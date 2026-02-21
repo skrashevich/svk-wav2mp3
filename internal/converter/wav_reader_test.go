@@ -3,20 +3,20 @@ package converter
 import "testing"
 
 func TestNormalizePCM_8bit(t *testing.T) {
-	// 8-bit: значение 128 (тишина) → 0
+	// 8-bit: value 128 (silence) → 0
 	samples := []int{128, 0, 255}
 	result := normalizePCM(samples, 8)
 
 	if result[0] != 0 {
-		t.Errorf("128 (8-bit) должен нормализоваться в 0, получено %d", result[0])
+		t.Errorf("128 (8-bit) should normalize to 0, got %d", result[0])
 	}
 	// 0 → (0 - 128) << 8 = -128 << 8 = -32768
 	if result[1] != -32768 {
-		t.Errorf("0 (8-bit) должен нормализоваться в -32768, получено %d", result[1])
+		t.Errorf("0 (8-bit) should normalize to -32768, got %d", result[1])
 	}
 	// 255 → (255 - 128) << 8 = 127 << 8 = 32512
 	if result[2] != 32512 {
-		t.Errorf("255 (8-bit) должен нормализоваться в 32512, получено %d", result[2])
+		t.Errorf("255 (8-bit) should normalize to 32512, got %d", result[2])
 	}
 }
 
@@ -26,7 +26,7 @@ func TestNormalizePCM_16bit(t *testing.T) {
 
 	for i, s := range samples {
 		if result[i] != int16(s) {
-			t.Errorf("16-bit сэмпл[%d]: ожидался %d, получено %d", i, int16(s), result[i])
+			t.Errorf("16-bit sample[%d]: expected %d, got %d", i, int16(s), result[i])
 		}
 	}
 }
@@ -44,7 +44,7 @@ func TestNormalizePCM_24bit(t *testing.T) {
 	}
 	for i, exp := range expected {
 		if result[i] != exp {
-			t.Errorf("24-bit сэмпл[%d]: ожидался %d, получено %d", i, exp, result[i])
+			t.Errorf("24-bit sample[%d]: expected %d, got %d", i, exp, result[i])
 		}
 	}
 }
@@ -62,7 +62,7 @@ func TestNormalizePCM_32bit(t *testing.T) {
 	}
 	for i, exp := range expected {
 		if result[i] != exp {
-			t.Errorf("32-bit сэмпл[%d]: ожидался %d, получено %d", i, exp, result[i])
+			t.Errorf("32-bit sample[%d]: expected %d, got %d", i, exp, result[i])
 		}
 	}
 }
@@ -70,6 +70,6 @@ func TestNormalizePCM_32bit(t *testing.T) {
 func TestNormalizePCM_EmptyInput(t *testing.T) {
 	result := normalizePCM(nil, 16)
 	if len(result) != 0 {
-		t.Errorf("ожидался пустой результат, получено %d элементов", len(result))
+		t.Errorf("expected empty result, got %d elements", len(result))
 	}
 }

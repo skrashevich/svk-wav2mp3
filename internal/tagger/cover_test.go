@@ -18,10 +18,10 @@ func TestLoadCover_JPEG(t *testing.T) {
 
 	cover, err := LoadCover(f.Name())
 	if err != nil {
-		t.Fatalf("не ожидалась ошибка: %v", err)
+		t.Fatalf("unexpected error: %v", err)
 	}
 	if cover.MIMEType != "image/jpeg" {
-		t.Errorf("ожидался image/jpeg, получен %s", cover.MIMEType)
+		t.Errorf("expected image/jpeg, got %s", cover.MIMEType)
 	}
 }
 
@@ -38,10 +38,10 @@ func TestLoadCover_PNG(t *testing.T) {
 
 	cover, err := LoadCover(f.Name())
 	if err != nil {
-		t.Fatalf("не ожидалась ошибка: %v", err)
+		t.Fatalf("unexpected error: %v", err)
 	}
 	if cover.MIMEType != "image/png" {
-		t.Errorf("ожидался image/png, получен %s", cover.MIMEType)
+		t.Errorf("expected image/png, got %s", cover.MIMEType)
 	}
 }
 
@@ -58,10 +58,10 @@ func TestLoadCover_GIF(t *testing.T) {
 
 	cover, err := LoadCover(f.Name())
 	if err != nil {
-		t.Fatalf("не ожидалась ошибка: %v", err)
+		t.Fatalf("unexpected error: %v", err)
 	}
 	if cover.MIMEType != "image/gif" {
-		t.Errorf("ожидался image/gif, получен %s", cover.MIMEType)
+		t.Errorf("expected image/gif, got %s", cover.MIMEType)
 	}
 }
 
@@ -69,7 +69,7 @@ func TestLoadCover_WebP(t *testing.T) {
 	// WebP: RIFF????WEBP
 	data := []byte{
 		0x52, 0x49, 0x46, 0x46, // RIFF
-		0x24, 0x00, 0x00, 0x00, // размер
+		0x24, 0x00, 0x00, 0x00, // size
 		0x57, 0x45, 0x42, 0x50, // WEBP
 		0x56, 0x50, 0x38, 0x20, // VP8
 	}
@@ -83,10 +83,10 @@ func TestLoadCover_WebP(t *testing.T) {
 
 	cover, err := LoadCover(f.Name())
 	if err != nil {
-		t.Fatalf("не ожидалась ошибка: %v", err)
+		t.Fatalf("unexpected error: %v", err)
 	}
 	if cover.MIMEType != "image/webp" {
-		t.Errorf("ожидался image/webp, получен %s", cover.MIMEType)
+		t.Errorf("expected image/webp, got %s", cover.MIMEType)
 	}
 }
 
@@ -101,12 +101,12 @@ func TestLoadCover_UnknownFormat(t *testing.T) {
 	f.Close()
 
 	if _, err := LoadCover(f.Name()); err == nil {
-		t.Error("ожидалась ошибка для неизвестного формата")
+		t.Error("expected error for unknown format")
 	}
 }
 
 func TestLoadCover_NonExistent(t *testing.T) {
 	if _, err := LoadCover("/nonexistent/cover.jpg"); err == nil {
-		t.Error("ожидалась ошибка для несуществующего файла")
+		t.Error("expected error for non-existent file")
 	}
 }

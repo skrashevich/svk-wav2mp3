@@ -1,6 +1,6 @@
 package config
 
-// ID3Tags содержит метаданные для MP3-файла.
+// ID3Tags contains metadata for MP3 file.
 type ID3Tags struct {
 	Title   string
 	Artist  string
@@ -9,27 +9,27 @@ type ID3Tags struct {
 	Genre   string
 	Track   string
 	Comment string
-	Cover   string // путь к файлу обложки
+	Cover   string // path to cover file
 }
 
-// ConvertOptions содержит все параметры конвертации.
+// ConvertOptions contains all conversion parameters.
 type ConvertOptions struct {
 	InputPath  string
-	OutputPath string // пустая строка — генерировать из InputPath
+	OutputPath string // empty string - generate from InputPath
 
 	Tags ID3Tags
 
-	// Режим кодирования
+	// Encoding mode
 	VBR        bool
-	VBRQuality float64 // 0.0 (лучше) — 9.9 (хуже), только при VBR
-	Bitrate    int     // CBR в kbps (32–320), только при !VBR
-	Quality    int     // алгоритмическое качество LAME 0–9 (0=лучше)
+	VBRQuality float64 // 0.0 (better) – 9.9 (worse), VBR only
+	Bitrate    int     // CBR in kbps (32–320), VBR only when !VBR
+	Quality    int     // LAME algorithmic quality 0–9 (0=better)
 
 	Verbose bool
 	Quiet   bool
 }
 
-// DefaultConvertOptions возвращает параметры по умолчанию: VBR V2, quality 2.
+// DefaultConvertOptions returns default parameters: VBR V2, quality 2.
 func DefaultConvertOptions() ConvertOptions {
 	return ConvertOptions{
 		VBR:        true,
