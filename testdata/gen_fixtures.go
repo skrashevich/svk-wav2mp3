@@ -1,7 +1,7 @@
 //go:build ignore
 
-// Генерирует WAV-файлы в testdata/fixtures/ для интеграционных тестов.
-// Запуск: go run testdata/gen_fixtures.go
+// Generates WAV files in testdata/fixtures/ for integration tests.
+// Run: go run testdata/gen_fixtures.go
 package main
 
 import (
@@ -35,11 +35,11 @@ func main() {
 	for _, fx := range fixtures {
 		path := filepath.Join(dir, fx.name)
 		if err := writeWAV(path, fx.sampleRate, fx.numChannels, fx.bitDepth, fx.duration); err != nil {
-			fmt.Fprintf(os.Stderr, "ошибка при создании %s: %v\n", path, err)
+			fmt.Fprintf(os.Stderr, "error creating %s: %v\n", path, err)
 			os.Exit(1)
 		}
 		fi, _ := os.Stat(path)
-		fmt.Printf("создан: %s (%.1f KB)\n", path, float64(fi.Size())/1024)
+		fmt.Printf("created: %s (%.1f KB)\n", path, float64(fi.Size())/1024)
 	}
 }
 
