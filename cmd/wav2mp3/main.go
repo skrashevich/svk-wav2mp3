@@ -10,7 +10,7 @@ import (
 	"github.com/svk/wav2mp3/internal/cli"
 )
 
-// Устанавливается через -ldflags при сборке.
+// Set via -ldflags at build time.
 var version = "dev"
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 	root.SetContext(ctx)
 
 	if err := root.ExecuteContext(ctx); err != nil {
-		fmt.Fprintln(os.Stderr, "Ошибка:", err)
+		fmt.Fprintln(os.Stderr, "Error:", err)
 		os.Exit(1)
 	}
 }

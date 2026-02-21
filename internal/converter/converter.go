@@ -12,7 +12,7 @@ import (
 	"github.com/svk/wav2mp3/internal/tagger"
 )
 
-// Stats содержит статистику после конвертации.
+// Stats contains conversion statistics.
 type Stats struct {
 	InputPath   string
 	OutputPath  string
@@ -25,11 +25,11 @@ type Stats struct {
 	Tags        config.ID3Tags
 }
 
-// Convert выполняет полный цикл конвертации WAV → MP3.
+// Convert performs full conversion cycle WAV → MP3.
 func Convert(ctx context.Context, opts config.ConvertOptions) (*Stats, error) {
 	outputPath := resolveOutputPath(opts.InputPath, opts.OutputPath)
 
-	// Защита: удалить недозаписанный файл при ошибке или отмене
+	// Safety: remove partial output file on error or cancellation
 	success := false
 	defer func() {
 		if !success {
@@ -37,14 +37,14 @@ func Convert(ctx context.Context, opts config.ConvertOptions) (*Stats, error) {
 		}
 	}()
 
-	// Открываем WAV
+	// Open WAV
 	reader, err := NewWAVReader(opts.InputPath)
 	if err != nil {
 		return nil, err
 	}
 	defer reader.Close()
 
-	// Создаём MP3-энкодер
+	// Create MP3 encoder
 	encCfg := EncoderConfig{
 		SampleRate:  reader.Info.SampleRate,
 		NumChannels: reader.Info.NumChannels,
@@ -60,20 +60,20 @@ func Convert(ctx context.Context, opts config.ConvertOptions) (*Stats, error) {
 
 	start := time.Now()
 
-	// Кодируем
+	// Encode
 	if err := RunPipeline(ctx, reader, writer, opts.Quiet); err != nil {
 		writer.Close()
 		return nil, err
 	}
 
-	// Закрываем энкодер (flush + close)
+	// Close encoder (flush + close)
 	if err := writer.Close(); err != nil {
-		return nil, fmt.Errorf("ошибка завершения кодирования: %w", err)
+		return nil, fmt.Errorf("encoder flush/close error: %w", err)
 	}
 
 	elapsed := time.Since(start)
 
-	// Записываем ID3v2-теги после закрытия энкодера
+	// Write ID3v2 tags after encoder is closed
 	hasAnyTag := opts.Tags.Title != "" || opts.Tags.Artist != "" || opts.Tags.Album != "" ||
 		opts.Tags.Year != "" || opts.Tags.Genre != "" || opts.Tags.Track != "" ||
 		opts.Tags.Comment != "" || opts.Tags.Cover != ""
@@ -84,7 +84,7 @@ func Convert(ctx context.Context, opts config.ConvertOptions) (*Stats, error) {
 		}
 	}
 
-	// Размер выходного файла
+	// Output file size
 	fi, err := os.Stat(outputPath)
 	if err != nil {
 		return nil, err
@@ -105,7 +105,7 @@ func Convert(ctx context.Context, opts config.ConvertOptions) (*Stats, error) {
 	}, nil
 }
 
-// resolveOutputPath генерирует путь выходного файла если не задан явно.
+// resolveOutputPath generates output file path if not explicitly provided.
 func resolveOutputPath(inputPath, outputPath string) string {
 	if outputPath != "" {
 		return outputPath

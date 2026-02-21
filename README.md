@@ -1,10 +1,10 @@
 # wav2mp3
 
-Конвертер WAV → MP3 с максимальным качеством. Использует [libmp3lame](https://lame.sourceforge.io/) через CGo с поддержкой VBR, ID3v2-тегов и обложки альбома.
+High-quality WAV → MP3 converter. Uses [libmp3lame](https://lame.sourceforge.io/) via CGo with VBR support, ID3v2 tags, and album cover embedding.
 
-## Требования
+## Requirements
 
-- macOS (Apple Silicon или Intel)
+- macOS (Apple Silicon or Intel)
 - Go 1.21+
 - libmp3lame:
 
@@ -12,36 +12,36 @@
 brew install lame
 ```
 
-## Установка
+## Installation
 
 ```bash
 git clone ...
 cd svk-wav2mp3
-make install        # собирает и копирует в /usr/local/bin/wav2mp3
+make install        # builds and copies to /usr/local/bin/wav2mp3
 ```
 
-Или только сборка:
+Or just build:
 
 ```bash
 make build          # ./bin/wav2mp3
 ```
 
-## Использование
+## Usage
 
 ```
 wav2mp3 -i INPUT [flags]
 ```
 
-### Примеры
+### Examples
 
 ```bash
-# VBR V2 по умолчанию — лучший баланс качество/размер
+# VBR V2 by default — best quality/size balance
 wav2mp3 -i song.wav
 
-# Указать выходной файл
+# Specify output file
 wav2mp3 -i song.wav -o song_hq.mp3
 
-# С тегами и обложкой
+# With tags and cover
 wav2mp3 -i song.wav \
   --title "Song Title" \
   --artist "Artist Name" \
@@ -54,62 +54,62 @@ wav2mp3 -i song.wav \
 # CBR 320 kbps
 wav2mp3 -i song.wav --bitrate 320
 
-# VBR максимальное качество (V0)
+# VBR maximum quality (V0)
 wav2mp3 -i song.wav --vbr-quality 0
 
-# Тихий режим (без прогресс-бара и статистики)
+# Quiet mode (no progress bar and stats)
 wav2mp3 -i song.wav -q
 
-# Подробный вывод (параметры энкодера)
+# Verbose output (encoder parameters)
 wav2mp3 -i song.wav -v
 ```
 
-### Флаги
+### Flags
 
-| Флаг | По умолчанию | Описание |
-|------|--------------|----------|
-| `-i, --input` | — | Входной WAV файл **(обязательный)** |
-| `-o, --output` | рядом с входным | Выходной MP3 файл |
-| `--title` | | Название трека |
-| `--artist` | | Исполнитель |
-| `--album` | | Альбом |
-| `--year` | | Год |
-| `--genre` | | Жанр |
-| `--track` | | Номер трека |
-| `--comment` | | Комментарий |
-| `--cover` | | Обложка (JPEG, PNG, GIF, WebP) |
-| `--vbr-quality` | `2.0` | VBR качество 0.0 (лучше) – 9.9; несовместим с `--bitrate` |
-| `--bitrate` | — | CBR битрейт kbps (32–320); при указании отключает VBR |
-| `--quality` | `2` | Алгоритмическое качество LAME 0 (лучше) – 9 |
-| `-v, --verbose` | | Подробный вывод |
-| `-q, --quiet` | | Без прогресс-бара и статистики |
-| `--version` | | Версия |
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-i, --input` | — | Input WAV file **(required)** |
+| `-o, --output` | next to input | Output MP3 file |
+| `--title` | | Track title |
+| `--artist` | | Artist |
+| `--album` | | Album |
+| `--year` | | Year |
+| `--genre` | | Genre |
+| `--track` | | Track number |
+| `--comment` | | Comment |
+| `--cover` | | Cover (JPEG, PNG, GIF, WebP) |
+| `--vbr-quality` | `2.0` | VBR quality 0.0 (better) – 9.9; incompatible with `--bitrate` |
+| `--bitrate` | — | CBR bitrate kbps (32–320); specifying disables VBR |
+| `--quality` | `2` | LAME algorithmic quality 0 (better) – 9 |
+| `-v, --verbose` | | Verbose output |
+| `-q, --quiet` | | No progress bar and stats |
+| `--version` | | Version |
 
-### Поддерживаемые форматы WAV
+### Supported WAV Formats
 
-| Формат | Каналы |
-|--------|--------|
+| Format | Channels |
+|--------|----------|
 | 8-bit PCM | Mono, Stereo |
 | 16-bit PCM | Mono, Stereo |
 | 24-bit PCM | Mono, Stereo |
 | 32-bit PCM | Mono, Stereo |
 
-## Вывод
+## Output
 
 ```
-Вход:  song.wav (44100 Hz, Stereo, 16-bit, 3m 42s, 39.1 MB)
-Выход: song.mp3 (VBR V2, elapsed 12.3s, 8.4 MB, сжатие 4.65x)
-Теги:  Title="Song Title", Artist="Artist Name", Cover=cover.jpg
+Input:  song.wav (44100 Hz, Stereo, 16-bit, 3m 42s, 39.1 MB)
+Output: song.mp3 (VBR V2, elapsed 12.3s, 8.4 MB, compression 4.65x)
+Tags:   Title="Song Title", Artist="Artist Name", Cover=cover.jpg
 ```
 
-## Разработка
+## Development
 
 ```bash
-make test           # все тесты
-make testdata       # регенерировать WAV-фикстуры
+make test           # all tests
+make testdata       # regenerate WAV fixtures
 make fmt            # go fmt
 ```
 
-## Лицензия
+## License
 
 MIT

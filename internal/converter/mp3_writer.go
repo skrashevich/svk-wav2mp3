@@ -8,33 +8,33 @@ import (
 	"github.com/viert/go-lame"
 )
 
-// MP3Writer управляет LAME-энкодером и записью MP3-данных в файл.
+// MP3Writer manages LAME encoder and MP3 data writing to file.
 type MP3Writer struct {
 	file    *os.File
 	encoder *lame.Encoder
 }
 
-// EncoderConfig параметры энкодера.
+// EncoderConfig encoder parameters.
 type EncoderConfig struct {
 	SampleRate  int
 	NumChannels int
 	VBR         bool
 	VBRQuality  float64 // 0.0–9.9
-	Bitrate     int     // kbps, только CBR
-	Quality     int     // алгоритмическое 0–9
+	Bitrate     int     // kbps, CBR only
+	Quality     int     // algorithmic 0–9
 }
 
-// NewMP3Writer создаёт файл и инициализирует LAME-энкодер.
+// NewMP3Writer creates file and initializes LAME encoder.
 func NewMP3Writer(path string, cfg EncoderConfig) (*MP3Writer, error) {
 	f, err := os.Create(path)
 	if err != nil {
-		return nil, fmt.Errorf("не удалось создать MP3 файл: %w", err)
+		return nil, fmt.Errorf("failed to create MP3 file: %w", err)
 	}
 
 	enc := lame.NewEncoder(f)
 
-	// Отключаем автоматическую запись ID3-тегов LAME —
-	// теги будем писать вручную через bogem/id3v2 после кодирования.
+	// Disable automatic ID3 tag writing by LAME
+	// We'll write tags manually via bogem/id3v2 after encoding.
 	enc.SetWriteID3TagAutomatic(false)
 
 	if err := enc.SetInSamplerate(cfg.SampleRate); err != nil {
@@ -76,29 +76,29 @@ func NewMP3Writer(path string, cfg EncoderConfig) (*MP3Writer, error) {
 	}, nil
 }
 
-// WriteSamples кодирует и записывает чанк int16-сэмплов.
-// go-lame.Write принимает []byte (int16 little-endian interleaved).
+// WriteSamples encodes and writes chunk of int16 samples.
+// go-lame.Write expects []byte (int16 little-endian interleaved).
 func (w *MP3Writer) WriteSamples(samples []int16) error {
 	buf := make([]byte, len(samples)*2)
 	for i, s := range samples {
 		binary.LittleEndian.PutUint16(buf[i*2:], uint16(s))
 	}
 	if _, err := w.encoder.Write(buf); err != nil {
-		return fmt.Errorf("ошибка кодирования: %w", err)
+		return fmt.Errorf("encoding error: %w", err)
 	}
 	return nil
 }
 
-// Close сбрасывает буферы LAME и закрывает файл.
+// Close flushes LAME buffers and closes file.
 func (w *MP3Writer) Close() error {
 	if _, err := w.encoder.Flush(); err != nil {
-		return fmt.Errorf("ошибка flush LAME: %w", err)
+		return fmt.Errorf("LAME flush error: %w", err)
 	}
 	w.encoder.Close()
 	return w.file.Close()
 }
 
-// FilePath возвращает путь к выходному файлу.
+// FilePath returns output file path.
 func (w *MP3Writer) FilePath() string {
 	return w.file.Name()
 }

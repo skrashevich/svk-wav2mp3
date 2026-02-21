@@ -8,8 +8,8 @@ import (
 	"github.com/schollz/progressbar/v3"
 )
 
-// RunPipeline читает WAV и пишет MP3 чанками по chunkSamples фреймов,
-// обновляя progressbar. Корректно реагирует на отмену контекста между чанками.
+// RunPipeline reads WAV and writes MP3 in chunks of chunkSamples frames,
+// updating the progressbar. Properly responds to context cancellation between chunks.
 func RunPipeline(ctx context.Context, reader *WAVReader, writer *MP3Writer, quiet bool) error {
 	totalSamples := reader.TotalSamples()
 
@@ -17,7 +17,7 @@ func RunPipeline(ctx context.Context, reader *WAVReader, writer *MP3Writer, quie
 	if !quiet {
 		if totalSamples > 0 {
 			bar = progressbar.NewOptions(totalSamples,
-				progressbar.OptionSetDescription("Кодирование"),
+				progressbar.OptionSetDescription("Encoding"),
 				progressbar.OptionSetWriter(os.Stderr),
 				progressbar.OptionShowBytes(false),
 				progressbar.OptionSetWidth(40),
@@ -28,7 +28,7 @@ func RunPipeline(ctx context.Context, reader *WAVReader, writer *MP3Writer, quie
 			)
 		} else {
 			bar = progressbar.NewOptions(-1,
-				progressbar.OptionSetDescription("Кодирование"),
+				progressbar.OptionSetDescription("Encoding"),
 				progressbar.OptionSetWriter(os.Stderr),
 				progressbar.OptionSpinnerType(14),
 			)
@@ -37,7 +37,7 @@ func RunPipeline(ctx context.Context, reader *WAVReader, writer *MP3Writer, quie
 
 	for {
 		if err := ctx.Err(); err != nil {
-			return fmt.Errorf("операция отменена: %w", err)
+			return fmt.Errorf("operation cancelled: %w", err)
 		}
 
 		samples, err := reader.ReadSamplesInt16()
