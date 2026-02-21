@@ -5,31 +5,31 @@ import (
 	"os"
 )
 
-// CoverData содержит данные обложки и её MIME-тип.
+// CoverData contains cover data and its MIME type.
 type CoverData struct {
 	Data     []byte
 	MIMEType string
 }
 
-// LoadCover загружает файл обложки и определяет MIME-тип по magic bytes.
+// LoadCover loads cover file and detects MIME type via magic bytes.
 func LoadCover(path string) (*CoverData, error) {
 	data, err := os.ReadFile(path)
 	if err != nil {
-		return nil, fmt.Errorf("не удалось прочитать обложку %s: %w", path, err)
+		return nil, fmt.Errorf("failed to read cover %s: %w", path, err)
 	}
 	if len(data) < 4 {
-		return nil, fmt.Errorf("файл обложки слишком маленький: %s", path)
+		return nil, fmt.Errorf("cover file too small: %s", path)
 	}
 
 	mimeType, err := detectMIME(data)
 	if err != nil {
-		return nil, fmt.Errorf("неподдерживаемый формат обложки %s: %w", path, err)
+		return nil, fmt.Errorf("unsupported cover format %s: %w", path, err)
 	}
 
 	return &CoverData{Data: data, MIMEType: mimeType}, nil
 }
 
-// detectMIME определяет MIME-тип изображения по magic bytes.
+// detectMIME determines image MIME type via magic bytes.
 func detectMIME(data []byte) (string, error) {
 	// JPEG: FF D8 FF
 	if len(data) >= 3 && data[0] == 0xFF && data[1] == 0xD8 && data[2] == 0xFF {
@@ -52,5 +52,5 @@ func detectMIME(data []byte) (string, error) {
 		return "image/webp", nil
 	}
 
-	return "", fmt.Errorf("неизвестный формат (поддерживаются JPEG, PNG, GIF, WebP)")
+	return "", fmt.Errorf("unknown format (supported: JPEG, PNG, GIF, WebP)")
 }

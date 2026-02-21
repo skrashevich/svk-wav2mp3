@@ -7,11 +7,11 @@ import (
 	"github.com/svk/wav2mp3/internal/config"
 )
 
-// Apply записывает ID3v2-теги в готовый MP3-файл.
+// Apply writes ID3v2 tags to finished MP3 file.
 func Apply(mp3Path string, tags config.ID3Tags) error {
 	tag, err := id3v2.Open(mp3Path, id3v2.Options{Parse: false})
 	if err != nil {
-		return fmt.Errorf("не удалось открыть MP3 для тегирования: %w", err)
+		return fmt.Errorf("failed to open MP3 for tagging: %w", err)
 	}
 	defer tag.Close()
 
@@ -59,7 +59,7 @@ func Apply(mp3Path string, tags config.ID3Tags) error {
 	}
 
 	if err := tag.Save(); err != nil {
-		return fmt.Errorf("не удалось сохранить теги: %w", err)
+		return fmt.Errorf("failed to save tags: %w", err)
 	}
 	return nil
 }
