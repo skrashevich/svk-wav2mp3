@@ -1,31 +1,31 @@
 # TODO: svk-wav2mp3
 
-## Выполнено
+## Completed
 
-- [x] go mod init + go get зависимостей
+- [x] go mod init + go get dependencies
 - [x] internal/config/options.go — ConvertOptions, ID3Tags
-- [x] internal/converter/wav_reader.go — WAVReader + bit-depth нормализация
+- [x] internal/converter/wav_reader.go — WAVReader + bit-depth normalization
 - [x] internal/converter/mp3_writer.go — MP3Writer + lame encoder config
-- [x] internal/converter/pipeline.go — потоковый PCM pipeline + progressbar
-- [x] internal/tagger/cover.go — LoadCover с magic bytes detection
+- [x] internal/converter/pipeline.go — streaming PCM pipeline + progressbar
+- [x] internal/tagger/cover.go — LoadCover with magic bytes detection
 - [x] internal/tagger/tagger.go — ID3v2Tagger
-- [x] internal/converter/converter.go — DefaultConverter (оркестрация)
-- [x] internal/validate/validate.go — валидация опций
-- [x] internal/cli/root.go — cobra команда с флагами
-- [x] cmd/wav2mp3/main.go — main с signal handling
+- [x] internal/converter/converter.go — DefaultConverter (orchestration)
+- [x] internal/validate/validate.go — validation of options
+- [x] internal/cli/root.go — cobra command with flags
+- [x] cmd/wav2mp3/main.go — main with signal handling
 - [x] Makefile — build/test/install/testdata
 
-## Выполнено (продолжение)
+## Completed (continued)
 
-- [x] Тесты: unit (validate — 8 тестов, cover detection — 6 тестов, bit-depth — 5 тестов)
-- [x] Тесты: integration (5 тестов: stereo 16-bit, mono 8-bit, CBR, auto output path, context cancel)
-- [x] Верификация: make build && ffprobe подтвердил корректные теги в MP3
+- [x] Tests: unit (validate — 8 tests, cover detection — 6 tests, bit-depth — 5 tests)
+- [x] Tests: integration (5 tests: stereo 16-bit, mono 8-bit, CBR, auto output path, context cancel)
+- [x] Verification: make build && ffprobe confirmed correct tags in MP3
 
-## Следующие шаги (опционально)
+## Next Steps (optional)
 
-## Будущие улучшения
+## Future Improvements
 
-- [ ] Пакетная конвертация (glob-паттерны, рекурсивный обход директорий)
-- [ ] Пул горутин для параллельной конвертации
-- [ ] Поддержка ReplayGain
-- [ ] Вывод версии go.mod через `wav2mp3 --version`
+- [ ] Batch conversion (glob patterns, recursive directory traversal)
+- [ ] Goroutine pool for parallel conversion
+- [ ] ReplayGain support
+- [ ] Version output via `wav2mp3 --version`

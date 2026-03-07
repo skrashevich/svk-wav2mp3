@@ -1,23 +1,32 @@
 package cli
 
 import (
+	"context"
 	"fmt"
 	"os"
+	"path/filepath"
+	"sort"
 	"strings"
 
+	"github.com/bmatcuk/doublestar/v2"
 	"github.com/spf13/cobra"
+	"github.com/svk/wav2mp3/internal/batch"
 	"github.com/svk/wav2mp3/internal/config"
 	"github.com/svk/wav2mp3/internal/converter"
 	"github.com/svk/wav2mp3/internal/validate"
 )
 
 var opts = config.DefaultConvertOptions()
+var batchOpts = batch.BatchOptions{}
 
 // NewRootCmd creates and returns root cobra command.
 func NewRootCmd(version string) *cobra.Command {
+	// Populate batchOpts.Tags from opts for batch mode
+	batchOpts.Tags = opts.Tags
+
 	root := &cobra.Command{
-		Use:   "wav2mp3 -i INPUT [flags]",
-		Short: "High-quality WAV to MP3 converter",
+		Use:   "wav2mp3 [flags]",
+		Short: "High-quality WAV to MP3 converter with batch mode support",
 		Long: `wav2mp3 converts WAV files to MP3 via libmp3lame with support for
 ID3v2 tags and album cover.
 
@@ -34,7 +43,14 @@ For CBR use --bitrate; --bitrate and --vbr-quality are incompatible.`,
 
 	// Main parameters
 	f.StringVarP(&opts.InputPath, "input", "i", "", "Input WAV file (required)")
-	f.StringVarP(&opts.OutputPath, "output", "o", "", "Output MP3 file (default: next to input)")
+
+	// Batch conversion parameters
+	f.StringArrayVarP(&batchOpts.Patterns, "pattern", "p", []string{},
+		"WAV file pattern(s) - can contain wildcards (for batch mode)")
+	f.BoolVarP(&batchOpts.Recursive, "recursive", "r", false,
+		"Recurse into subdirectories (for batch mode with patterns)")
+	f.StringVarP(&batchOpts.OutputDir, "output-dir", "", "",
+		"Output directory (for batch mode)")
 
 	// ID3 tags
 	f.StringVar(&opts.Tags.Title, "title", "", "Track title")
@@ -58,7 +74,8 @@ For CBR use --bitrate; --bitrate and --vbr-quality are incompatible.`,
 	f.BoolVarP(&opts.Verbose, "verbose", "v", false, "Verbose output (encoder parameters)")
 	f.BoolVarP(&opts.Quiet, "quiet", "q", false, "Minimal output (no progress bar and stats)")
 
-	_ = root.MarkFlagRequired("input")
+	// ID3 tags are shared with single-file mode
+	batchOpts.Tags = opts.Tags
 
 	return root
 }
@@ -66,6 +83,15 @@ For CBR use --bitrate; --bitrate and --vbr-quality are incompatible.`,
 func runConvert(cmd *cobra.Command) error {
 	ctx := cmd.Context()
 
+	// Batch mode
+	if len(batchOpts.Patterns) > 0 {
+		return runBatchConvert(ctx)
+	}
+
+	// Single file mode requires -i
+	if opts.InputPath == "" {
+		return fmt.Errorf("either --input (-i) for single file or --pattern (-p) for batch mode is required")
+	}
 	bitrateSet := cmd.Flags().Changed("bitrate")
 	vbrQualitySet := cmd.Flags().Changed("vbr-quality")
 
@@ -94,6 +120,76 @@ func runConvert(cmd *cobra.Command) error {
 	}
 
 	return nil
+}
+
+func runBatchConvert(ctx context.Context) error {
+	// Collect all WAV files from patterns
+	var files []string
+	for _, pattern := range batchOpts.Patterns {
+		matches, err := globWAVFiles(ctx, pattern)
+		if err != nil {
+			return fmt.Errorf("glob error for %s: %w", pattern, err)
+		}
+		files = append(files, matches...)
+	}
+
+	if len(files) == 0 {
+		fmt.Println("No matching WAV files found.")
+		return nil
+	}
+
+	// Execute batch conversion
+	stats, err := batch.ConvertBatch(ctx, batchOpts)
+	if err != nil {
+		return err
+	}
+
+	if !opts.Quiet {
+		fmt.Printf("\nConverted %d files successfully.\n", stats.Successful)
+	}
+
+	return nil
+}
+
+func globWAVFiles(ctx context.Context, pattern string) ([]string, error) {
+	if !filepath.IsAbs(pattern) {
+		pattern = filepath.Join(".", pattern)
+	}
+
+	matches, err := doublestar.Glob(pattern)
+	if err != nil {
+		return nil, err
+	}
+
+	var result []string
+	for _, m := range matches {
+		m = filepath.Clean(m)
+		if strings.HasSuffix(strings.ToLower(m), ".wav") ||
+			strings.HasSuffix(strings.ToLower(m), ".wave") {
+			result = append(result, m)
+		}
+	}
+
+	// If no matches, try with explicit .wav extension
+	if len(result) == 0 {
+		pattern = strings.TrimSuffix(pattern, "*")
+		if !filepath.IsAbs(pattern) {
+			pattern = filepath.Join(".", pattern)
+		}
+		pattern += "*.wav"
+		matches, err = doublestar.Glob(pattern)
+		if err != nil {
+			return nil, err
+		}
+		for _, m := range matches {
+			result = append(result, m)
+		}
+	}
+
+	// Sort for deterministic output
+	sort.Strings(result)
+
+	return result, nil
 }
 
 func printVerboseInfo() {
