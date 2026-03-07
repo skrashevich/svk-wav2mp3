@@ -3,6 +3,7 @@ module github.com/svk/wav2mp3
 go 1.25.0
 
 require (
+	github.com/bmatcuk/doublestar/v2 v2.0.4 // indirect
 	github.com/bogem/id3v2/v2 v2.1.4 // indirect
 	github.com/go-audio/audio v1.0.0 // indirect
 	github.com/go-audio/riff v1.0.0 // indirect
