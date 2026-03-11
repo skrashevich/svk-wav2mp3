@@ -15,7 +15,7 @@ type Task interface {
 // TaskResult содержит результат выполнения задачи.
 type TaskResult struct {
 	Task   Task
-	Output interface{}
+	Output any
 	Error  error
 }
 
