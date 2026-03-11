@@ -30,6 +30,8 @@ jobs:
           cd lame-3.100
           ./configure --disable-shared --disable-frontend --disable-decoder \
             --disable-gtktest --enable-static --disable-rpath --disable-cpml \
+            --disable-nasm \
+            ac_cv_header_xmmintrin_h=no \
             CFLAGS="-O2 -fno-strict-aliasing"
 
       - name: Generate linux/amd64
