@@ -3,3 +3,4 @@ bin/
 .DS_Store
 build/lame-*
 .omc
+benchmark/
