@@ -56,42 +56,27 @@ jobs:
             -o internal/lame/lame_linux_amd64.go \
             $SRCS
 
-      - name: Generate darwin/amd64 (cross-OS, tolerate _Float128 warnings)
+      - name: Derive darwin/amd64 from darwin/arm64
         run: |
-          LAME=/tmp/lame-3.100
-          SRCS=$(echo $LAME_C_FILES | tr ' ' '\n' | sed "s|^|${LAME}/libmp3lame/|" | tr '\n' ' ')
-          # ccgo v4 exits non-zero due to _Float128 warnings in libc headers
-          # but may still produce valid output for LAME (which doesn't use _Float128)
-          TARGET_GOOS=darwin TARGET_GOARCH=amd64 \
-          ccgo $CCGO_FLAGS \
-            -I${LAME}/include -I${LAME}/libmp3lame -I${LAME} \
-            -o internal/lame/lame_darwin_amd64.go \
-            $SRCS || true
+          # Both darwin/arm64 and darwin/amd64 are 64-bit little-endian with
+          # identical OS constants. The transpiled code is pure Go (no asm).
+          # Adapt the build tag and header comment.
+          sed \
+            -e 's|//go:build darwin && arm64|//go:build darwin \&\& amd64|' \
+            -e 's|darwin/arm64|darwin/amd64|g' \
+            internal/lame/lame_darwin_arm64.go > internal/lame/lame_darwin_amd64.go
 
-          # Verify the file was actually generated and looks valid
-          if [ ! -f internal/lame/lame_darwin_amd64.go ]; then
-            echo "ERROR: darwin/amd64 file was not generated"
-            exit 1
-          fi
-          if ! head -5 internal/lame/lame_darwin_amd64.go | grep -q 'darwin && amd64'; then
-            echo "ERROR: generated file does not have correct build tag"
-            cat internal/lame/lame_darwin_amd64.go | head -10
-            exit 1
-          fi
-          LINES=$(wc -l < internal/lame/lame_darwin_amd64.go)
-          echo "Generated darwin/amd64: ${LINES} lines"
-          if [ "$LINES" -lt 10000 ]; then
-            echo "ERROR: generated file is suspiciously small (${LINES} lines)"
-            exit 1
-          fi
-
-      - name: Verify generated files
-        run: |
-          head -5 internal/lame/lame_linux_amd64.go
-          echo "---"
+          echo "darwin/amd64 derived from darwin/arm64:"
           head -5 internal/lame/lame_darwin_amd64.go
-          echo "---"
-          wc -l internal/lame/lame_*_amd64.go
+          wc -l internal/lame/lame_darwin_amd64.go
+
+      - name: Smoke test — verify all 4 targets compile
+        run: |
+          for pair in linux/amd64 linux/arm64 darwin/amd64 darwin/arm64; do
+            GOOS=${pair%/*} GOARCH=${pair#*/} CGO_ENABLED=0 \
+              go build ./internal/lame/
+            echo "OK: $pair"
+          done
 
       - name: Upload generated files
         uses: actions/upload-artifact@v4
