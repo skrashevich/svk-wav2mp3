@@ -23,7 +23,7 @@ env:
 jobs:
   generate-amd64:
     name: Generate amd64 transpiled files
-    runs-on: macos-13
+    runs-on: macos-12
     steps:
       - uses: actions/checkout@v4
 
