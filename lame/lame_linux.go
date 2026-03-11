@@ -1,6 +1,6 @@
-// Code generated for darwin/arm64 by 'ccgo --package-name lame -o /Users/svk/Documents/Projects.nosync/svk-wav2mp3/internal/lame/lame_darwin_arm64.go -DHAVE_CONFIG_H -I/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/include -I/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame -I/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100 -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H -ignore-asm-errors -ignore-unsupported-alignment /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/VbrTag.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/bitstream.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/encoder.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/fft.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/gain_analysis.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/id3tag.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/lame.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/mpglib_interface.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/newmdct.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/presets.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/psymodel.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/quantize.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/quantize_pvt.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/reservoir.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/set_get.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/tables.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/takehiro.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/util.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/vbrquantize.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/version.c', DO NOT EDIT.
+// Code generated for linux/arm64 by 'ccgo --package-name lame -o /Users/svk/Documents/Projects.nosync/svk-wav2mp3/internal/lame/lame_linux_arm64.go -DHAVE_CONFIG_H -I/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/include -I/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame -I/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100 -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H -ignore-asm-errors -ignore-unsupported-alignment /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/VbrTag.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/bitstream.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/encoder.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/fft.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/gain_analysis.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/id3tag.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/lame.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/mpglib_interface.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/newmdct.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/presets.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/psymodel.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/quantize.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/quantize_pvt.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/reservoir.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/set_get.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/tables.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/takehiro.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/util.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/vbrquantize.c /Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/version.c', DO NOT EDIT.
 
-//go:build darwin && arm64
+//go:build linux && (arm64 || amd64)
 
 package lame
 
@@ -14,280 +14,259 @@ import (
 var _ reflect.Type
 var _ unsafe.Pointer
 
-const ATTRIBUTION_NAME_MAX = 255
-const AT_EACCESS = 0x0010
-const AT_FDONLY = 0x0400
-const AT_NODELETEBUSY = 0x4000
-const AT_REALDEV = 0x0200
-const AT_REMOVEDIR = 0x0080
-const AT_RESOLVE_BENEATH = 0x2000
-const AT_SYMLINK_FOLLOW = 0x0040
-const AT_SYMLINK_NOFOLLOW = 0x0020
-const AT_SYMLINK_NOFOLLOW_ANY = 0x0800
-const AT_UNIQUE = 0x8000
-const BADSIG = "SIG_ERR"
-const BIG_ENDIAN = "__DARWIN_BIG_ENDIAN"
+const ARG_MAX = 131072
+const AT_EACCESS = 0x200
+const AT_EMPTY_PATH = 0x1000
+const AT_NO_AUTOMOUNT = 0x800
+const AT_RECURSIVE = 0x8000
+const AT_REMOVEDIR = 0x200
+const AT_STATX_DONT_SYNC = 0x4000
+const AT_STATX_FORCE_SYNC = 0x2000
+const AT_STATX_SYNC_AS_STAT = 0x0000
+const AT_STATX_SYNC_TYPE = 0x6000
+const AT_SYMLINK_FOLLOW = 0x400
+const AT_SYMLINK_NOFOLLOW = 0x100
+const BC_BASE_MAX = 99
+const BC_DIM_MAX = 2048
+const BC_SCALE_MAX = 99
+const BC_STRING_MAX = 1000
+const BIG_ENDIAN = "__BIG_ENDIAN"
 const BLKSIZE = 1024
 const BLKSIZE_s = 256
 const BPC = 320
 const BUFFER_SIZE = "LAME_MAXMP3BUFFER"
 const BUFSIZ = 1024
-const BUS_ADRALN = 1
-const BUS_ADRERR = 2
-const BUS_NOOP = 0
-const BUS_OBJERR = 3
 const BYTES_FLAG = 2
-const BYTE_ORDER = "__DARWIN_BYTE_ORDER"
+const BYTE_ORDER = "__BYTE_ORDER"
 const CBANDS = 64
-const CLD_CONTINUED = 6
-const CLD_DUMPED = 3
-const CLD_EXITED = 1
-const CLD_KILLED = 2
-const CLD_NOOP = 0
-const CLD_STOPPED = 5
-const CLD_TRAPPED = 4
-const CPF_IGNORE_MODE = 0x0002
-const CPF_OVERWRITE = 0x0001
-const CPUMON_MAKE_FATAL = 0x1000
+const CHARCLASS_NAME_MAX = 14
+const CHAR_BIT = 8
+const CHAR_MAX = 255
+const CHAR_MIN = 0
+const COLL_WEIGHTS_MAX = 2
 const CRC16_POLYNOMIAL = 0x8005
 const DEBUGF = "lame_debugf"
 const DECDELAY = 528
+const DELAYTIMER_MAX = 0x7fffffff
 const DEPRECATED_OR_OBSOLETE_CODE_REMOVED = 1
-const DOMAIN = 1
+const DN_ACCESS = 0x00000001
+const DN_ATTRIB = 0x00000020
+const DN_CREATE = 0x00000004
+const DN_DELETE = 0x00000008
+const DN_MODIFY = 0x00000002
+const DN_MULTISHOT = 0x80000000
+const DN_RENAME = 0x00000010
 const E2BIG = 7
 const EACCES = 13
-const EADDRINUSE = 48
-const EADDRNOTAVAIL = 49
-const EAFNOSUPPORT = 47
-const EAGAIN = 35
-const EALREADY = 37
-const EAUTH = 80
-const EBADARCH = 86
-const EBADEXEC = 85
+const EADDRINUSE = 98
+const EADDRNOTAVAIL = 99
+const EADV = 68
+const EAFNOSUPPORT = 97
+const EAGAIN = 11
+const EALREADY = 114
+const EBADE = 52
 const EBADF = 9
-const EBADMACHO = 88
-const EBADMSG = 94
-const EBADRPC = 72
+const EBADFD = 77
+const EBADMSG = 74
+const EBADR = 53
+const EBADRQC = 56
+const EBADSLT = 57
+const EBFONT = 59
 const EBUSY = 16
-const ECANCELED = 89
+const ECANCELED = 125
 const ECHILD = 10
-const ECONNABORTED = 53
-const ECONNREFUSED = 61
-const ECONNRESET = 54
-const EDEADLK = 11
-const EDESTADDRREQ = 39
-const EDEVERR = 83
+const ECHRNG = 44
+const ECOMM = 70
+const ECONNABORTED = 103
+const ECONNREFUSED = 111
+const ECONNRESET = 104
+const EDEADLK = 35
+const EDEADLOCK = "EDEADLK"
+const EDESTADDRREQ = 89
 const EDOM = 33
-const EDQUOT = 69
+const EDOTDOT = 73
+const EDQUOT = 122
 const EEXIST = 17
 const EFAULT = 14
 const EFBIG = 27
-const EFTYPE = 79
-const EF_IS_PURGEABLE = 0x00000008
-const EF_IS_SPARSE = 0x00000010
-const EF_IS_SYNC_ROOT = 0x00000004
-const EF_IS_SYNTHETIC = 0x00000020
-const EF_MAY_SHARE_BLOCKS = 0x00000001
-const EF_NO_XATTRS = 0x00000002
-const EF_SHARES_ALL_BLOCKS = 0x00000040
-const EHOSTDOWN = 64
-const EHOSTUNREACH = 65
-const EIDRM = 90
-const EILSEQ = 92
-const EINPROGRESS = 36
+const EHOSTDOWN = 112
+const EHOSTUNREACH = 113
+const EHWPOISON = 133
+const EIDRM = 43
+const EILSEQ = 84
+const EINPROGRESS = 115
 const EINTR = 4
 const EINVAL = 22
 const EIO = 5
-const EISCONN = 56
+const EISCONN = 106
 const EISDIR = 21
-const ELAST = 107
-const ELOOP = 62
+const EISNAM = 120
+const EKEYEXPIRED = 127
+const EKEYREJECTED = 129
+const EKEYREVOKED = 128
+const EL2HLT = 51
+const EL2NSYNC = 45
+const EL3HLT = 46
+const EL3RST = 47
+const ELIBACC = 79
+const ELIBBAD = 80
+const ELIBEXEC = 83
+const ELIBMAX = 82
+const ELIBSCN = 81
+const ELNRNG = 48
+const ELOOP = 40
+const EMEDIUMTYPE = 124
 const EMFILE = 24
 const EMLINK = 31
-const EMSGSIZE = 40
-const EMULTIHOP = 95
-const ENAMETOOLONG = 63
+const EMSGSIZE = 90
+const EMULTIHOP = 72
+const ENAMETOOLONG = 36
+const ENAVAIL = 119
 const ENCDELAY = 576
-const ENEEDAUTH = 81
-const ENETDOWN = 50
-const ENETRESET = 52
-const ENETUNREACH = 51
+const ENETDOWN = 100
+const ENETRESET = 102
+const ENETUNREACH = 101
 const ENFILE = 23
-const ENOATTR = 93
-const ENOBUFS = 55
-const ENODATA = 96
+const ENOANO = 55
+const ENOBUFS = 105
+const ENOCSI = 50
+const ENODATA = 61
 const ENODEV = 19
 const ENOENT = 2
 const ENOEXEC = 8
-const ENOLCK = 77
-const ENOLINK = 97
+const ENOKEY = 126
+const ENOLCK = 37
+const ENOLINK = 67
+const ENOMEDIUM = 123
 const ENOMEM = 12
-const ENOMSG = 91
-const ENOPOLICY = 103
-const ENOPROTOOPT = 42
+const ENOMSG = 42
+const ENONET = 64
+const ENOPKG = 65
+const ENOPROTOOPT = 92
 const ENOSPC = 28
-const ENOSR = 98
-const ENOSTR = 99
-const ENOSYS = 78
+const ENOSR = 63
+const ENOSTR = 60
+const ENOSYS = 38
 const ENOTBLK = 15
-const ENOTCAPABLE = 107
-const ENOTCONN = 57
+const ENOTCONN = 107
 const ENOTDIR = 20
-const ENOTEMPTY = 66
-const ENOTRECOVERABLE = 104
-const ENOTSOCK = 38
-const ENOTSUP = 45
+const ENOTEMPTY = 39
+const ENOTNAM = 118
+const ENOTRECOVERABLE = 131
+const ENOTSOCK = 88
+const ENOTSUP = "EOPNOTSUPP"
 const ENOTTY = 25
+const ENOTUNIQ = 76
 const ENXIO = 6
-const EOPNOTSUPP = 102
-const EOVERFLOW = 84
-const EOWNERDEAD = 105
+const EOPNOTSUPP = 95
+const EOVERFLOW = 75
+const EOWNERDEAD = 130
 const EPERM = 1
-const EPFNOSUPPORT = 46
+const EPFNOSUPPORT = 96
 const EPIPE = 32
-const EPROCLIM = 67
-const EPROCUNAVAIL = 76
-const EPROGMISMATCH = 75
-const EPROGUNAVAIL = 74
-const EPROTO = 100
-const EPROTONOSUPPORT = 43
-const EPROTOTYPE = 41
-const EPWROFF = 82
-const EQFULL = 106
+const EPROTO = 71
+const EPROTONOSUPPORT = 93
+const EPROTOTYPE = 91
 const ERANGE = 34
-const EREMOTE = 71
+const EREMCHG = 78
+const EREMOTE = 66
+const EREMOTEIO = 121
+const ERESTART = 85
+const ERFKILL = 132
 const EROFS = 30
-const ERPCMISMATCH = 73
 const ERRORF = "lame_errorf"
-const ESHLIBVERS = 87
-const ESHUTDOWN = 58
-const ESOCKTNOSUPPORT = 44
+const ESHUTDOWN = 108
+const ESOCKTNOSUPPORT = 94
 const ESPIPE = 29
 const ESRCH = 3
-const ESTALE = 70
-const ETIME = 101
-const ETIMEDOUT = 60
-const ETOOMANYREFS = 59
+const ESRMNT = 69
+const ESTALE = 116
+const ESTRPIPE = 86
+const ETIME = 62
+const ETIMEDOUT = 110
+const ETOOMANYREFS = 109
 const ETXTBSY = 26
-const EUSERS = 68
+const EUCLEAN = 117
+const EUNATCH = 49
+const EUSERS = 87
 const EWOULDBLOCK = "EAGAIN"
 const EXDEV = 18
+const EXFULL = 54
 const EXIT_FAILURE = 1
 const EXIT_SUCCESS = 0
+const EXPR_NEST_MAX = 32
+const FALLOC_FL_KEEP_SIZE = 1
+const FALLOC_FL_PUNCH_HOLE = 2
 const FALSE = 0
 const FAPPEND = "O_APPEND"
 const FASYNC = "O_ASYNC"
-const FCNTL_FS_SPECIFIC_BASE = 0x00010000
 const FD_CLOEXEC = 1
-const FD_SETSIZE = "__DARWIN_FD_SETSIZE"
-const FFDSYNC = "O_DSYNC"
-const FFSYNC = "O_FSYNC"
-const FILENAME_MAX = 1024
-const FILESEC_GUID = "FILESEC_UUID"
+const FD_SETSIZE = 1024
+const FFSYNC = "O_SYNC"
+const FILENAME_MAX = 4096
+const FILESIZEBITS = 64
 const FLOAT8_MAX = 1e99
 const FLOAT_MAX = 1e37
-const FNDELAY = "O_NONBLOCK"
+const FNDELAY = "O_NDELAY"
 const FNONBLOCK = "O_NONBLOCK"
-const FOOTPRINT_INTERVAL_RESET = 0x1
-const FOPEN_MAX = 20
-const FPE_FLTDIV = 1
-const FPE_FLTINV = 5
-const FPE_FLTOVF = 2
-const FPE_FLTRES = 4
-const FPE_FLTSUB = 6
-const FPE_FLTUND = 3
-const FPE_INTDIV = 7
-const FPE_INTOVF = 8
-const FPE_NOOP = 0
+const FOPEN_MAX = 1000
 const FP_FAST_FMA = 1
 const FP_FAST_FMAF = 1
-const FP_FAST_FMAL = 1
-const FP_INFINITE = 2
-const FP_NAN = 1
+const FP_ILOGB0 = "FP_ILOGBNAN"
+const FP_INFINITE = 1
+const FP_NAN = 0
 const FP_NORMAL = 4
-const FP_QNAN = "FP_NAN"
-const FP_SNAN = "FP_NAN"
-const FP_SUBNORMAL = 5
-const FP_SUPERNORMAL = 6
-const FP_ZERO = 3
+const FP_SUBNORMAL = 3
+const FP_ZERO = 2
 const FRAMES_FLAG = 1
-const FREAD = 0x00000001
-const FWRITE = 0x00000002
-const F_ADDFILESIGS = 61
-const F_ADDFILESIGS_FOR_DYLD_SIM = 83
-const F_ADDFILESIGS_INFO = 103
-const F_ADDFILESIGS_RETURN = 97
-const F_ADDFILESUPPL = 104
-const F_ADDSIGS = 59
-const F_ADDSIGS_MAIN_BINARY = 113
-const F_ALLOCATEALL = 0x00000004
-const F_ALLOCATECONTIG = 0x00000002
-const F_ALLOCATEPERSIST = 0x00000008
-const F_ATTRIBUTION_TAG = 111
-const F_BARRIERFSYNC = 85
-const F_CHECK_LV = 98
-const F_CHKCLEAN = 41
-const F_CREATE_TAG = 0x00000001
-const F_DELETE_TAG = 0x00000002
+const F_ADD_SEALS = 1033
+const F_CANCELLK = 1029
 const F_DUPFD = 0
-const F_DUPFD_CLOEXEC = 67
-const F_FINDSIGS = 78
-const F_FLUSH_DATA = 40
-const F_FREEZE_FS = 53
-const F_FULLFSYNC = 51
-const F_GETCODEDIR = 72
+const F_DUPFD_CLOEXEC = 1030
 const F_GETFD = 1
 const F_GETFL = 3
-const F_GETLEASE = 107
-const F_GETLK = 7
-const F_GETLKPID = 66
-const F_GETNOSIGPIPE = 74
-const F_GETOWN = 5
-const F_GETPATH = 50
-const F_GETPATH_MTMINFO = 71
-const F_GETPATH_NOFIRMLINK = 102
-const F_GETPROTECTIONCLASS = 63
-const F_GETPROTECTIONLEVEL = 77
-const F_GETSIGSINFO = 105
-const F_GLOBAL_NOCACHE = 55
-const F_LOG2PHYS = 49
-const F_LOG2PHYS_EXT = 65
-const F_NOCACHE = 48
-const F_NOCACHE_EXT = 112
-const F_NODIRECT = 62
-const F_OFD_GETLK = 92
-const F_OFD_SETLK = 90
-const F_OFD_SETLKW = 91
-const F_OFD_SETLKWTIMEOUT = 93
-const F_PATHPKG_CHECK = 52
-const F_PEOFPOSMODE = 3
-const F_PREALLOCATE = 42
-const F_PUNCHHOLE = 99
-const F_QUERY_TAG = 0x00000004
-const F_RDADVISE = 44
-const F_RDAHEAD = 45
-const F_RDLCK = 1
-const F_SETBACKINGSTORE = 70
+const F_GETLEASE = 1025
+const F_GETLK = 5
+const F_GETOWN = 9
+const F_GETOWNER_UIDS = 17
+const F_GETOWN_EX = 16
+const F_GETPIPE_SZ = 1032
+const F_GETSIG = 11
+const F_GET_FILE_RW_HINT = 1037
+const F_GET_RW_HINT = 1035
+const F_GET_SEALS = 1034
+const F_LOCK = 1
+const F_NOTIFY = 1026
+const F_OFD_GETLK = 36
+const F_OFD_SETLK = 37
+const F_OFD_SETLKW = 38
+const F_OK = 0
+const F_OWNER_GID = 2
+const F_OWNER_PGRP = 2
+const F_OWNER_PID = 1
+const F_OWNER_TID = 0
+const F_RDLCK = 0
+const F_SEAL_FUTURE_WRITE = 0x0010
+const F_SEAL_GROW = 0x0004
+const F_SEAL_SEAL = 0x0001
+const F_SEAL_SHRINK = 0x0002
+const F_SEAL_WRITE = 0x0008
 const F_SETFD = 2
 const F_SETFL = 4
-const F_SETLEASE = 106
-const F_SETLK = 8
-const F_SETLKW = 9
-const F_SETLKWTIMEOUT = 10
-const F_SETNOSIGPIPE = 73
-const F_SETOWN = 6
-const F_SETPROTECTIONCLASS = 64
-const F_SETSIZE = 43
-const F_SINGLE_WRITER = 76
-const F_SPECULATIVE_READ = 101
-const F_THAW_FS = 54
-const F_TRANSCODEKEY = 75
-const F_TRANSFEREXTENTS = 110
-const F_TRIM_ACTIVE_FILE = 100
+const F_SETLEASE = 1024
+const F_SETLK = 6
+const F_SETLKW = 7
+const F_SETOWN = 8
+const F_SETOWN_EX = 15
+const F_SETPIPE_SZ = 1031
+const F_SETSIG = 10
+const F_SET_FILE_RW_HINT = 1038
+const F_SET_RW_HINT = 1036
+const F_TEST = 3
+const F_TLOCK = 2
+const F_ULOCK = 0
 const F_UNLCK = 2
-const F_VOLPOSMODE = 4
-const F_WRLCK = 3
-const GETSIGSINFO_PLATFORM_BINARY = 1
+const F_WRLCK = 1
 const HAVE_ALLOCA = 1
 const HAVE_ALLOCA_H = 1
 const HAVE_CONFIG_H = 1
@@ -319,84 +298,36 @@ const HAVE_UINT32_T = 1
 const HAVE_UINT64_T = 1
 const HAVE_UINT8_T = 1
 const HAVE_UNISTD_H = 1
+const HOST_NAME_MAX = 255
 const HTN = 34
-const HUGE = "MAXFLOAT"
-const ILL_BADSTK = 8
-const ILL_COPROC = 7
-const ILL_ILLADR = 5
-const ILL_ILLOPC = 1
-const ILL_ILLOPN = 4
-const ILL_ILLTRP = 2
-const ILL_NOOP = 0
-const ILL_PRVOPC = 3
-const ILL_PRVREG = 6
-const INFINITY = "HUGE_VALF"
-const INTMAX_MAX = "__INTMAX_MAX__"
-const INTPTR_MAX = "__INTPTR_MAX__"
-const INT_FAST16_MAX = "__INT_LEAST16_MAX"
-const INT_FAST16_MIN = "__INT_LEAST16_MIN"
-const INT_FAST32_MAX = "__INT_LEAST32_MAX"
-const INT_FAST32_MIN = "__INT_LEAST32_MIN"
-const INT_FAST64_MAX = "__INT_LEAST64_MAX"
-const INT_FAST64_MIN = "__INT_LEAST64_MIN"
-const INT_FAST8_MAX = "__INT_LEAST8_MAX"
-const INT_FAST8_MIN = "__INT_LEAST8_MIN"
-const INT_LEAST16_MAX = "__INT_LEAST16_MAX"
-const INT_LEAST16_MIN = "__INT_LEAST16_MIN"
-const INT_LEAST32_MAX = "__INT_LEAST32_MAX"
-const INT_LEAST32_MIN = "__INT_LEAST32_MIN"
-const INT_LEAST64_MAX = "__INT_LEAST64_MAX"
-const INT_LEAST64_MIN = "__INT_LEAST64_MIN"
-const INT_LEAST8_MAX = "__INT_LEAST8_MAX"
-const INT_LEAST8_MIN = "__INT_LEAST8_MIN"
-const IOPOL_APPLICATION = "IOPOL_STANDARD"
-const IOPOL_ATIME_UPDATES_DEFAULT = 0
-const IOPOL_ATIME_UPDATES_OFF = 1
-const IOPOL_DEFAULT = 0
-const IOPOL_IMPORTANT = 1
-const IOPOL_MATERIALIZE_DATALESS_FILES_BASIC_MASK = 3
-const IOPOL_MATERIALIZE_DATALESS_FILES_DEFAULT = 0
-const IOPOL_MATERIALIZE_DATALESS_FILES_OFF = 1
-const IOPOL_MATERIALIZE_DATALESS_FILES_ON = 2
-const IOPOL_MATERIALIZE_DATALESS_FILES_ORIG = 4
-const IOPOL_NORMAL = "IOPOL_IMPORTANT"
-const IOPOL_PASSIVE = 2
-const IOPOL_SCOPE_DARWIN_BG = 2
-const IOPOL_SCOPE_PROCESS = 0
-const IOPOL_SCOPE_THREAD = 1
-const IOPOL_STANDARD = 5
-const IOPOL_THROTTLE = 3
-const IOPOL_TYPE_DISK = 0
-const IOPOL_TYPE_VFS_ALLOW_LOW_SPACE_WRITES = 9
-const IOPOL_TYPE_VFS_ATIME_UPDATES = 2
-const IOPOL_TYPE_VFS_DISALLOW_RW_FOR_O_EVTONLY = 10
-const IOPOL_TYPE_VFS_ENTITLED_RESERVE_ACCESS = 14
-const IOPOL_TYPE_VFS_IGNORE_CONTENT_PROTECTION = 6
-const IOPOL_TYPE_VFS_IGNORE_PERMISSIONS = 7
-const IOPOL_TYPE_VFS_MATERIALIZE_DATALESS_FILES = 3
-const IOPOL_TYPE_VFS_SKIP_MTIME_UPDATE = 8
-const IOPOL_TYPE_VFS_STATFS_NO_DATA_VOLUME = 4
-const IOPOL_TYPE_VFS_TRIGGER_RESOLVE = 5
-const IOPOL_UTILITY = 4
-const IOPOL_VFS_ALLOW_LOW_SPACE_WRITES_OFF = 0
-const IOPOL_VFS_ALLOW_LOW_SPACE_WRITES_ON = 1
-const IOPOL_VFS_CONTENT_PROTECTION_DEFAULT = 0
-const IOPOL_VFS_CONTENT_PROTECTION_IGNORE = 1
-const IOPOL_VFS_DISALLOW_RW_FOR_O_EVTONLY_DEFAULT = 0
-const IOPOL_VFS_DISALLOW_RW_FOR_O_EVTONLY_ON = 1
-const IOPOL_VFS_ENTITLED_RESERVE_ACCESS_OFF = 0
-const IOPOL_VFS_ENTITLED_RESERVE_ACCESS_ON = 1
-const IOPOL_VFS_IGNORE_PERMISSIONS_OFF = 0
-const IOPOL_VFS_IGNORE_PERMISSIONS_ON = 1
-const IOPOL_VFS_NOCACHE_WRITE_FS_BLKSIZE_DEFAULT = 0
-const IOPOL_VFS_NOCACHE_WRITE_FS_BLKSIZE_ON = 1
-const IOPOL_VFS_SKIP_MTIME_UPDATE_IGNORE = 2
-const IOPOL_VFS_SKIP_MTIME_UPDATE_OFF = 0
-const IOPOL_VFS_SKIP_MTIME_UPDATE_ON = 1
-const IOPOL_VFS_STATFS_FORCE_NO_DATA_VOLUME = 1
-const IOPOL_VFS_STATFS_NO_DATA_VOLUME_DEFAULT = 0
-const IOPOL_VFS_TRIGGER_RESOLVE_DEFAULT = 0
-const IOPOL_VFS_TRIGGER_RESOLVE_OFF = 1
+const HUGE = 3.40282346638528859812e+38
+const HUGE_VALF = "INFINITY"
+const INT16_MAX = 0x7fff
+const INT32_MAX = 0x7fffffff
+const INT64_MAX = 0x7fffffffffffffff
+const INT8_MAX = 0x7f
+const INTMAX_MAX = "INT64_MAX"
+const INTMAX_MIN = "INT64_MIN"
+const INTPTR_MAX = "INT64_MAX"
+const INTPTR_MIN = "INT64_MIN"
+const INT_FAST16_MAX = "INT32_MAX"
+const INT_FAST16_MIN = "INT32_MIN"
+const INT_FAST32_MAX = "INT32_MAX"
+const INT_FAST32_MIN = "INT32_MIN"
+const INT_FAST64_MAX = "INT64_MAX"
+const INT_FAST64_MIN = "INT64_MIN"
+const INT_FAST8_MAX = "INT8_MAX"
+const INT_FAST8_MIN = "INT8_MIN"
+const INT_LEAST16_MAX = "INT16_MAX"
+const INT_LEAST16_MIN = "INT16_MIN"
+const INT_LEAST32_MAX = "INT32_MAX"
+const INT_LEAST32_MIN = "INT32_MIN"
+const INT_LEAST64_MAX = "INT64_MAX"
+const INT_LEAST64_MIN = "INT64_MIN"
+const INT_LEAST8_MAX = "INT8_MAX"
+const INT_LEAST8_MIN = "INT8_MIN"
+const INT_MAX = 0x7fffffff
+const IOV_MAX = 1024
 const LAME_ID = 0xFFF88E3B
 const LAME_LIBRARY_BUILD = 1
 const LAME_MAJOR_VERSION = 3
@@ -405,156 +336,81 @@ const LAME_PATCH_LEVEL_STRING = ""
 const LAME_PATCH_VERSION = 0
 const LAME_TYPE_VERSION = 2
 const LAME_URL = "http://lame.sf.net"
-const LITTLE_ENDIAN = "__DARWIN_LITTLE_ENDIAN"
-const LOCK_EX = 0x02
-const LOCK_NB = 0x04
-const LOCK_SH = 0x01
-const LOCK_UN = 0x08
+const LINE_MAX = 4096
+const LITTLE_ENDIAN = "__LITTLE_ENDIAN"
+const LLONG_MAX = 0x7fffffffffffffff
 const LOG10 = "M_LN10"
 const LOG2 = "M_LN2"
+const LOGIN_NAME_MAX = 256
+const LONG_BIT = 64
+const LONG_MAX = "__LONG_MAX"
 const LT_OBJDIR = ".libs/"
-const L_ctermid = 1024
-const L_tmpnam = 1024
-const MAC_OS_VERSION_11_0 = "__MAC_11_0"
-const MAC_OS_VERSION_11_1 = "__MAC_11_1"
-const MAC_OS_VERSION_11_3 = "__MAC_11_3"
-const MAC_OS_VERSION_11_4 = "__MAC_11_4"
-const MAC_OS_VERSION_11_5 = "__MAC_11_5"
-const MAC_OS_VERSION_11_6 = "__MAC_11_6"
-const MAC_OS_VERSION_12_0 = "__MAC_12_0"
-const MAC_OS_VERSION_12_1 = "__MAC_12_1"
-const MAC_OS_VERSION_12_2 = "__MAC_12_2"
-const MAC_OS_VERSION_12_3 = "__MAC_12_3"
-const MAC_OS_VERSION_12_4 = "__MAC_12_4"
-const MAC_OS_VERSION_12_5 = "__MAC_12_5"
-const MAC_OS_VERSION_12_6 = "__MAC_12_6"
-const MAC_OS_VERSION_12_7 = "__MAC_12_7"
-const MAC_OS_VERSION_13_0 = "__MAC_13_0"
-const MAC_OS_VERSION_13_1 = "__MAC_13_1"
-const MAC_OS_VERSION_13_2 = "__MAC_13_2"
-const MAC_OS_VERSION_13_3 = "__MAC_13_3"
-const MAC_OS_VERSION_13_4 = "__MAC_13_4"
-const MAC_OS_VERSION_13_5 = "__MAC_13_5"
-const MAC_OS_VERSION_13_6 = "__MAC_13_6"
-const MAC_OS_VERSION_13_7 = "__MAC_13_7"
-const MAC_OS_VERSION_14_0 = "__MAC_14_0"
-const MAC_OS_VERSION_14_1 = "__MAC_14_1"
-const MAC_OS_VERSION_14_2 = "__MAC_14_2"
-const MAC_OS_VERSION_14_3 = "__MAC_14_3"
-const MAC_OS_VERSION_14_4 = "__MAC_14_4"
-const MAC_OS_VERSION_14_5 = "__MAC_14_5"
-const MAC_OS_VERSION_14_6 = "__MAC_14_6"
-const MAC_OS_VERSION_14_7 = "__MAC_14_7"
-const MAC_OS_VERSION_15_0 = "__MAC_15_0"
-const MAC_OS_VERSION_15_1 = "__MAC_15_1"
-const MAC_OS_VERSION_15_2 = "__MAC_15_2"
-const MAC_OS_VERSION_15_3 = "__MAC_15_3"
-const MAC_OS_VERSION_15_4 = "__MAC_15_4"
-const MAC_OS_VERSION_15_5 = "__MAC_15_5"
-const MAC_OS_VERSION_15_6 = "__MAC_15_6"
-const MAC_OS_VERSION_16_0 = "__MAC_16_0"
-const MAC_OS_VERSION_26_0 = "__MAC_26_0"
-const MAC_OS_VERSION_26_1 = "__MAC_26_1"
-const MAC_OS_VERSION_26_2 = "__MAC_26_2"
-const MAC_OS_X_VERSION_10_0 = "__MAC_10_0"
-const MAC_OS_X_VERSION_10_1 = "__MAC_10_1"
-const MAC_OS_X_VERSION_10_10 = "__MAC_10_10"
-const MAC_OS_X_VERSION_10_10_2 = "__MAC_10_10_2"
-const MAC_OS_X_VERSION_10_10_3 = "__MAC_10_10_3"
-const MAC_OS_X_VERSION_10_11 = "__MAC_10_11"
-const MAC_OS_X_VERSION_10_11_2 = "__MAC_10_11_2"
-const MAC_OS_X_VERSION_10_11_3 = "__MAC_10_11_3"
-const MAC_OS_X_VERSION_10_11_4 = "__MAC_10_11_4"
-const MAC_OS_X_VERSION_10_12 = "__MAC_10_12"
-const MAC_OS_X_VERSION_10_12_1 = "__MAC_10_12_1"
-const MAC_OS_X_VERSION_10_12_2 = "__MAC_10_12_2"
-const MAC_OS_X_VERSION_10_12_4 = "__MAC_10_12_4"
-const MAC_OS_X_VERSION_10_13 = "__MAC_10_13"
-const MAC_OS_X_VERSION_10_13_1 = "__MAC_10_13_1"
-const MAC_OS_X_VERSION_10_13_2 = "__MAC_10_13_2"
-const MAC_OS_X_VERSION_10_13_4 = "__MAC_10_13_4"
-const MAC_OS_X_VERSION_10_14 = "__MAC_10_14"
-const MAC_OS_X_VERSION_10_14_1 = "__MAC_10_14_1"
-const MAC_OS_X_VERSION_10_14_4 = "__MAC_10_14_4"
-const MAC_OS_X_VERSION_10_14_5 = "__MAC_10_14_5"
-const MAC_OS_X_VERSION_10_14_6 = "__MAC_10_14_6"
-const MAC_OS_X_VERSION_10_15 = "__MAC_10_15"
-const MAC_OS_X_VERSION_10_15_1 = "__MAC_10_15_1"
-const MAC_OS_X_VERSION_10_15_4 = "__MAC_10_15_4"
-const MAC_OS_X_VERSION_10_16 = "__MAC_10_16"
-const MAC_OS_X_VERSION_10_2 = "__MAC_10_2"
-const MAC_OS_X_VERSION_10_3 = "__MAC_10_3"
-const MAC_OS_X_VERSION_10_4 = "__MAC_10_4"
-const MAC_OS_X_VERSION_10_5 = "__MAC_10_5"
-const MAC_OS_X_VERSION_10_6 = "__MAC_10_6"
-const MAC_OS_X_VERSION_10_7 = "__MAC_10_7"
-const MAC_OS_X_VERSION_10_8 = "__MAC_10_8"
-const MAC_OS_X_VERSION_10_9 = "__MAC_10_9"
+const L_ctermid = 20
+const L_cuserid = 20
+const L_tmpnam = 20
 const MATH_ERREXCEPT = 2
 const MATH_ERRNO = 1
-const MAXFLOAT = "0x1.fffffep+127f"
 const MAXFRAMESIZE = 2880
 const MAX_BITS_PER_CHANNEL = 4095
 const MAX_BITS_PER_GRANULE = 7680
+const MAX_HANDLE_SZ = 128
 const MAX_HEADER_BUF = 256
 const MAX_HEADER_LEN = 40
 const MAX_U_32_NUM = "UINT_MAX"
-const MB_CUR_MAX = "__mb_cur_max"
-const MB_LEN_MAX = 1
+const MB_LEN_MAX = 4
 const MDCTDELAY = 48
-const MINSIGSTKSZ = 32768
+const MQ_PRIO_MAX = 32768
 const MSGF = "lame_msgf"
-const M_1_PI = 0.318309886183790671537767526745028724
-const M_2_PI = 0.636619772367581343075535053490057448
-const M_2_SQRTPI = 1.12837916709551257389615890312154517
-const M_E = 2.71828182845904523536028747135266250
-const M_LN10 = 2.30258509299404568401799145468436421
-const M_LN2 = 0.693147180559945309417232121458176568
-const M_LOG10E = 0.434294481903251827651128918916605082
-const M_LOG2E = 1.44269504088896340735992468100189214
-const M_PI = 3.14159265358979323846264338327950288
-const M_PI_2 = 1.57079632679489661923132169163975144
-const M_PI_4 = 0.785398163397448309615660845819875721
-const M_SQRT1_2 = 0.707106781186547524400844362104849039
-const M_SQRT2 = 1.41421356237309504880168872420969808
-const NBBY = "__DARWIN_NBBY"
-const NFDBITS = "__DARWIN_NFDBITS"
+const M_1_PI = 0.31830988618379067154
+const M_2_PI = 0.63661977236758134308
+const M_2_SQRTPI = 1.12837916709551257390
+const M_E = 2.7182818284590452354
+const M_LN10 = 2.30258509299404568402
+const M_LN2 = 0.69314718055994530942
+const M_LOG10E = 0.43429448190325182765
+const M_LOG2E = 1.4426950408889634074
+const M_PI = 3.14159265358979323846
+const M_PI_2 = 1.57079632679489661923
+const M_PI_4 = 0.78539816339744830962
+const M_SQRT1_2 = 0.70710678118654752440
+const M_SQRT2 = 1.41421356237309504880
+const NAME_MAX = 255
+const NGROUPS_MAX = 32
+const NL_ARGMAX = 9
+const NL_LANGMAX = 32
+const NL_MSGMAX = 32767
+const NL_NMAX = 16
+const NL_SETMAX = 255
+const NL_TEXTMAX = 2048
 const NOANALYSIS = 1
 const NORM_TYPE = 0
-const NSIG = "__DARWIN_NSIG"
 const NUMTOCENTRIES = 100
-const OVERFLOW = 3
-const O_ACCMODE = 0x0003
-const O_ALERT = 0x20000000
-const O_APPEND = 0x00000008
-const O_ASYNC = 0x00000040
-const O_CLOEXEC = 0x01000000
-const O_CREAT = 0x00000200
-const O_DIRECTORY = 0x00100000
-const O_DP_AUTHENTICATE = 0x0004
-const O_DP_GETRAWENCRYPTED = 0x0001
-const O_DP_GETRAWUNENCRYPTED = 0x0002
-const O_DSYNC = 0x400000
-const O_EVTONLY = 0x00008000
-const O_EXCL = 0x00000800
-const O_EXEC = 0x40000000
-const O_EXLOCK = 0x00000020
-const O_FSYNC = "O_SYNC"
+const NZERO = 20
+const O_APPEND = 02000
+const O_ASYNC = 020000
+const O_CLOEXEC = 02000000
+const O_CREAT = 0100
+const O_DIRECT = 0200000
+const O_DIRECTORY = 040000
+const O_DSYNC = 010000
+const O_EXCL = 0200
+const O_EXEC = "O_PATH"
+const O_LARGEFILE = 0400000
 const O_NDELAY = "O_NONBLOCK"
-const O_NOCTTY = 0x00020000
-const O_NOFOLLOW = 0x00000100
-const O_NOFOLLOW_ANY = 0x20000000
-const O_NONBLOCK = 0x00000004
-const O_POPUP = 0x80000000
-const O_RDONLY = 0x0000
-const O_RDWR = 0x0002
-const O_RESOLVE_BENEATH = 0x00001000
-const O_SHLOCK = 0x00000010
-const O_SYMLINK = 0x00200000
-const O_SYNC = 0x0080
-const O_TRUNC = 0x00000400
-const O_UNIQUE = 0x00002000
-const O_WRONLY = 0x0001
+const O_NOATIME = 01000000
+const O_NOCTTY = 0400
+const O_NOFOLLOW = 0100000
+const O_NONBLOCK = 04000
+const O_PATH = 010000000
+const O_RDONLY = 00
+const O_RDWR = 02
+const O_RSYNC = 04010000
+const O_SEARCH = "O_PATH"
+const O_SYNC = 04010000
+const O_TMPFILE = 020040000
+const O_TRUNC = 01000
+const O_TTY_INIT = 0
+const O_WRONLY = 01
 const PACKAGE = "lame"
 const PACKAGE_BUGREPORT = "lame-dev@lists.sf.net"
 const PACKAGE_NAME = "lame"
@@ -562,261 +418,149 @@ const PACKAGE_STRING = "lame 3.100"
 const PACKAGE_TARNAME = "lame"
 const PACKAGE_URL = ""
 const PACKAGE_VERSION = "3.100"
-const PDP_ENDIAN = "__DARWIN_PDP_ENDIAN"
+const PATH_MAX = 4096
+const PDP_ENDIAN = "__PDP_ENDIAN"
 const PI = "M_PI"
-const PLOSS = 6
-const POLL_ERR = 4
-const POLL_HUP = 6
-const POLL_IN = 1
-const POLL_MSG = 3
-const POLL_OUT = 2
-const POLL_PRI = 5
+const PIPE_BUF = 4096
+const POSIX_FADV_DONTNEED = 4
+const POSIX_FADV_NOREUSE = 5
+const POSIX_FADV_NORMAL = 0
+const POSIX_FADV_RANDOM = 1
+const POSIX_FADV_SEQUENTIAL = 2
+const POSIX_FADV_WILLNEED = 3
 const POSTDELAY = 1152
-const PRIO_DARWIN_BG = 0x1000
-const PRIO_DARWIN_NONUI = 0x1001
-const PRIO_DARWIN_PROCESS = 4
-const PRIO_DARWIN_THREAD = 3
-const PRIO_MAX = 20
-const PRIO_PGRP = 1
-const PRIO_PROCESS = 0
-const PRIO_USER = 2
-const PRIX16 = "hX"
+const PRIX16 = "X"
 const PRIX32 = "X"
-const PRIXFAST16 = "PRIX16"
-const PRIXFAST32 = "PRIX32"
-const PRIXFAST64 = "PRIX64"
-const PRIXFAST8 = "PRIX8"
-const PRIXLEAST16 = "PRIX16"
-const PRIXLEAST32 = "PRIX32"
-const PRIXLEAST64 = "PRIX64"
-const PRIXLEAST8 = "PRIX8"
-const PRIXPTR = "lX"
-const PRId16 = "hd"
+const PRIX8 = "X"
+const PRIXFAST16 = "X"
+const PRIXFAST32 = "X"
+const PRIXFAST8 = "X"
+const PRIXLEAST16 = "X"
+const PRIXLEAST32 = "X"
+const PRIXLEAST8 = "X"
+const PRId16 = "d"
 const PRId32 = "d"
-const PRIdFAST16 = "PRId16"
-const PRIdFAST32 = "PRId32"
-const PRIdFAST64 = "PRId64"
-const PRIdFAST8 = "PRId8"
-const PRIdLEAST16 = "PRId16"
-const PRIdLEAST32 = "PRId32"
-const PRIdLEAST64 = "PRId64"
-const PRIdLEAST8 = "PRId8"
-const PRIdPTR = "ld"
-const PRIi16 = "hi"
+const PRId8 = "d"
+const PRIdFAST16 = "d"
+const PRIdFAST32 = "d"
+const PRIdFAST8 = "d"
+const PRIdLEAST16 = "d"
+const PRIdLEAST32 = "d"
+const PRIdLEAST8 = "d"
+const PRIi16 = "i"
 const PRIi32 = "i"
-const PRIiFAST16 = "PRIi16"
-const PRIiFAST32 = "PRIi32"
-const PRIiFAST64 = "PRIi64"
-const PRIiFAST8 = "PRIi8"
-const PRIiLEAST16 = "PRIi16"
-const PRIiLEAST32 = "PRIi32"
-const PRIiLEAST64 = "PRIi64"
-const PRIiLEAST8 = "PRIi8"
-const PRIiPTR = "li"
-const PRIo16 = "ho"
+const PRIi8 = "i"
+const PRIiFAST16 = "i"
+const PRIiFAST32 = "i"
+const PRIiFAST8 = "i"
+const PRIiLEAST16 = "i"
+const PRIiLEAST32 = "i"
+const PRIiLEAST8 = "i"
+const PRIo16 = "o"
 const PRIo32 = "o"
-const PRIoFAST16 = "PRIo16"
-const PRIoFAST32 = "PRIo32"
-const PRIoFAST64 = "PRIo64"
-const PRIoFAST8 = "PRIo8"
-const PRIoLEAST16 = "PRIo16"
-const PRIoLEAST32 = "PRIo32"
-const PRIoLEAST64 = "PRIo64"
-const PRIoLEAST8 = "PRIo8"
-const PRIoPTR = "lo"
-const PRIu16 = "hu"
+const PRIo8 = "o"
+const PRIoFAST16 = "o"
+const PRIoFAST32 = "o"
+const PRIoFAST8 = "o"
+const PRIoLEAST16 = "o"
+const PRIoLEAST32 = "o"
+const PRIoLEAST8 = "o"
+const PRIu16 = "u"
 const PRIu32 = "u"
-const PRIuFAST16 = "PRIu16"
-const PRIuFAST32 = "PRIu32"
-const PRIuFAST64 = "PRIu64"
-const PRIuFAST8 = "PRIu8"
-const PRIuLEAST16 = "PRIu16"
-const PRIuLEAST32 = "PRIu32"
-const PRIuLEAST64 = "PRIu64"
-const PRIuLEAST8 = "PRIu8"
-const PRIuPTR = "lu"
-const PRIx16 = "hx"
+const PRIu8 = "u"
+const PRIuFAST16 = "u"
+const PRIuFAST32 = "u"
+const PRIuFAST8 = "u"
+const PRIuLEAST16 = "u"
+const PRIuLEAST32 = "u"
+const PRIuLEAST8 = "u"
+const PRIx16 = "x"
 const PRIx32 = "x"
-const PRIxFAST16 = "PRIx16"
-const PRIxFAST32 = "PRIx32"
-const PRIxFAST64 = "PRIx64"
-const PRIxFAST8 = "PRIx8"
-const PRIxLEAST16 = "PRIx16"
-const PRIxLEAST32 = "PRIx32"
-const PRIxLEAST64 = "PRIx64"
-const PRIxLEAST8 = "PRIx8"
-const PRIxPTR = "lx"
+const PRIx8 = "x"
+const PRIxFAST16 = "x"
+const PRIxFAST32 = "x"
+const PRIxFAST8 = "x"
+const PRIxLEAST16 = "x"
+const PRIxLEAST32 = "x"
+const PRIxLEAST8 = "x"
 const PSFB12 = 6
 const PSFB21 = 6
 const PSY_ALPHA_VERSION = 0
 const PSY_BETA_VERSION = 0
 const PSY_MAJOR_VERSION = 1
 const PSY_MINOR_VERSION = 0
-const PTRDIFF_MAX = "__PTRDIFF_MAX__"
-const P_tmpdir = "/var/tmp/"
+const PTHREAD_DESTRUCTOR_ITERATIONS = 4
+const PTHREAD_KEYS_MAX = 128
+const PTHREAD_STACK_MIN = 2048
+const PTRDIFF_MAX = "INT64_MAX"
+const PTRDIFF_MIN = "INT64_MIN"
+const P_tmpdir = "/tmp"
 const RAND_MAX = 0x7fffffff
-const RENAME_EXCL = 0x00000004
-const RENAME_NOFOLLOW_ANY = 0x00000010
-const RENAME_RESERVED1 = 0x00000008
-const RENAME_RESOLVE_BENEATH = 0x00000020
-const RENAME_SECLUDE = 0x00000001
-const RENAME_SWAP = 0x00000002
-const RLIMIT_AS = 5
-const RLIMIT_CORE = 4
-const RLIMIT_CPU = 0
-const RLIMIT_CPU_USAGE_MONITOR = 0x2
-const RLIMIT_DATA = 2
-const RLIMIT_FOOTPRINT_INTERVAL = 0x4
-const RLIMIT_FSIZE = 1
-const RLIMIT_MEMLOCK = 6
-const RLIMIT_NOFILE = 8
-const RLIMIT_NPROC = 7
-const RLIMIT_RSS = "RLIMIT_AS"
-const RLIMIT_STACK = 3
-const RLIMIT_THREAD_CPULIMITS = 0x3
-const RLIMIT_WAKEUPS_MONITOR = 0x1
-const RLIM_NLIMITS = 9
-const RLIM_SAVED_CUR = "RLIM_INFINITY"
-const RLIM_SAVED_MAX = "RLIM_INFINITY"
-const RUSAGE_INFO_CURRENT = "RUSAGE_INFO_V6"
-const RUSAGE_INFO_V0 = 0
-const RUSAGE_INFO_V1 = 1
-const RUSAGE_INFO_V2 = 2
-const RUSAGE_INFO_V3 = 3
-const RUSAGE_INFO_V4 = 4
-const RUSAGE_INFO_V5 = 5
-const RUSAGE_INFO_V6 = 6
-const RUSAGE_SELF = 0
-const RU_PROC_RUNS_RESLIDE = 0x00000001
-const SA_64REGSET = 0x0200
-const SA_NOCLDSTOP = 0x0008
-const SA_NOCLDWAIT = 0x0020
-const SA_NODEFER = 0x0010
-const SA_ONSTACK = 0x0001
-const SA_RESETHAND = 0x0004
-const SA_RESTART = 0x0002
-const SA_SIGINFO = 0x0040
-const SA_USERTRAMP = 0x0100
+const RE_DUP_MAX = 255
+const RWF_WRITE_LIFE_NOT_SET = 0
+const RWH_WRITE_LIFE_EXTREME = 5
+const RWH_WRITE_LIFE_LONG = 4
+const RWH_WRITE_LIFE_MEDIUM = 3
+const RWH_WRITE_LIFE_NONE = 1
+const RWH_WRITE_LIFE_SHORT = 2
+const R_OK = 4
 const SBLIMIT = 32
 const SBMAX_l = 22
 const SBMAX_s = 13
 const SBPSY_l = 21
 const SBPSY_s = 12
+const SCHAR_MAX = 127
 const SCNd16 = "hd"
 const SCNd32 = "d"
-const SCNdFAST16 = "SCNd16"
-const SCNdFAST32 = "SCNd32"
-const SCNdFAST64 = "SCNd64"
-const SCNdFAST8 = "SCNd8"
-const SCNdLEAST16 = "SCNd16"
-const SCNdLEAST32 = "SCNd32"
-const SCNdLEAST64 = "SCNd64"
-const SCNdLEAST8 = "SCNd8"
-const SCNdPTR = "ld"
+const SCNd8 = "hhd"
+const SCNdFAST16 = "d"
+const SCNdFAST32 = "d"
+const SCNdFAST8 = "hhd"
+const SCNdLEAST16 = "hd"
+const SCNdLEAST32 = "d"
+const SCNdLEAST8 = "hhd"
 const SCNi16 = "hi"
 const SCNi32 = "i"
-const SCNiFAST16 = "SCNi16"
-const SCNiFAST32 = "SCNi32"
-const SCNiFAST64 = "SCNi64"
-const SCNiFAST8 = "SCNi8"
-const SCNiLEAST16 = "SCNi16"
-const SCNiLEAST32 = "SCNi32"
-const SCNiLEAST64 = "SCNi64"
-const SCNiLEAST8 = "SCNi8"
-const SCNiPTR = "li"
+const SCNi8 = "hhi"
+const SCNiFAST16 = "i"
+const SCNiFAST32 = "i"
+const SCNiFAST8 = "hhi"
+const SCNiLEAST16 = "hi"
+const SCNiLEAST32 = "i"
+const SCNiLEAST8 = "hhi"
 const SCNo16 = "ho"
 const SCNo32 = "o"
-const SCNoFAST16 = "SCNo16"
-const SCNoFAST32 = "SCNo32"
-const SCNoFAST64 = "SCNo64"
-const SCNoFAST8 = "SCNo8"
-const SCNoLEAST16 = "SCNo16"
-const SCNoLEAST32 = "SCNo32"
-const SCNoLEAST64 = "SCNo64"
-const SCNoLEAST8 = "SCNo8"
-const SCNoPTR = "lo"
+const SCNo8 = "hho"
+const SCNoFAST16 = "o"
+const SCNoFAST32 = "o"
+const SCNoFAST8 = "hho"
+const SCNoLEAST16 = "ho"
+const SCNoLEAST32 = "o"
+const SCNoLEAST8 = "hho"
 const SCNu16 = "hu"
 const SCNu32 = "u"
-const SCNuFAST16 = "SCNu16"
-const SCNuFAST32 = "SCNu32"
-const SCNuFAST64 = "SCNu64"
-const SCNuFAST8 = "SCNu8"
-const SCNuLEAST16 = "SCNu16"
-const SCNuLEAST32 = "SCNu32"
-const SCNuLEAST64 = "SCNu64"
-const SCNuLEAST8 = "SCNu8"
-const SCNuPTR = "lu"
+const SCNu8 = "hhu"
+const SCNuFAST16 = "u"
+const SCNuFAST32 = "u"
+const SCNuFAST8 = "hhu"
+const SCNuLEAST16 = "hu"
+const SCNuLEAST32 = "u"
+const SCNuLEAST8 = "hhu"
 const SCNx16 = "hx"
 const SCNx32 = "x"
-const SCNxFAST16 = "SCNx16"
-const SCNxFAST32 = "SCNx32"
-const SCNxFAST64 = "SCNx64"
-const SCNxFAST8 = "SCNx8"
-const SCNxLEAST16 = "SCNx16"
-const SCNxLEAST32 = "SCNx32"
-const SCNxLEAST64 = "SCNx64"
-const SCNxLEAST8 = "SCNx8"
-const SCNxPTR = "lx"
-const SEEK_CUR = 1
-const SEEK_DATA = 4
-const SEEK_END = 2
-const SEEK_HOLE = 3
-const SEEK_SET = 0
-const SEGV_ACCERR = 2
-const SEGV_MAPERR = 1
-const SEGV_NOOP = 0
-const SF_APPEND = 0x00040000
-const SF_ARCHIVED = 0x00010000
-const SF_DATALESS = 0x40000000
-const SF_FIRMLINK = 0x00800000
-const SF_IMMUTABLE = 0x00020000
-const SF_NOUNLINK = 0x00100000
-const SF_RESTRICTED = 0x00080000
-const SF_SETTABLE = 0x3fff0000
-const SF_SUPPORTED = 0x009f0000
-const SF_SYNTHETIC = 0xc0000000
+const SCNx8 = "hhx"
+const SCNxFAST16 = "x"
+const SCNxFAST32 = "x"
+const SCNxFAST8 = "hhx"
+const SCNxLEAST16 = "hx"
+const SCNxLEAST32 = "x"
+const SCNxLEAST8 = "hhx"
+const SEM_NSEMS_MAX = 256
+const SEM_VALUE_MAX = 0x7fffffff
 const SHORT_TYPE = 2
-const SIGABRT = 6
-const SIGALRM = 14
-const SIGBUS = 10
-const SIGCHLD = 20
-const SIGCONT = 19
-const SIGEMT = 7
-const SIGEV_KEVENT = 4
-const SIGEV_NONE = 0
-const SIGEV_SIGNAL = 1
-const SIGEV_THREAD = 3
-const SIGFPE = 8
-const SIGHUP = 1
-const SIGILL = 4
-const SIGINFO = 29
-const SIGINT = 2
-const SIGIO = 23
-const SIGIOT = "SIGABRT"
-const SIGKILL = 9
-const SIGPIPE = 13
-const SIGPROF = 27
-const SIGQUIT = 3
-const SIGSEGV = 11
-const SIGSTKSZ = 131072
-const SIGSTOP = 17
-const SIGSYS = 12
-const SIGTERM = 15
-const SIGTRAP = 5
-const SIGTSTP = 18
-const SIGTTIN = 21
-const SIGTTOU = 22
-const SIGURG = 16
-const SIGUSR1 = 30
-const SIGUSR2 = 31
-const SIGVTALRM = 26
-const SIGWINCH = 28
-const SIGXCPU = 24
-const SIGXFSZ = 25
-const SIG_BLOCK = 1
-const SIG_SETMASK = 3
-const SIG_UNBLOCK = 2
-const SING = 2
+const SHRT_MAX = 0x7fff
+const SIG_ATOMIC_MAX = "INT32_MAX"
+const SIG_ATOMIC_MIN = "INT32_MIN"
 const SIZEOF_DOUBLE = 8
 const SIZEOF_FLOAT = 4
 const SIZEOF_INT = 4
@@ -827,25 +571,34 @@ const SIZEOF_UNSIGNED_INT = 4
 const SIZEOF_UNSIGNED_LONG = 8
 const SIZEOF_UNSIGNED_LONG_LONG = 8
 const SIZEOF_UNSIGNED_SHORT = 2
-const SIZE_MAX = "__SIZE_MAX__"
-const SI_ASYNCIO = 0x10004
-const SI_MESGQ = 0x10005
-const SI_QUEUE = 0x10002
-const SI_TIMER = 0x10003
-const SI_USER = 0x10001
+const SIZE_MAX = "UINT64_MAX"
+const SPLICE_F_GIFT = 8
+const SPLICE_F_MORE = 4
+const SPLICE_F_MOVE = 1
+const SPLICE_F_NONBLOCK = 2
 const SQRT2 = "M_SQRT2"
-const SS_DISABLE = 0x0004
-const SS_ONSTACK = 0x0001
+const SSIZE_MAX = "LONG_MAX"
 const START_TYPE = 1
+const STATX_ALL = 0xfff
+const STATX_ATIME = 0x20
+const STATX_BASIC_STATS = 0x7ff
+const STATX_BLOCKS = 0x400
+const STATX_BTIME = 0x800
+const STATX_CTIME = 0x80
+const STATX_GID = 0x10
+const STATX_INO = 0x100
+const STATX_MODE = 2
+const STATX_MTIME = 0x40
+const STATX_NLINK = 4
+const STATX_SIZE = 0x200
+const STATX_TYPE = 1
+const STATX_UID = 8
 const STDC_HEADERS = 1
 const STOP_TYPE = 3
-const SV_INTERRUPT = "SA_RESTART"
-const SV_NOCLDSTOP = "SA_NOCLDSTOP"
-const SV_NODEFER = "SA_NODEFER"
-const SV_ONSTACK = "SA_ONSTACK"
-const SV_RESETHAND = "SA_RESETHAND"
-const SV_SIGINFO = "SA_SIGINFO"
-const S_BLKSIZE = 512
+const SYMLOOP_MAX = 40
+const SYNC_FILE_RANGE_WAIT_AFTER = 4
+const SYNC_FILE_RANGE_WAIT_BEFORE = 1
+const SYNC_FILE_RANGE_WRITE = 2
 const S_IEXEC = "S_IXUSR"
 const S_IFBLK = 0060000
 const S_IFCHR = 0020000
@@ -855,25 +608,23 @@ const S_IFLNK = 0120000
 const S_IFMT = 0170000
 const S_IFREG = 0100000
 const S_IFSOCK = 0140000
-const S_IFWHT = 0160000
 const S_IREAD = "S_IRUSR"
-const S_IRGRP = 0000040
-const S_IROTH = 0000004
-const S_IRUSR = 0000400
-const S_IRWXG = 0000070
-const S_IRWXO = 0000007
-const S_IRWXU = 0000700
-const S_ISGID = 0002000
-const S_ISTXT = "S_ISVTX"
-const S_ISUID = 0004000
-const S_ISVTX = 0001000
-const S_IWGRP = 0000020
-const S_IWOTH = 0000002
+const S_IRGRP = 0040
+const S_IROTH = 0004
+const S_IRUSR = 0400
+const S_IRWXG = 0070
+const S_IRWXO = 0007
+const S_IRWXU = 0700
+const S_ISGID = 02000
+const S_ISUID = 04000
+const S_ISVTX = 01000
+const S_IWGRP = 0020
+const S_IWOTH = 0002
 const S_IWRITE = "S_IWUSR"
-const S_IWUSR = 0000200
-const S_IXGRP = 0000010
-const S_IXOTH = 0000001
-const S_IXUSR = 0000100
+const S_IWUSR = 0200
+const S_IXGRP = 0010
+const S_IXOTH = 0001
+const S_IXUSR = 0100
 const TARGET_IPHONE_SIMULATOR = 0
 const TARGET_OS_ARROW = 1
 const TARGET_OS_BRIDGE = 0
@@ -897,116 +648,104 @@ const TARGET_OS_WIN32 = 0
 const TARGET_OS_WINDOWS = 0
 const TARGET_OS_XR = 0
 const TIME_WITH_SYS_TIME = 1
-const TLOSS = 5
-const TMP_MAX = 308915776
+const TMP_MAX = 10000
 const TOC_FLAG = 4
-const TRAP_BRKPT = 1
-const TRAP_TRACE = 2
-const UF_APPEND = 0x00000004
-const UF_COMPRESSED = 0x00000020
-const UF_DATAVAULT = 0x00000080
-const UF_HIDDEN = 0x00008000
-const UF_IMMUTABLE = 0x00000002
-const UF_NODUMP = 0x00000001
-const UF_OPAQUE = 0x00000008
-const UF_SETTABLE = 0x0000ffff
-const UF_TRACKED = 0x00000040
-const UINTMAX_MAX = "__UINTMAX_MAX__"
-const UINTPTR_MAX = "__UINTPTR_MAX__"
-const UINT_FAST16_MAX = "__UINT_LEAST16_MAX"
-const UINT_FAST32_MAX = "__UINT_LEAST32_MAX"
-const UINT_FAST64_MAX = "__UINT_LEAST64_MAX"
-const UINT_FAST8_MAX = "__UINT_LEAST8_MAX"
-const UINT_LEAST16_MAX = "__UINT_LEAST16_MAX"
-const UINT_LEAST32_MAX = "__UINT_LEAST32_MAX"
-const UINT_LEAST64_MAX = "__UINT_LEAST64_MAX"
-const UINT_LEAST8_MAX = "__UINT_LEAST8_MAX"
-const UNDERFLOW = 4
-const USER_FSIGNATURES_CDHASH_LEN = 20
+const TTY_NAME_MAX = 32
+const TZNAME_MAX = 6
+const UCHAR_MAX = 255
+const UINT16_MAX = 0xffff
+const UINT32_MAX = "0xffffffffu"
+const UINT64_MAX = "0xffffffffffffffffu"
+const UINT8_MAX = 0xff
+const UINTMAX_MAX = "UINT64_MAX"
+const UINTPTR_MAX = "UINT64_MAX"
+const UINT_FAST16_MAX = "UINT32_MAX"
+const UINT_FAST32_MAX = "UINT32_MAX"
+const UINT_FAST64_MAX = "UINT64_MAX"
+const UINT_FAST8_MAX = "UINT8_MAX"
+const UINT_LEAST16_MAX = "UINT16_MAX"
+const UINT_LEAST32_MAX = "UINT32_MAX"
+const UINT_LEAST64_MAX = "UINT64_MAX"
+const UINT_LEAST8_MAX = "UINT8_MAX"
+const UINT_MAX = 0xffffffff
+const USHRT_MAX = 0xffff
+const UTIME_NOW = 0x3fffffff
+const UTIME_OMIT = 0x3ffffffe
 const VBR_SCALE_FLAG = 8
 const VERSION = "3.100"
-const WAIT_MYPGRP = 0
-const WAKEMON_DISABLE = 0x02
-const WAKEMON_ENABLE = 0x01
-const WAKEMON_GET_PARAMS = 0x04
-const WAKEMON_MAKE_FATAL = 0x10
-const WAKEMON_SET_DEFAULTS = 0x08
-const WCHAR_MAX = "__WCHAR_MAX__"
-const WCONTINUED = 0x00000010
-const WCOREFLAG = 0200
-const WEXITED = 0x00000004
-const WNOHANG = 0x00000001
-const WNOWAIT = 0x00000020
-const WSTOPPED = 0x00000008
-const WUNTRACED = 0x00000002
+const WINT_MAX = "UINT32_MAX"
+const WINT_MIN = 0
+const WNOHANG = 1
+const WORD_BIT = 32
+const WUNTRACED = 2
+const W_OK = 2
 const XING_BITRATE1 = 128
 const XING_BITRATE2 = 64
 const XING_BITRATE25 = 32
-const X_TLOSS = 1.41484755040568800000e+16
+const X_OK = 1
 const _ALL_SOURCE = 1
-const _ARM_SIGNAL_ = 1
-const _CTYPE_A = 256
-const _CTYPE_B = 131072
-const _CTYPE_C = 512
-const _CTYPE_D = 1024
-const _CTYPE_G = 2048
-const _CTYPE_I = 524288
-const _CTYPE_L = 4096
-const _CTYPE_P = 8192
-const _CTYPE_Q = 2097152
-const _CTYPE_R = 262144
-const _CTYPE_S = 16384
-const _CTYPE_SW0 = 0x20000000
-const _CTYPE_SW1 = 0x40000000
-const _CTYPE_SW2 = 0x80000000
-const _CTYPE_SW3 = 0xc0000000
-const _CTYPE_SWM = 3758096384
-const _CTYPE_SWS = 30
-const _CTYPE_T = 1048576
-const _CTYPE_U = 32768
-const _CTYPE_X = 65536
-const _DARWIN_FEATURE_64_BIT_INODE = 1
-const _DARWIN_FEATURE_ONLY_64_BIT_INODE = 1
-const _DARWIN_FEATURE_ONLY_UNIX_CONFORMANCE = 1
-const _DARWIN_FEATURE_ONLY_VERS_1050 = 1
-const _DARWIN_FEATURE_UNIX_CONFORMANCE = 3
 const _DARWIN_USE_64_BIT_INODE = 1
-const _FORTIFY_SOURCE = 2
 const _GNU_SOURCE = 1
 const _HAS_BUILTIN_AVAILABLE_FEATS = 1
 const _IOFBF = 0
 const _IOLBF = 1
 const _IONBF = 2
-const _LIBC_COUNT__MB_LEN_MAX = "_LIBC_UNSAFE_INDEXABLE"
-const _LIBC_COUNT__PATH_MAX = "_LIBC_UNSAFE_INDEXABLE"
 const _LP64 = 1
-const _MALLOC_TYPE_MALLOC_BACKDEPLOY_PUBLIC = 1
+const _POSIX2_BC_BASE_MAX = 99
+const _POSIX2_BC_DIM_MAX = 2048
+const _POSIX2_BC_SCALE_MAX = 99
+const _POSIX2_BC_STRING_MAX = 1000
+const _POSIX2_CHARCLASS_NAME_MAX = 14
+const _POSIX2_COLL_WEIGHTS_MAX = 2
+const _POSIX2_EXPR_NEST_MAX = 32
+const _POSIX2_LINE_MAX = 2048
+const _POSIX2_RE_DUP_MAX = 255
+const _POSIX_AIO_LISTIO_MAX = 2
+const _POSIX_AIO_MAX = 1
+const _POSIX_ARG_MAX = 4096
+const _POSIX_CHILD_MAX = 25
+const _POSIX_CLOCKRES_MIN = 20000000
+const _POSIX_DELAYTIMER_MAX = 32
+const _POSIX_HOST_NAME_MAX = 255
+const _POSIX_LINK_MAX = 8
+const _POSIX_LOGIN_NAME_MAX = 9
+const _POSIX_MAX_CANON = 255
+const _POSIX_MAX_INPUT = 255
+const _POSIX_MQ_OPEN_MAX = 8
+const _POSIX_MQ_PRIO_MAX = 32
+const _POSIX_NAME_MAX = 14
+const _POSIX_NGROUPS_MAX = 8
+const _POSIX_OPEN_MAX = 20
+const _POSIX_PATH_MAX = 256
+const _POSIX_PIPE_BUF = 512
 const _POSIX_PTHREAD_SEMANTICS = 1
-const _QUAD_HIGHWORD = 1
-const _QUAD_LOWWORD = 0
-const _RLIMIT_POSIX_FLAG = 0x1000
-const _RUNE_MAGIC_A = "RuneMagA"
-const _STRUCT_MCONTEXT = "_STRUCT_MCONTEXT64"
+const _POSIX_RE_DUP_MAX = 255
+const _POSIX_RTSIG_MAX = 8
+const _POSIX_SEM_NSEMS_MAX = 256
+const _POSIX_SEM_VALUE_MAX = 32767
+const _POSIX_SIGQUEUE_MAX = 32
+const _POSIX_SSIZE_MAX = 32767
+const _POSIX_SS_REPL_MAX = 4
+const _POSIX_STREAM_MAX = 8
+const _POSIX_SYMLINK_MAX = 255
+const _POSIX_SYMLOOP_MAX = 8
+const _POSIX_THREAD_DESTRUCTOR_ITERATIONS = 4
+const _POSIX_THREAD_KEYS_MAX = 128
+const _POSIX_THREAD_THREADS_MAX = 64
+const _POSIX_TIMER_MAX = 32
+const _POSIX_TRACE_EVENT_NAME_MAX = 30
+const _POSIX_TRACE_NAME_MAX = 8
+const _POSIX_TRACE_SYS_MAX = 8
+const _POSIX_TRACE_USER_EVENT_MAX = 32
+const _POSIX_TTY_NAME_MAX = 9
+const _POSIX_TZNAME_MAX = 6
 const _TANDEM_SOURCE = 1
-const _WSTOPPED = 0177
+const _XOPEN_IOV_MAX = 16
+const _XOPEN_NAME_MAX = 255
+const _XOPEN_PATH_MAX = 1024
 const __AARCH64EL__ = 1
 const __AARCH64_CMODEL_SMALL__ = 1
 const __AARCH64_SIMD__ = 1
-const __API_TO_BE_DEPRECATED = 100000
-const __API_TO_BE_DEPRECATED_DRIVERKIT = 100000
-const __API_TO_BE_DEPRECATED_IOS = 100000
-const __API_TO_BE_DEPRECATED_IOSAPPLICATIONEXTENSION = 100000
-const __API_TO_BE_DEPRECATED_KERNELKIT = 100000
-const __API_TO_BE_DEPRECATED_MACCATALYST = 100000
-const __API_TO_BE_DEPRECATED_MACCATALYSTAPPLICATIONEXTENSION = 100000
-const __API_TO_BE_DEPRECATED_MACOS = 100000
-const __API_TO_BE_DEPRECATED_MACOSAPPLICATIONEXTENSION = 100000
-const __API_TO_BE_DEPRECATED_TVOS = 100000
-const __API_TO_BE_DEPRECATED_TVOSAPPLICATIONEXTENSION = 100000
-const __API_TO_BE_DEPRECATED_VISIONOS = 100000
-const __API_TO_BE_DEPRECATED_VISIONOSAPPLICATIONEXTENSION = 100000
-const __API_TO_BE_DEPRECATED_WATCHOS = 100000
-const __API_TO_BE_DEPRECATED_WATCHOSAPPLICATIONEXTENSION = 100000
 const __APPLE_CC__ = 6000
 const __APPLE__ = 1
 const __ARM64_ARCH_8__ = 1
@@ -1056,57 +795,18 @@ const __ARM_SIZEOF_MINIMAL_ENUM = 4
 const __ARM_SIZEOF_WCHAR_T = 4
 const __ARM_STATE_ZA = 1
 const __ARM_STATE_ZT0 = 1
-const __ASSERT_FILE_NAME = "__FILE__"
 const __ATOMIC_ACQUIRE = 2
 const __ATOMIC_ACQ_REL = 4
 const __ATOMIC_CONSUME = 1
 const __ATOMIC_RELAXED = 0
 const __ATOMIC_RELEASE = 3
 const __ATOMIC_SEQ_CST = 5
-const __AVAILABILITY_FILE = "AvailabilityVersions.h"
-const __AVAILABILITY_VERSIONS_VERSION_HASH = 93585900
-const __AVAILABILITY_VERSIONS_VERSION_STRING = "Local"
 const __BIGGEST_ALIGNMENT__ = 8
+const __BIG_ENDIAN = 4321
 const __BITINT_MAXWIDTH__ = 128
 const __BLOCKS__ = 1
 const __BOOL_WIDTH__ = 8
-const __BRIDGEOS_10_0 = 100000
-const __BRIDGEOS_10_1 = 100100
-const __BRIDGEOS_10_2 = 100200
-const __BRIDGEOS_2_0 = 20000
-const __BRIDGEOS_3_0 = 30000
-const __BRIDGEOS_3_1 = 30100
-const __BRIDGEOS_3_4 = 30400
-const __BRIDGEOS_4_0 = 40000
-const __BRIDGEOS_4_1 = 40100
-const __BRIDGEOS_5_0 = 50000
-const __BRIDGEOS_5_1 = 50100
-const __BRIDGEOS_5_3 = 50300
-const __BRIDGEOS_6_0 = 60000
-const __BRIDGEOS_6_2 = 60200
-const __BRIDGEOS_6_4 = 60400
-const __BRIDGEOS_6_5 = 60500
-const __BRIDGEOS_6_6 = 60600
-const __BRIDGEOS_7_0 = 70000
-const __BRIDGEOS_7_1 = 70100
-const __BRIDGEOS_7_2 = 70200
-const __BRIDGEOS_7_3 = 70300
-const __BRIDGEOS_7_4 = 70400
-const __BRIDGEOS_7_6 = 70600
-const __BRIDGEOS_8_0 = 80000
-const __BRIDGEOS_8_1 = 80100
-const __BRIDGEOS_8_2 = 80200
-const __BRIDGEOS_8_3 = 80300
-const __BRIDGEOS_8_4 = 80400
-const __BRIDGEOS_8_5 = 80500
-const __BRIDGEOS_8_6 = 80600
-const __BRIDGEOS_9_0 = 90000
-const __BRIDGEOS_9_1 = 90100
-const __BRIDGEOS_9_2 = 90200
-const __BRIDGEOS_9_3 = 90300
-const __BRIDGEOS_9_4 = 90400
-const __BRIDGEOS_9_5 = 90500
-const __BRIDGEOS_9_6 = 90600
+const __BYTE_ORDER = 1234
 const __BYTE_ORDER__ = "__ORDER_LITTLE_ENDIAN__"
 const __CCGO__ = 1
 const __CHAR_BIT__ = 8
@@ -1121,29 +821,6 @@ const __CLANG_ATOMIC_POINTER_LOCK_FREE = 2
 const __CLANG_ATOMIC_SHORT_LOCK_FREE = 2
 const __CLANG_ATOMIC_WCHAR_T_LOCK_FREE = 2
 const __CONSTANT_CFSTRINGS__ = 1
-const __DARWIN_64_BIT_INO_T = 1
-const __DARWIN_BIG_ENDIAN = 4321
-const __DARWIN_BYTE_ORDER = "__DARWIN_LITTLE_ENDIAN"
-const __DARWIN_CTYPE_TOP_inline = "__header_inline"
-const __DARWIN_CTYPE_inline = "__header_inline"
-const __DARWIN_C_ANSI = 010000
-const __DARWIN_C_FULL = 900000
-const __DARWIN_C_LEVEL = "__DARWIN_C_FULL"
-const __DARWIN_FD_SETSIZE = 1024
-const __DARWIN_LITTLE_ENDIAN = 1234
-const __DARWIN_NBBY = 8
-const __DARWIN_NON_CANCELABLE = 0
-const __DARWIN_NO_LONG_LONG = 0
-const __DARWIN_NSIG = 32
-const __DARWIN_ONLY_64_BIT_INO_T = 1
-const __DARWIN_ONLY_UNIX_CONFORMANCE = 1
-const __DARWIN_ONLY_VERS_1050 = 1
-const __DARWIN_OPAQUE_ARM_THREAD_STATE64 = 0
-const __DARWIN_PDP_ENDIAN = 3412
-const __DARWIN_SUF_EXTSN = "$DARWIN_EXTSN"
-const __DARWIN_UNIX03 = 1
-const __DARWIN_VERS_1050 = 1
-const __DARWIN_WCHAR_MAX = "__WCHAR_MAX__"
 const __DBL_DECIMAL_DIG__ = 17
 const __DBL_DENORM_MIN__ = 4.9406564584124654e-324
 const __DBL_DIG__ = 15
@@ -1158,32 +835,7 @@ const __DBL_MAX__ = 1.7976931348623157e+308
 const __DBL_MIN__ = 2.2250738585072014e-308
 const __DBL_NORM_MAX__ = 1.7976931348623157e+308
 const __DECIMAL_DIG__ = "__LDBL_DECIMAL_DIG__"
-const __DRIVERKIT_19_0 = 190000
-const __DRIVERKIT_20_0 = 200000
-const __DRIVERKIT_21_0 = 210000
-const __DRIVERKIT_22_0 = 220000
-const __DRIVERKIT_22_4 = 220400
-const __DRIVERKIT_22_5 = 220500
-const __DRIVERKIT_22_6 = 220600
-const __DRIVERKIT_23_0 = 230000
-const __DRIVERKIT_23_1 = 230100
-const __DRIVERKIT_23_2 = 230200
-const __DRIVERKIT_23_3 = 230300
-const __DRIVERKIT_23_4 = 230400
-const __DRIVERKIT_23_5 = 230500
-const __DRIVERKIT_23_6 = 230600
-const __DRIVERKIT_24_0 = 240000
-const __DRIVERKIT_24_1 = 240100
-const __DRIVERKIT_24_2 = 240200
-const __DRIVERKIT_24_3 = 240300
-const __DRIVERKIT_24_4 = 240400
-const __DRIVERKIT_24_5 = 240500
-const __DRIVERKIT_24_6 = 240600
-const __DRIVERKIT_25_0 = 250000
-const __DRIVERKIT_25_1 = 250100
-const __DRIVERKIT_25_2 = 250200
 const __DYNAMIC__ = 1
-const __ENABLE_LEGACY_MAC_AVAILABILITY = 1
 const __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ = 260000
 const __ENVIRONMENT_OS_VERSION_MIN_REQUIRED__ = 260000
 const __EXTENSIONS__ = 1
@@ -1308,9 +960,7 @@ const __INT_LEAST32_TYPE__ = "int"
 const __INT_LEAST32_WIDTH__ = 32
 const __INT_LEAST64_FMTd__ = "lld"
 const __INT_LEAST64_FMTi__ = "lli"
-const __INT_LEAST64_MAX = "INT64_MAX"
 const __INT_LEAST64_MAX__ = 9223372036854775807
-const __INT_LEAST64_MIN = "INT64_MIN"
 const __INT_LEAST64_WIDTH__ = 64
 const __INT_LEAST8_FMTd__ = "hhd"
 const __INT_LEAST8_FMTi__ = "hhi"
@@ -1318,97 +968,6 @@ const __INT_LEAST8_MAX__ = 127
 const __INT_LEAST8_WIDTH__ = 8
 const __INT_MAX__ = 2147483647
 const __INT_WIDTH__ = 32
-const __IPHONE_10_0 = 100000
-const __IPHONE_10_1 = 100100
-const __IPHONE_10_2 = 100200
-const __IPHONE_10_3 = 100300
-const __IPHONE_11_0 = 110000
-const __IPHONE_11_1 = 110100
-const __IPHONE_11_2 = 110200
-const __IPHONE_11_3 = 110300
-const __IPHONE_11_4 = 110400
-const __IPHONE_12_0 = 120000
-const __IPHONE_12_1 = 120100
-const __IPHONE_12_2 = 120200
-const __IPHONE_12_3 = 120300
-const __IPHONE_12_4 = 120400
-const __IPHONE_13_0 = 130000
-const __IPHONE_13_1 = 130100
-const __IPHONE_13_2 = 130200
-const __IPHONE_13_3 = 130300
-const __IPHONE_13_4 = 130400
-const __IPHONE_13_5 = 130500
-const __IPHONE_13_6 = 130600
-const __IPHONE_13_7 = 130700
-const __IPHONE_14_0 = 140000
-const __IPHONE_14_1 = 140100
-const __IPHONE_14_2 = 140200
-const __IPHONE_14_3 = 140300
-const __IPHONE_14_5 = 140500
-const __IPHONE_14_6 = 140600
-const __IPHONE_14_7 = 140700
-const __IPHONE_14_8 = 140800
-const __IPHONE_15_0 = 150000
-const __IPHONE_15_1 = 150100
-const __IPHONE_15_2 = 150200
-const __IPHONE_15_3 = 150300
-const __IPHONE_15_4 = 150400
-const __IPHONE_15_5 = 150500
-const __IPHONE_15_6 = 150600
-const __IPHONE_15_7 = 150700
-const __IPHONE_15_8 = 150800
-const __IPHONE_16_0 = 160000
-const __IPHONE_16_1 = 160100
-const __IPHONE_16_2 = 160200
-const __IPHONE_16_3 = 160300
-const __IPHONE_16_4 = 160400
-const __IPHONE_16_5 = 160500
-const __IPHONE_16_6 = 160600
-const __IPHONE_16_7 = 160700
-const __IPHONE_17_0 = 170000
-const __IPHONE_17_1 = 170100
-const __IPHONE_17_2 = 170200
-const __IPHONE_17_3 = 170300
-const __IPHONE_17_4 = 170400
-const __IPHONE_17_5 = 170500
-const __IPHONE_17_6 = 170600
-const __IPHONE_17_7 = 170700
-const __IPHONE_18_0 = 180000
-const __IPHONE_18_1 = 180100
-const __IPHONE_18_2 = 180200
-const __IPHONE_18_3 = 180300
-const __IPHONE_18_4 = 180400
-const __IPHONE_18_5 = 180500
-const __IPHONE_18_6 = 180600
-const __IPHONE_19_0 = 190000
-const __IPHONE_26_0 = 260000
-const __IPHONE_26_1 = 260100
-const __IPHONE_26_2 = 260200
-const __IPHONE_2_0 = 20000
-const __IPHONE_2_1 = 20100
-const __IPHONE_2_2 = 20200
-const __IPHONE_3_0 = 30000
-const __IPHONE_3_1 = 30100
-const __IPHONE_3_2 = 30200
-const __IPHONE_4_0 = 40000
-const __IPHONE_4_1 = 40100
-const __IPHONE_4_2 = 40200
-const __IPHONE_4_3 = 40300
-const __IPHONE_5_0 = 50000
-const __IPHONE_5_1 = 50100
-const __IPHONE_6_0 = 60000
-const __IPHONE_6_1 = 60100
-const __IPHONE_7_0 = 70000
-const __IPHONE_7_1 = 70100
-const __IPHONE_8_0 = 80000
-const __IPHONE_8_1 = 80100
-const __IPHONE_8_2 = 80200
-const __IPHONE_8_3 = 80300
-const __IPHONE_8_4 = 80400
-const __IPHONE_9_0 = 90000
-const __IPHONE_9_1 = 90100
-const __IPHONE_9_2 = 90200
-const __IPHONE_9_3 = 90300
 const __LDBL_DECIMAL_DIG__ = 17
 const __LDBL_DENORM_MIN__ = 4.9406564584124654e-324
 const __LDBL_DIG__ = 15
@@ -1422,90 +981,15 @@ const __LDBL_MAX_EXP__ = 1024
 const __LDBL_MAX__ = 1.7976931348623157e+308
 const __LDBL_MIN__ = 2.2250738585072014e-308
 const __LDBL_NORM_MAX__ = 1.7976931348623157e+308
+const __LITTLE_ENDIAN = 1234
 const __LITTLE_ENDIAN__ = 1
 const __LLONG_WIDTH__ = 64
 const __LONG_LONG_MAX__ = 9223372036854775807
+const __LONG_MAX = 0x7fffffffffffffff
 const __LONG_MAX__ = 9223372036854775807
 const __LONG_WIDTH__ = 64
 const __LP64__ = 1
 const __MACH__ = 1
-const __MAC_10_0 = 1000
-const __MAC_10_1 = 1010
-const __MAC_10_10 = 101000
-const __MAC_10_10_2 = 101002
-const __MAC_10_10_3 = 101003
-const __MAC_10_11 = 101100
-const __MAC_10_11_2 = 101102
-const __MAC_10_11_3 = 101103
-const __MAC_10_11_4 = 101104
-const __MAC_10_12 = 101200
-const __MAC_10_12_1 = 101201
-const __MAC_10_12_2 = 101202
-const __MAC_10_12_4 = 101204
-const __MAC_10_13 = 101300
-const __MAC_10_13_1 = 101301
-const __MAC_10_13_2 = 101302
-const __MAC_10_13_4 = 101304
-const __MAC_10_14 = 101400
-const __MAC_10_14_1 = 101401
-const __MAC_10_14_4 = 101404
-const __MAC_10_14_5 = 101405
-const __MAC_10_14_6 = 101406
-const __MAC_10_15 = 101500
-const __MAC_10_15_1 = 101501
-const __MAC_10_15_4 = 101504
-const __MAC_10_16 = 101600
-const __MAC_10_2 = 1020
-const __MAC_10_3 = 1030
-const __MAC_10_4 = 1040
-const __MAC_10_5 = 1050
-const __MAC_10_6 = 1060
-const __MAC_10_7 = 1070
-const __MAC_10_8 = 1080
-const __MAC_10_9 = 1090
-const __MAC_11_0 = 110000
-const __MAC_11_1 = 110100
-const __MAC_11_3 = 110300
-const __MAC_11_4 = 110400
-const __MAC_11_5 = 110500
-const __MAC_11_6 = 110600
-const __MAC_12_0 = 120000
-const __MAC_12_1 = 120100
-const __MAC_12_2 = 120200
-const __MAC_12_3 = 120300
-const __MAC_12_4 = 120400
-const __MAC_12_5 = 120500
-const __MAC_12_6 = 120600
-const __MAC_12_7 = 120700
-const __MAC_13_0 = 130000
-const __MAC_13_1 = 130100
-const __MAC_13_2 = 130200
-const __MAC_13_3 = 130300
-const __MAC_13_4 = 130400
-const __MAC_13_5 = 130500
-const __MAC_13_6 = 130600
-const __MAC_13_7 = 130700
-const __MAC_14_0 = 140000
-const __MAC_14_1 = 140100
-const __MAC_14_2 = 140200
-const __MAC_14_3 = 140300
-const __MAC_14_4 = 140400
-const __MAC_14_5 = 140500
-const __MAC_14_6 = 140600
-const __MAC_14_7 = 140700
-const __MAC_15_0 = 150000
-const __MAC_15_1 = 150100
-const __MAC_15_2 = 150200
-const __MAC_15_3 = 150300
-const __MAC_15_4 = 150400
-const __MAC_15_5 = 150500
-const __MAC_15_6 = 150600
-const __MAC_16_0 = 160000
-const __MAC_26_0 = 260000
-const __MAC_26_1 = 260100
-const __MAC_26_2 = 260200
-const __MAC_OS_X_VERSION_MAX_ALLOWED = "__MAC_26_2"
-const __MAC_OS_X_VERSION_MIN_REQUIRED = "__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__"
 const __MEMORY_SCOPE_DEVICE = 1
 const __MEMORY_SCOPE_SINGLE = 4
 const __MEMORY_SCOPE_SYSTEM = 0
@@ -1522,36 +1006,20 @@ const __OPENCL_MEMORY_SCOPE_WORK_ITEM = 0
 const __ORDER_BIG_ENDIAN__ = 4321
 const __ORDER_LITTLE_ENDIAN__ = 1234
 const __ORDER_PDP_ENDIAN__ = 3412
+const __PDP_ENDIAN = 3412
 const __PIC__ = 2
 const __POINTER_WIDTH__ = 64
 const __PRAGMA_REDEFINE_EXTNAME = 1
 const __PRETTY_FUNCTION__ = "__func__"
-const __PRI_64_LENGTH_MODIFIER__ = "ll"
-const __PRI_8_LENGTH_MODIFIER__ = "hh"
-const __PRI_MAX_LENGTH_MODIFIER__ = "j"
-const __PTHREAD_ATTR_SIZE__ = 56
-const __PTHREAD_CONDATTR_SIZE__ = 8
-const __PTHREAD_COND_SIZE__ = 40
-const __PTHREAD_MUTEXATTR_SIZE__ = 8
-const __PTHREAD_MUTEX_SIZE__ = 56
-const __PTHREAD_ONCE_SIZE__ = 8
-const __PTHREAD_RWLOCKATTR_SIZE__ = 16
-const __PTHREAD_RWLOCK_SIZE__ = 192
-const __PTHREAD_SIZE__ = 8176
+const __PRI64 = "l"
+const __PRIPTR = "l"
 const __PTRDIFF_FMTd__ = "ld"
 const __PTRDIFF_FMTi__ = "li"
 const __PTRDIFF_MAX__ = 9223372036854775807
 const __PTRDIFF_WIDTH__ = 64
-const __SALC = 0x4000
-const __SAPP = 0x0100
 const __SCHAR_MAX__ = 127
-const __SCN_64_LENGTH_MODIFIER__ = "ll"
-const __SCN_MAX_LENGTH_MODIFIER__ = "j"
-const __SEOF = 0x0020
-const __SERR = 0x0040
 const __SHRT_MAX__ = 32767
 const __SHRT_WIDTH__ = 16
-const __SIGN = 0x8000
 const __SIG_ATOMIC_MAX__ = 2147483647
 const __SIG_ATOMIC_WIDTH__ = 32
 const __SIZEOF_DOUBLE__ = 8
@@ -1573,17 +1041,7 @@ const __SIZE_FMTu__ = "lu"
 const __SIZE_FMTx__ = "lx"
 const __SIZE_MAX__ = 18446744073709551615
 const __SIZE_WIDTH__ = 64
-const __SLBF = 0x0001
-const __SMBF = 0x0080
-const __SMOD = 0x2000
-const __SNBF = 0x0002
-const __SNPT = 0x0800
-const __SOFF = 0x1000
-const __SOPT = 0x0400
-const __SRD = 0x0004
-const __SRW = 0x0010
 const __SSP__ = 1
-const __SSTR = 0x0200
 const __STDC_EMBED_EMPTY__ = 2
 const __STDC_EMBED_FOUND__ = 1
 const __STDC_EMBED_NOT_FOUND__ = 0
@@ -1592,69 +1050,7 @@ const __STDC_NO_THREADS__ = 1
 const __STDC_UTF_16__ = 1
 const __STDC_UTF_32__ = 1
 const __STDC_VERSION__ = 201710
-const __STDC_WANT_LIB_EXT1__ = 1
 const __STDC__ = 1
-const __SWR = 0x0008
-const __TVOS_10_0 = 100000
-const __TVOS_10_0_1 = 100001
-const __TVOS_10_1 = 100100
-const __TVOS_10_2 = 100200
-const __TVOS_11_0 = 110000
-const __TVOS_11_1 = 110100
-const __TVOS_11_2 = 110200
-const __TVOS_11_3 = 110300
-const __TVOS_11_4 = 110400
-const __TVOS_12_0 = 120000
-const __TVOS_12_1 = 120100
-const __TVOS_12_2 = 120200
-const __TVOS_12_3 = 120300
-const __TVOS_12_4 = 120400
-const __TVOS_13_0 = 130000
-const __TVOS_13_2 = 130200
-const __TVOS_13_3 = 130300
-const __TVOS_13_4 = 130400
-const __TVOS_14_0 = 140000
-const __TVOS_14_1 = 140100
-const __TVOS_14_2 = 140200
-const __TVOS_14_3 = 140300
-const __TVOS_14_5 = 140500
-const __TVOS_14_6 = 140600
-const __TVOS_14_7 = 140700
-const __TVOS_15_0 = 150000
-const __TVOS_15_1 = 150100
-const __TVOS_15_2 = 150200
-const __TVOS_15_3 = 150300
-const __TVOS_15_4 = 150400
-const __TVOS_15_5 = 150500
-const __TVOS_15_6 = 150600
-const __TVOS_16_0 = 160000
-const __TVOS_16_1 = 160100
-const __TVOS_16_2 = 160200
-const __TVOS_16_3 = 160300
-const __TVOS_16_4 = 160400
-const __TVOS_16_5 = 160500
-const __TVOS_16_6 = 160600
-const __TVOS_17_0 = 170000
-const __TVOS_17_1 = 170100
-const __TVOS_17_2 = 170200
-const __TVOS_17_3 = 170300
-const __TVOS_17_4 = 170400
-const __TVOS_17_5 = 170500
-const __TVOS_17_6 = 170600
-const __TVOS_18_0 = 180000
-const __TVOS_18_1 = 180100
-const __TVOS_18_2 = 180200
-const __TVOS_18_3 = 180300
-const __TVOS_18_4 = 180400
-const __TVOS_18_5 = 180500
-const __TVOS_18_6 = 180600
-const __TVOS_19_0 = 190000
-const __TVOS_26_0 = 260000
-const __TVOS_26_1 = 260100
-const __TVOS_26_2 = 260200
-const __TVOS_9_0 = 90000
-const __TVOS_9_1 = 90100
-const __TVOS_9_2 = 90200
 const __UINT16_FMTX__ = "hX"
 const __UINT16_FMTo__ = "ho"
 const __UINT16_FMTu__ = "hu"
@@ -1724,7 +1120,6 @@ const __UINT_LEAST64_FMTX__ = "llX"
 const __UINT_LEAST64_FMTo__ = "llo"
 const __UINT_LEAST64_FMTu__ = "llu"
 const __UINT_LEAST64_FMTx__ = "llx"
-const __UINT_LEAST64_MAX = "UINT64_MAX"
 const __UINT_LEAST64_MAX__ = "18446744073709551615U"
 const __UINT_LEAST8_FMTX__ = "hhX"
 const __UINT_LEAST8_FMTo__ = "hho"
@@ -1732,82 +1127,8 @@ const __UINT_LEAST8_FMTu__ = "hhu"
 const __UINT_LEAST8_FMTx__ = "hhx"
 const __UINT_LEAST8_MAX__ = 255
 const __USER_LABEL_PREFIX__ = "_"
+const __USE_TIME_BITS64 = 1
 const __VERSION__ = "Apple LLVM 17.0.0 (clang-1700.6.4.2)"
-const __VISIONOS_1_0 = 10000
-const __VISIONOS_1_1 = 10100
-const __VISIONOS_1_2 = 10200
-const __VISIONOS_1_3 = 10300
-const __VISIONOS_26_0 = 260000
-const __VISIONOS_26_1 = 260100
-const __VISIONOS_26_2 = 260200
-const __VISIONOS_2_0 = 20000
-const __VISIONOS_2_1 = 20100
-const __VISIONOS_2_2 = 20200
-const __VISIONOS_2_3 = 20300
-const __VISIONOS_2_4 = 20400
-const __VISIONOS_2_5 = 20500
-const __VISIONOS_2_6 = 20600
-const __VISIONOS_3_0 = 30000
-const __WATCHOS_10_0 = 100000
-const __WATCHOS_10_1 = 100100
-const __WATCHOS_10_2 = 100200
-const __WATCHOS_10_3 = 100300
-const __WATCHOS_10_4 = 100400
-const __WATCHOS_10_5 = 100500
-const __WATCHOS_10_6 = 100600
-const __WATCHOS_10_7 = 100700
-const __WATCHOS_11_0 = 110000
-const __WATCHOS_11_1 = 110100
-const __WATCHOS_11_2 = 110200
-const __WATCHOS_11_3 = 110300
-const __WATCHOS_11_4 = 110400
-const __WATCHOS_11_5 = 110500
-const __WATCHOS_11_6 = 110600
-const __WATCHOS_12_0 = 120000
-const __WATCHOS_1_0 = 10000
-const __WATCHOS_26_0 = 260000
-const __WATCHOS_26_1 = 260100
-const __WATCHOS_26_2 = 260200
-const __WATCHOS_2_0 = 20000
-const __WATCHOS_2_1 = 20100
-const __WATCHOS_2_2 = 20200
-const __WATCHOS_3_0 = 30000
-const __WATCHOS_3_1 = 30100
-const __WATCHOS_3_1_1 = 30101
-const __WATCHOS_3_2 = 30200
-const __WATCHOS_4_0 = 40000
-const __WATCHOS_4_1 = 40100
-const __WATCHOS_4_2 = 40200
-const __WATCHOS_4_3 = 40300
-const __WATCHOS_5_0 = 50000
-const __WATCHOS_5_1 = 50100
-const __WATCHOS_5_2 = 50200
-const __WATCHOS_5_3 = 50300
-const __WATCHOS_6_0 = 60000
-const __WATCHOS_6_1 = 60100
-const __WATCHOS_6_2 = 60200
-const __WATCHOS_7_0 = 70000
-const __WATCHOS_7_1 = 70100
-const __WATCHOS_7_2 = 70200
-const __WATCHOS_7_3 = 70300
-const __WATCHOS_7_4 = 70400
-const __WATCHOS_7_5 = 70500
-const __WATCHOS_7_6 = 70600
-const __WATCHOS_8_0 = 80000
-const __WATCHOS_8_1 = 80100
-const __WATCHOS_8_3 = 80300
-const __WATCHOS_8_4 = 80400
-const __WATCHOS_8_5 = 80500
-const __WATCHOS_8_6 = 80600
-const __WATCHOS_8_7 = 80700
-const __WATCHOS_8_8 = 80800
-const __WATCHOS_9_0 = 90000
-const __WATCHOS_9_1 = 90100
-const __WATCHOS_9_2 = 90200
-const __WATCHOS_9_3 = 90300
-const __WATCHOS_9_4 = 90400
-const __WATCHOS_9_5 = 90500
-const __WATCHOS_9_6 = 90600
 const __WCHAR_MAX__ = 2147483647
 const __WCHAR_TYPE__ = "int"
 const __WCHAR_WIDTH__ = 32
@@ -1825,12 +1146,7 @@ const __clang_minor__ = 0
 const __clang_patchlevel__ = 0
 const __clang_version__ = "17.0.0 (clang-1700.6.4.2)"
 const __clang_wide_literal_encoding__ = "UTF-32"
-const __const = "const"
-const __exported_hidden = "__private_extern__"
-const __has_bounds_safety_attributes = 0
-const __has_ptrcheck = 0
-const __has_safe_buffers = 0
-const __header_inline = "inline"
+const __inline = "inline"
 const __llvm__ = 1
 const __nonnull = "_Nonnull"
 const __null_unspecified = "_Null_unspecified"
@@ -1838,15 +1154,10 @@ const __nullable = "_Nullable"
 const __pic__ = 2
 const __restrict = "restrict"
 const __restrict_arr = "restrict"
-const __signed = "signed"
-const __volatile = "volatile"
-const ru_first = "ru_ixrss"
-const ru_last = "ru_nivcsw"
+const alloca1 = "__builtin_alloca"
+const loff_t = "off_t"
+const math_errhandling = 2
 const static_assert = "_Static_assert"
-const stderr1 = "__stderrp"
-const stdin1 = "__stdinp"
-const stdout1 = "__stdoutp"
-const sv_onstack = "sv_flags"
 
 type __builtin_va_list = uintptr
 
@@ -1862,285 +1173,41 @@ type ieee754_float64_t = float64
 
 type ieee854_float80_t = float64
 
-type ptrdiff_t = int64
+type wchar_t = uint32
+
+type max_align_t = struct {
+	F__ll int64
+	F__ld float64
+}
 
 type size_t = uint64
 
-type wchar_t = int32
-
-type max_align_t = float64
-
-type __gnuc_va_list = uintptr
+type ptrdiff_t = int64
 
 type va_list = uintptr
 
-type __int8_t = int8
-
-type __uint8_t = uint8
-
-type __int16_t = int16
-
-type __uint16_t = uint16
-
-type __int32_t = int32
-
-type __uint32_t = uint32
-
-type __int64_t = int64
-
-type __uint64_t = uint64
-
-type __darwin_intptr_t = int64
-
-type __darwin_natural_t = uint32
-
-type __darwin_ct_rune_t = int32
-
-type __mbstate_t = struct {
-	F_mbstateL  [0]int64
-	F__mbstate8 [128]int8
-}
-
-type __darwin_mbstate_t = struct {
-	F_mbstateL  [0]int64
-	F__mbstate8 [128]int8
-}
-
-type __darwin_ptrdiff_t = int64
-
-type __darwin_size_t = uint64
-
-type __darwin_va_list = uintptr
-
-type __darwin_wchar_t = int32
-
-type __darwin_rune_t = int32
-
-type __darwin_wint_t = int32
-
-type __darwin_clock_t = uint64
-
-type __darwin_socklen_t = uint32
-
-type __darwin_ssize_t = int64
-
-type __darwin_time_t = int64
-
-type __darwin_blkcnt_t = int64
-
-type __darwin_blksize_t = int32
-
-type __darwin_dev_t = int32
-
-type __darwin_fsblkcnt_t = uint32
-
-type __darwin_fsfilcnt_t = uint32
-
-type __darwin_gid_t = uint32
-
-type __darwin_id_t = uint32
-
-type __darwin_ino64_t = uint64
-
-type __darwin_ino_t = uint64
-
-type __darwin_mach_port_name_t = uint32
-
-type __darwin_mach_port_t = uint32
-
-type __darwin_mode_t = uint16
-
-type __darwin_off_t = int64
-
-type __darwin_pid_t = int32
-
-type __darwin_sigset_t = uint32
-
-type __darwin_suseconds_t = int32
-
-type __darwin_uid_t = uint32
-
-type __darwin_useconds_t = uint32
-
-type __darwin_uuid_t = [16]uint8
-
-type __darwin_uuid_string_t = [37]int8
-
-type __darwin_pthread_handler_rec = struct {
-	F__routine uintptr
-	F__arg     uintptr
-	F__next    uintptr
-}
-
-type _opaque_pthread_attr_t = struct {
-	F__sig    int64
-	F__opaque [56]int8
-}
-
-type _opaque_pthread_cond_t = struct {
-	F__sig    int64
-	F__opaque [40]int8
-}
-
-type _opaque_pthread_condattr_t = struct {
-	F__sig    int64
-	F__opaque [8]int8
-}
-
-type _opaque_pthread_mutex_t = struct {
-	F__sig    int64
-	F__opaque [56]int8
-}
-
-type _opaque_pthread_mutexattr_t = struct {
-	F__sig    int64
-	F__opaque [8]int8
-}
-
-type _opaque_pthread_once_t = struct {
-	F__sig    int64
-	F__opaque [8]int8
-}
-
-type _opaque_pthread_rwlock_t = struct {
-	F__sig    int64
-	F__opaque [192]int8
-}
-
-type _opaque_pthread_rwlockattr_t = struct {
-	F__sig    int64
-	F__opaque [16]int8
-}
-
-type _opaque_pthread_t = struct {
-	F__sig           int64
-	F__cleanup_stack uintptr
-	F__opaque        [8176]int8
-}
-
-type __darwin_pthread_attr_t = struct {
-	F__sig    int64
-	F__opaque [56]int8
-}
-
-type __darwin_pthread_cond_t = struct {
-	F__sig    int64
-	F__opaque [40]int8
-}
-
-type __darwin_pthread_condattr_t = struct {
-	F__sig    int64
-	F__opaque [8]int8
-}
-
-type __darwin_pthread_key_t = uint64
-
-type __darwin_pthread_mutex_t = struct {
-	F__sig    int64
-	F__opaque [56]int8
-}
-
-type __darwin_pthread_mutexattr_t = struct {
-	F__sig    int64
-	F__opaque [8]int8
-}
-
-type __darwin_pthread_once_t = struct {
-	F__sig    int64
-	F__opaque [8]int8
-}
-
-type __darwin_pthread_rwlock_t = struct {
-	F__sig    int64
-	F__opaque [192]int8
-}
-
-type __darwin_pthread_rwlockattr_t = struct {
-	F__sig    int64
-	F__opaque [16]int8
-}
-
-type __darwin_pthread_t = uintptr
-
-type __darwin_nl_item = int32
-
-type __darwin_wctrans_t = int32
-
-type __darwin_wctype_t = uint32
-
-type int8_t = int8
-
-type int16_t = int16
-
-type int32_t = int32
-
-type int64_t = int64
-
-type u_int8_t = uint8
-
-type u_int16_t = uint16
-
-type u_int32_t = uint32
-
-type u_int64_t = uint64
-
-type register_t = int64
-
-type intptr_t = int64
-
-type uintptr_t = uint64
-
-type user_addr_t = uint64
-
-type user_size_t = uint64
-
-type user_ssize_t = int64
-
-type user_long_t = int64
-
-type user_ulong_t = uint64
-
-type user_time_t = int64
-
-type user_off_t = int64
-
-type syscall_arg_t = uint64
-
-type fpos_t = int64
-
-type __sbuf = struct {
-	F_base uintptr
-	F_size int32
-}
-
-type FILE = struct {
-	F_p       uintptr
-	F_r       int32
-	F_w       int32
-	F_flags   int16
-	F_file    int16
-	F_bf      __sbuf
-	F_lbfsize int32
-	F_cookie  uintptr
-	F_close   uintptr
-	F_read    uintptr
-	F_seek    uintptr
-	F_write   uintptr
-	F_ub      __sbuf
-	F_extra   uintptr
-	F_ur      int32
-	F_ubuf    [3]uint8
-	F_nbuf    [1]uint8
-	F_lb      __sbuf
-	F_blksize int32
-	F_offset  fpos_t
-}
-
-type __sFILE = FILE
+type ssize_t = int64
 
 type off_t = int64
 
-type ssize_t = int64
+type __isoc_va_list = uintptr
+
+type fpos_t = struct {
+	F__lldata [0]int64
+	F__align  [0]float64
+	F__opaque [16]uint8
+}
+
+type _G_fpos64_t = fpos_t
+
+type cookie_io_functions_t = struct {
+	Fread   uintptr
+	Fwrite  uintptr
+	Fseek   uintptr
+	Fclose1 uintptr
+}
+
+type _IO_cookie_io_functions_t = cookie_io_functions_t
 
 type lame_report_function = uintptr
 
@@ -2450,611 +1517,6 @@ const FRONTEND_READERROR = -80
 const FRONTEND_WRITEERROR = -81
 const FRONTEND_FILETOOLARGE = -82
 
-type idtype_t = int32
-
-const P_ALL = 0
-const P_PID = 1
-const P_PGID = 2
-
-type pid_t = int32
-
-type id_t = uint32
-
-type sig_atomic_t = int32
-
-type __darwin_arm_exception_state = struct {
-	F__exception __uint32_t
-	F__fsr       __uint32_t
-	F__far       __uint32_t
-}
-
-type __darwin_arm_exception_state64 = struct {
-	F__far       __uint64_t
-	F__esr       __uint32_t
-	F__exception __uint32_t
-}
-
-type __darwin_arm_exception_state64_v2 = struct {
-	F__far __uint64_t
-	F__esr __uint64_t
-}
-
-type __darwin_arm_thread_state = struct {
-	F__r    [13]__uint32_t
-	F__sp   __uint32_t
-	F__lr   __uint32_t
-	F__pc   __uint32_t
-	F__cpsr __uint32_t
-}
-
-type __darwin_arm_thread_state64 = struct {
-	F__x    [29]__uint64_t
-	F__fp   __uint64_t
-	F__lr   __uint64_t
-	F__sp   __uint64_t
-	F__pc   __uint64_t
-	F__cpsr __uint32_t
-	F__pad  __uint32_t
-}
-
-type __darwin_arm_vfp_state = struct {
-	F__r     [64]__uint32_t
-	F__fpscr __uint32_t
-}
-
-type __darwin_arm_neon_state64 = struct {
-	F__ccgo_align [0]uint64
-	F__v          [32][2]uint64
-	F__fpsr       __uint32_t
-	F__fpcr       __uint32_t
-	F__ccgo_pad3  [8]byte
-}
-
-type __darwin_arm_neon_state = struct {
-	F__ccgo_align [0]uint64
-	F__v          [16][2]uint64
-	F__fpsr       __uint32_t
-	F__fpcr       __uint32_t
-	F__ccgo_pad3  [8]byte
-}
-
-type __arm_pagein_state = struct {
-	F__pagein_error int32
-}
-
-type __darwin_arm_sme_state = struct {
-	F__svcr       __uint64_t
-	F__tpidr2_el0 __uint64_t
-	F__svl_b      __uint16_t
-}
-
-type __darwin_arm_sve_z_state = struct {
-	F__ccgo_align [0]uint32
-	F__z          [16][256]int8
-}
-
-type __darwin_arm_sve_p_state = struct {
-	F__ccgo_align [0]uint32
-	F__p          [16][32]int8
-}
-
-type __darwin_arm_sme_za_state = struct {
-	F__ccgo_align [0]uint32
-	F__za         [4096]int8
-}
-
-type __darwin_arm_sme2_state = struct {
-	F__ccgo_align [0]uint32
-	F__zt0        [64]int8
-}
-
-type __arm_legacy_debug_state = struct {
-	F__bvr [16]__uint32_t
-	F__bcr [16]__uint32_t
-	F__wvr [16]__uint32_t
-	F__wcr [16]__uint32_t
-}
-
-type __darwin_arm_debug_state32 = struct {
-	F__bvr       [16]__uint32_t
-	F__bcr       [16]__uint32_t
-	F__wvr       [16]__uint32_t
-	F__wcr       [16]__uint32_t
-	F__mdscr_el1 __uint64_t
-}
-
-type __darwin_arm_debug_state64 = struct {
-	F__bvr       [16]__uint64_t
-	F__bcr       [16]__uint64_t
-	F__wvr       [16]__uint64_t
-	F__wcr       [16]__uint64_t
-	F__mdscr_el1 __uint64_t
-}
-
-type __darwin_arm_cpmu_state64 = struct {
-	F__ctrs [16]__uint64_t
-}
-
-type __darwin_mcontext32 = struct {
-	F__es __darwin_arm_exception_state
-	F__ss __darwin_arm_thread_state
-	F__fs __darwin_arm_vfp_state
-}
-
-type __darwin_mcontext64 = struct {
-	F__ccgo_align [0]uint64
-	F__es         __darwin_arm_exception_state64
-	F__ss         __darwin_arm_thread_state64
-	F__ns         __darwin_arm_neon_state64
-}
-
-type mcontext_t = uintptr
-
-type pthread_attr_t = struct {
-	F__sig    int64
-	F__opaque [56]int8
-}
-
-type __darwin_sigaltstack = struct {
-	Fss_sp    uintptr
-	Fss_size  __darwin_size_t
-	Fss_flags int32
-}
-
-type stack_t = struct {
-	Fss_sp    uintptr
-	Fss_size  __darwin_size_t
-	Fss_flags int32
-}
-
-type __darwin_ucontext = struct {
-	Fuc_onstack  int32
-	Fuc_sigmask  __darwin_sigset_t
-	Fuc_stack    __darwin_sigaltstack
-	Fuc_link     uintptr
-	Fuc_mcsize   __darwin_size_t
-	Fuc_mcontext uintptr
-}
-
-type ucontext_t = struct {
-	Fuc_onstack  int32
-	Fuc_sigmask  __darwin_sigset_t
-	Fuc_stack    __darwin_sigaltstack
-	Fuc_link     uintptr
-	Fuc_mcsize   __darwin_size_t
-	Fuc_mcontext uintptr
-}
-
-type sigset_t = uint32
-
-type uid_t = uint32
-
-type sigval = struct {
-	Fsival_ptr   [0]uintptr
-	Fsival_int   int32
-	F__ccgo_pad2 [4]byte
-}
-
-type sigevent = struct {
-	Fsigev_notify            int32
-	Fsigev_signo             int32
-	Fsigev_value             sigval
-	Fsigev_notify_function   uintptr
-	Fsigev_notify_attributes uintptr
-}
-
-type siginfo_t = struct {
-	Fsi_signo  int32
-	Fsi_errno  int32
-	Fsi_code   int32
-	Fsi_pid    pid_t
-	Fsi_uid    uid_t
-	Fsi_status int32
-	Fsi_addr   uintptr
-	Fsi_value  sigval
-	Fsi_band   int64
-	F__pad     [7]uint64
-}
-
-type __siginfo = siginfo_t
-
-type __sigaction_u = struct {
-	F__sa_sigaction [0]uintptr
-	F__sa_handler   uintptr
-}
-
-type __sigaction = struct {
-	F__sigaction_u __sigaction_u
-	Fsa_tramp      uintptr
-	Fsa_mask       sigset_t
-	Fsa_flags      int32
-}
-
-type sigaction1 = struct {
-	F__sigaction_u __sigaction_u
-	Fsa_mask       sigset_t
-	Fsa_flags      int32
-}
-
-type sig_t = uintptr
-
-type sigvec = struct {
-	Fsv_handler uintptr
-	Fsv_mask    int32
-	Fsv_flags   int32
-}
-
-type sigstack = struct {
-	Fss_sp      uintptr
-	Fss_onstack int32
-}
-
-type uint64_t = uint64
-
-type int_least64_t = int64
-
-type uint_least64_t = uint64
-
-type int_fast64_t = int64
-
-type uint_fast64_t = uint64
-
-type uint32_t = uint32
-
-type int_least32_t = int32
-
-type uint_least32_t = uint32
-
-type int_fast32_t = int32
-
-type uint_fast32_t = uint32
-
-type uint16_t = uint16
-
-type int_least16_t = int16
-
-type uint_least16_t = uint16
-
-type int_fast16_t = int16
-
-type uint_fast16_t = uint16
-
-type uint8_t = uint8
-
-type int_least8_t = int8
-
-type uint_least8_t = uint8
-
-type int_fast8_t = int8
-
-type uint_fast8_t = uint8
-
-type intmax_t = int64
-
-type uintmax_t = uint64
-
-type timeval = struct {
-	Ftv_sec  __darwin_time_t
-	Ftv_usec __darwin_suseconds_t
-}
-
-type rlim_t = uint64
-
-type rusage = struct {
-	Fru_utime    timeval
-	Fru_stime    timeval
-	Fru_maxrss   int64
-	Fru_ixrss    int64
-	Fru_idrss    int64
-	Fru_isrss    int64
-	Fru_minflt   int64
-	Fru_majflt   int64
-	Fru_nswap    int64
-	Fru_inblock  int64
-	Fru_oublock  int64
-	Fru_msgsnd   int64
-	Fru_msgrcv   int64
-	Fru_nsignals int64
-	Fru_nvcsw    int64
-	Fru_nivcsw   int64
-}
-
-type rusage_info_t = uintptr
-
-type rusage_info_v0 = struct {
-	Fri_uuid               [16]uint8_t
-	Fri_user_time          uint64_t
-	Fri_system_time        uint64_t
-	Fri_pkg_idle_wkups     uint64_t
-	Fri_interrupt_wkups    uint64_t
-	Fri_pageins            uint64_t
-	Fri_wired_size         uint64_t
-	Fri_resident_size      uint64_t
-	Fri_phys_footprint     uint64_t
-	Fri_proc_start_abstime uint64_t
-	Fri_proc_exit_abstime  uint64_t
-}
-
-type rusage_info_v1 = struct {
-	Fri_uuid                  [16]uint8_t
-	Fri_user_time             uint64_t
-	Fri_system_time           uint64_t
-	Fri_pkg_idle_wkups        uint64_t
-	Fri_interrupt_wkups       uint64_t
-	Fri_pageins               uint64_t
-	Fri_wired_size            uint64_t
-	Fri_resident_size         uint64_t
-	Fri_phys_footprint        uint64_t
-	Fri_proc_start_abstime    uint64_t
-	Fri_proc_exit_abstime     uint64_t
-	Fri_child_user_time       uint64_t
-	Fri_child_system_time     uint64_t
-	Fri_child_pkg_idle_wkups  uint64_t
-	Fri_child_interrupt_wkups uint64_t
-	Fri_child_pageins         uint64_t
-	Fri_child_elapsed_abstime uint64_t
-}
-
-type rusage_info_v2 = struct {
-	Fri_uuid                  [16]uint8_t
-	Fri_user_time             uint64_t
-	Fri_system_time           uint64_t
-	Fri_pkg_idle_wkups        uint64_t
-	Fri_interrupt_wkups       uint64_t
-	Fri_pageins               uint64_t
-	Fri_wired_size            uint64_t
-	Fri_resident_size         uint64_t
-	Fri_phys_footprint        uint64_t
-	Fri_proc_start_abstime    uint64_t
-	Fri_proc_exit_abstime     uint64_t
-	Fri_child_user_time       uint64_t
-	Fri_child_system_time     uint64_t
-	Fri_child_pkg_idle_wkups  uint64_t
-	Fri_child_interrupt_wkups uint64_t
-	Fri_child_pageins         uint64_t
-	Fri_child_elapsed_abstime uint64_t
-	Fri_diskio_bytesread      uint64_t
-	Fri_diskio_byteswritten   uint64_t
-}
-
-type rusage_info_v3 = struct {
-	Fri_uuid                          [16]uint8_t
-	Fri_user_time                     uint64_t
-	Fri_system_time                   uint64_t
-	Fri_pkg_idle_wkups                uint64_t
-	Fri_interrupt_wkups               uint64_t
-	Fri_pageins                       uint64_t
-	Fri_wired_size                    uint64_t
-	Fri_resident_size                 uint64_t
-	Fri_phys_footprint                uint64_t
-	Fri_proc_start_abstime            uint64_t
-	Fri_proc_exit_abstime             uint64_t
-	Fri_child_user_time               uint64_t
-	Fri_child_system_time             uint64_t
-	Fri_child_pkg_idle_wkups          uint64_t
-	Fri_child_interrupt_wkups         uint64_t
-	Fri_child_pageins                 uint64_t
-	Fri_child_elapsed_abstime         uint64_t
-	Fri_diskio_bytesread              uint64_t
-	Fri_diskio_byteswritten           uint64_t
-	Fri_cpu_time_qos_default          uint64_t
-	Fri_cpu_time_qos_maintenance      uint64_t
-	Fri_cpu_time_qos_background       uint64_t
-	Fri_cpu_time_qos_utility          uint64_t
-	Fri_cpu_time_qos_legacy           uint64_t
-	Fri_cpu_time_qos_user_initiated   uint64_t
-	Fri_cpu_time_qos_user_interactive uint64_t
-	Fri_billed_system_time            uint64_t
-	Fri_serviced_system_time          uint64_t
-}
-
-type rusage_info_v4 = struct {
-	Fri_uuid                          [16]uint8_t
-	Fri_user_time                     uint64_t
-	Fri_system_time                   uint64_t
-	Fri_pkg_idle_wkups                uint64_t
-	Fri_interrupt_wkups               uint64_t
-	Fri_pageins                       uint64_t
-	Fri_wired_size                    uint64_t
-	Fri_resident_size                 uint64_t
-	Fri_phys_footprint                uint64_t
-	Fri_proc_start_abstime            uint64_t
-	Fri_proc_exit_abstime             uint64_t
-	Fri_child_user_time               uint64_t
-	Fri_child_system_time             uint64_t
-	Fri_child_pkg_idle_wkups          uint64_t
-	Fri_child_interrupt_wkups         uint64_t
-	Fri_child_pageins                 uint64_t
-	Fri_child_elapsed_abstime         uint64_t
-	Fri_diskio_bytesread              uint64_t
-	Fri_diskio_byteswritten           uint64_t
-	Fri_cpu_time_qos_default          uint64_t
-	Fri_cpu_time_qos_maintenance      uint64_t
-	Fri_cpu_time_qos_background       uint64_t
-	Fri_cpu_time_qos_utility          uint64_t
-	Fri_cpu_time_qos_legacy           uint64_t
-	Fri_cpu_time_qos_user_initiated   uint64_t
-	Fri_cpu_time_qos_user_interactive uint64_t
-	Fri_billed_system_time            uint64_t
-	Fri_serviced_system_time          uint64_t
-	Fri_logical_writes                uint64_t
-	Fri_lifetime_max_phys_footprint   uint64_t
-	Fri_instructions                  uint64_t
-	Fri_cycles                        uint64_t
-	Fri_billed_energy                 uint64_t
-	Fri_serviced_energy               uint64_t
-	Fri_interval_max_phys_footprint   uint64_t
-	Fri_runnable_time                 uint64_t
-}
-
-type rusage_info_v5 = struct {
-	Fri_uuid                          [16]uint8_t
-	Fri_user_time                     uint64_t
-	Fri_system_time                   uint64_t
-	Fri_pkg_idle_wkups                uint64_t
-	Fri_interrupt_wkups               uint64_t
-	Fri_pageins                       uint64_t
-	Fri_wired_size                    uint64_t
-	Fri_resident_size                 uint64_t
-	Fri_phys_footprint                uint64_t
-	Fri_proc_start_abstime            uint64_t
-	Fri_proc_exit_abstime             uint64_t
-	Fri_child_user_time               uint64_t
-	Fri_child_system_time             uint64_t
-	Fri_child_pkg_idle_wkups          uint64_t
-	Fri_child_interrupt_wkups         uint64_t
-	Fri_child_pageins                 uint64_t
-	Fri_child_elapsed_abstime         uint64_t
-	Fri_diskio_bytesread              uint64_t
-	Fri_diskio_byteswritten           uint64_t
-	Fri_cpu_time_qos_default          uint64_t
-	Fri_cpu_time_qos_maintenance      uint64_t
-	Fri_cpu_time_qos_background       uint64_t
-	Fri_cpu_time_qos_utility          uint64_t
-	Fri_cpu_time_qos_legacy           uint64_t
-	Fri_cpu_time_qos_user_initiated   uint64_t
-	Fri_cpu_time_qos_user_interactive uint64_t
-	Fri_billed_system_time            uint64_t
-	Fri_serviced_system_time          uint64_t
-	Fri_logical_writes                uint64_t
-	Fri_lifetime_max_phys_footprint   uint64_t
-	Fri_instructions                  uint64_t
-	Fri_cycles                        uint64_t
-	Fri_billed_energy                 uint64_t
-	Fri_serviced_energy               uint64_t
-	Fri_interval_max_phys_footprint   uint64_t
-	Fri_runnable_time                 uint64_t
-	Fri_flags                         uint64_t
-}
-
-type rusage_info_v6 = struct {
-	Fri_uuid                          [16]uint8_t
-	Fri_user_time                     uint64_t
-	Fri_system_time                   uint64_t
-	Fri_pkg_idle_wkups                uint64_t
-	Fri_interrupt_wkups               uint64_t
-	Fri_pageins                       uint64_t
-	Fri_wired_size                    uint64_t
-	Fri_resident_size                 uint64_t
-	Fri_phys_footprint                uint64_t
-	Fri_proc_start_abstime            uint64_t
-	Fri_proc_exit_abstime             uint64_t
-	Fri_child_user_time               uint64_t
-	Fri_child_system_time             uint64_t
-	Fri_child_pkg_idle_wkups          uint64_t
-	Fri_child_interrupt_wkups         uint64_t
-	Fri_child_pageins                 uint64_t
-	Fri_child_elapsed_abstime         uint64_t
-	Fri_diskio_bytesread              uint64_t
-	Fri_diskio_byteswritten           uint64_t
-	Fri_cpu_time_qos_default          uint64_t
-	Fri_cpu_time_qos_maintenance      uint64_t
-	Fri_cpu_time_qos_background       uint64_t
-	Fri_cpu_time_qos_utility          uint64_t
-	Fri_cpu_time_qos_legacy           uint64_t
-	Fri_cpu_time_qos_user_initiated   uint64_t
-	Fri_cpu_time_qos_user_interactive uint64_t
-	Fri_billed_system_time            uint64_t
-	Fri_serviced_system_time          uint64_t
-	Fri_logical_writes                uint64_t
-	Fri_lifetime_max_phys_footprint   uint64_t
-	Fri_instructions                  uint64_t
-	Fri_cycles                        uint64_t
-	Fri_billed_energy                 uint64_t
-	Fri_serviced_energy               uint64_t
-	Fri_interval_max_phys_footprint   uint64_t
-	Fri_runnable_time                 uint64_t
-	Fri_flags                         uint64_t
-	Fri_user_ptime                    uint64_t
-	Fri_system_ptime                  uint64_t
-	Fri_pinstructions                 uint64_t
-	Fri_pcycles                       uint64_t
-	Fri_energy_nj                     uint64_t
-	Fri_penergy_nj                    uint64_t
-	Fri_secure_time_in_system         uint64_t
-	Fri_secure_ptime_in_system        uint64_t
-	Fri_neural_footprint              uint64_t
-	Fri_lifetime_max_neural_footprint uint64_t
-	Fri_interval_max_neural_footprint uint64_t
-	Fri_reserved                      [9]uint64_t
-}
-
-type rusage_info_current = struct {
-	Fri_uuid                          [16]uint8_t
-	Fri_user_time                     uint64_t
-	Fri_system_time                   uint64_t
-	Fri_pkg_idle_wkups                uint64_t
-	Fri_interrupt_wkups               uint64_t
-	Fri_pageins                       uint64_t
-	Fri_wired_size                    uint64_t
-	Fri_resident_size                 uint64_t
-	Fri_phys_footprint                uint64_t
-	Fri_proc_start_abstime            uint64_t
-	Fri_proc_exit_abstime             uint64_t
-	Fri_child_user_time               uint64_t
-	Fri_child_system_time             uint64_t
-	Fri_child_pkg_idle_wkups          uint64_t
-	Fri_child_interrupt_wkups         uint64_t
-	Fri_child_pageins                 uint64_t
-	Fri_child_elapsed_abstime         uint64_t
-	Fri_diskio_bytesread              uint64_t
-	Fri_diskio_byteswritten           uint64_t
-	Fri_cpu_time_qos_default          uint64_t
-	Fri_cpu_time_qos_maintenance      uint64_t
-	Fri_cpu_time_qos_background       uint64_t
-	Fri_cpu_time_qos_utility          uint64_t
-	Fri_cpu_time_qos_legacy           uint64_t
-	Fri_cpu_time_qos_user_initiated   uint64_t
-	Fri_cpu_time_qos_user_interactive uint64_t
-	Fri_billed_system_time            uint64_t
-	Fri_serviced_system_time          uint64_t
-	Fri_logical_writes                uint64_t
-	Fri_lifetime_max_phys_footprint   uint64_t
-	Fri_instructions                  uint64_t
-	Fri_cycles                        uint64_t
-	Fri_billed_energy                 uint64_t
-	Fri_serviced_energy               uint64_t
-	Fri_interval_max_phys_footprint   uint64_t
-	Fri_runnable_time                 uint64_t
-	Fri_flags                         uint64_t
-	Fri_user_ptime                    uint64_t
-	Fri_system_ptime                  uint64_t
-	Fri_pinstructions                 uint64_t
-	Fri_pcycles                       uint64_t
-	Fri_energy_nj                     uint64_t
-	Fri_penergy_nj                    uint64_t
-	Fri_secure_time_in_system         uint64_t
-	Fri_secure_ptime_in_system        uint64_t
-	Fri_neural_footprint              uint64_t
-	Fri_lifetime_max_neural_footprint uint64_t
-	Fri_interval_max_neural_footprint uint64_t
-	Fri_reserved                      [9]uint64_t
-}
-
-type rlimit = struct {
-	Frlim_cur rlim_t
-	Frlim_max rlim_t
-}
-
-type proc_rlimit_control_wakeupmon = struct {
-	Fwm_flags uint32_t
-	Fwm_rate  int32_t
-}
-
-type wait = struct {
-	Fw_T [0]struct {
-		F__ccgo0 uint32
-	}
-	Fw_S [0]struct {
-		F__ccgo0 uint32
-	}
-	Fw_status int32
-}
-
-type ct_rune_t = int32
-
-type rune_t = int32
-
 type div_t = struct {
 	Fquot int32
 	Frem  int32
@@ -3070,337 +1532,293 @@ type lldiv_t = struct {
 	Frem  int64
 }
 
-type malloc_type_id_t = uint64
-
-type dev_t = int32
-
-type mode_t = uint16
-
-type rsize_t = uint64
-
-type errno_t = int32
+type locale_t = uintptr
 
 type float_t = float32
 
 type double_t = float64
 
-type __float2 = struct {
-	F__sinval float32
-	F__cosval float32
-}
+type mode_t = uint32
 
-type __double2 = struct {
-	F__sinval float64
-	F__cosval float64
-}
+type pid_t = int32
 
-type exception = struct {
-	Ftype1  int32
-	Fname   uintptr
-	Farg1   float64
-	Farg2   float64
-	Fretval float64
-}
-
-type wint_t = int32
-
-type _RuneEntry = struct {
-	F__min   __darwin_rune_t
-	F__max   __darwin_rune_t
-	F__map   __darwin_rune_t
-	F__types uintptr
-}
-
-type _RuneRange = struct {
-	F__nranges int32
-	F__ranges  uintptr
-}
-
-type _RuneCharClass = struct {
-	F__name [14]int8
-	F__mask __uint32_t
-}
-
-type _RuneLocale = struct {
-	F__magic        [8]int8
-	F__encoding     [32]int8
-	F__sgetrune     uintptr
-	F__sputrune     uintptr
-	F__invalid_rune __darwin_rune_t
-	F__runetype     [256]__uint32_t
-	F__maplower     [256]__darwin_rune_t
-	F__mapupper     [256]__darwin_rune_t
-	F__runetype_ext _RuneRange
-	F__maplower_ext _RuneRange
-	F__mapupper_ext _RuneRange
-	F__variable     uintptr
-	F__variable_len int32
-	F__ncharclasses int32
-	F__charclasses  uintptr
+type iovec = struct {
+	Fiov_base uintptr
+	Fiov_len  size_t
 }
 
 type flock1 = struct {
+	Fl_type   int16
+	Fl_whence int16
 	Fl_start  off_t
 	Fl_len    off_t
 	Fl_pid    pid_t
-	Fl_type   int16
-	Fl_whence int16
 }
 
-type timespec = struct {
-	Ftv_sec  __darwin_time_t
-	Ftv_nsec int64
+type file_handle = struct {
+	Fhandle_bytes uint32
+	Fhandle_type  int32
 }
 
-type flocktimeout = struct {
-	Ffl      flock1
-	Ftimeout timespec
+type f_owner_ex = struct {
+	Ftype1 int32
+	Fpid   pid_t
 }
 
-type radvisory = struct {
-	Fra_offset off_t
-	Fra_count  int32
+type blksize_t = int32
+
+type nlink_t = uint32
+
+type register_t = int64
+
+type time_t = int64
+
+type suseconds_t = int64
+
+type int8_t = int8
+
+type int16_t = int16
+
+type int32_t = int32
+
+type int64_t = int64
+
+type u_int64_t = uint64
+
+type ino_t = uint64
+
+type dev_t = uint64
+
+type blkcnt_t = int64
+
+type fsblkcnt_t = uint64
+
+type fsfilcnt_t = uint64
+
+type timer_t = uintptr
+
+type clockid_t = int32
+
+type clock_t = int64
+
+type id_t = uint32
+
+type uid_t = uint32
+
+type gid_t = uint32
+
+type key_t = int32
+
+type useconds_t = uint32
+
+type pthread_t = uintptr
+
+type pthread_once_t = int32
+
+type pthread_key_t = uint32
+
+type pthread_spinlock_t = int32
+
+type pthread_mutexattr_t = struct {
+	F__attr uint32
 }
 
-type fsignatures_t = struct {
-	Ffs_file_start       off_t
-	Ffs_blob_start       uintptr
-	Ffs_blob_size        size_t
-	Ffs_fsignatures_size size_t
-	Ffs_cdhash           [20]int8
-	Ffs_hash_type        int32
+type pthread_condattr_t = struct {
+	F__attr uint32
 }
 
-type fsignatures = fsignatures_t
-
-type fsupplement_t = struct {
-	Ffs_file_start off_t
-	Ffs_blob_start off_t
-	Ffs_blob_size  size_t
-	Ffs_orig_fd    int32
+type pthread_barrierattr_t = struct {
+	F__attr uint32
 }
 
-type fsupplement = fsupplement_t
-
-type fchecklv_t = struct {
-	Flv_file_start         off_t
-	Flv_error_message_size size_t
-	Flv_error_message      uintptr
+type pthread_rwlockattr_t = struct {
+	F__attr [2]uint32
 }
 
-type fchecklv = fchecklv_t
-
-type fgetsigsinfo_t = struct {
-	Ffg_file_start      off_t
-	Ffg_info_request    int32
-	Ffg_sig_is_platform int32
+type pthread_attr_t = struct {
+	F__u struct {
+		F__vi [0][14]int32
+		F__s  [0][7]uint64
+		F__i  [14]int32
+	}
 }
 
-type fgetsigsinfo = fgetsigsinfo_t
-
-type fstore_t = struct {
-	Ffst_flags      uint32
-	Ffst_posmode    int32
-	Ffst_offset     off_t
-	Ffst_length     off_t
-	Ffst_bytesalloc off_t
+type pthread_mutex_t = struct {
+	F__u struct {
+		F__vi [0][10]int32
+		F__p  [0][5]uintptr
+		F__i  [10]int32
+	}
 }
 
-type fstore = fstore_t
-
-type fpunchhole_t = struct {
-	Ffp_flags  uint32
-	Freserved  uint32
-	Ffp_offset off_t
-	Ffp_length off_t
+type pthread_cond_t = struct {
+	F__u struct {
+		F__vi [0][12]int32
+		F__p  [0][6]uintptr
+		F__i  [12]int32
+	}
 }
 
-type fpunchhole = fpunchhole_t
-
-type ftrimactivefile_t = struct {
-	Ffta_offset off_t
-	Ffta_length off_t
+type pthread_rwlock_t = struct {
+	F__u struct {
+		F__vi [0][14]int32
+		F__p  [0][7]uintptr
+		F__i  [14]int32
+	}
 }
 
-type ftrimactivefile = ftrimactivefile_t
-
-type fspecread_t = struct {
-	Ffsr_flags  uint32
-	Freserved   uint32
-	Ffsr_offset off_t
-	Ffsr_length off_t
+type pthread_barrier_t = struct {
+	F__u struct {
+		F__vi [0][8]int32
+		F__p  [0][4]uintptr
+		F__i  [8]int32
+	}
 }
 
-type fspecread = fspecread_t
+type u_int8_t = uint8
 
-type fattributiontag_t = struct {
-	Fft_flags            uint32
-	Fft_hash             uint64
-	Fft_attribution_name [255]int8
-}
+type u_int16_t = uint16
 
-type fattributiontag = fattributiontag_t
+type u_int32_t = uint32
 
-type log2phys = struct {
-	Fl2p_flags       uint32
-	Fl2p_contigbytes off_t
-	Fl2p_devoffset   off_t
-}
-
-type filesec_t = uintptr
-
-type filesec_property_t = int32
-
-const FILESEC_OWNER = 1
-const FILESEC_GROUP = 2
-const FILESEC_UUID = 3
-const FILESEC_MODE = 4
-const FILESEC_ACL = 5
-const FILESEC_GRPUUID = 6
-const FILESEC_ACL_RAW = 100
-const FILESEC_ACL_ALLOCSIZE = 101
+type caddr_t = uintptr
 
 type u_char = uint8
 
 type u_short = uint16
 
-type u_int = uint32
-
-type u_long = uint64
-
 type ushort = uint16
+
+type u_int = uint32
 
 type uint1 = uint32
 
-type u_quad_t = uint64
+type u_long = uint64
+
+type ulong = uint64
 
 type quad_t = int64
 
-type qaddr_t = uintptr
+type u_quad_t = uint64
 
-type caddr_t = uintptr
+type uint16_t = uint16
 
-type daddr_t = int32
+type uint32_t = uint32
 
-type fixpt_t = uint32
+type uint64_t = uint64
 
-type blkcnt_t = int64
+type timeval = struct {
+	Ftv_sec  time_t
+	Ftv_usec suseconds_t
+}
 
-type blksize_t = int32
+type timespec = struct {
+	Ftv_sec  time_t
+	Ftv_nsec int64
+}
 
-type gid_t = uint32
+type sigset_t = struct {
+	F__bits [16]uint64
+}
 
-type in_addr_t = uint32
+type __sigset_t = sigset_t
 
-type in_port_t = uint16
-
-type ino_t = uint64
-
-type ino64_t = uint64
-
-type key_t = int32
-
-type nlink_t = uint16
-
-type segsz_t = int32
-
-type swblk_t = int32
-
-type clock_t = uint64
-
-type time_t = int64
-
-type useconds_t = uint32
-
-type suseconds_t = int32
+type fd_mask = uint64
 
 type fd_set = struct {
-	Ffds_bits [32]__int32_t
-}
-
-type fd_mask = int32
-
-type pthread_cond_t = struct {
-	F__sig    int64
-	F__opaque [40]int8
-}
-
-type pthread_condattr_t = struct {
-	F__sig    int64
-	F__opaque [8]int8
-}
-
-type pthread_mutex_t = struct {
-	F__sig    int64
-	F__opaque [56]int8
-}
-
-type pthread_mutexattr_t = struct {
-	F__sig    int64
-	F__opaque [8]int8
-}
-
-type pthread_once_t = struct {
-	F__sig    int64
-	F__opaque [8]int8
-}
-
-type pthread_rwlock_t = struct {
-	F__sig    int64
-	F__opaque [192]int8
-}
-
-type pthread_rwlockattr_t = struct {
-	F__sig    int64
-	F__opaque [16]int8
-}
-
-type pthread_t = uintptr
-
-type pthread_key_t = uint64
-
-type fsblkcnt_t = uint32
-
-type fsfilcnt_t = uint32
-
-type ostat = struct {
-	Fst_dev       __uint16_t
-	Fst_ino       ino_t
-	Fst_mode      mode_t
-	Fst_nlink     nlink_t
-	Fst_uid       __uint16_t
-	Fst_gid       __uint16_t
-	Fst_rdev      __uint16_t
-	Fst_size      __int32_t
-	Fst_atimespec timespec
-	Fst_mtimespec timespec
-	Fst_ctimespec timespec
-	Fst_blksize   __int32_t
-	Fst_blocks    __int32_t
-	Fst_flags     __uint32_t
-	Fst_gen       __uint32_t
+	Ffds_bits [16]uint64
 }
 
 type stat1 = struct {
-	Fst_dev           dev_t
-	Fst_mode          mode_t
-	Fst_nlink         nlink_t
-	Fst_ino           __darwin_ino64_t
-	Fst_uid           uid_t
-	Fst_gid           gid_t
-	Fst_rdev          dev_t
-	Fst_atimespec     timespec
-	Fst_mtimespec     timespec
-	Fst_ctimespec     timespec
-	Fst_birthtimespec timespec
-	Fst_size          off_t
-	Fst_blocks        blkcnt_t
-	Fst_blksize       blksize_t
-	Fst_flags         __uint32_t
-	Fst_gen           __uint32_t
-	Fst_lspare        __int32_t
-	Fst_qspare        [2]__int64_t
+	Fst_dev     dev_t
+	Fst_ino     ino_t
+	Fst_mode    mode_t
+	Fst_nlink   nlink_t
+	Fst_uid     uid_t
+	Fst_gid     gid_t
+	Fst_rdev    dev_t
+	F__pad      uint64
+	Fst_size    off_t
+	Fst_blksize blksize_t
+	F__pad2     int32
+	Fst_blocks  blkcnt_t
+	Fst_atim    timespec
+	Fst_mtim    timespec
+	Fst_ctim    timespec
+	F__unused   [2]uint32
 }
+
+type statx_timestamp = struct {
+	Ftv_sec  int64_t
+	Ftv_nsec uint32_t
+	F__pad   uint32_t
+}
+
+type statx1 = struct {
+	Fstx_mask            uint32_t
+	Fstx_blksize         uint32_t
+	Fstx_attributes      uint64_t
+	Fstx_nlink           uint32_t
+	Fstx_uid             uint32_t
+	Fstx_gid             uint32_t
+	Fstx_mode            uint16_t
+	F__pad0              [1]uint16_t
+	Fstx_ino             uint64_t
+	Fstx_size            uint64_t
+	Fstx_blocks          uint64_t
+	Fstx_attributes_mask uint64_t
+	Fstx_atime           statx_timestamp
+	Fstx_btime           statx_timestamp
+	Fstx_ctime           statx_timestamp
+	Fstx_mtime           statx_timestamp
+	Fstx_rdev_major      uint32_t
+	Fstx_rdev_minor      uint32_t
+	Fstx_dev_major       uint32_t
+	Fstx_dev_minor       uint32_t
+	F__pad1              [14]uint64_t
+}
+
+type uintptr_t = uint64
+
+type intptr_t = int64
+
+type intmax_t = int64
+
+type uint8_t = uint8
+
+type uintmax_t = uint64
+
+type int_fast8_t = int8
+
+type int_fast64_t = int64
+
+type int_least8_t = int8
+
+type int_least16_t = int16
+
+type int_least32_t = int32
+
+type int_least64_t = int64
+
+type uint_fast8_t = uint8
+
+type uint_fast64_t = uint64
+
+type uint_least8_t = uint8
+
+type uint_least16_t = uint16
+
+type uint_least32_t = uint32
+
+type uint_least64_t = uint64
+
+type int_fast16_t = int32
+
+type int_fast32_t = int32
+
+type uint_fast16_t = uint32
+
+type uint_fast32_t = uint32
 
 type imaxdiv_t = struct {
 	Fquot intmax_t
@@ -3505,7 +1923,7 @@ type gr_info = struct {
 	Fsfb_partition_table uintptr
 	Fslen                [4]int32
 	Fmax_nonzero_coeff   int32
-	Fenergy_above_cutoff [39]int8
+	Fenergy_above_cutoff [39]uint8
 }
 
 type III_side_info_t = struct {
@@ -3525,7 +1943,7 @@ const MIMETYPE_GIF = 3
 type FrameDataNode = struct {
 	Fnxt uintptr
 	Ffid uint32_t
-	Flng [4]int8
+	Flng [4]uint8
 	Fdsc struct {
 		Fptr struct {
 			Fu [0]uintptr
@@ -3559,7 +1977,7 @@ type id3tag_spec = struct {
 	Falbumart_size     uint32
 	Fpadding_size      uint32
 	Falbumart_mimetype int32
-	Flanguage          [4]int8
+	Flanguage          [4]uint8
 	Fv2_head           uintptr
 	Fv2_tail           uintptr
 }
@@ -3667,7 +2085,7 @@ type EncStateVar_t = struct {
 	Fheader     [256]struct {
 		Fwrite_timing int32
 		Fptr          int32
-		Fbuf          [40]int8
+		Fbuf          [40]uint8
 	}
 	Fh_ptr                int32
 	Fw_ptr                int32
@@ -3704,7 +2122,7 @@ type QntStateVar_t = struct {
 	Fpseudohalf        [39]int32
 	Fsfb21_extra       int32
 	Fsubstep_shaping   int32
-	Fbv_scf            [576]int8
+	Fbv_scf            [576]uint8
 }
 
 type RpgStateVar_t = struct {
@@ -3805,8 +2223,8 @@ type huffcodetab = struct {
 	Fhlen   uintptr
 }
 
-var VBRTag0 = [5]int8{'X', 'i', 'n', 'g'}
-var VBRTag1 = [5]int8{'I', 'n', 'f', 'o'}
+var VBRTag0 = [5]uint8{'X', 'i', 'n', 'g'}
+var VBRTag1 = [5]uint8{'I', 'n', 'f', 'o'}
 
 /* Lookup table for fast CRC computation
  * See 'CRC_update_lookup'
@@ -4147,15 +2565,17 @@ func Xing_seek_table(tls *libc.TLS, v uintptr, t uintptr) {
 //	*/
 func AddVbrFrame(tls *libc.TLS, gfc uintptr) {
 	var kbps int32
-	_ = kbps
+	var v1 bool
+	_, _ = kbps, v1
 	kbps = *(*int32)(unsafe.Pointer(uintptr(unsafe.Pointer(&bitrate_table)) + uintptr((*lame_internal_flags)(unsafe.Pointer(gfc)).Fcfg.Fversion)*64 + uintptr((*lame_internal_flags)(unsafe.Pointer(gfc)).Fov_enc.Fbitrate_index)*4))
-	if libc.BoolInt64(!((*lame_internal_flags)(unsafe.Pointer(gfc)).FVBR_seek_table.Fbag != 0)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__)), __ccgo_ts, int32(199), __ccgo_ts+86)
+	if v1 = (*lame_internal_flags)(unsafe.Pointer(gfc)).FVBR_seek_table.Fbag != 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts, __ccgo_ts+24, int32(199), uintptr(unsafe.Pointer(&__func__)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	addVbr(tls, gfc+88448, kbps)
 }
 
-var __func__ = [12]int8{'A', 'd', 'd', 'V', 'b', 'r', 'F', 'r', 'a', 'm', 'e'}
+var __func__ = [12]uint8{'A', 'd', 'd', 'V', 'b', 'r', 'F', 'r', 'a', 'm', 'e'}
 
 // C documentation
 //
@@ -4194,13 +2614,13 @@ func CreateI2(tls *libc.TLS, buf uintptr, nValue int32) {
 func IsVbrTag(tls *libc.TLS, buf uintptr) (r int32) {
 	var isTag0, isTag1 int32
 	_, _ = isTag0, isTag1
-	isTag0 = libc.BoolInt32(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf))) == int32(VBRTag0[0]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 1))) == int32(VBRTag0[int32(1)]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 2))) == int32(VBRTag0[int32(2)]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 3))) == int32(VBRTag0[int32(3)]))
-	isTag1 = libc.BoolInt32(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf))) == int32(VBRTag1[0]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 1))) == int32(VBRTag1[int32(1)]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 2))) == int32(VBRTag1[int32(2)]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 3))) == int32(VBRTag1[int32(3)]))
+	isTag0 = libc.BoolInt32(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf))) == libc.Int32FromUint8(VBRTag0[0]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 1))) == libc.Int32FromUint8(VBRTag0[int32(1)]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 2))) == libc.Int32FromUint8(VBRTag0[int32(2)]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 3))) == libc.Int32FromUint8(VBRTag0[int32(3)]))
+	isTag1 = libc.BoolInt32(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf))) == libc.Int32FromUint8(VBRTag1[0]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 1))) == libc.Int32FromUint8(VBRTag1[int32(1)]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 2))) == libc.Int32FromUint8(VBRTag1[int32(2)]) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buf + 3))) == libc.Int32FromUint8(VBRTag1[int32(3)]))
 	return libc.BoolInt32(isTag0 != 0 || isTag1 != 0)
 }
 
 func setLameTagFrameHeader(tls *libc.TLS, gfc uintptr, buffer uintptr) {
-	var abyte, bbyte int8
+	var abyte, bbyte uint8
 	var bitrate, v1 int32
 	var cfg, eov uintptr
 	_, _, _, _, _, _ = abyte, bbyte, bitrate, cfg, eov, v1
@@ -4235,7 +2655,7 @@ func setLameTagFrameHeader(tls *libc.TLS, gfc uintptr, buffer uintptr) {
 	/* but sampling freq, mode andy copyright/copy protection taken */
 	/* from first valid frame */
 	*(*uint8)(unsafe.Pointer(buffer)) = libc.Uint8FromInt32(0xff)
-	abyte = int8(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buffer + 1))) & libc.Int32FromUint8(libc.Uint8FromInt32(0xf1)))
+	abyte = libc.Uint8FromInt32(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buffer + 1))) & libc.Int32FromUint8(libc.Uint8FromInt32(0xf1)))
 	if int32(1) == (*SessionConfig_t)(unsafe.Pointer(cfg)).Fversion {
 		bitrate = int32(XING_BITRATE1)
 	} else {
@@ -4249,23 +2669,23 @@ func setLameTagFrameHeader(tls *libc.TLS, gfc uintptr, buffer uintptr) {
 		bitrate = (*SessionConfig_t)(unsafe.Pointer(cfg)).Favg_bitrate
 	}
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Ffree_format != 0 {
-		bbyte = 0x00
+		bbyte = uint8(0x00)
 	} else {
-		bbyte = int8(int32(16) * BitrateIndex(tls, bitrate, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fversion, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_out))
+		bbyte = libc.Uint8FromInt32(int32(16) * BitrateIndex(tls, bitrate, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fversion, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_out))
 	}
 	/* Use as much of the info from the real frames in the
 	 * Xing header:  samplerate, channels, crc, etc...
 	 */
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fversion == int32(1) {
 		/* MPEG1 */
-		*(*uint8)(unsafe.Pointer(buffer + 1)) = libc.Uint8FromInt32(int32(abyte) | int32(libc.Int8FromInt32(0x0a))) /* was 0x0b; */
-		abyte = int8(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buffer + 2))) & int32(libc.Int8FromInt32(0x0d)))  /* AF keep also private bit */
-		*(*uint8)(unsafe.Pointer(buffer + 2)) = libc.Uint8FromInt32(int32(bbyte) | int32(abyte))                    /* 64kbs MPEG1 frame */
+		*(*uint8)(unsafe.Pointer(buffer + 1)) = libc.Uint8FromInt32(libc.Int32FromUint8(abyte) | libc.Int32FromUint8(libc.Uint8FromInt32(0x0a))) /* was 0x0b; */
+		abyte = libc.Uint8FromInt32(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buffer + 2))) & libc.Int32FromUint8(libc.Uint8FromInt32(0x0d))) /* AF keep also private bit */
+		*(*uint8)(unsafe.Pointer(buffer + 2)) = libc.Uint8FromInt32(libc.Int32FromUint8(bbyte) | libc.Int32FromUint8(abyte))                     /* 64kbs MPEG1 frame */
 	} else {
 		/* MPEG2 */
-		*(*uint8)(unsafe.Pointer(buffer + 1)) = libc.Uint8FromInt32(int32(abyte) | int32(libc.Int8FromInt32(0x02))) /* was 0x03; */
-		abyte = int8(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buffer + 2))) & int32(libc.Int8FromInt32(0x0d)))  /* AF keep also private bit */
-		*(*uint8)(unsafe.Pointer(buffer + 2)) = libc.Uint8FromInt32(int32(bbyte) | int32(abyte))                    /* 64kbs MPEG2 frame */
+		*(*uint8)(unsafe.Pointer(buffer + 1)) = libc.Uint8FromInt32(libc.Int32FromUint8(abyte) | libc.Int32FromUint8(libc.Uint8FromInt32(0x02))) /* was 0x03; */
+		abyte = libc.Uint8FromInt32(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(buffer + 2))) & libc.Int32FromUint8(libc.Uint8FromInt32(0x0d))) /* AF keep also private bit */
+		*(*uint8)(unsafe.Pointer(buffer + 2)) = libc.Uint8FromInt32(libc.Int32FromUint8(bbyte) | libc.Int32FromUint8(abyte))                     /* 64kbs MPEG2 frame */
 	}
 }
 
@@ -4715,7 +3135,7 @@ func skipId3v2(tls *libc.TLS, fpStream uintptr) (r int64) {
 	var _ /* id3v2Header at bp+0 */ [10]uint8
 	_, _ = id3v2TagSize, nbytes
 	/* seek to the beginning of the stream */
-	if libc.Xfseek(tls, fpStream, 0, SEEK_SET) != 0 {
+	if libc.Xfseek(tls, fpStream, 0, 0) != 0 {
 		return int64(-int32(2)) /* not seekable, abort */
 	}
 	/* read 10 bytes in case there's an ID3 version 2 header here */
@@ -4802,29 +3222,29 @@ func lame_get_lametag_frame(tls *libc.TLS, gfp uintptr, buffer uintptr, size siz
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr == int32(vbr_off) {
 		v2 = nStreamIndex
 		nStreamIndex = nStreamIndex + 1
-		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = libc.Uint8FromInt8(VBRTag1[0])
+		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = VBRTag1[0]
 		v2 = nStreamIndex
 		nStreamIndex = nStreamIndex + 1
-		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = libc.Uint8FromInt8(VBRTag1[int32(1)])
+		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = VBRTag1[int32(1)]
 		v2 = nStreamIndex
 		nStreamIndex = nStreamIndex + 1
-		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = libc.Uint8FromInt8(VBRTag1[int32(2)])
+		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = VBRTag1[int32(2)]
 		v2 = nStreamIndex
 		nStreamIndex = nStreamIndex + 1
-		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = libc.Uint8FromInt8(VBRTag1[int32(3)])
+		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = VBRTag1[int32(3)]
 	} else {
 		v2 = nStreamIndex
 		nStreamIndex = nStreamIndex + 1
-		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = libc.Uint8FromInt8(VBRTag0[0])
+		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = VBRTag0[0]
 		v2 = nStreamIndex
 		nStreamIndex = nStreamIndex + 1
-		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = libc.Uint8FromInt8(VBRTag0[int32(1)])
+		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = VBRTag0[int32(1)]
 		v2 = nStreamIndex
 		nStreamIndex = nStreamIndex + 1
-		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = libc.Uint8FromInt8(VBRTag0[int32(2)])
+		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = VBRTag0[int32(2)]
 		v2 = nStreamIndex
 		nStreamIndex = nStreamIndex + 1
-		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = libc.Uint8FromInt8(VBRTag0[int32(3)])
+		*(*uint8)(unsafe.Pointer(buffer + uintptr(v2))) = VBRTag0[int32(3)]
 	}
 	/* Put header flags */
 	CreateI4(tls, buffer+uintptr(nStreamIndex), libc.Uint32FromInt32(libc.Int32FromInt32(FRAMES_FLAG)+libc.Int32FromInt32(BYTES_FLAG)+libc.Int32FromInt32(TOC_FLAG)+libc.Int32FromInt32(VBR_SCALE_FLAG)))
@@ -4883,7 +3303,7 @@ func PutVbrTag(tls *libc.TLS, gfp uintptr, fpStream uintptr) (r int32) {
 		return -int32(1)
 	}
 	/* Seek to end of file */
-	libc.Xfseek(tls, fpStream, 0, int32(SEEK_END))
+	libc.Xfseek(tls, fpStream, 0, int32(2))
 	/* Get file size */
 	lFileSize = libc.Xftell(tls, fpStream)
 	/* Abort if file has zero length. Yes, it can happen :) */
@@ -4900,7 +3320,7 @@ func PutVbrTag(tls *libc.TLS, gfp uintptr, fpStream uintptr) (r int32) {
 		return int32(id3v2TagSize)
 	}
 	/*Seek to the beginning of the stream */
-	libc.Xfseek(tls, fpStream, id3v2TagSize, SEEK_SET)
+	libc.Xfseek(tls, fpStream, id3v2TagSize, 0)
 	nbytes = lame_get_lametag_frame(tls, gfp, bp, uint64(2880))
 	if nbytes > uint64(2880) {
 		return -int32(1)
@@ -5050,7 +3470,8 @@ func calcFrameLength(tls *libc.TLS, cfg uintptr, kbps int32, pad int32) (r int32
 func getframebits(tls *libc.TLS, gfc uintptr) (r int32) {
 	var bit_rate int32
 	var cfg, eov uintptr
-	_, _, _ = bit_rate, cfg, eov
+	var v1 bool
+	_, _, _, _ = bit_rate, cfg, eov, v1
 	cfg = gfc + 24
 	eov = gfc + 86688
 	/* get bitrate in kbps [?] */
@@ -5060,15 +3481,16 @@ func getframebits(tls *libc.TLS, gfc uintptr) (r int32) {
 		bit_rate = (*SessionConfig_t)(unsafe.Pointer(cfg)).Favg_bitrate
 	}
 	/*assert(bit_rate <= 550); */
-	if libc.BoolInt64(!(int32(8) <= bit_rate && bit_rate <= int32(640))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__1)), __ccgo_ts+154, int32(83), __ccgo_ts+243)
+	if v1 = int32(8) <= bit_rate && bit_rate <= int32(640); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+154, __ccgo_ts+187, int32(83), uintptr(unsafe.Pointer(&__func__1)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	/* main encoding routine toggles padding on and off */
 	/* one Layer3 Slot consists of 8 bits */
 	return calcFrameLength(tls, cfg, bit_rate, (*EncResult_t)(unsafe.Pointer(eov)).Fpadding)
 }
 
-var __func__1 = [13]int8{'g', 'e', 't', 'f', 'r', 'a', 'm', 'e', 'b', 'i', 't', 's'}
+var __func__1 = [13]uint8{'g', 'e', 't', 'f', 'r', 'a', 'm', 'e', 'b', 'i', 't', 's'}
 
 func get_max_frame_buffer_size_by_constraint(tls *libc.TLS, cfg uintptr, constraint int32) (r int32) {
 	var max_kbps, maxmp3buf int32
@@ -5121,100 +3543,111 @@ func putheader_bits(tls *libc.TLS, gfc uintptr) {
 //
 //	/*write j bits into the bit stream */
 func putbits2(tls *libc.TLS, gfc uintptr, val int32, j int32) {
-	var bs, esv, v2 uintptr
-	var k, v1 int32
-	_, _, _, _, _ = bs, esv, k, v1, v2
+	var bs, esv, v7 uintptr
+	var k, v4 int32
+	var v1 bool
+	_, _, _, _, _, _ = bs, esv, k, v1, v4, v7
 	esv = gfc + 27888
 	bs = gfc + 296
-	if libc.BoolInt64(!(j < libc.Int32FromInt32(MAX_LENGTH)-libc.Int32FromInt32(2))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__2)), __ccgo_ts+154, int32(158), __ccgo_ts+276)
+	if v1 = j < libc.Int32FromInt32(MAX_LENGTH)-libc.Int32FromInt32(2); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+276, __ccgo_ts+187, int32(158), uintptr(unsafe.Pointer(&__func__2)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	for j > 0 {
 		if (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx == 0 {
 			(*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx = int32(8)
 			(*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx + 1
-			if libc.BoolInt64(!((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx < libc.Int32FromInt32(16384)+libc.Int32FromInt32(128)*libc.Int32FromInt32(1024))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__2)), __ccgo_ts+154, int32(165), __ccgo_ts+295)
+			if v1 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx < libc.Int32FromInt32(16384)+libc.Int32FromInt32(128)*libc.Int32FromInt32(1024); !v1 {
+				libc.X__assert_fail(tls, __ccgo_ts+295, __ccgo_ts+187, int32(165), uintptr(unsafe.Pointer(&__func__2)))
 			}
-			if libc.BoolInt64(!((*(*struct {
+			_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+			if v1 = (*(*struct {
 				Fwrite_timing int32
 				Fptr          int32
-				Fbuf          [40]int8
-			})(unsafe.Pointer(esv + 14588 + uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fw_ptr)*48))).Fwrite_timing >= (*Bit_stream_struc)(unsafe.Pointer(bs)).Ftotbit)) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__2)), __ccgo_ts+154, int32(166), __ccgo_ts+326)
+				Fbuf          [40]uint8
+			})(unsafe.Pointer(esv + 14588 + uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fw_ptr)*48))).Fwrite_timing >= (*Bit_stream_struc)(unsafe.Pointer(bs)).Ftotbit; !v1 {
+				libc.X__assert_fail(tls, __ccgo_ts+326, __ccgo_ts+187, int32(166), uintptr(unsafe.Pointer(&__func__2)))
 			}
+			_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			if (*(*struct {
 				Fwrite_timing int32
 				Fptr          int32
-				Fbuf          [40]int8
+				Fbuf          [40]uint8
 			})(unsafe.Pointer(esv + 14588 + uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fw_ptr)*48))).Fwrite_timing == (*Bit_stream_struc)(unsafe.Pointer(bs)).Ftotbit {
 				putheader_bits(tls, gfc)
 			}
 			*(*uint8)(unsafe.Pointer((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf + uintptr((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx))) = uint8(0)
 		}
 		if j < (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx {
-			v1 = j
+			v4 = j
 		} else {
-			v1 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx
+			v4 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx
 		}
-		k = v1
+		k = v4
 		j = j - k
 		*(*int32)(unsafe.Pointer(bs + 20)) -= k
-		if libc.BoolInt64(!(j < libc.Int32FromInt32(MAX_LENGTH))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__2)), __ccgo_ts+154, int32(178), __ccgo_ts+377)
-		} /* 32 too large on 32 bit machines */
-		if libc.BoolInt64(!((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx < libc.Int32FromInt32(MAX_LENGTH))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__2)), __ccgo_ts+154, int32(179), __ccgo_ts+392)
+		if v1 = j < int32(MAX_LENGTH); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+377, __ccgo_ts+187, int32(178), uintptr(unsafe.Pointer(&__func__2)))
 		}
-		v2 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf + uintptr((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx)
-		*(*uint8)(unsafe.Pointer(v2)) = uint8(int32(*(*uint8)(unsafe.Pointer(v2))) | val>>j<<(*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx)
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0) /* 32 too large on 32 bit machines */
+		if v1 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx < int32(MAX_LENGTH); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+392, __ccgo_ts+187, int32(179), uintptr(unsafe.Pointer(&__func__2)))
+		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		v7 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf + uintptr((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx)
+		*(*uint8)(unsafe.Pointer(v7)) = uint8(int32(*(*uint8)(unsafe.Pointer(v7))) | val>>j<<(*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx)
 		*(*int32)(unsafe.Pointer(bs + 12)) += k
 	}
 }
 
-var __func__2 = [9]int8{'p', 'u', 't', 'b', 'i', 't', 's', '2'}
+var __func__2 = [9]uint8{'p', 'u', 't', 'b', 'i', 't', 's', '2'}
 
 // C documentation
 //
 //	/*write j bits into the bit stream, ignoring frame headers */
 func putbits_noheaders(tls *libc.TLS, gfc uintptr, val int32, j int32) {
-	var bs, v2 uintptr
-	var k, v1 int32
-	_, _, _, _ = bs, k, v1, v2
+	var bs, v6 uintptr
+	var k, v3 int32
+	var v1 bool
+	_, _, _, _, _ = bs, k, v1, v3, v6
 	bs = gfc + 296
-	if libc.BoolInt64(!(j < libc.Int32FromInt32(MAX_LENGTH)-libc.Int32FromInt32(2))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__3)), __ccgo_ts+154, int32(193), __ccgo_ts+276)
+	if v1 = j < libc.Int32FromInt32(MAX_LENGTH)-libc.Int32FromInt32(2); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+276, __ccgo_ts+187, int32(193), uintptr(unsafe.Pointer(&__func__3)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	for j > 0 {
 		if (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx == 0 {
 			(*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx = int32(8)
 			(*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx + 1
-			if libc.BoolInt64(!((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx < libc.Int32FromInt32(16384)+libc.Int32FromInt32(128)*libc.Int32FromInt32(1024))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__3)), __ccgo_ts+154, int32(200), __ccgo_ts+295)
+			if v1 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx < libc.Int32FromInt32(16384)+libc.Int32FromInt32(128)*libc.Int32FromInt32(1024); !v1 {
+				libc.X__assert_fail(tls, __ccgo_ts+295, __ccgo_ts+187, int32(200), uintptr(unsafe.Pointer(&__func__3)))
 			}
+			_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			*(*uint8)(unsafe.Pointer((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf + uintptr((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx))) = uint8(0)
 		}
 		if j < (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx {
-			v1 = j
+			v3 = j
 		} else {
-			v1 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx
+			v3 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx
 		}
-		k = v1
+		k = v3
 		j = j - k
 		*(*int32)(unsafe.Pointer(bs + 20)) -= k
-		if libc.BoolInt64(!(j < libc.Int32FromInt32(MAX_LENGTH))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__3)), __ccgo_ts+154, int32(209), __ccgo_ts+377)
-		} /* 32 too large on 32 bit machines */
-		if libc.BoolInt64(!((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx < libc.Int32FromInt32(MAX_LENGTH))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__3)), __ccgo_ts+154, int32(210), __ccgo_ts+392)
+		if v1 = j < int32(MAX_LENGTH); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+377, __ccgo_ts+187, int32(209), uintptr(unsafe.Pointer(&__func__3)))
 		}
-		v2 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf + uintptr((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx)
-		*(*uint8)(unsafe.Pointer(v2)) = uint8(int32(*(*uint8)(unsafe.Pointer(v2))) | val>>j<<(*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx)
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0) /* 32 too large on 32 bit machines */
+		if v1 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx < int32(MAX_LENGTH); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+392, __ccgo_ts+187, int32(210), uintptr(unsafe.Pointer(&__func__3)))
+		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		v6 = (*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf + uintptr((*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_byte_idx)
+		*(*uint8)(unsafe.Pointer(v6)) = uint8(int32(*(*uint8)(unsafe.Pointer(v6))) | val>>j<<(*Bit_stream_struc)(unsafe.Pointer(bs)).Fbuf_bit_idx)
 		*(*int32)(unsafe.Pointer(bs + 12)) += k
 	}
 }
 
-var __func__3 = [18]int8{'p', 'u', 't', 'b', 'i', 't', 's', '_', 'n', 'o', 'h', 'e', 'a', 'd', 'e', 'r', 's'}
+var __func__3 = [18]uint8{'p', 'u', 't', 'b', 'i', 't', 's', '_', 'n', 'o', 'h', 'e', 'a', 'd', 'e', 'r', 's'}
 
 /*
 Some combinations of bitrate, Fs, and stereo make it impossible to stuff
@@ -5225,12 +3658,14 @@ the ancillary data...
 func drain_into_ancillary(tls *libc.TLS, gfc uintptr, remainingBits int32) {
 	var cfg, esv, version uintptr
 	var i int32
-	_, _, _, _ = cfg, esv, i, version
+	var v1 bool
+	_, _, _, _, _ = cfg, esv, i, version, v1
 	cfg = gfc + 24
 	esv = gfc + 27888
-	if libc.BoolInt64(!(remainingBits >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__4)), __ccgo_ts+154, int32(231), __ccgo_ts+421)
+	if v1 = remainingBits >= 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+421, __ccgo_ts+187, int32(231), uintptr(unsafe.Pointer(&__func__4)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	if remainingBits >= int32(8) {
 		putbits2(tls, gfc, int32(0x4c), int32(8))
 		remainingBits = remainingBits - int32(8)
@@ -5256,9 +3691,9 @@ func drain_into_ancillary(tls *libc.TLS, gfc uintptr, remainingBits int32) {
 					break
 				}
 				remainingBits = remainingBits - int32(8)
-				putbits2(tls, gfc, int32(*(*int8)(unsafe.Pointer(version + uintptr(i)))), int32(8))
-				goto _1
-			_1:
+				putbits2(tls, gfc, libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(version + uintptr(i)))), int32(8))
+				goto _2
+			_2:
 				;
 				i = i + 1
 			}
@@ -5270,30 +3705,32 @@ func drain_into_ancillary(tls *libc.TLS, gfc uintptr, remainingBits int32) {
 		}
 		putbits2(tls, gfc, (*EncStateVar_t)(unsafe.Pointer(esv)).Fancillary_flag, int32(1))
 		*(*int32)(unsafe.Pointer(esv + 26884)) ^= libc.BoolInt32(!((*SessionConfig_t)(unsafe.Pointer(cfg)).Fdisable_reservoir != 0))
-		goto _2
-	_2:
+		goto _3
+	_3:
 		;
 		remainingBits = remainingBits - int32(1)
 	}
-	if libc.BoolInt64(!(remainingBits == libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__4)), __ccgo_ts+154, int32(264), __ccgo_ts+440)
+	if v1 = remainingBits == 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+440, __ccgo_ts+187, int32(264), uintptr(unsafe.Pointer(&__func__4)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 }
 
-var __func__4 = [21]int8{'d', 'r', 'a', 'i', 'n', '_', 'i', 'n', 't', 'o', '_', 'a', 'n', 'c', 'i', 'l', 'l', 'a', 'r', 'y'}
+var __func__4 = [21]uint8{'d', 'r', 'a', 'i', 'n', '_', 'i', 'n', 't', 'o', '_', 'a', 'n', 'c', 'i', 'l', 'l', 'a', 'r', 'y'}
 
 // C documentation
 //
 //	/*write N bits into the header */
 func writeheader(tls *libc.TLS, gfc uintptr, val int32, j int32) {
-	var esv, v2 uintptr
+	var esv, v3 uintptr
 	var k, ptr, v1 int32
-	_, _, _, _, _ = esv, k, ptr, v1, v2
+	var v2 bool
+	_, _, _, _, _, _ = esv, k, ptr, v1, v2, v3
 	esv = gfc + 27888
 	ptr = (*(*struct {
 		Fwrite_timing int32
 		Fptr          int32
-		Fbuf          [40]int8
+		Fbuf          [40]uint8
 	})(unsafe.Pointer(esv + 14588 + uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr)*48))).Fptr
 	for j > 0 {
 		if j < int32(8)-ptr&int32(7) {
@@ -5303,21 +3740,22 @@ func writeheader(tls *libc.TLS, gfc uintptr, val int32, j int32) {
 		}
 		k = v1
 		j = j - k
-		if libc.BoolInt64(!(j < libc.Int32FromInt32(MAX_LENGTH))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__5)), __ccgo_ts+154, int32(278), __ccgo_ts+377)
-		} /* >> 32  too large for 32 bit machines */
-		v2 = esv + 14588 + uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr)*48 + 8 + uintptr(ptr>>int32(3))
-		*(*int8)(unsafe.Pointer(v2)) = int8(int32(*(*int8)(unsafe.Pointer(v2))) | val>>j<<(libc.Int32FromInt32(8)-ptr&libc.Int32FromInt32(7)-k))
+		if v2 = j < int32(MAX_LENGTH); !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+377, __ccgo_ts+187, int32(278), uintptr(unsafe.Pointer(&__func__5)))
+		}
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0) /* >> 32  too large for 32 bit machines */
+		v3 = esv + 14588 + uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr)*48 + 8 + uintptr(ptr>>int32(3))
+		*(*uint8)(unsafe.Pointer(v3)) = uint8(int32(*(*uint8)(unsafe.Pointer(v3))) | val>>j<<(libc.Int32FromInt32(8)-ptr&libc.Int32FromInt32(7)-k))
 		ptr = ptr + k
 	}
 	(*(*struct {
 		Fwrite_timing int32
 		Fptr          int32
-		Fbuf          [40]int8
+		Fbuf          [40]uint8
 	})(unsafe.Pointer(esv + 14588 + uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr)*48))).Fptr = ptr
 }
 
-var __func__5 = [12]int8{'w', 'r', 'i', 't', 'e', 'h', 'e', 'a', 'd', 'e', 'r'}
+var __func__5 = [12]uint8{'w', 'r', 'i', 't', 'e', 'h', 'e', 'a', 'd', 'e', 'r'}
 
 func CRC_update(tls *libc.TLS, value int32, crc int32) (r int32) {
 	var i int32
@@ -5360,14 +3798,15 @@ func CRC_writeheader(tls *libc.TLS, gfc uintptr, header uintptr) {
 		;
 		i = i + 1
 	}
-	*(*int8)(unsafe.Pointer(header + 4)) = int8(crc >> int32(8))
-	*(*int8)(unsafe.Pointer(header + 5)) = int8(crc & int32(255))
+	*(*uint8)(unsafe.Pointer(header + 4)) = libc.Uint8FromInt32(crc >> int32(8))
+	*(*uint8)(unsafe.Pointer(header + 5)) = libc.Uint8FromInt32(crc & int32(255))
 }
 
 func encodeSideInfo2(tls *libc.TLS, gfc uintptr, bitsPerFrame int32) {
 	var band, ch, gr, old int32
 	var cfg, eov, esv, gi, gi1, l3_side uintptr
-	_, _, _, _, _, _, _, _, _, _ = band, cfg, ch, eov, esv, gi, gi1, gr, l3_side, old
+	var v1 bool
+	_, _, _, _, _, _, _, _, _, _, _ = band, cfg, ch, eov, esv, gi, gi1, gr, l3_side, old, v1
 	cfg = gfc + 24
 	eov = gfc + 86688
 	esv = gfc + 27888
@@ -5375,7 +3814,7 @@ func encodeSideInfo2(tls *libc.TLS, gfc uintptr, bitsPerFrame int32) {
 	(*(*struct {
 		Fwrite_timing int32
 		Fptr          int32
-		Fbuf          [40]int8
+		Fbuf          [40]uint8
 	})(unsafe.Pointer(esv + 14588 + uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr)*48))).Fptr = 0
 	libc.Xmemset(tls, esv+14588+uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr)*48+8, 0, libc.Uint64FromInt32((*SessionConfig_t)(unsafe.Pointer(cfg)).Fsideinfo_len))
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_out < int32(16000) {
@@ -5400,9 +3839,10 @@ func encodeSideInfo2(tls *libc.TLS, gfc uintptr, bitsPerFrame int32) {
 	}
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fversion == int32(1) {
 		/* MPEG1 */
-		if libc.BoolInt64(!((*III_side_info_t)(unsafe.Pointer(l3_side)).Fmain_data_begin >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__6)), __ccgo_ts+154, int32(354), __ccgo_ts+459)
+		if v1 = (*III_side_info_t)(unsafe.Pointer(l3_side)).Fmain_data_begin >= 0; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+459, __ccgo_ts+187, int32(354), uintptr(unsafe.Pointer(&__func__6)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		writeheader(tls, gfc, (*III_side_info_t)(unsafe.Pointer(l3_side)).Fmain_data_begin, int32(9))
 		if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fchannels_out == int32(2) {
 			writeheader(tls, gfc, (*III_side_info_t)(unsafe.Pointer(l3_side)).Fprivate_bits, int32(3))
@@ -5420,13 +3860,13 @@ func encodeSideInfo2(tls *libc.TLS, gfc uintptr, bitsPerFrame int32) {
 					break
 				}
 				writeheader(tls, gfc, *(*int32)(unsafe.Pointer(l3_side + 21072 + uintptr(ch)*16 + uintptr(band)*4)), int32(1))
-				goto _2
-			_2:
+				goto _3
+			_3:
 				;
 				band = band + 1
 			}
-			goto _1
-		_1:
+			goto _2
+		_2:
 			;
 			ch = ch + 1
 		}
@@ -5474,33 +3914,36 @@ func encodeSideInfo2(tls *libc.TLS, gfc uintptr, bitsPerFrame int32) {
 						*(*int32)(unsafe.Pointer(gi + 4796 + 2*4)) = int32(16)
 					}
 					writeheader(tls, gfc, *(*int32)(unsafe.Pointer(gi + 4796 + 2*4)), int32(5))
-					if libc.BoolInt64(!(0 <= (*gr_info)(unsafe.Pointer(gi)).Fregion0_count && (*gr_info)(unsafe.Pointer(gi)).Fregion0_count < int32(16))) != 0 {
-						libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__6)), __ccgo_ts+154, int32(405), __ccgo_ts+489)
+					if v1 = 0 <= (*gr_info)(unsafe.Pointer(gi)).Fregion0_count && (*gr_info)(unsafe.Pointer(gi)).Fregion0_count < int32(16); !v1 {
+						libc.X__assert_fail(tls, __ccgo_ts+489, __ccgo_ts+187, int32(405), uintptr(unsafe.Pointer(&__func__6)))
 					}
-					if libc.BoolInt64(!(0 <= (*gr_info)(unsafe.Pointer(gi)).Fregion1_count && (*gr_info)(unsafe.Pointer(gi)).Fregion1_count < int32(8))) != 0 {
-						libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__6)), __ccgo_ts+154, int32(406), __ccgo_ts+538)
+					_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+					if v1 = 0 <= (*gr_info)(unsafe.Pointer(gi)).Fregion1_count && (*gr_info)(unsafe.Pointer(gi)).Fregion1_count < int32(8); !v1 {
+						libc.X__assert_fail(tls, __ccgo_ts+538, __ccgo_ts+187, int32(406), uintptr(unsafe.Pointer(&__func__6)))
 					}
+					_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 					writeheader(tls, gfc, (*gr_info)(unsafe.Pointer(gi)).Fregion0_count, int32(4))
 					writeheader(tls, gfc, (*gr_info)(unsafe.Pointer(gi)).Fregion1_count, int32(3))
 				}
 				writeheader(tls, gfc, (*gr_info)(unsafe.Pointer(gi)).Fpreflag, int32(1))
 				writeheader(tls, gfc, (*gr_info)(unsafe.Pointer(gi)).Fscalefac_scale, int32(1))
 				writeheader(tls, gfc, (*gr_info)(unsafe.Pointer(gi)).Fcount1table_select, int32(1))
-				goto _4
-			_4:
+				goto _5
+			_5:
 				;
 				ch = ch + 1
 			}
-			goto _3
-		_3:
+			goto _4
+		_4:
 			;
 			gr = gr + 1
 		}
 	} else {
 		/* MPEG2 */
-		if libc.BoolInt64(!((*III_side_info_t)(unsafe.Pointer(l3_side)).Fmain_data_begin >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__6)), __ccgo_ts+154, int32(418), __ccgo_ts+459)
+		if v1 = (*III_side_info_t)(unsafe.Pointer(l3_side)).Fmain_data_begin >= 0; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+459, __ccgo_ts+187, int32(418), uintptr(unsafe.Pointer(&__func__6)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		writeheader(tls, gfc, (*III_side_info_t)(unsafe.Pointer(l3_side)).Fmain_data_begin, int32(8))
 		writeheader(tls, gfc, (*III_side_info_t)(unsafe.Pointer(l3_side)).Fprivate_bits, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fchannels_out)
 		gr = 0
@@ -5543,19 +3986,21 @@ func encodeSideInfo2(tls *libc.TLS, gfc uintptr, bitsPerFrame int32) {
 					*(*int32)(unsafe.Pointer(gi1 + 4796 + 2*4)) = int32(16)
 				}
 				writeheader(tls, gfc, *(*int32)(unsafe.Pointer(gi1 + 4796 + 2*4)), int32(5))
-				if libc.BoolInt64(!(0 <= (*gr_info)(unsafe.Pointer(gi1)).Fregion0_count && (*gr_info)(unsafe.Pointer(gi1)).Fregion0_count < int32(16))) != 0 {
-					libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__6)), __ccgo_ts+154, int32(458), __ccgo_ts+489)
+				if v1 = 0 <= (*gr_info)(unsafe.Pointer(gi1)).Fregion0_count && (*gr_info)(unsafe.Pointer(gi1)).Fregion0_count < int32(16); !v1 {
+					libc.X__assert_fail(tls, __ccgo_ts+489, __ccgo_ts+187, int32(458), uintptr(unsafe.Pointer(&__func__6)))
 				}
-				if libc.BoolInt64(!(0 <= (*gr_info)(unsafe.Pointer(gi1)).Fregion1_count && (*gr_info)(unsafe.Pointer(gi1)).Fregion1_count < int32(8))) != 0 {
-					libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__6)), __ccgo_ts+154, int32(459), __ccgo_ts+538)
+				_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+				if v1 = 0 <= (*gr_info)(unsafe.Pointer(gi1)).Fregion1_count && (*gr_info)(unsafe.Pointer(gi1)).Fregion1_count < int32(8); !v1 {
+					libc.X__assert_fail(tls, __ccgo_ts+538, __ccgo_ts+187, int32(459), uintptr(unsafe.Pointer(&__func__6)))
 				}
+				_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 				writeheader(tls, gfc, (*gr_info)(unsafe.Pointer(gi1)).Fregion0_count, int32(4))
 				writeheader(tls, gfc, (*gr_info)(unsafe.Pointer(gi1)).Fregion1_count, int32(3))
 			}
 			writeheader(tls, gfc, (*gr_info)(unsafe.Pointer(gi1)).Fscalefac_scale, int32(1))
 			writeheader(tls, gfc, (*gr_info)(unsafe.Pointer(gi1)).Fcount1table_select, int32(1))
-			goto _5
-		_5:
+			goto _9
+		_9:
 			;
 			ch = ch + 1
 		}
@@ -5565,22 +4010,23 @@ func encodeSideInfo2(tls *libc.TLS, gfc uintptr, bitsPerFrame int32) {
 		CRC_writeheader(tls, gfc, esv+14588+uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr)*48+8)
 	}
 	old = (*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr
-	if libc.BoolInt64(!((*(*struct {
+	if v1 = (*(*struct {
 		Fwrite_timing int32
 		Fptr          int32
-		Fbuf          [40]int8
-	})(unsafe.Pointer(esv + 14588 + uintptr(old)*48))).Fptr == (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsideinfo_len*libc.Int32FromInt32(8))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__6)), __ccgo_ts+154, int32(476), __ccgo_ts+586)
+		Fbuf          [40]uint8
+	})(unsafe.Pointer(esv + 14588 + uintptr(old)*48))).Fptr == (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsideinfo_len*int32(8); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+586, __ccgo_ts+187, int32(476), uintptr(unsafe.Pointer(&__func__6)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	(*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr = (old + int32(1)) & (libc.Int32FromInt32(MAX_HEADER_BUF) - libc.Int32FromInt32(1))
 	(*(*struct {
 		Fwrite_timing int32
 		Fptr          int32
-		Fbuf          [40]int8
+		Fbuf          [40]uint8
 	})(unsafe.Pointer(esv + 14588 + uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr)*48))).Fwrite_timing = (*(*struct {
 		Fwrite_timing int32
 		Fptr          int32
-		Fbuf          [40]int8
+		Fbuf          [40]uint8
 	})(unsafe.Pointer(esv + 14588 + uintptr(old)*48))).Fwrite_timing + bitsPerFrame
 	if (*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr == (*EncStateVar_t)(unsafe.Pointer(esv)).Fw_ptr {
 		/* yikes! we are out of header buffer space */
@@ -5588,20 +4034,22 @@ func encodeSideInfo2(tls *libc.TLS, gfc uintptr, bitsPerFrame int32) {
 	}
 }
 
-var __func__6 = [16]int8{'e', 'n', 'c', 'o', 'd', 'e', 'S', 'i', 'd', 'e', 'I', 'n', 'f', 'o', '2'}
+var __func__6 = [16]uint8{'e', 'n', 'c', 'o', 'd', 'e', 'S', 'i', 'd', 'e', 'I', 'n', 'f', 'o', '2'}
 
 func huffman_coder_count1(tls *libc.TLS, gfc uintptr, gi uintptr) (r int32) {
 	var bits, huffbits, i, p, v int32
 	var h, ix, xr uintptr
-	_, _, _, _, _, _, _, _ = bits, h, huffbits, i, ix, p, v, xr
+	var v1 bool
+	_, _, _, _, _, _, _, _, _ = bits, h, huffbits, i, ix, p, v, xr, v1
 	/* Write count1 area */
 	h = uintptr(unsafe.Pointer(&ht)) + uintptr((*gr_info)(unsafe.Pointer(gi)).Fcount1table_select+int32(32))*24
 	bits = 0
 	ix = gi + 2304 + uintptr((*gr_info)(unsafe.Pointer(gi)).Fbig_values)*4
 	xr = gi + uintptr((*gr_info)(unsafe.Pointer(gi)).Fbig_values)*4
-	if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(gi)).Fcount1table_select < libc.Int32FromInt32(2))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__7)), __ccgo_ts+154, int32(502), __ccgo_ts+681)
+	if v1 = (*gr_info)(unsafe.Pointer(gi)).Fcount1table_select < int32(2); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+681, __ccgo_ts+187, int32(502), uintptr(unsafe.Pointer(&__func__7)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	i = ((*gr_info)(unsafe.Pointer(gi)).Fcount1 - (*gr_info)(unsafe.Pointer(gi)).Fbig_values) / int32(4)
 	for {
 		if !(i > 0) {
@@ -5615,9 +4063,10 @@ func huffman_coder_count1(tls *libc.TLS, gfc uintptr, gi uintptr) (r int32) {
 			if *(*FLOAT)(unsafe.Pointer(xr)) < libc.Float32FromFloat32(0) {
 				huffbits = huffbits + 1
 			}
-			if libc.BoolInt64(!(v <= libc.Int32FromInt32(1))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__7)), __ccgo_ts+154, int32(513), __ccgo_ts+708)
+			if v1 = v <= int32(1); !v1 {
+				libc.X__assert_fail(tls, __ccgo_ts+708, __ccgo_ts+187, int32(513), uintptr(unsafe.Pointer(&__func__7)))
 			}
+			_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		}
 		v = *(*int32)(unsafe.Pointer(ix + 1*4))
 		if v != 0 {
@@ -5626,9 +4075,10 @@ func huffman_coder_count1(tls *libc.TLS, gfc uintptr, gi uintptr) (r int32) {
 			if *(*FLOAT)(unsafe.Pointer(xr + 1*4)) < libc.Float32FromFloat32(0) {
 				huffbits = huffbits + 1
 			}
-			if libc.BoolInt64(!(v <= libc.Int32FromInt32(1))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__7)), __ccgo_ts+154, int32(522), __ccgo_ts+708)
+			if v1 = v <= int32(1); !v1 {
+				libc.X__assert_fail(tls, __ccgo_ts+708, __ccgo_ts+187, int32(522), uintptr(unsafe.Pointer(&__func__7)))
 			}
+			_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		}
 		v = *(*int32)(unsafe.Pointer(ix + 2*4))
 		if v != 0 {
@@ -5637,9 +4087,10 @@ func huffman_coder_count1(tls *libc.TLS, gfc uintptr, gi uintptr) (r int32) {
 			if *(*FLOAT)(unsafe.Pointer(xr + 2*4)) < libc.Float32FromFloat32(0) {
 				huffbits = huffbits + 1
 			}
-			if libc.BoolInt64(!(v <= libc.Int32FromInt32(1))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__7)), __ccgo_ts+154, int32(531), __ccgo_ts+708)
+			if v1 = v <= int32(1); !v1 {
+				libc.X__assert_fail(tls, __ccgo_ts+708, __ccgo_ts+187, int32(531), uintptr(unsafe.Pointer(&__func__7)))
 			}
+			_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		}
 		v = *(*int32)(unsafe.Pointer(ix + 3*4))
 		if v != 0 {
@@ -5648,23 +4099,24 @@ func huffman_coder_count1(tls *libc.TLS, gfc uintptr, gi uintptr) (r int32) {
 			if *(*FLOAT)(unsafe.Pointer(xr + 3*4)) < libc.Float32FromFloat32(0) {
 				huffbits = huffbits + 1
 			}
-			if libc.BoolInt64(!(v <= libc.Int32FromInt32(1))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__7)), __ccgo_ts+154, int32(540), __ccgo_ts+708)
+			if v1 = v <= int32(1); !v1 {
+				libc.X__assert_fail(tls, __ccgo_ts+708, __ccgo_ts+187, int32(540), uintptr(unsafe.Pointer(&__func__7)))
 			}
+			_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		}
 		ix = ix + uintptr(4)*4
 		xr = xr + uintptr(4)*4
 		putbits2(tls, gfc, huffbits+libc.Int32FromUint16(*(*uint16_t)(unsafe.Pointer((*huffcodetab)(unsafe.Pointer(h)).Ftable + uintptr(p)*2))), libc.Int32FromUint8(*(*uint8_t)(unsafe.Pointer((*huffcodetab)(unsafe.Pointer(h)).Fhlen + uintptr(p)))))
 		bits = bits + libc.Int32FromUint8(*(*uint8_t)(unsafe.Pointer((*huffcodetab)(unsafe.Pointer(h)).Fhlen + uintptr(p))))
-		goto _1
-	_1:
+		goto _2
+	_2:
 		;
 		i = i - 1
 	}
 	return bits
 }
 
-var __func__7 = [21]int8{'h', 'u', 'f', 'f', 'm', 'a', 'n', '_', 'c', 'o', 'd', 'e', 'r', '_', 'c', 'o', 'u', 'n', 't', '1'}
+var __func__7 = [21]uint8{'h', 'u', 'f', 'f', 'm', 'a', 'n', '_', 'c', 'o', 'd', 'e', 'r', '_', 'c', 'o', 'u', 'n', 't', '1'}
 
 // C documentation
 //
@@ -5677,13 +4129,15 @@ func Huffmancode(tls *libc.TLS, gfc uintptr, tableindex uint32, start int32, end
 	var ext, linbits, x1, x2, xlen uint32
 	var h uintptr
 	var linbits_x1, linbits_x2, xbits uint16_t
-	_, _, _, _, _, _, _, _, _, _, _, _ = bits, cbits, ext, h, i, linbits, linbits_x1, linbits_x2, x1, x2, xbits, xlen
+	var v1 bool
+	_, _, _, _, _, _, _, _, _, _, _, _, _ = bits, cbits, ext, h, i, linbits, linbits_x1, linbits_x2, x1, x2, xbits, xlen, v1
 	h = uintptr(unsafe.Pointer(&ht)) + uintptr(tableindex)*24
 	linbits = (*huffcodetab)(unsafe.Pointer(h)).Fxlen
 	bits = 0
-	if libc.BoolInt64(!(tableindex < libc.Uint32FromUint32(32))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__8)), __ccgo_ts+154, int32(568), __ccgo_ts+715)
+	if v1 = tableindex < uint32(32); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+715, __ccgo_ts+187, int32(568), uintptr(unsafe.Pointer(&__func__8)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	if !(tableindex != 0) {
 		return bits
 	}
@@ -5698,12 +4152,14 @@ func Huffmancode(tls *libc.TLS, gfc uintptr, tableindex uint32, start int32, end
 		ext = uint32(0)
 		x1 = libc.Uint32FromInt32(*(*int32)(unsafe.Pointer(gi + 2304 + uintptr(i)*4)))
 		x2 = libc.Uint32FromInt32(*(*int32)(unsafe.Pointer(gi + 2304 + uintptr(i+int32(1))*4)))
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(gi + 2304 + uintptr(i)*4)) >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__8)), __ccgo_ts+154, int32(580), __ccgo_ts+732)
+		if v1 = *(*int32)(unsafe.Pointer(gi + 2304 + uintptr(i)*4)) >= 0; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+732, __ccgo_ts+187, int32(580), uintptr(unsafe.Pointer(&__func__8)))
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(gi + 2304 + uintptr(i+int32(1))*4)) >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__8)), __ccgo_ts+154, int32(581), __ccgo_ts+751)
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v1 = *(*int32)(unsafe.Pointer(gi + 2304 + uintptr(i+int32(1))*4)) >= 0; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+751, __ccgo_ts+187, int32(581), uintptr(unsafe.Pointer(&__func__8)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		if x1 != 0 {
 			if *(*FLOAT)(unsafe.Pointer(gi + uintptr(i)*4)) < libc.Float32FromFloat32(0) {
 				ext = ext + 1
@@ -5714,18 +4170,20 @@ func Huffmancode(tls *libc.TLS, gfc uintptr, tableindex uint32, start int32, end
 			/* use ESC-words */
 			if x1 >= uint32(15) {
 				linbits_x1 = uint16(x1 - uint32(15))
-				if libc.BoolInt64(!(uint32(linbits_x1) <= (*huffcodetab)(unsafe.Pointer(h)).Flinmax)) != 0 {
-					libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__8)), __ccgo_ts+154, int32(593), __ccgo_ts+772)
+				if v1 = uint32(linbits_x1) <= (*huffcodetab)(unsafe.Pointer(h)).Flinmax; !v1 {
+					libc.X__assert_fail(tls, __ccgo_ts+772, __ccgo_ts+187, int32(593), uintptr(unsafe.Pointer(&__func__8)))
 				}
+				_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 				ext = ext | libc.Uint32FromInt32(libc.Int32FromUint16(linbits_x1)<<uint32(1))
 				xbits = uint16(linbits)
 				x1 = uint32(15)
 			}
 			if x2 >= uint32(15) {
 				linbits_x2 = uint16(x2 - uint32(15))
-				if libc.BoolInt64(!(uint32(linbits_x2) <= (*huffcodetab)(unsafe.Pointer(h)).Flinmax)) != 0 {
-					libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__8)), __ccgo_ts+154, int32(601), __ccgo_ts+796)
+				if v1 = uint32(linbits_x2) <= (*huffcodetab)(unsafe.Pointer(h)).Flinmax; !v1 {
+					libc.X__assert_fail(tls, __ccgo_ts+796, __ccgo_ts+187, int32(601), uintptr(unsafe.Pointer(&__func__8)))
 				}
+				_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 				ext = ext << linbits
 				ext = ext | uint32(linbits_x2)
 				xbits = uint16(uint32(xbits) + linbits)
@@ -5740,30 +4198,33 @@ func Huffmancode(tls *libc.TLS, gfc uintptr, tableindex uint32, start int32, end
 			}
 			cbits = cbits - 1
 		}
-		if libc.BoolInt64(!(x1|x2 < libc.Uint32FromUint32(16))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__8)), __ccgo_ts+154, int32(617), __ccgo_ts+820)
+		if v1 = x1|x2 < uint32(16); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+820, __ccgo_ts+187, int32(617), uintptr(unsafe.Pointer(&__func__8)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		x1 = x1*xlen + x2
 		xbits = libc.Uint16FromInt32(int32(xbits) - int32(cbits))
 		cbits = int16(int32(cbits) + libc.Int32FromUint8(*(*uint8_t)(unsafe.Pointer((*huffcodetab)(unsafe.Pointer(h)).Fhlen + uintptr(x1)))))
-		if libc.BoolInt64(!(int32(cbits) <= libc.Int32FromInt32(MAX_LENGTH))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__8)), __ccgo_ts+154, int32(623), __ccgo_ts+836)
+		if v1 = int32(cbits) <= int32(MAX_LENGTH); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+836, __ccgo_ts+187, int32(623), uintptr(unsafe.Pointer(&__func__8)))
 		}
-		if libc.BoolInt64(!(libc.Int32FromUint16(xbits) <= libc.Int32FromInt32(MAX_LENGTH))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__8)), __ccgo_ts+154, int32(624), __ccgo_ts+856)
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v1 = libc.Int32FromUint16(xbits) <= int32(MAX_LENGTH); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+856, __ccgo_ts+187, int32(624), uintptr(unsafe.Pointer(&__func__8)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		putbits2(tls, gfc, libc.Int32FromUint16(*(*uint16_t)(unsafe.Pointer((*huffcodetab)(unsafe.Pointer(h)).Ftable + uintptr(x1)*2))), int32(cbits))
 		putbits2(tls, gfc, libc.Int32FromUint32(ext), libc.Int32FromUint16(xbits))
 		bits = bits + (int32(cbits) + libc.Int32FromUint16(xbits))
-		goto _1
-	_1:
+		goto _2
+	_2:
 		;
 		i = i + int32(2)
 	}
 	return bits
 }
 
-var __func__8 = [12]int8{'H', 'u', 'f', 'f', 'm', 'a', 'n', 'c', 'o', 'd', 'e'}
+var __func__8 = [12]uint8{'H', 'u', 'f', 'f', 'm', 'a', 'n', 'c', 'o', 'd', 'e'}
 
 // C documentation
 //
@@ -5788,26 +4249,32 @@ func ShortHuffmancodebits(tls *libc.TLS, gfc uintptr, gi uintptr) (r int32) {
 func LongHuffmancodebits(tls *libc.TLS, gfc uintptr, gi uintptr) (r int32) {
 	var bigvalues, bits, region1Start, region2Start int32
 	var i uint32
-	_, _, _, _, _ = bigvalues, bits, i, region1Start, region2Start
+	var v1 bool
+	_, _, _, _, _, _ = bigvalues, bits, i, region1Start, region2Start, v1
 	bigvalues = (*gr_info)(unsafe.Pointer(gi)).Fbig_values
-	if libc.BoolInt64(!(0 <= bigvalues && bigvalues <= int32(576))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__9)), __ccgo_ts+154, int32(662), __ccgo_ts+876)
+	if v1 = 0 <= bigvalues && bigvalues <= int32(576); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+876, __ccgo_ts+187, int32(662), uintptr(unsafe.Pointer(&__func__9)))
 	}
-	if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(gi)).Fregion0_count >= -libc.Int32FromInt32(1))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__9)), __ccgo_ts+154, int32(664), __ccgo_ts+911)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = (*gr_info)(unsafe.Pointer(gi)).Fregion0_count >= -int32(1); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+911, __ccgo_ts+187, int32(664), uintptr(unsafe.Pointer(&__func__9)))
 	}
-	if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(gi)).Fregion1_count >= -libc.Int32FromInt32(1))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__9)), __ccgo_ts+154, int32(665), __ccgo_ts+935)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = (*gr_info)(unsafe.Pointer(gi)).Fregion1_count >= -int32(1); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+935, __ccgo_ts+187, int32(665), uintptr(unsafe.Pointer(&__func__9)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	i = libc.Uint32FromInt32((*gr_info)(unsafe.Pointer(gi)).Fregion0_count + int32(1))
-	if libc.BoolInt64(!(uint64(i) < libc.Uint64FromInt64(92)/libc.Uint64FromInt64(4))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__9)), __ccgo_ts+154, int32(667), __ccgo_ts+959)
+	if v1 = uint64(i) < libc.Uint64FromInt64(92)/libc.Uint64FromInt64(4); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+959, __ccgo_ts+187, int32(667), uintptr(unsafe.Pointer(&__func__9)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	region1Start = *(*int32)(unsafe.Pointer(gfc + 21424 + uintptr(i)*4))
 	i = i + libc.Uint32FromInt32((*gr_info)(unsafe.Pointer(gi)).Fregion1_count+int32(1))
-	if libc.BoolInt64(!(uint64(i) < libc.Uint64FromInt64(92)/libc.Uint64FromInt64(4))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__9)), __ccgo_ts+154, int32(670), __ccgo_ts+959)
+	if v1 = uint64(i) < libc.Uint64FromInt64(92)/libc.Uint64FromInt64(4); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+959, __ccgo_ts+187, int32(670), uintptr(unsafe.Pointer(&__func__9)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	region2Start = *(*int32)(unsafe.Pointer(gfc + 21424 + uintptr(i)*4))
 	if region1Start > bigvalues {
 		region1Start = bigvalues
@@ -5821,12 +4288,13 @@ func LongHuffmancodebits(tls *libc.TLS, gfc uintptr, gi uintptr) (r int32) {
 	return bits
 }
 
-var __func__9 = [20]int8{'L', 'o', 'n', 'g', 'H', 'u', 'f', 'f', 'm', 'a', 'n', 'c', 'o', 'd', 'e', 'b', 'i', 't', 's'}
+var __func__9 = [20]uint8{'L', 'o', 'n', 'g', 'H', 'u', 'f', 'f', 'm', 'a', 'n', 'c', 'o', 'd', 'e', 'b', 'i', 't', 's'}
 
 func writeMainData(tls *libc.TLS, gfc uintptr) (r int32) {
 	var cfg, gi, gi1, l3_side uintptr
-	var ch, data_bits, gr, i, scale_bits, sfb, sfb_partition, sfbs, sfbs1, slen, slen1, slen11, slen2, tot_bits, v8 int32
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = cfg, ch, data_bits, gi, gi1, gr, i, l3_side, scale_bits, sfb, sfb_partition, sfbs, sfbs1, slen, slen1, slen11, slen2, tot_bits, v8
+	var ch, data_bits, gr, i, scale_bits, sfb, sfb_partition, sfbs, sfbs1, slen, slen1, slen11, slen2, tot_bits, v11 int32
+	var v5 bool
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = cfg, ch, data_bits, gi, gi1, gr, i, l3_side, scale_bits, sfb, sfb_partition, sfbs, sfbs1, slen, slen1, slen11, slen2, tot_bits, v11, v5
 	cfg = gfc + 24
 	l3_side = gfc + 320
 	tot_bits = 0
@@ -5875,9 +4343,10 @@ func writeMainData(tls *libc.TLS, gfc uintptr) (r int32) {
 					;
 					sfb = sfb + 1
 				}
-				if libc.BoolInt64(!(data_bits == (*gr_info)(unsafe.Pointer(gi)).Fpart2_length)) != 0 {
-					libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__10)), __ccgo_ts+154, int32(715), __ccgo_ts+1007)
+				if v5 = data_bits == (*gr_info)(unsafe.Pointer(gi)).Fpart2_length; !v5 {
+					libc.X__assert_fail(tls, __ccgo_ts+1007, __ccgo_ts+187, int32(715), uintptr(unsafe.Pointer(&__func__10)))
 				}
+				_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
 				if (*gr_info)(unsafe.Pointer(gi)).Fblock_type == int32(SHORT_TYPE) {
 					data_bits = data_bits + ShortHuffmancodebits(tls, gfc, gi)
 				} else {
@@ -5885,9 +4354,10 @@ func writeMainData(tls *libc.TLS, gfc uintptr) (r int32) {
 				}
 				data_bits = data_bits + huffman_coder_count1(tls, gfc, gi)
 				/* does bitcount in quantize.c agree with actual bit count? */
-				if libc.BoolInt64(!(data_bits == (*gr_info)(unsafe.Pointer(gi)).Fpart2_3_length+(*gr_info)(unsafe.Pointer(gi)).Fpart2_length)) != 0 {
-					libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__10)), __ccgo_ts+154, int32(728), __ccgo_ts+1037)
+				if v5 = data_bits == (*gr_info)(unsafe.Pointer(gi)).Fpart2_3_length+(*gr_info)(unsafe.Pointer(gi)).Fpart2_length; !v5 {
+					libc.X__assert_fail(tls, __ccgo_ts+1037, __ccgo_ts+187, int32(728), uintptr(unsafe.Pointer(&__func__10)))
 				}
+				_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
 				tot_bits = tot_bits + data_bits
 				goto _2
 			_2:
@@ -5909,9 +4379,10 @@ func writeMainData(tls *libc.TLS, gfc uintptr) (r int32) {
 			}
 			gi1 = l3_side + uintptr(gr)*10528 + uintptr(ch)*5264
 			scale_bits = 0
-			if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(gi1)).Fsfb_partition_table != 0)) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__10)), __ccgo_ts+154, int32(739), __ccgo_ts+1088)
+			if v5 = (*gr_info)(unsafe.Pointer(gi1)).Fsfb_partition_table != 0; !v5 {
+				libc.X__assert_fail(tls, __ccgo_ts+1088, __ccgo_ts+187, int32(739), uintptr(unsafe.Pointer(&__func__10)))
 			}
+			_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			data_bits = 0
 			sfb = 0
 			sfb_partition = 0
@@ -5928,32 +4399,32 @@ func writeMainData(tls *libc.TLS, gfc uintptr) (r int32) {
 							break
 						}
 						if *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb*int32(3)+0)*4)) > 0 {
-							v8 = *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb*int32(3)+0)*4))
+							v11 = *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb*int32(3)+0)*4))
 						} else {
-							v8 = 0
+							v11 = 0
 						}
-						putbits2(tls, gfc, v8, slen)
+						putbits2(tls, gfc, v11, slen)
 						if *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb*int32(3)+int32(1))*4)) > 0 {
-							v8 = *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb*int32(3)+int32(1))*4))
+							v11 = *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb*int32(3)+int32(1))*4))
 						} else {
-							v8 = 0
+							v11 = 0
 						}
-						putbits2(tls, gfc, v8, slen)
+						putbits2(tls, gfc, v11, slen)
 						if *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb*int32(3)+int32(2))*4)) > 0 {
-							v8 = *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb*int32(3)+int32(2))*4))
+							v11 = *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb*int32(3)+int32(2))*4))
 						} else {
-							v8 = 0
+							v11 = 0
 						}
-						putbits2(tls, gfc, v8, slen)
+						putbits2(tls, gfc, v11, slen)
 						scale_bits = scale_bits + int32(3)*slen
-						goto _7
-					_7:
+						goto _10
+					_10:
 						;
 						i = i + 1
 						sfb = sfb + 1
 					}
-					goto _6
-				_6:
+					goto _9
+				_9:
 					;
 					sfb_partition = sfb_partition + 1
 				}
@@ -5971,20 +4442,20 @@ func writeMainData(tls *libc.TLS, gfc uintptr) (r int32) {
 							break
 						}
 						if *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb)*4)) > 0 {
-							v8 = *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb)*4))
+							v11 = *(*int32)(unsafe.Pointer(gi1 + 4608 + uintptr(sfb)*4))
 						} else {
-							v8 = 0
+							v11 = 0
 						}
-						putbits2(tls, gfc, v8, slen1)
+						putbits2(tls, gfc, v11, slen1)
 						scale_bits = scale_bits + slen1
-						goto _12
-					_12:
+						goto _15
+					_15:
 						;
 						i = i + 1
 						sfb = sfb + 1
 					}
-					goto _11
-				_11:
+					goto _14
+				_14:
 					;
 					sfb_partition = sfb_partition + 1
 				}
@@ -5992,15 +4463,17 @@ func writeMainData(tls *libc.TLS, gfc uintptr) (r int32) {
 			}
 			data_bits = data_bits + huffman_coder_count1(tls, gfc, gi1)
 			/* does bitcount in quantize.c agree with actual bit count? */
-			if libc.BoolInt64(!(data_bits == (*gr_info)(unsafe.Pointer(gi1)).Fpart2_3_length)) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__10)), __ccgo_ts+154, int32(776), __ccgo_ts+1112)
+			if v5 = data_bits == (*gr_info)(unsafe.Pointer(gi1)).Fpart2_3_length; !v5 {
+				libc.X__assert_fail(tls, __ccgo_ts+1112, __ccgo_ts+187, int32(776), uintptr(unsafe.Pointer(&__func__10)))
 			}
-			if libc.BoolInt64(!(scale_bits == (*gr_info)(unsafe.Pointer(gi1)).Fpart2_length)) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__10)), __ccgo_ts+154, int32(777), __ccgo_ts+1144)
+			_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
+			if v5 = scale_bits == (*gr_info)(unsafe.Pointer(gi1)).Fpart2_length; !v5 {
+				libc.X__assert_fail(tls, __ccgo_ts+1144, __ccgo_ts+187, int32(777), uintptr(unsafe.Pointer(&__func__10)))
 			}
+			_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			tot_bits = tot_bits + (scale_bits + data_bits)
-			goto _5
-		_5:
+			goto _7
+		_7:
 			;
 			ch = ch + 1
 		} /* for ch */
@@ -6008,7 +4481,7 @@ func writeMainData(tls *libc.TLS, gfc uintptr) (r int32) {
 	return tot_bits
 }
 
-var __func__10 = [14]int8{'w', 'r', 'i', 't', 'e', 'M', 'a', 'i', 'n', 'D', 'a', 't', 'a'}
+var __func__10 = [14]uint8{'w', 'r', 'i', 't', 'e', 'M', 'a', 'i', 'n', 'D', 'a', 't', 'a'}
 
 /* main_data */
 
@@ -6044,7 +4517,7 @@ func compute_flushbits(tls *libc.TLS, gfc uintptr, total_bytes_output uintptr) (
 	flushbits = (*(*struct {
 		Fwrite_timing int32
 		Fptr          int32
-		Fbuf          [40]int8
+		Fbuf          [40]uint8
 	})(unsafe.Pointer(esv + 14588 + uintptr(last_ptr)*48))).Fwrite_timing - (*lame_internal_flags)(unsafe.Pointer(gfc)).Fbs.Ftotbit
 	*(*int32)(unsafe.Pointer(total_bytes_output)) = flushbits
 	if flushbits >= 0 {
@@ -6081,8 +4554,9 @@ func flush_bitstream(tls *libc.TLS, gfc uintptr) {
 	defer tls.Free(16)
 	var esv, l3_side uintptr
 	var flushbits, last_ptr, v1 int32
+	var v2 bool
 	var _ /* nbytes at bp+0 */ int32
-	_, _, _, _, _ = esv, flushbits, l3_side, last_ptr, v1
+	_, _, _, _, _, _ = esv, flushbits, l3_side, last_ptr, v1, v2
 	esv = gfc + 27888
 	last_ptr = (*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr - int32(1) /* last header to add to bitstream */
 	if last_ptr == -int32(1) {
@@ -6096,20 +4570,21 @@ func flush_bitstream(tls *libc.TLS, gfc uintptr) {
 	}
 	drain_into_ancillary(tls, gfc, flushbits)
 	/* check that the 100% of the last frame has been written to bitstream */
-	if libc.BoolInt64(!((*(*struct {
+	if v2 = (*(*struct {
 		Fwrite_timing int32
 		Fptr          int32
-		Fbuf          [40]int8
-	})(unsafe.Pointer(esv + 14588 + uintptr(last_ptr)*48))).Fwrite_timing+getframebits(tls, gfc) == (*lame_internal_flags)(unsafe.Pointer(gfc)).Fbs.Ftotbit)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__11)), __ccgo_ts+154, int32(880), __ccgo_ts+1211)
+		Fbuf          [40]uint8
+	})(unsafe.Pointer(esv + 14588 + uintptr(last_ptr)*48))).Fwrite_timing+getframebits(tls, gfc) == (*lame_internal_flags)(unsafe.Pointer(gfc)).Fbs.Ftotbit; !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+1211, __ccgo_ts+187, int32(880), uintptr(unsafe.Pointer(&__func__11)))
 	}
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	/* we have padded out all frames with ancillary data, which is the
 	   same as filling the bitreservoir with ancillary data, so : */
 	(*EncStateVar_t)(unsafe.Pointer(esv)).FResvSize = 0
 	(*III_side_info_t)(unsafe.Pointer(l3_side)).Fmain_data_begin = 0
 }
 
-var __func__11 = [16]int8{'f', 'l', 'u', 's', 'h', '_', 'b', 'i', 't', 's', 't', 'r', 'e', 'a', 'm'}
+var __func__11 = [16]uint8{'f', 'l', 'u', 's', 'h', '_', 'b', 'i', 't', 's', 't', 'r', 'e', 'a', 'm'}
 
 func add_dummy_byte(tls *libc.TLS, gfc uintptr, val uint8, n uint32) {
 	var esv uintptr
@@ -6132,7 +4607,7 @@ func add_dummy_byte(tls *libc.TLS, gfc uintptr, val uint8, n uint32) {
 			(*(*struct {
 				Fwrite_timing int32
 				Fptr          int32
-				Fbuf          [40]int8
+				Fbuf          [40]uint8
 			})(unsafe.Pointer(esv + 14588 + uintptr(i)*48))).Fwrite_timing += int32(8)
 			goto _2
 		_2:
@@ -6159,8 +4634,9 @@ func format_bitstream(tls *libc.TLS, gfc uintptr) (r int32) {
 	defer tls.Free(96)
 	var bits, bitsPerFrame, i int32
 	var cfg, esv, l3_side uintptr
+	var v1 bool
 	var _ /* nbytes at bp+0 */ int32
-	_, _, _, _, _, _ = bits, bitsPerFrame, cfg, esv, i, l3_side
+	_, _, _, _, _, _, _ = bits, bitsPerFrame, cfg, esv, i, l3_side, v1
 	cfg = gfc + 24
 	esv = gfc + 27888
 	l3_side = gfc + 320
@@ -6187,9 +4663,10 @@ func format_bitstream(tls *libc.TLS, gfc uintptr) (r int32) {
 		lame_errorf(tls, gfc, __ccgo_ts+1780, 0)
 		(*EncStateVar_t)(unsafe.Pointer(esv)).FResvSize = (*III_side_info_t)(unsafe.Pointer(l3_side)).Fmain_data_begin * int32(8)
 	}
-	if libc.BoolInt64(!((*lame_internal_flags)(unsafe.Pointer(gfc)).Fbs.Ftotbit%libc.Int32FromInt32(8) == libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__12)), __ccgo_ts+154, int32(972), __ccgo_ts+1815)
+	if v1 = (*lame_internal_flags)(unsafe.Pointer(gfc)).Fbs.Ftotbit%int32(8) == 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+1815, __ccgo_ts+187, int32(972), uintptr(unsafe.Pointer(&__func__12)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	if (*lame_internal_flags)(unsafe.Pointer(gfc)).Fbs.Ftotbit > int32(1000000000) {
 		i = 0
 		for {
@@ -6199,10 +4676,10 @@ func format_bitstream(tls *libc.TLS, gfc uintptr) (r int32) {
 			(*(*struct {
 				Fwrite_timing int32
 				Fptr          int32
-				Fbuf          [40]int8
+				Fbuf          [40]uint8
 			})(unsafe.Pointer(esv + 14588 + uintptr(i)*48))).Fwrite_timing -= (*lame_internal_flags)(unsafe.Pointer(gfc)).Fbs.Ftotbit
-			goto _1
-		_1:
+			goto _2
+		_2:
 			;
 			i = i + 1
 		}
@@ -6211,7 +4688,7 @@ func format_bitstream(tls *libc.TLS, gfc uintptr) (r int32) {
 	return 0
 }
 
-var __func__12 = [17]int8{'f', 'o', 'r', 'm', 'a', 't', '_', 'b', 'i', 't', 's', 't', 'r', 'e', 'a', 'm'}
+var __func__12 = [17]uint8{'f', 'o', 'r', 'm', 'a', 't', '_', 'b', 'i', 't', 's', 't', 'r', 'e', 'a', 'm'}
 
 func do_gain_analysis(tls *libc.TLS, gfc uintptr, buffer uintptr, minimum int32) (r int32) {
 	var cfg, rov, rsv uintptr
@@ -6276,7 +4753,7 @@ func init_bit_stream_w(tls *libc.TLS, gfc uintptr) {
 	(*(*struct {
 		Fwrite_timing int32
 		Fptr          int32
-		Fbuf          [40]int8
+		Fbuf          [40]uint8
 	})(unsafe.Pointer(esv + 14588 + uintptr((*EncStateVar_t)(unsafe.Pointer(esv)).Fh_ptr)*48))).Fwrite_timing = 0
 	(*lame_internal_flags)(unsafe.Pointer(gfc)).Fbs.Fbuf = libc.Xcalloc(tls, libc.Uint64FromInt32(libc.Int32FromInt32(16384)+libc.Int32FromInt32(128)*libc.Int32FromInt32(1024)), uint64(1))
 	(*lame_internal_flags)(unsafe.Pointer(gfc)).Fbs.Fbuf_size = libc.Int32FromInt32(16384) + libc.Int32FromInt32(128)*libc.Int32FromInt32(1024)
@@ -6471,15 +4948,18 @@ func adjust_ATH(tls *libc.TLS, gfc uintptr) {
 func updateStats(tls *libc.TLS, gfc uintptr) {
 	var bt, ch, gr int32
 	var cfg, eov uintptr
-	_, _, _, _, _ = bt, cfg, ch, eov, gr
+	var v1 bool
+	_, _, _, _, _, _ = bt, cfg, ch, eov, gr, v1
 	cfg = gfc + 24
 	eov = gfc + 86688
-	if libc.BoolInt64(!(0 <= (*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index && (*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index < int32(16))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__13)), __ccgo_ts+1839, int32(161), __ccgo_ts+1926)
+	if v1 = 0 <= (*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index && (*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index < int32(16); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+1839, __ccgo_ts+1890, int32(161), uintptr(unsafe.Pointer(&__func__13)))
 	}
-	if libc.BoolInt64(!(0 <= (*EncResult_t)(unsafe.Pointer(eov)).Fmode_ext && (*EncResult_t)(unsafe.Pointer(eov)).Fmode_ext < int32(4))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__13)), __ccgo_ts+1839, int32(162), __ccgo_ts+1977)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = 0 <= (*EncResult_t)(unsafe.Pointer(eov)).Fmode_ext && (*EncResult_t)(unsafe.Pointer(eov)).Fmode_ext < int32(4); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+1977, __ccgo_ts+1890, int32(162), uintptr(unsafe.Pointer(&__func__13)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	/* count bitrate indices */
 	*(*int32)(unsafe.Pointer(eov + uintptr((*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index)*20 + 4*4)) = *(*int32)(unsafe.Pointer(eov + uintptr((*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index)*20 + 4*4)) + 1
 	*(*int32)(unsafe.Pointer(eov + 15*20 + 4*4)) = *(*int32)(unsafe.Pointer(eov + 15*20 + 4*4)) + 1
@@ -6506,28 +4986,29 @@ func updateStats(tls *libc.TLS, gfc uintptr) {
 			*(*int32)(unsafe.Pointer(eov + 320 + uintptr((*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index)*24 + 5*4)) = *(*int32)(unsafe.Pointer(eov + 320 + uintptr((*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index)*24 + 5*4)) + 1
 			*(*int32)(unsafe.Pointer(eov + 320 + 15*24 + uintptr(bt)*4)) = *(*int32)(unsafe.Pointer(eov + 320 + 15*24 + uintptr(bt)*4)) + 1
 			*(*int32)(unsafe.Pointer(eov + 320 + 15*24 + 5*4)) = *(*int32)(unsafe.Pointer(eov + 320 + 15*24 + 5*4)) + 1
-			goto _2
-		_2:
+			goto _4
+		_4:
 			;
 			ch = ch + 1
 		}
-		goto _1
-	_1:
+		goto _3
+	_3:
 		;
 		gr = gr + 1
 	}
 }
 
-var __func__13 = [12]int8{'u', 'p', 'd', 'a', 't', 'e', 'S', 't', 'a', 't', 's'}
+var __func__13 = [12]uint8{'u', 'p', 'd', 'a', 't', 'e', 'S', 't', 'a', 't', 's'}
 
 func lame_encode_frame_init(tls *libc.TLS, gfc uintptr, inbuf uintptr) {
 	bp := tls.Alloc(16112)
 	defer tls.Free(16112)
 	var cfg uintptr
 	var ch, framesize, gr, i, j int32
+	var v4 bool
 	var _ /* primebuff0 at bp+0 */ [2014]sample_t
 	var _ /* primebuff1 at bp+8056 */ [2014]sample_t
-	_, _, _, _, _, _ = cfg, ch, framesize, gr, i, j
+	_, _, _, _, _, _, _ = cfg, ch, framesize, gr, i, j, v4
 	cfg = gfc + 24
 	if (*lame_internal_flags)(unsafe.Pointer(gfc)).Flame_encode_frame_init == 0 {
 		framesize = int32(576) * (*SessionConfig_t)(unsafe.Pointer(cfg)).Fmode_gr
@@ -6582,17 +5063,19 @@ func lame_encode_frame_init(tls *libc.TLS, gfc uintptr, inbuf uintptr) {
 		mdct_sub48(tls, gfc, bp, bp+8056)
 		/* check FFT will not use a negative starting offset */
 		/* check if we have enough data for FFT */
-		if libc.BoolInt64(!((*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_enc.Fmf_size >= libc.Int32FromInt32(BLKSIZE)+framesize-(libc.Int32FromInt32(224)+libc.Int32FromInt32(MDCTDELAY)))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__14)), __ccgo_ts+1839, int32(231), __ccgo_ts+2017)
+		if v4 = (*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_enc.Fmf_size >= int32(BLKSIZE)+framesize-(libc.Int32FromInt32(224)+libc.Int32FromInt32(MDCTDELAY)); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+2017, __ccgo_ts+1890, int32(231), uintptr(unsafe.Pointer(&__func__14)))
 		}
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		/* check if we have enough data for polyphase filterbank */
-		if libc.BoolInt64(!((*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_enc.Fmf_size >= libc.Int32FromInt32(512)+framesize-libc.Int32FromInt32(32))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__14)), __ccgo_ts+1839, int32(233), __ccgo_ts+2074)
+		if v4 = (*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_enc.Fmf_size >= int32(512)+framesize-int32(32); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+2074, __ccgo_ts+1890, int32(233), uintptr(unsafe.Pointer(&__func__14)))
 		}
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	}
 }
 
-var __func__14 = [23]int8{'l', 'a', 'm', 'e', '_', 'e', 'n', 'c', 'o', 'd', 'e', '_', 'f', 'r', 'a', 'm', 'e', '_', 'i', 'n', 'i', 't'}
+var __func__14 = [23]uint8{'l', 'a', 'm', 'e', '_', 'e', 'n', 'c', 'o', 'd', 'e', '_', 'f', 'r', 'a', 'm', 'e', '_', 'i', 'n', 'i', 't'}
 
 /************************************************************************
 *
@@ -7372,8 +5855,8 @@ func init_fft(tls *libc.TLS, gfc uintptr) {
 	(*lame_internal_flags)(unsafe.Pointer(gfc)).Ffft_fht = __ccgo_fp(fht)
 }
 
-const M_PI2 = 3.14159265358979323846264338327950288
-const M_SQRT22 = 1.41421356237309504880168872420969808
+const M_PI2 = 3.14159265358979323846
+const M_SQRT22 = 1.41421356237309504880
 
 /* for each filter: */
 /* [0] 48 kHz, [1] 44.1 kHz, [2] 32 kHz, [3] 24 kHz, [4] 22050 Hz, [5] 16 kHz, [6] 12 kHz, [7] is 11025 Hz, [8] 8 kHz */
@@ -7989,6 +6472,7 @@ func GetTitleGain(tls *libc.TLS, rgData uintptr) (r Float_t) {
 
 const GENRE_INDEX_OTHER = 12
 const GENRE_NUM_UNKNOWN = 255
+const UINT_MAX1 = 4294967295
 
 var genre_names = [148]uintptr{
 	0:   __ccgo_ts + 2120,
@@ -8412,7 +6896,7 @@ func id3v2AddLameVersion(tls *libc.TLS, gfp lame_t) {
 	defer tls.Free(1056)
 	var b, u, v uintptr
 	var lenb size_t
-	var _ /* buffer at bp+0 */ [1024]int8
+	var _ /* buffer at bp+0 */ [1024]uint8
 	_, _, _, _ = b, lenb, u, v
 	b = get_lame_os_bitness(tls)
 	v = get_lame_version(tls)
@@ -8432,10 +6916,10 @@ func id3v2AddAudioDuration(tls *libc.TLS, gfp lame_t, ms float64) {
 	var cfg uintptr
 	var max_ulong float64
 	var playlength_ms uint64
-	var _ /* buffer at bp+0 */ [1024]int8
+	var _ /* buffer at bp+0 */ [1024]uint8
 	_, _, _ = cfg, max_ulong, playlength_ms
 	cfg = (*lame_global_flags)(unsafe.Pointer(gfp)).Finternal_flags + 24
-	max_ulong = float64(libc.Uint32FromInt32(__INT_MAX__)*libc.Uint32FromUint32(2) + libc.Uint32FromUint32(1))
+	max_ulong = libc.Float64FromUint32(0xffffffff)
 	ms = ms * libc.Float64FromInt32(1000)
 	ms = ms / float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_in)
 	if ms > max_ulong {
@@ -8582,7 +7066,8 @@ func fromLatin1Char(tls *libc.TLS, s uintptr, c uint16) (r uint16) {
 
 func local_strdup(tls *libc.TLS, dst uintptr, src uintptr) (r size_t) {
 	var n size_t
-	_ = n
+	var v2 bool
+	_, _ = n, v2
 	if dst == uintptr(0) {
 		return uint64(0)
 	}
@@ -8591,7 +7076,7 @@ func local_strdup(tls *libc.TLS, dst uintptr, src uintptr) (r size_t) {
 	if src != uintptr(0) {
 		n = uint64(0)
 		for {
-			if !(int32(*(*int8)(unsafe.Pointer(src + uintptr(n)))) != 0) {
+			if !(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(src + uintptr(n)))) != 0) {
 				break
 			} /* calc src string length */
 			goto _1
@@ -8600,10 +7085,14 @@ func local_strdup(tls *libc.TLS, dst uintptr, src uintptr) (r size_t) {
 			n = n + 1
 		}
 		if n > uint64(0) { /* string length without zero termination */
+			if v2 = libc.Bool(uint64(1) == uint64(1)); !v2 {
+				libc.X__assert_fail(tls, __ccgo_ts+3498, __ccgo_ts+3528, int32(423), uintptr(unsafe.Pointer(&__func__15)))
+			}
+			_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			*(*uintptr)(unsafe.Pointer(dst)) = libc.Xcalloc(tls, n+uint64(1), uint64(1))
 			if *(*uintptr)(unsafe.Pointer(dst)) != uintptr(0) {
 				libc.Xmemcpy(tls, *(*uintptr)(unsafe.Pointer(dst)), src, n*uint64(1))
-				*(*int8)(unsafe.Pointer(*(*uintptr)(unsafe.Pointer(dst)) + uintptr(n))) = 0
+				*(*uint8)(unsafe.Pointer(*(*uintptr)(unsafe.Pointer(dst)) + uintptr(n))) = uint8(0)
 				return n
 			}
 		}
@@ -8611,11 +7100,12 @@ func local_strdup(tls *libc.TLS, dst uintptr, src uintptr) (r size_t) {
 	return uint64(0)
 }
 
-var __func__15 = [13]int8{'l', 'o', 'c', 'a', 'l', '_', 's', 't', 'r', 'd', 'u', 'p'}
+var __func__15 = [13]uint8{'l', 'o', 'c', 'a', 'l', '_', 's', 't', 'r', 'd', 'u', 'p'}
 
 func local_ucs2_strdup(tls *libc.TLS, dst uintptr, src uintptr) (r size_t) {
 	var n size_t
-	_ = n
+	var v2 bool
+	_, _ = n, v2
 	if dst == uintptr(0) {
 		return uint64(0)
 	}
@@ -8633,6 +7123,14 @@ func local_ucs2_strdup(tls *libc.TLS, dst uintptr, src uintptr) (r size_t) {
 			n = n + 1
 		}
 		if n > uint64(0) { /* string length without zero termination */
+			if v2 = libc.Bool(uint64(2) >= uint64(2)); !v2 {
+				libc.X__assert_fail(tls, __ccgo_ts+3614, __ccgo_ts+3528, int32(448), uintptr(unsafe.Pointer(&__func__16)))
+			}
+			_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
+			if v2 = libc.Bool(uint64(2) == uint64(2)); !v2 {
+				libc.X__assert_fail(tls, __ccgo_ts+3498, __ccgo_ts+3528, int32(449), uintptr(unsafe.Pointer(&__func__16)))
+			}
+			_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			*(*uintptr)(unsafe.Pointer(dst)) = libc.Xcalloc(tls, n+uint64(1), uint64(2))
 			if *(*uintptr)(unsafe.Pointer(dst)) != uintptr(0) {
 				libc.Xmemcpy(tls, *(*uintptr)(unsafe.Pointer(dst)), src, n*uint64(2))
@@ -8644,7 +7142,7 @@ func local_ucs2_strdup(tls *libc.TLS, dst uintptr, src uintptr) (r size_t) {
 	return uint64(0)
 }
 
-var __func__16 = [18]int8{'l', 'o', 'c', 'a', 'l', '_', 'u', 'c', 's', '2', '_', 's', 't', 'r', 'd', 'u', 'p'}
+var __func__16 = [18]uint8{'l', 'o', 'c', 'a', 'l', '_', 'u', 'c', 's', '2', '_', 's', 't', 'r', 'd', 'u', 'p'}
 
 func local_ucs2_strlen(tls *libc.TLS, s uintptr) (r size_t) {
 	var n size_t
@@ -8719,15 +7217,15 @@ func local_ucs2_pos(tls *libc.TLS, str uintptr, c uint16) (r int32) {
 	return -int32(1)
 }
 
-func local_char_pos(tls *libc.TLS, str uintptr, c int8) (r int32) {
+func local_char_pos(tls *libc.TLS, str uintptr, c uint8) (r int32) {
 	var i int32
 	_ = i
 	i = 0
 	for {
-		if !(str != uintptr(0) && int32(*(*int8)(unsafe.Pointer(str + uintptr(i)))) != 0) {
+		if !(str != uintptr(0) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(str + uintptr(i)))) != 0) {
 			break
 		}
-		if int32(*(*int8)(unsafe.Pointer(str + uintptr(i)))) == int32(c) {
+		if libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(str + uintptr(i)))) == libc.Int32FromUint8(c) {
 			return i
 		}
 		goto _1
@@ -8766,7 +7264,7 @@ func lookupGenre(tls *libc.TLS, genre uintptr) (r int32) {
 	_ = num
 	num = int32(libc.Xstrtol(tls, genre, bp, int32(10)))
 	/* is the input a string or a valid number? */
-	if *(*int8)(unsafe.Pointer(*(*uintptr)(unsafe.Pointer(bp)))) != 0 {
+	if *(*uint8)(unsafe.Pointer(*(*uintptr)(unsafe.Pointer(bp)))) != 0 {
 		num = searchGenre(tls, genre)
 		if num == libc.Int32FromUint64(libc.Uint64FromInt64(1184)/libc.Uint64FromInt64(8)) {
 			num = sloppySearchGenre(tls, genre)
@@ -8852,10 +7350,10 @@ func id3tag_set_albumart(tls *libc.TLS, gfp lame_t, image uintptr, size size_t) 
 		if uint64(2) < size && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(data))) == int32(0xFF) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(data + 1))) == int32(0xD8) {
 			mimetype = int32(MIMETYPE_JPEG)
 		} else {
-			if uint64(4) < size && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(data))) == int32(0x89) && libc.Xstrncmp(tls, data+1, __ccgo_ts+3498, uint64(3)) == 0 {
+			if uint64(4) < size && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(data))) == int32(0x89) && libc.Xstrncmp(tls, data+1, __ccgo_ts+3632, uint64(3)) == 0 {
 				mimetype = int32(MIMETYPE_PNG)
 			} else {
-				if uint64(4) < size && libc.Xstrncmp(tls, data, __ccgo_ts+3502, uint64(4)) == 0 {
+				if uint64(4) < size && libc.Xstrncmp(tls, data, __ccgo_ts+3636, uint64(4)) == 0 {
 					mimetype = int32(MIMETYPE_GIF)
 				} else {
 					return -int32(1)
@@ -8902,7 +7400,7 @@ func set_4_byte_value(tls *libc.TLS, bytes uintptr, value uint32_t) (r uintptr) 
 }
 
 func toID3v2TagId(tls *libc.TLS, s uintptr) (r uint32_t) {
-	var c int8
+	var c uint8
 	var i, u, x uint32
 	_, _, _, _ = c, i, u, x
 	x = uint32(0)
@@ -8911,15 +7409,15 @@ func toID3v2TagId(tls *libc.TLS, s uintptr) (r uint32_t) {
 	}
 	i = uint32(0)
 	for {
-		if !(i < uint32(4) && int32(*(*int8)(unsafe.Pointer(s + uintptr(i)))) != 0) {
+		if !(i < uint32(4) && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(s + uintptr(i)))) != 0) {
 			break
 		}
-		c = *(*int8)(unsafe.Pointer(s + uintptr(i)))
-		u = libc.Uint32FromInt32(int32(0x0ff) & int32(c))
+		c = *(*uint8)(unsafe.Pointer(s + uintptr(i)))
+		u = libc.Uint32FromInt32(int32(0x0ff) & libc.Int32FromUint8(c))
 		x = x << uint32(8)
 		x = x | u
-		if int32(c) < int32('A') || int32('Z') < int32(c) {
-			if int32(c) < int32('0') || int32('9') < int32(c) {
+		if libc.Int32FromUint8(c) < int32('A') || int32('Z') < libc.Int32FromUint8(c) {
+			if libc.Int32FromUint8(c) < int32('0') || int32('9') < libc.Int32FromUint8(c) {
 				return uint32(0)
 			}
 		}
@@ -9026,17 +7524,17 @@ func appendNode(tls *libc.TLS, tag uintptr, node uintptr) {
 func setLang(tls *libc.TLS, dst uintptr, src uintptr) {
 	var i int32
 	_ = i
-	if src == uintptr(0) || int32(*(*int8)(unsafe.Pointer(src))) == 0 {
-		*(*int8)(unsafe.Pointer(dst)) = int8('e')
-		*(*int8)(unsafe.Pointer(dst + 1)) = int8('n')
-		*(*int8)(unsafe.Pointer(dst + 2)) = int8('g')
+	if src == uintptr(0) || libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(src))) == 0 {
+		*(*uint8)(unsafe.Pointer(dst)) = uint8('e')
+		*(*uint8)(unsafe.Pointer(dst + 1)) = uint8('n')
+		*(*uint8)(unsafe.Pointer(dst + 2)) = uint8('g')
 	} else {
 		i = 0
 		for {
-			if !(i < int32(3) && src != 0 && *(*int8)(unsafe.Pointer(src)) != 0) {
+			if !(i < int32(3) && src != 0 && *(*uint8)(unsafe.Pointer(src)) != 0) {
 				break
 			}
-			*(*int8)(unsafe.Pointer(dst + uintptr(i))) = *(*int8)(unsafe.Pointer(src + uintptr(i)))
+			*(*uint8)(unsafe.Pointer(dst + uintptr(i))) = *(*uint8)(unsafe.Pointer(src + uintptr(i)))
 			goto _1
 		_1:
 			;
@@ -9046,7 +7544,7 @@ func setLang(tls *libc.TLS, dst uintptr, src uintptr) {
 			if !(i < int32(3)) {
 				break
 			}
-			*(*int8)(unsafe.Pointer(dst + uintptr(i))) = int8(' ')
+			*(*uint8)(unsafe.Pointer(dst + uintptr(i))) = uint8(' ')
 			goto _2
 		_2:
 			;
@@ -9058,31 +7556,25 @@ func setLang(tls *libc.TLS, dst uintptr, src uintptr) {
 func isSameLang(tls *libc.TLS, l1 uintptr, l2 uintptr) (r int32) {
 	bp := tls.Alloc(16)
 	defer tls.Free(16)
-	var a, b int8
-	var i, v2, v4 int32
-	var _ /* d at bp+0 */ [3]int8
-	_, _, _, _, _ = a, b, i, v2, v4
+	var a, b uint8
+	var i int32
+	var _ /* d at bp+0 */ [3]uint8
+	_, _, _ = a, b, i
 	setLang(tls, bp, l2)
 	i = 0
 	for {
 		if !(i < int32(3)) {
 			break
 		}
-		v2 = libc.X__tolower(tls, int32(*(*int8)(unsafe.Pointer(l1 + uintptr(i)))))
-		goto _3
-	_3:
-		a = int8(v2)
-		v4 = libc.X__tolower(tls, int32((*(*[3]int8)(unsafe.Pointer(bp)))[i]))
-		goto _5
-	_5:
-		b = int8(v4)
-		if int32(a) < int32(' ') {
-			a = int8(' ')
+		a = libc.Uint8FromInt32(libc.Xtolower(tls, libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(l1 + uintptr(i))))))
+		b = libc.Uint8FromInt32(libc.Xtolower(tls, libc.Int32FromUint8((*(*[3]uint8)(unsafe.Pointer(bp)))[i])))
+		if libc.Int32FromUint8(a) < int32(' ') {
+			a = uint8(' ')
 		}
-		if int32(b) < int32(' ') {
-			b = int8(' ')
+		if libc.Int32FromUint8(b) < int32(' ') {
+			b = uint8(' ')
 		}
-		if int32(a) != int32(b) {
+		if libc.Int32FromUint8(a) != libc.Int32FromUint8(b) {
 			return 0
 		}
 		goto _1
@@ -9104,7 +7596,7 @@ func isSameDescriptor(tls *libc.TLS, node uintptr, dsc uintptr) (r int32) {
 		if !(i < (*FrameDataNode)(unsafe.Pointer(node)).Fdsc.Fdim) {
 			break
 		}
-		if !(dsc != 0) || int32(*(*int8)(unsafe.Pointer(*(*uintptr)(unsafe.Pointer(node + 16)) + uintptr(i)))) != int32(*(*int8)(unsafe.Pointer(dsc + uintptr(i)))) {
+		if !(dsc != 0) || libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(*(*uintptr)(unsafe.Pointer(node + 16)) + uintptr(i)))) != libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(dsc + uintptr(i)))) {
 			return 0
 		}
 		goto _1
@@ -9141,7 +7633,7 @@ func id3v2_add_ucs2(tls *libc.TLS, gfp lame_t, frame_id uint32_t, lng uintptr, d
 	bp := tls.Alloc(16)
 	defer tls.Free(16)
 	var gfc, node, v1 uintptr
-	var _ /* lang at bp+0 */ [4]int8
+	var _ /* lang at bp+0 */ [4]uint8
 	_, _, _ = gfc, node, v1
 	if gfp != uintptr(0) {
 		v1 = (*lame_global_flags)(unsafe.Pointer(gfp)).Finternal_flags
@@ -9185,7 +7677,7 @@ func id3v2_add_latin1(tls *libc.TLS, gfp lame_t, frame_id uint32_t, lng uintptr,
 	bp := tls.Alloc(16)
 	defer tls.Free(16)
 	var gfc, node, v1 uintptr
-	var _ /* lang at bp+0 */ [4]int8
+	var _ /* lang at bp+0 */ [4]uint8
 	_, _, _ = gfc, node, v1
 	if gfp != uintptr(0) {
 		v1 = (*lame_global_flags)(unsafe.Pointer(gfp)).Finternal_flags
@@ -9258,16 +7750,16 @@ func id3tag_set_userinfo_latin1(tls *libc.TLS, gfp lame_t, id uint32_t, fieldval
 	bp := tls.Alloc(16)
 	defer tls.Free(16)
 	var a, rc int32
-	var separator int8
+	var separator uint8
 	var _ /* dup at bp+0 */ uintptr
 	_, _, _ = a, rc, separator
-	separator = int8('=')
+	separator = uint8('=')
 	rc = -int32(7)
 	a = local_char_pos(tls, fieldvalue, separator)
 	if a >= 0 {
 		*(*uintptr)(unsafe.Pointer(bp)) = uintptr(0)
 		local_strdup(tls, bp, fieldvalue)
-		*(*int8)(unsafe.Pointer(*(*uintptr)(unsafe.Pointer(bp)) + uintptr(a))) = 0
+		*(*uint8)(unsafe.Pointer(*(*uintptr)(unsafe.Pointer(bp)) + uintptr(a))) = uint8(0)
 		rc = id3v2_add_latin1_lng(tls, gfp, id, *(*uintptr)(unsafe.Pointer(bp)), *(*uintptr)(unsafe.Pointer(bp))+uintptr(a)+uintptr(1))
 		libc.Xfree(tls, *(*uintptr)(unsafe.Pointer(bp)))
 	}
@@ -9404,7 +7896,7 @@ func id3tag_set_title(tls *libc.TLS, gfp lame_t, title uintptr) {
 		v1 = uintptr(0)
 	}
 	gfc = v1
-	if gfc != 0 && title != 0 && *(*int8)(unsafe.Pointer(title)) != 0 {
+	if gfc != 0 && title != 0 && *(*uint8)(unsafe.Pointer(title)) != 0 {
 		local_strdup(tls, gfc+88352+8, title)
 		(*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fflags |= libc.Uint32FromUint32(1) << libc.Int32FromInt32(0)
 		copyV1ToV2(tls, gfp, int32(ID_TITLE), title)
@@ -9420,7 +7912,7 @@ func id3tag_set_artist(tls *libc.TLS, gfp lame_t, artist uintptr) {
 		v1 = uintptr(0)
 	}
 	gfc = v1
-	if gfc != 0 && artist != 0 && *(*int8)(unsafe.Pointer(artist)) != 0 {
+	if gfc != 0 && artist != 0 && *(*uint8)(unsafe.Pointer(artist)) != 0 {
 		local_strdup(tls, gfc+88352+16, artist)
 		(*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fflags |= libc.Uint32FromUint32(1) << libc.Int32FromInt32(0)
 		copyV1ToV2(tls, gfp, int32(ID_ARTIST), artist)
@@ -9436,7 +7928,7 @@ func id3tag_set_album(tls *libc.TLS, gfp lame_t, album uintptr) {
 		v1 = uintptr(0)
 	}
 	gfc = v1
-	if gfc != 0 && album != 0 && *(*int8)(unsafe.Pointer(album)) != 0 {
+	if gfc != 0 && album != 0 && *(*uint8)(unsafe.Pointer(album)) != 0 {
 		local_strdup(tls, gfc+88352+24, album)
 		(*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fflags |= libc.Uint32FromUint32(1) << libc.Int32FromInt32(0)
 		copyV1ToV2(tls, gfp, int32(ID_ALBUM), album)
@@ -9453,7 +7945,7 @@ func id3tag_set_year(tls *libc.TLS, gfp lame_t, year uintptr) {
 		v1 = uintptr(0)
 	}
 	gfc = v1
-	if gfc != 0 && year != 0 && *(*int8)(unsafe.Pointer(year)) != 0 {
+	if gfc != 0 && year != 0 && *(*uint8)(unsafe.Pointer(year)) != 0 {
 		num = libc.Xatoi(tls, year)
 		if num < 0 {
 			num = 0
@@ -9480,11 +7972,11 @@ func id3tag_set_comment(tls *libc.TLS, gfp lame_t, comment uintptr) {
 		v1 = uintptr(0)
 	}
 	gfc = v1
-	if gfc != 0 && comment != 0 && *(*int8)(unsafe.Pointer(comment)) != 0 {
+	if gfc != 0 && comment != 0 && *(*uint8)(unsafe.Pointer(comment)) != 0 {
 		local_strdup(tls, gfc+88352+32, comment)
 		(*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fflags |= libc.Uint32FromUint32(1) << libc.Int32FromInt32(0)
 		flags = (*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fflags
-		id3v2_add_latin1_lng(tls, gfp, uint32(ID_COMMENT), __ccgo_ts+3507, comment)
+		id3v2_add_latin1_lng(tls, gfp, uint32(ID_COMMENT), __ccgo_ts+3641, comment)
 		(*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fflags = flags
 	}
 }
@@ -9500,7 +7992,7 @@ func id3tag_set_track(tls *libc.TLS, gfp lame_t, track uintptr) (r int32) {
 	}
 	gfc = v1
 	ret = 0
-	if gfc != 0 && track != 0 && *(*int8)(unsafe.Pointer(track)) != 0 {
+	if gfc != 0 && track != 0 && *(*uint8)(unsafe.Pointer(track)) != 0 {
 		num = libc.Xatoi(tls, track)
 		/* check for valid ID3v1 track number range */
 		if num < int32(1) || num > int32(255) {
@@ -9514,7 +8006,7 @@ func id3tag_set_track(tls *libc.TLS, gfp lame_t, track uintptr) (r int32) {
 		}
 		/* Look for the total track count after a "/", same restrictions */
 		trackcount = libc.Xstrchr(tls, track, int32('/'))
-		if trackcount != 0 && *(*int8)(unsafe.Pointer(trackcount)) != 0 {
+		if trackcount != 0 && *(*uint8)(unsafe.Pointer(trackcount)) != 0 {
 			(*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fflags |= libc.Uint32FromUint32(1)<<libc.Int32FromInt32(0) | libc.Uint32FromUint32(1)<<libc.Int32FromInt32(1)
 		}
 		copyV1ToV2(tls, gfp, int32(ID_TRACK), track)
@@ -9527,17 +8019,10 @@ func id3tag_set_track(tls *libc.TLS, gfp lame_t, track uintptr) (r int32) {
 //	/* would use real "strcasecmp" but it isn't portable */
 func local_strcasecmp(tls *libc.TLS, s1 uintptr, s2 uintptr) (r int32) {
 	var c1, c2 uint8
-	var v1 int32
-	_, _, _ = c1, c2, v1
+	_, _ = c1, c2
 	for cond := true; cond; cond = libc.Int32FromUint8(c1) == libc.Int32FromUint8(c2) {
-		v1 = libc.X__tolower(tls, int32(*(*int8)(unsafe.Pointer(s1))))
-		goto _2
-	_2:
-		c1 = libc.Uint8FromInt32(v1)
-		v1 = libc.X__tolower(tls, int32(*(*int8)(unsafe.Pointer(s2))))
-		goto _4
-	_4:
-		c2 = libc.Uint8FromInt32(v1)
+		c1 = libc.Uint8FromInt32(libc.Xtolower(tls, libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(s1)))))
+		c2 = libc.Uint8FromInt32(libc.Xtolower(tls, libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(s2)))))
 		if !(c1 != 0) {
 			break
 		}
@@ -9547,21 +8032,17 @@ func local_strcasecmp(tls *libc.TLS, s1 uintptr, s2 uintptr) (r int32) {
 	return libc.Int32FromUint8(c1) - libc.Int32FromUint8(c2)
 }
 
-func nextUpperAlpha(tls *libc.TLS, p uintptr, x int8) (r uintptr) {
-	var c int8
-	var v2 int32
-	var v4 uintptr
-	_, _, _ = c, v2, v4
-	v2 = libc.X__toupper(tls, int32(*(*int8)(unsafe.Pointer(p))))
-	goto _3
-_3:
-	c = int8(v2)
+func nextUpperAlpha(tls *libc.TLS, p uintptr, x uint8) (r uintptr) {
+	var c uint8
+	var v2 uintptr
+	_, _ = c, v2
+	c = libc.Uint8FromInt32(libc.Xtoupper(tls, libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(p)))))
 	for {
-		if !(int32(*(*int8)(unsafe.Pointer(p))) != 0) {
+		if !(libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(p))) != 0) {
 			break
 		}
-		if int32('A') <= int32(c) && int32(c) <= int32('Z') {
-			if int32(c) != int32(x) {
+		if int32('A') <= libc.Int32FromUint8(c) && libc.Int32FromUint8(c) <= int32('Z') {
+			if libc.Int32FromUint8(c) != libc.Int32FromUint8(x) {
 				return p
 			}
 		}
@@ -9569,56 +8050,40 @@ _3:
 	_1:
 		;
 		p = p + 1
-		v4 = p
-		v2 = libc.X__toupper(tls, int32(*(*int8)(unsafe.Pointer(v4))))
-		goto _6
-	_6:
-		c = int8(v2)
+		v2 = p
+		c = libc.Uint8FromInt32(libc.Xtoupper(tls, libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(v2)))))
 	}
 	return p
 }
 
 func sloppyCompared(tls *libc.TLS, p uintptr, q uintptr) (r int32) {
-	var cp, cq int8
-	var v1 int32
-	var v5 uintptr
-	var v6 bool
-	_, _, _, _, _ = cp, cq, v1, v5, v6
-	p = nextUpperAlpha(tls, p, 0)
-	q = nextUpperAlpha(tls, q, 0)
-	v1 = libc.X__toupper(tls, int32(*(*int8)(unsafe.Pointer(p))))
-	goto _2
-_2:
-	cp = int8(v1)
-	v1 = libc.X__toupper(tls, int32(*(*int8)(unsafe.Pointer(q))))
-	goto _4
-_4:
-	cq = int8(v1)
-	for int32(cp) == int32(cq) {
-		if int32(cp) == 0 {
+	var cp, cq uint8
+	var v1 uintptr
+	var v2 bool
+	_, _, _, _ = cp, cq, v1, v2
+	p = nextUpperAlpha(tls, p, uint8(0))
+	q = nextUpperAlpha(tls, q, uint8(0))
+	cp = libc.Uint8FromInt32(libc.Xtoupper(tls, libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(p)))))
+	cq = libc.Uint8FromInt32(libc.Xtoupper(tls, libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(q)))))
+	for libc.Int32FromUint8(cp) == libc.Int32FromUint8(cq) {
+		if libc.Int32FromUint8(cp) == 0 {
 			return int32(1)
 		}
-		if int32(*(*int8)(unsafe.Pointer(p + 1))) == int32('.') { /* some abbrevation */
+		if libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(p + 1))) == int32('.') { /* some abbrevation */
 			for {
-				if v6 = *(*int8)(unsafe.Pointer(q)) != 0; v6 {
-					v5 = q
+				if v2 = *(*uint8)(unsafe.Pointer(q)) != 0; v2 {
+					v1 = q
 					q = q + 1
 				}
-				if !(v6 && int32(*(*int8)(unsafe.Pointer(v5))) != int32(' ')) {
+				if !(v2 && libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(v1))) != int32(' ')) {
 					break
 				}
 			}
 		}
 		p = nextUpperAlpha(tls, p, cp)
 		q = nextUpperAlpha(tls, q, cq)
-		v1 = libc.X__toupper(tls, int32(*(*int8)(unsafe.Pointer(p))))
-		goto _8
-	_8:
-		cp = int8(v1)
-		v1 = libc.X__toupper(tls, int32(*(*int8)(unsafe.Pointer(q))))
-		goto _10
-	_10:
-		cq = int8(v1)
+		cp = libc.Uint8FromInt32(libc.Xtoupper(tls, libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(p)))))
+		cq = libc.Uint8FromInt32(libc.Xtoupper(tls, libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(q)))))
 	}
 	return 0
 }
@@ -9672,7 +8137,7 @@ func id3tag_set_genre(tls *libc.TLS, gfp lame_t, genre uintptr) (r int32) {
 	}
 	gfc = v1
 	ret = 0
-	if gfc != 0 && genre != 0 && *(*int8)(unsafe.Pointer(genre)) != 0 {
+	if gfc != 0 && genre != 0 && *(*uint8)(unsafe.Pointer(genre)) != 0 {
 		num = lookupGenre(tls, genre)
 		if num == -int32(1) {
 			return num
@@ -9793,7 +8258,7 @@ func writeChars(tls *libc.TLS, frame uintptr, str uintptr, n size_t) (r uintptr)
 		frame = frame + 1
 		v3 = str
 		str = str + 1
-		*(*uint8)(unsafe.Pointer(v2)) = libc.Uint8FromInt8(*(*int8)(unsafe.Pointer(v3)))
+		*(*uint8)(unsafe.Pointer(v2)) = *(*uint8)(unsafe.Pointer(v3))
 	}
 	return frame
 }
@@ -9887,13 +8352,13 @@ func set_frame_comment(tls *libc.TLS, frame uintptr, node uintptr) (r uintptr) {
 		/* 3 bytes language */
 		v1 = frame
 		frame = frame + 1
-		*(*uint8)(unsafe.Pointer(v1)) = libc.Uint8FromInt8(*(*int8)(unsafe.Pointer(node + 12)))
+		*(*uint8)(unsafe.Pointer(v1)) = *(*uint8)(unsafe.Pointer(node + 12))
 		v1 = frame
 		frame = frame + 1
-		*(*uint8)(unsafe.Pointer(v1)) = libc.Uint8FromInt8(*(*int8)(unsafe.Pointer(node + 12 + 1)))
+		*(*uint8)(unsafe.Pointer(v1)) = *(*uint8)(unsafe.Pointer(node + 12 + 1))
 		v1 = frame
 		frame = frame + 1
-		*(*uint8)(unsafe.Pointer(v1)) = libc.Uint8FromInt8(*(*int8)(unsafe.Pointer(node + 12 + 2)))
+		*(*uint8)(unsafe.Pointer(v1)) = *(*uint8)(unsafe.Pointer(node + 12 + 2))
 		/* descriptor with zero byte(s) separator */
 		if (*FrameDataNode)(unsafe.Pointer(node)).Fdsc.Fenc != int32(1) {
 			frame = writeChars(tls, frame, *(*uintptr)(unsafe.Pointer(node + 16)), (*FrameDataNode)(unsafe.Pointer(node)).Fdsc.Fdim)
@@ -10046,12 +8511,12 @@ func set_frame_apic(tls *libc.TLS, frame uintptr, mimetype uintptr, data uintptr
 		frame = frame + 1
 		*(*uint8)(unsafe.Pointer(v1)) = uint8(0)
 		/* copy mime_type */
-		for *(*int8)(unsafe.Pointer(mimetype)) != 0 {
+		for *(*uint8)(unsafe.Pointer(mimetype)) != 0 {
 			v1 = frame
 			frame = frame + 1
 			v2 = mimetype
 			mimetype = mimetype + 1
-			*(*uint8)(unsafe.Pointer(v1)) = libc.Uint8FromInt8(*(*int8)(unsafe.Pointer(v2)))
+			*(*uint8)(unsafe.Pointer(v1)) = *(*uint8)(unsafe.Pointer(v2))
 		}
 		v1 = frame
 		frame = frame + 1
@@ -10085,8 +8550,8 @@ func id3tag_set_fieldvalue(tls *libc.TLS, gfp lame_t, fieldvalue uintptr) (r int
 	if is_lame_internal_flags_null(tls, gfp) != 0 {
 		return 0
 	}
-	if fieldvalue != 0 && *(*int8)(unsafe.Pointer(fieldvalue)) != 0 {
-		if libc.Xstrlen(tls, fieldvalue) < uint64(5) || int32(*(*int8)(unsafe.Pointer(fieldvalue + 4))) != int32('=') {
+	if fieldvalue != 0 && *(*uint8)(unsafe.Pointer(fieldvalue)) != 0 {
+		if libc.Xstrlen(tls, fieldvalue) < uint64(5) || libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(fieldvalue + 4))) != int32('=') {
 			return -int32(1)
 		}
 		return id3tag_set_textinfo_latin1(tls, gfp, fieldvalue, fieldvalue+5)
@@ -10101,7 +8566,7 @@ func id3tag_set_fieldvalue_utf16(tls *libc.TLS, gfp lame_t, fieldvalue uintptr) 
 	var frame_id uint32_t
 	var rc int32
 	var separator uint16
-	var _ /* fid at bp+0 */ [5]int8
+	var _ /* fid at bp+0 */ [5]uint8
 	var _ /* txt at bp+8 */ uintptr
 	_, _, _, _ = dx, frame_id, rc, separator
 	if is_lame_internal_flags_null(tls, gfp) != 0 {
@@ -10110,15 +8575,15 @@ func id3tag_set_fieldvalue_utf16(tls *libc.TLS, gfp lame_t, fieldvalue uintptr) 
 	if fieldvalue != 0 && *(*uint16)(unsafe.Pointer(fieldvalue)) != 0 {
 		dx = libc.Uint64FromInt32(hasUcs2ByteOrderMarker(tls, *(*uint16)(unsafe.Pointer(fieldvalue))))
 		separator = fromLatin1Char(tls, fieldvalue, uint16('='))
-		*(*[5]int8)(unsafe.Pointer(bp)) = [5]int8{}
+		*(*[5]uint8)(unsafe.Pointer(bp)) = [5]uint8{}
 		frame_id = toID3v2TagId_ucs2(tls, fieldvalue)
 		if local_ucs2_strlen(tls, fieldvalue) < uint64(5)+dx || libc.Int32FromUint16(*(*uint16)(unsafe.Pointer(fieldvalue + uintptr(uint64(4)+dx)*2))) != libc.Int32FromUint16(separator) {
 			return -int32(1)
 		}
-		(*(*[5]int8)(unsafe.Pointer(bp)))[0] = libc.Int8FromUint32(frame_id >> libc.Int32FromInt32(24) & uint32(0x0ff))
-		(*(*[5]int8)(unsafe.Pointer(bp)))[int32(1)] = libc.Int8FromUint32(frame_id >> libc.Int32FromInt32(16) & uint32(0x0ff))
-		(*(*[5]int8)(unsafe.Pointer(bp)))[int32(2)] = libc.Int8FromUint32(frame_id >> libc.Int32FromInt32(8) & uint32(0x0ff))
-		(*(*[5]int8)(unsafe.Pointer(bp)))[int32(3)] = libc.Int8FromUint32(frame_id & uint32(0x0ff))
+		(*(*[5]uint8)(unsafe.Pointer(bp)))[0] = uint8(frame_id >> libc.Int32FromInt32(24) & uint32(0x0ff))
+		(*(*[5]uint8)(unsafe.Pointer(bp)))[int32(1)] = uint8(frame_id >> libc.Int32FromInt32(16) & uint32(0x0ff))
+		(*(*[5]uint8)(unsafe.Pointer(bp)))[int32(2)] = uint8(frame_id >> libc.Int32FromInt32(8) & uint32(0x0ff))
+		(*(*[5]uint8)(unsafe.Pointer(bp)))[int32(3)] = uint8(frame_id & uint32(0x0ff))
 		if frame_id != uint32(0) {
 			*(*uintptr)(unsafe.Pointer(bp + 8)) = uintptr(0)
 			local_ucs2_substr(tls, bp+8, fieldvalue, dx+uint64(5), local_ucs2_strlen(tls, fieldvalue))
@@ -10183,7 +8648,7 @@ func lame_get_id3v2_tag(tls *libc.TLS, gfp lame_t, buffer uintptr, size size_t) 
 	}
 	if usev2 != 0 {
 		albumart_mime = libc.UintptrFromInt32(0)
-		if (*lame_global_flags)(unsafe.Pointer(gfp)).Fnum_samples != uint64(libc.Uint32FromInt32(__INT_MAX__)*libc.Uint32FromUint32(2)+libc.Uint32FromUint32(1)) {
+		if (*lame_global_flags)(unsafe.Pointer(gfp)).Fnum_samples != uint64(0xffffffff) {
 			id3v2AddAudioDuration(tls, gfp, float64((*lame_global_flags)(unsafe.Pointer(gfp)).Fnum_samples))
 		}
 		/* calulate size of tag starting with 10-byte tag header */
@@ -10314,11 +8779,11 @@ func lame_get_id3v2_tag(tls *libc.TLS, gfp lame_t, buffer uintptr, size size_t) 
 	return uint64(0)
 }
 
-var mime_jpeg = __ccgo_ts + 3508
+var mime_jpeg = __ccgo_ts + 3642
 
-var mime_png = __ccgo_ts + 3519
+var mime_png = __ccgo_ts + 3653
 
-var mime_gif = __ccgo_ts + 3529
+var mime_gif = __ccgo_ts + 3663
 
 func id3tag_write_v2(tls *libc.TLS, gfp lame_t) (r int32) {
 	var gfc, tag uintptr
@@ -10373,12 +8838,12 @@ func set_text_field(tls *libc.TLS, field uintptr, text uintptr, size size_t, pad
 		if !(v1 != 0) {
 			break
 		}
-		if text != 0 && *(*int8)(unsafe.Pointer(text)) != 0 {
+		if text != 0 && *(*uint8)(unsafe.Pointer(text)) != 0 {
 			v2 = field
 			field = field + 1
 			v3 = text
 			text = text + 1
-			*(*uint8)(unsafe.Pointer(v2)) = libc.Uint8FromInt8(*(*int8)(unsafe.Pointer(v3)))
+			*(*uint8)(unsafe.Pointer(v2)) = *(*uint8)(unsafe.Pointer(v3))
 		} else {
 			v2 = field
 			field = field + 1
@@ -10394,7 +8859,7 @@ func lame_get_id3v1_tag(tls *libc.TLS, gfp lame_t, buffer uintptr, size size_t) 
 	var gfc, p, v2 uintptr
 	var pad, v1 int32
 	var tag_size size_t
-	var _ /* year at bp+0 */ [5]int8
+	var _ /* year at bp+0 */ [5]uint8
 	_, _, _, _, _, _ = gfc, p, pad, tag_size, v1, v2
 	tag_size = uint64(128)
 	if gfp == uintptr(0) {
@@ -10435,7 +8900,7 @@ func lame_get_id3v1_tag(tls *libc.TLS, gfp lame_t, buffer uintptr, size size_t) 
 		p = set_text_field(tls, p, (*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Ftitle, uint64(30), pad)
 		p = set_text_field(tls, p, (*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fartist, uint64(30), pad)
 		p = set_text_field(tls, p, (*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Falbum, uint64(30), pad)
-		libc.Xsprintf(tls, bp, __ccgo_ts+3539, libc.VaList(bp+16, (*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fyear))
+		libc.Xsprintf(tls, bp, __ccgo_ts+3673, libc.VaList(bp+16, (*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fyear))
 		if (*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Fyear != 0 {
 			v2 = bp
 		} else {
@@ -10498,6 +8963,7 @@ func id3tag_write_v1(tls *libc.TLS, gfp lame_t) (r int32) {
 	return libc.Int32FromUint64(n) /* ok, tag has fixed size of 128 bytes, well below 2GB */
 }
 
+const INT_MAX1 = 2147483647
 const LAME_DEFAULT_QUALITY = 3
 const LAME_ID1 = 4294479419
 const M_PI3 = 3.141592653589793
@@ -10588,7 +9054,7 @@ func lame_init_params_ppflt(tls *libc.TLS, gfc uintptr) {
 		if float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fhighpass2) < float64(libc.Float64FromFloat64(0.9)*(libc.Float64FromFloat64(0.75)/libc.Float64FromFloat64(31))) {
 			(*SessionConfig_t)(unsafe.Pointer(cfg)).Fhighpass1 = libc.Float32FromInt32(0)
 			(*SessionConfig_t)(unsafe.Pointer(cfg)).Fhighpass2 = libc.Float32FromInt32(0)
-			lame_msgf(tls, gfc, __ccgo_ts+3542, 0)
+			lame_msgf(tls, gfc, __ccgo_ts+3676, 0)
 		}
 	}
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fhighpass2 > libc.Float32FromInt32(0) {
@@ -11067,11 +9533,12 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 	}
 	var q_, qval, t_ float32
 	var x, x1, x2 [11]int32
+	var v3 bool
 	var _ /* highpass at bp+16 */ float64
 	var _ /* lowpass at bp+8 */ float64
 	var _ /* m at bp+24 */ [2][2]FLOAT
 	var _ /* v at bp+0 */ int32
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = a, a1, a2, b, b1, b2, cfg, cmp, d, d1, gfc, i, j, k, m, m1, m2, m3, q_, qval, size, size1, start, start1, t_, x, x1, x2, v1
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = a, a1, a2, b, b1, b2, cfg, cmp, d, d1, gfc, i, j, k, m, m1, m2, m3, q_, qval, size, size1, start, start1, t_, x, x1, x2, v1, v3
 	if !(is_lame_global_flags_valid(tls, gfp) != 0) {
 		return -int32(1)
 	}
@@ -11185,9 +9652,10 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 		(*lame_global_flags)(unsafe.Pointer(gfp)).Fbrate = int32(float64((*lame_global_flags)(unsafe.Pointer(gfp)).Fsamplerate_out*int32(16)*(*SessionConfig_t)(unsafe.Pointer(cfg)).Fchannels_out) / float64(float64(1000)*float64((*lame_global_flags)(unsafe.Pointer(gfp)).Fcompression_ratio)))
 		/* we need the version for the bitrate table look up */
 		(*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_index = SmpFrqIndex(tls, (*lame_global_flags)(unsafe.Pointer(gfp)).Fsamplerate_out, cfg)
-		if libc.BoolInt64(!((*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_index >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__17)), __ccgo_ts+3608, int32(658), __ccgo_ts+3692)
+		if v3 = (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_index >= 0; !v3 {
+			libc.X__assert_fail(tls, __ccgo_ts+3742, __ccgo_ts+3768, int32(658), uintptr(unsafe.Pointer(&__func__17)))
 		}
+		_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		if !((*SessionConfig_t)(unsafe.Pointer(cfg)).Ffree_format != 0) { /* for non Free Format find the nearest allowed bitrate */
 			(*lame_global_flags)(unsafe.Pointer(gfp)).Fbrate = FindNearestBitrate(tls, (*lame_global_flags)(unsafe.Pointer(gfp)).Fbrate, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fversion, (*lame_global_flags)(unsafe.Pointer(gfp)).Fsamplerate_out)
 		}
@@ -11344,8 +9812,8 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 					break
 				}
 			}
-			goto _9
-		_9:
+			goto _10
+		_10:
 			;
 			i = i + 1
 		}
@@ -11577,9 +10045,10 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 	 * samplerate and bitrate index
 	 *******************************************************/
 	(*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_index = SmpFrqIndex(tls, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_out, cfg)
-	if libc.BoolInt64(!((*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_index >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__17)), __ccgo_ts+3608, int32(917), __ccgo_ts+3718)
+	if v3 = (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_index >= 0; !v3 {
+		libc.X__assert_fail(tls, __ccgo_ts+3852, __ccgo_ts+3768, int32(917), uintptr(unsafe.Pointer(&__func__17)))
 	}
+	_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr == int32(vbr_off) {
 		if (*SessionConfig_t)(unsafe.Pointer(cfg)).Ffree_format != 0 {
 			(*lame_internal_flags)(unsafe.Pointer(gfc)).Fov_enc.Fbitrate_index = 0
@@ -11590,7 +10059,10 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 				/* This never happens, because of preceding FindNearestBitrate!
 				 * But, set a sane value, just in case
 				 */
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__17)), __ccgo_ts+3608, int32(930), __ccgo_ts+3745)
+				if v3 = libc.Bool(0 != 0); !v3 {
+					libc.X__assert_fail(tls, __ccgo_ts+3879, __ccgo_ts+3768, int32(930), uintptr(unsafe.Pointer(&__func__17)))
+				}
+				_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 				(*lame_internal_flags)(unsafe.Pointer(gfc)).Fov_enc.Fbitrate_index = int32(8)
 			}
 		}
@@ -11605,8 +10077,8 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 			break
 		}
 		*(*int32)(unsafe.Pointer(gfc + 21424 + uintptr(i)*4)) = *(*int32)(unsafe.Pointer(uintptr(unsafe.Pointer(&sfBandIndex)) + uintptr(j)*204 + uintptr(i)*4))
-		goto _14
-	_14:
+		goto _17
+	_17:
 		;
 		i = i + 1
 	}
@@ -11618,8 +10090,8 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 		size = (*(*int32)(unsafe.Pointer(gfc + 21424 + 22*4)) - *(*int32)(unsafe.Pointer(gfc + 21424 + 21*4))) / int32(PSFB21)
 		start = *(*int32)(unsafe.Pointer(gfc + 21424 + 21*4)) + i*size
 		*(*int32)(unsafe.Pointer(gfc + 21424 + 148 + uintptr(i)*4)) = start
-		goto _15
-	_15:
+		goto _18
+	_18:
 		;
 		i = i + 1
 	}
@@ -11630,8 +10102,8 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 			break
 		}
 		*(*int32)(unsafe.Pointer(gfc + 21424 + 92 + uintptr(i)*4)) = *(*int32)(unsafe.Pointer(uintptr(unsafe.Pointer(&sfBandIndex)) + uintptr(j)*204 + 92 + uintptr(i)*4))
-		goto _16
-	_16:
+		goto _19
+	_19:
 		;
 		i = i + 1
 	}
@@ -11643,8 +10115,8 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 		size1 = (*(*int32)(unsafe.Pointer(gfc + 21424 + 92 + 13*4)) - *(*int32)(unsafe.Pointer(gfc + 21424 + 92 + 12*4))) / int32(PSFB12)
 		start1 = *(*int32)(unsafe.Pointer(gfc + 21424 + 92 + 12*4)) + i*size1
 		*(*int32)(unsafe.Pointer(gfc + 21424 + 176 + uintptr(i)*4)) = start1
-		goto _17
-	_17:
+		goto _20
+	_20:
 		;
 		i = i + 1
 	}
@@ -11674,20 +10146,22 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 			break
 		}
 		*(*FLOAT)(unsafe.Pointer(gfc + 27888 + 14504 + uintptr(k)*4)) = FLOAT(int32(700) * (*SessionConfig_t)(unsafe.Pointer(cfg)).Fmode_gr * (*SessionConfig_t)(unsafe.Pointer(cfg)).Fchannels_out)
-		goto _20
-	_20:
+		goto _23
+	_23:
 		;
 		k = k + 1
 	}
 	if (*lame_global_flags)(unsafe.Pointer(gfp)).FATHtype == -int32(1) {
 		(*lame_global_flags)(unsafe.Pointer(gfp)).FATHtype = int32(4)
 	}
-	if libc.BoolInt64(!((*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q <= libc.Int32FromInt32(9))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__17)), __ccgo_ts+3608, int32(981), __ccgo_ts+3747)
+	if v3 = (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q <= int32(9); !v3 {
+		libc.X__assert_fail(tls, __ccgo_ts+3881, __ccgo_ts+3768, int32(981), uintptr(unsafe.Pointer(&__func__17)))
 	}
-	if libc.BoolInt64(!((*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__17)), __ccgo_ts+3608, int32(982), __ccgo_ts+3763)
+	_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v3 = (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q >= 0; !v3 {
+		libc.X__assert_fail(tls, __ccgo_ts+3897, __ccgo_ts+3768, int32(982), uintptr(unsafe.Pointer(&__func__17)))
 	}
+	_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	switch (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr {
 	case int32(vbr_mt):
 		fallthrough
@@ -11777,7 +10251,10 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 				/* This never happens, because of preceding FindNearestBitrate!
 				 * But, set a sane value, just in case
 				 */
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__17)), __ccgo_ts+3608, int32(1091), __ccgo_ts+3745)
+				if v3 = libc.Bool(0 != 0); !v3 {
+					libc.X__assert_fail(tls, __ccgo_ts+3879, __ccgo_ts+3768, int32(1091), uintptr(unsafe.Pointer(&__func__17)))
+				}
+				_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 				(*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr_min_bitrate_index = int32(1)
 			}
 		}
@@ -11788,7 +10265,10 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 				/* This never happens, because of preceding FindNearestBitrate!
 				 * But, set a sane value, just in case
 				 */
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__17)), __ccgo_ts+3608, int32(1104), __ccgo_ts+3745)
+				if v3 = libc.Bool(0 != 0); !v3 {
+					libc.X__assert_fail(tls, __ccgo_ts+3879, __ccgo_ts+3768, int32(1104), uintptr(unsafe.Pointer(&__func__17)))
+				}
+				_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 				if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_out < int32(16000) {
 					v1 = int32(8)
 				} else {
@@ -11973,7 +10453,10 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 			/* Actually this never happens, our samplerates are the ones RG accepts!
 			 * But just in case, turn RG off
 			 */
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__17)), __ccgo_ts+3608, int32(1295), __ccgo_ts+3745)
+			if v3 = libc.Bool(0 != 0); !v3 {
+				libc.X__assert_fail(tls, __ccgo_ts+3879, __ccgo_ts+3768, int32(1295), uintptr(unsafe.Pointer(&__func__17)))
+			}
+			_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			(*SessionConfig_t)(unsafe.Pointer(cfg)).FfindReplayGain = 0
 		}
 	}
@@ -11982,10 +10465,10 @@ func lame_init_params(tls *libc.TLS, gfp uintptr) (r int32) {
 	return 0
 }
 
-var __func__17 = [17]int8{'l', 'a', 'm', 'e', '_', 'i', 'n', 'i', 't', '_', 'p', 'a', 'r', 'a', 'm', 's'}
+var __func__17 = [17]uint8{'l', 'a', 'm', 'e', '_', 'i', 'n', 'i', 't', '_', 'p', 'a', 'r', 'a', 'm', 's'}
 
 func concatSep(tls *libc.TLS, dest uintptr, sep uintptr, str uintptr) {
-	if int32(*(*int8)(unsafe.Pointer(dest))) != 0 {
+	if libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(dest))) != 0 {
 		libc.Xstrcat(tls, dest, sep)
 	}
 	libc.Xstrcat(tls, dest, str)
@@ -12006,63 +10489,63 @@ func lame_print_config(tls *libc.TLS, gfp uintptr) {
 	var cfg, gfc, v1 uintptr
 	var fft_asm_used int32
 	var in_samplerate, out_samplerate float64
-	var _ /* text at bp+0 */ [256]int8
+	var _ /* text at bp+0 */ [256]uint8
 	_, _, _, _, _, _ = cfg, fft_asm_used, gfc, in_samplerate, out_samplerate, v1
 	gfc = (*lame_global_flags)(unsafe.Pointer(gfp)).Finternal_flags
 	cfg = gfc + 24
 	out_samplerate = float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_out)
 	in_samplerate = float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_in)
-	lame_msgf(tls, gfc, __ccgo_ts+3779, libc.VaList(bp+264, get_lame_version(tls), get_lame_os_bitness(tls), get_lame_url(tls)))
+	lame_msgf(tls, gfc, __ccgo_ts+3913, libc.VaList(bp+264, get_lame_version(tls), get_lame_os_bitness(tls), get_lame_url(tls)))
 	if int32(*(*uint32)(unsafe.Pointer(gfc + 88444 + 0))&0x1>>0) != 0 || int32(*(*uint32)(unsafe.Pointer(gfc + 88444 + 0))&0x2>>1) != 0 || int32(*(*uint32)(unsafe.Pointer(gfc + 88444 + 0))&0x4>>2) != 0 || int32(*(*uint32)(unsafe.Pointer(gfc + 88444 + 0))&0x8>>3) != 0 {
-		*(*[256]int8)(unsafe.Pointer(bp)) = [256]int8{}
+		*(*[256]uint8)(unsafe.Pointer(bp)) = [256]uint8{}
 		fft_asm_used = 0
 		if int32(*(*uint32)(unsafe.Pointer(gfc + 88444 + 0))&0x1>>0) != 0 {
-			concatSep(tls, bp, __ccgo_ts+3796, __ccgo_ts+3799)
+			concatSep(tls, bp, __ccgo_ts+3930, __ccgo_ts+3933)
 		}
 		if int32(*(*uint32)(unsafe.Pointer(gfc + 88444 + 0))&0x2>>1) != 0 {
 			if fft_asm_used == int32(1) {
-				v1 = __ccgo_ts + 3803
+				v1 = __ccgo_ts + 3937
 			} else {
-				v1 = __ccgo_ts + 3821
+				v1 = __ccgo_ts + 3955
 			}
-			concatSep(tls, bp, __ccgo_ts+3796, v1)
+			concatSep(tls, bp, __ccgo_ts+3930, v1)
 		}
 		if int32(*(*uint32)(unsafe.Pointer(gfc + 88444 + 0))&0x4>>2) != 0 {
 			if fft_asm_used == int32(2) {
-				v1 = __ccgo_ts + 3828
+				v1 = __ccgo_ts + 3962
 			} else {
-				v1 = __ccgo_ts + 3843
+				v1 = __ccgo_ts + 3977
 			}
-			concatSep(tls, bp, __ccgo_ts+3796, v1)
+			concatSep(tls, bp, __ccgo_ts+3930, v1)
 		}
 		if int32(*(*uint32)(unsafe.Pointer(gfc + 88444 + 0))&0x8>>3) != 0 {
 			if fft_asm_used == int32(3) {
-				v1 = __ccgo_ts + 3847
+				v1 = __ccgo_ts + 3981
 			} else {
-				v1 = __ccgo_ts + 3863
+				v1 = __ccgo_ts + 3997
 			}
-			concatSep(tls, bp, __ccgo_ts+3796, v1)
+			concatSep(tls, bp, __ccgo_ts+3930, v1)
 		}
-		lame_msgf(tls, gfc, __ccgo_ts+3868, libc.VaList(bp+264, bp))
+		lame_msgf(tls, gfc, __ccgo_ts+4002, libc.VaList(bp+264, bp))
 	}
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fchannels_in == int32(2) && (*SessionConfig_t)(unsafe.Pointer(cfg)).Fchannels_out == int32(1) {
-		lame_msgf(tls, gfc, __ccgo_ts+3886, 0)
+		lame_msgf(tls, gfc, __ccgo_ts+4020, 0)
 	}
 	if isResamplingNecessary(tls, cfg) != 0 {
-		lame_msgf(tls, gfc, __ccgo_ts+3954, libc.VaList(bp+264, float64(float64(0.001)*in_samplerate), float64(float64(0.001)*out_samplerate)))
+		lame_msgf(tls, gfc, __ccgo_ts+4088, libc.VaList(bp+264, float64(float64(0.001)*in_samplerate), float64(float64(0.001)*out_samplerate)))
 	}
 	if float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fhighpass2) > float64(0) {
-		lame_msgf(tls, gfc, __ccgo_ts+3996, libc.VaList(bp+264, float64(float64(float64(0.5)*float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fhighpass1))*out_samplerate), float64(float64(float64(0.5)*float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fhighpass2))*out_samplerate)))
+		lame_msgf(tls, gfc, __ccgo_ts+4130, libc.VaList(bp+264, float64(float64(float64(0.5)*float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fhighpass1))*out_samplerate), float64(float64(float64(0.5)*float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fhighpass2))*out_samplerate)))
 	}
 	if float64(0) < float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Flowpass1) || float64(0) < float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Flowpass2) {
-		lame_msgf(tls, gfc, __ccgo_ts+4067, libc.VaList(bp+264, float64(float64(float64(0.5)*float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Flowpass1))*out_samplerate), float64(float64(float64(0.5)*float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Flowpass2))*out_samplerate)))
+		lame_msgf(tls, gfc, __ccgo_ts+4201, libc.VaList(bp+264, float64(float64(float64(0.5)*float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Flowpass1))*out_samplerate), float64(float64(float64(0.5)*float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Flowpass2))*out_samplerate)))
 	} else {
-		lame_msgf(tls, gfc, __ccgo_ts+4137, 0)
+		lame_msgf(tls, gfc, __ccgo_ts+4271, 0)
 	}
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Ffree_format != 0 {
-		lame_msgf(tls, gfc, __ccgo_ts+4172, 0)
+		lame_msgf(tls, gfc, __ccgo_ts+4306, 0)
 		if (*SessionConfig_t)(unsafe.Pointer(cfg)).Favg_bitrate > int32(320) {
-			lame_msgf(tls, gfc, __ccgo_ts+4233, 0)
+			lame_msgf(tls, gfc, __ccgo_ts+4367, 0)
 		}
 	}
 }
@@ -12081,149 +10564,149 @@ func lame_print_internals(tls *libc.TLS, gfp uintptr) {
 	_, _, _, _ = cfg, gfc, pc, v1
 	gfc = (*lame_global_flags)(unsafe.Pointer(gfp)).Finternal_flags
 	cfg = gfc + 24
-	pc = __ccgo_ts + 3507
+	pc = __ccgo_ts + 3641
 	/*  compiler/processor optimizations, operational, etc.
 	 */
-	lame_msgf(tls, gfc, __ccgo_ts+4322, 0)
-	lame_msgf(tls, gfc, __ccgo_ts+4331, libc.VaList(bp+8, float64((*lame_global_flags)(unsafe.Pointer(gfp)).Fscale)))
-	lame_msgf(tls, gfc, __ccgo_ts+4345, libc.VaList(bp+8, float64((*lame_global_flags)(unsafe.Pointer(gfp)).Fscale_left)))
-	lame_msgf(tls, gfc, __ccgo_ts+4370, libc.VaList(bp+8, float64((*lame_global_flags)(unsafe.Pointer(gfp)).Fscale_right)))
+	lame_msgf(tls, gfc, __ccgo_ts+4456, 0)
+	lame_msgf(tls, gfc, __ccgo_ts+4465, libc.VaList(bp+8, float64((*lame_global_flags)(unsafe.Pointer(gfp)).Fscale)))
+	lame_msgf(tls, gfc, __ccgo_ts+4479, libc.VaList(bp+8, float64((*lame_global_flags)(unsafe.Pointer(gfp)).Fscale_left)))
+	lame_msgf(tls, gfc, __ccgo_ts+4504, libc.VaList(bp+8, float64((*lame_global_flags)(unsafe.Pointer(gfp)).Fscale_right)))
 	switch (*SessionConfig_t)(unsafe.Pointer(cfg)).Fuse_best_huffman {
 	default:
-		pc = __ccgo_ts + 4396
+		pc = __ccgo_ts + 4530
 	case int32(1):
-		pc = __ccgo_ts + 4403
+		pc = __ccgo_ts + 4537
 	case int32(2):
-		pc = __ccgo_ts + 4423
+		pc = __ccgo_ts + 4557
 		break
 	}
-	lame_msgf(tls, gfc, __ccgo_ts+4448, libc.VaList(bp+8, pc))
-	lame_msgf(tls, gfc, __ccgo_ts+4469, libc.VaList(bp+8, (*lame_global_flags)(unsafe.Pointer(gfp)).FexperimentalY))
-	lame_msgf(tls, gfc, __ccgo_ts+4489, 0)
+	lame_msgf(tls, gfc, __ccgo_ts+4582, libc.VaList(bp+8, pc))
+	lame_msgf(tls, gfc, __ccgo_ts+4603, libc.VaList(bp+8, (*lame_global_flags)(unsafe.Pointer(gfp)).FexperimentalY))
+	lame_msgf(tls, gfc, __ccgo_ts+4623, 0)
 	/*  everything controlling the stream format
 	 */
-	lame_msgf(tls, gfc, __ccgo_ts+4495, 0)
+	lame_msgf(tls, gfc, __ccgo_ts+4629, 0)
 	switch (*SessionConfig_t)(unsafe.Pointer(cfg)).Fversion {
 	case 0:
-		pc = __ccgo_ts + 4513
+		pc = __ccgo_ts + 4647
 	case int32(1):
-		pc = __ccgo_ts + 4517
+		pc = __ccgo_ts + 4651
 	case int32(2):
-		pc = __ccgo_ts + 4519
+		pc = __ccgo_ts + 4653
 	default:
-		pc = __ccgo_ts + 4521
+		pc = __ccgo_ts + 4655
 		break
 	}
-	lame_msgf(tls, gfc, __ccgo_ts+4523, libc.VaList(bp+8, pc))
+	lame_msgf(tls, gfc, __ccgo_ts+4657, libc.VaList(bp+8, pc))
 	switch (*SessionConfig_t)(unsafe.Pointer(cfg)).Fmode {
 	case int32(JOINT_STEREO):
-		pc = __ccgo_ts + 4541
+		pc = __ccgo_ts + 4675
 	case int32(STEREO):
-		pc = __ccgo_ts + 4554
+		pc = __ccgo_ts + 4688
 	case int32(DUAL_CHANNEL):
-		pc = __ccgo_ts + 4561
+		pc = __ccgo_ts + 4695
 	case int32(MONO):
-		pc = __ccgo_ts + 4574
+		pc = __ccgo_ts + 4708
 	case int32(NOT_SET):
-		pc = __ccgo_ts + 4579
+		pc = __ccgo_ts + 4713
 	default:
-		pc = __ccgo_ts + 4595
+		pc = __ccgo_ts + 4729
 		break
 	}
-	lame_msgf(tls, gfc, __ccgo_ts+4611, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fchannels_out, pc))
+	lame_msgf(tls, gfc, __ccgo_ts+4745, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fchannels_out, pc))
 	switch (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr {
 	case int32(vbr_off):
-		pc = __ccgo_ts + 4629
+		pc = __ccgo_ts + 4763
 	default:
-		pc = __ccgo_ts + 4633
+		pc = __ccgo_ts + 4767
 		break
 	}
-	lame_msgf(tls, gfc, __ccgo_ts+4637, libc.VaList(bp+8, pc))
+	lame_msgf(tls, gfc, __ccgo_ts+4771, libc.VaList(bp+8, pc))
 	if int32(vbr_default) == (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr {
-		pc = __ccgo_ts + 4651
+		pc = __ccgo_ts + 4785
 	} else {
 		if (*SessionConfig_t)(unsafe.Pointer(cfg)).Ffree_format != 0 {
-			pc = __ccgo_ts + 4661
+			pc = __ccgo_ts + 4795
 		} else {
-			pc = __ccgo_ts + 3507
+			pc = __ccgo_ts + 3641
 		}
 	}
 	switch (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr {
 	case int32(vbr_off):
-		lame_msgf(tls, gfc, __ccgo_ts+4675, libc.VaList(bp+8, pc))
+		lame_msgf(tls, gfc, __ccgo_ts+4809, libc.VaList(bp+8, pc))
 	case int32(vbr_abr):
-		lame_msgf(tls, gfc, __ccgo_ts+4703, libc.VaList(bp+8, pc))
+		lame_msgf(tls, gfc, __ccgo_ts+4837, libc.VaList(bp+8, pc))
 	case int32(vbr_rh):
-		lame_msgf(tls, gfc, __ccgo_ts+4731, libc.VaList(bp+8, pc))
+		lame_msgf(tls, gfc, __ccgo_ts+4865, libc.VaList(bp+8, pc))
 	case int32(vbr_mt):
-		lame_msgf(tls, gfc, __ccgo_ts+4762, libc.VaList(bp+8, pc))
+		lame_msgf(tls, gfc, __ccgo_ts+4896, libc.VaList(bp+8, pc))
 	case int32(vbr_mtrh):
-		lame_msgf(tls, gfc, __ccgo_ts+4793, libc.VaList(bp+8, pc))
+		lame_msgf(tls, gfc, __ccgo_ts+4927, libc.VaList(bp+8, pc))
 	default:
-		lame_msgf(tls, gfc, __ccgo_ts+4826, 0)
+		lame_msgf(tls, gfc, __ccgo_ts+4960, 0)
 		break
 	}
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fwrite_lame_tag != 0 {
-		lame_msgf(tls, gfc, __ccgo_ts+4855, 0)
+		lame_msgf(tls, gfc, __ccgo_ts+4989, 0)
 	}
-	lame_msgf(tls, gfc, __ccgo_ts+4489, 0)
+	lame_msgf(tls, gfc, __ccgo_ts+4623, 0)
 	/*  everything controlling psychoacoustic settings, like ATH, etc.
 	 */
-	lame_msgf(tls, gfc, __ccgo_ts+4872, 0)
+	lame_msgf(tls, gfc, __ccgo_ts+5006, 0)
 	switch (*SessionConfig_t)(unsafe.Pointer(cfg)).Fshort_blocks {
 	default:
 		fallthrough
 	case int32(short_block_not_set):
-		pc = __ccgo_ts + 4521
+		pc = __ccgo_ts + 4655
 	case int32(short_block_allowed):
-		pc = __ccgo_ts + 4891
+		pc = __ccgo_ts + 5025
 	case int32(short_block_coupled):
-		pc = __ccgo_ts + 4899
+		pc = __ccgo_ts + 5033
 	case int32(short_block_dispensed):
-		pc = __ccgo_ts + 4915
+		pc = __ccgo_ts + 5049
 	case int32(short_block_forced):
-		pc = __ccgo_ts + 4925
+		pc = __ccgo_ts + 5059
 		break
 	}
-	lame_msgf(tls, gfc, __ccgo_ts+4932, libc.VaList(bp+8, pc))
-	lame_msgf(tls, gfc, __ccgo_ts+4957, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsubblock_gain))
-	lame_msgf(tls, gfc, __ccgo_ts+4977, libc.VaList(bp+8, float64((*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_qnt.Fmask_adjust)))
-	lame_msgf(tls, gfc, __ccgo_ts+5001, libc.VaList(bp+8, float64((*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_qnt.Fmask_adjust_short)))
-	lame_msgf(tls, gfc, __ccgo_ts+5031, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fquant_comp))
-	lame_msgf(tls, gfc, __ccgo_ts+5061, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fquant_comp_short))
-	lame_msgf(tls, gfc, __ccgo_ts+5094, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fnoise_shaping))
-	lame_msgf(tls, gfc, __ccgo_ts+5114, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fnoise_shaping_amp))
-	lame_msgf(tls, gfc, __ccgo_ts+5137, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fnoise_shaping_stop))
-	pc = __ccgo_ts + 5155
+	lame_msgf(tls, gfc, __ccgo_ts+5066, libc.VaList(bp+8, pc))
+	lame_msgf(tls, gfc, __ccgo_ts+5091, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fsubblock_gain))
+	lame_msgf(tls, gfc, __ccgo_ts+5111, libc.VaList(bp+8, float64((*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_qnt.Fmask_adjust)))
+	lame_msgf(tls, gfc, __ccgo_ts+5135, libc.VaList(bp+8, float64((*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_qnt.Fmask_adjust_short)))
+	lame_msgf(tls, gfc, __ccgo_ts+5165, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fquant_comp))
+	lame_msgf(tls, gfc, __ccgo_ts+5195, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fquant_comp_short))
+	lame_msgf(tls, gfc, __ccgo_ts+5228, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fnoise_shaping))
+	lame_msgf(tls, gfc, __ccgo_ts+5248, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fnoise_shaping_amp))
+	lame_msgf(tls, gfc, __ccgo_ts+5271, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).Fnoise_shaping_stop))
+	pc = __ccgo_ts + 5289
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).FATHshort != 0 {
-		pc = __ccgo_ts + 5161
+		pc = __ccgo_ts + 5295
 	}
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).FATHonly != 0 {
-		pc = __ccgo_ts + 5195
+		pc = __ccgo_ts + 5329
 	}
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).FnoATH != 0 {
-		pc = __ccgo_ts + 5212
+		pc = __ccgo_ts + 5346
 	}
-	lame_msgf(tls, gfc, __ccgo_ts+5221, libc.VaList(bp+8, pc))
-	lame_msgf(tls, gfc, __ccgo_ts+5231, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).FATHtype))
-	lame_msgf(tls, gfc, __ccgo_ts+5245, libc.VaList(bp+8, float64((*SessionConfig_t)(unsafe.Pointer(cfg)).FATHcurve), __ccgo_ts+5262))
-	lame_msgf(tls, gfc, __ccgo_ts+5281, libc.VaList(bp+8, float64((*SessionConfig_t)(unsafe.Pointer(cfg)).FATH_offset_db)))
-	lame_msgf(tls, gfc, __ccgo_ts+5311, libc.VaList(bp+8, (*ATH_t)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).FATH)).Fuse_adjust))
-	lame_msgf(tls, gfc, __ccgo_ts+5332, libc.VaList(bp+8, float64((*ATH_t)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).FATH)).Faa_sensitivity_p)))
-	lame_msgf(tls, gfc, __ccgo_ts+5366, 0)
-	lame_msgf(tls, gfc, __ccgo_ts+5410, libc.VaList(bp+8, float64(libc.Float64FromInt32(10)*libc.Xlog10(tls, float64(*(*FLOAT)(unsafe.Pointer(gfc + 87416))))), float64(libc.Float64FromInt32(10)*libc.Xlog10(tls, float64(*(*FLOAT)(unsafe.Pointer(gfc + 87416 + 7*4))))), float64(libc.Float64FromInt32(10)*libc.Xlog10(tls, float64(*(*FLOAT)(unsafe.Pointer(gfc + 87416 + 14*4))))), float64(libc.Float64FromInt32(10)*libc.Xlog10(tls, float64(*(*FLOAT)(unsafe.Pointer(gfc + 87416 + 21*4)))))))
+	lame_msgf(tls, gfc, __ccgo_ts+5355, libc.VaList(bp+8, pc))
+	lame_msgf(tls, gfc, __ccgo_ts+5365, libc.VaList(bp+8, (*SessionConfig_t)(unsafe.Pointer(cfg)).FATHtype))
+	lame_msgf(tls, gfc, __ccgo_ts+5379, libc.VaList(bp+8, float64((*SessionConfig_t)(unsafe.Pointer(cfg)).FATHcurve), __ccgo_ts+5396))
+	lame_msgf(tls, gfc, __ccgo_ts+5415, libc.VaList(bp+8, float64((*SessionConfig_t)(unsafe.Pointer(cfg)).FATH_offset_db)))
+	lame_msgf(tls, gfc, __ccgo_ts+5445, libc.VaList(bp+8, (*ATH_t)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).FATH)).Fuse_adjust))
+	lame_msgf(tls, gfc, __ccgo_ts+5466, libc.VaList(bp+8, float64((*ATH_t)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).FATH)).Faa_sensitivity_p)))
+	lame_msgf(tls, gfc, __ccgo_ts+5500, 0)
+	lame_msgf(tls, gfc, __ccgo_ts+5544, libc.VaList(bp+8, float64(libc.Float64FromInt32(10)*libc.Xlog10(tls, float64(*(*FLOAT)(unsafe.Pointer(gfc + 87416))))), float64(libc.Float64FromInt32(10)*libc.Xlog10(tls, float64(*(*FLOAT)(unsafe.Pointer(gfc + 87416 + 7*4))))), float64(libc.Float64FromInt32(10)*libc.Xlog10(tls, float64(*(*FLOAT)(unsafe.Pointer(gfc + 87416 + 14*4))))), float64(libc.Float64FromInt32(10)*libc.Xlog10(tls, float64(*(*FLOAT)(unsafe.Pointer(gfc + 87416 + 21*4)))))))
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fuse_temporal_masking_effect != 0 {
-		v1 = __ccgo_ts + 5480
+		v1 = __ccgo_ts + 5614
 	} else {
-		v1 = __ccgo_ts + 5484
+		v1 = __ccgo_ts + 5618
 	}
 	pc = v1
-	lame_msgf(tls, gfc, __ccgo_ts+5487, libc.VaList(bp+8, pc))
-	lame_msgf(tls, gfc, __ccgo_ts+5523, libc.VaList(bp+8, float64((*SessionConfig_t)(unsafe.Pointer(cfg)).FinterChRatio)))
-	lame_msgf(tls, gfc, __ccgo_ts+4489, 0)
+	lame_msgf(tls, gfc, __ccgo_ts+5621, libc.VaList(bp+8, pc))
+	lame_msgf(tls, gfc, __ccgo_ts+5657, libc.VaList(bp+8, float64((*SessionConfig_t)(unsafe.Pointer(cfg)).FinterChRatio)))
+	lame_msgf(tls, gfc, __ccgo_ts+4623, 0)
 	/*  that's all ?
 	 */
-	lame_msgf(tls, gfc, __ccgo_ts+5556, 0)
+	lame_msgf(tls, gfc, __ccgo_ts+5690, 0)
 	return
 }
 
@@ -12285,7 +10768,7 @@ func update_inbuffer_size(tls *libc.TLS, gfc uintptr, nsamples int32) (r int32) 
 		(*EncStateVar_t)(unsafe.Pointer(esv)).Fin_buffer_0 = uintptr(0)
 		(*EncStateVar_t)(unsafe.Pointer(esv)).Fin_buffer_1 = uintptr(0)
 		(*EncStateVar_t)(unsafe.Pointer(esv)).Fin_buffer_nsamples = 0
-		lame_errorf(tls, gfc, __ccgo_ts+5558, 0)
+		lame_errorf(tls, gfc, __ccgo_ts+5692, 0)
 		return -int32(2)
 	}
 	return 0
@@ -12293,7 +10776,8 @@ func update_inbuffer_size(tls *libc.TLS, gfc uintptr, nsamples int32) (r int32) 
 
 func calcNeeded(tls *libc.TLS, cfg uintptr) (r int32) {
 	var mf_needed, pcm_samples_per_frame, v1 int32
-	_, _, _ = mf_needed, pcm_samples_per_frame, v1
+	var v2 bool
+	_, _, _, _ = mf_needed, pcm_samples_per_frame, v1, v2
 	pcm_samples_per_frame = int32(576) * (*SessionConfig_t)(unsafe.Pointer(cfg)).Fmode_gr
 	/* some sanity checks */
 	mf_needed = int32(BLKSIZE) + pcm_samples_per_frame - (libc.Int32FromInt32(224) + libc.Int32FromInt32(MDCTDELAY)) /* amount needed for FFT */
@@ -12304,13 +10788,14 @@ func calcNeeded(tls *libc.TLS, cfg uintptr) (r int32) {
 		v1 = int32(512) + pcm_samples_per_frame - int32(32)
 	}
 	mf_needed = v1
-	if libc.BoolInt64(!(libc.Int32FromInt32(3)*libc.Int32FromInt32(1152)+libc.Int32FromInt32(ENCDELAY)-libc.Int32FromInt32(MDCTDELAY) >= mf_needed)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__18)), __ccgo_ts+3608, int32(1678), __ccgo_ts+5598)
+	if v2 = libc.Int32FromInt32(3)*libc.Int32FromInt32(1152)+libc.Int32FromInt32(ENCDELAY)-libc.Int32FromInt32(MDCTDELAY) >= mf_needed; !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+5732, __ccgo_ts+3768, int32(1678), uintptr(unsafe.Pointer(&__func__18)))
 	}
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	return mf_needed
 }
 
-var __func__18 = [11]int8{'c', 'a', 'l', 'c', 'N', 'e', 'e', 'd', 'e', 'd'}
+var __func__18 = [11]uint8{'c', 'a', 'l', 'c', 'N', 'e', 'e', 'd', 'e', 'd'}
 
 // C documentation
 //
@@ -12339,12 +10824,13 @@ func lame_encode_buffer_sample_t(tls *libc.TLS, gfc uintptr, nsamples int32, mp3
 	defer tls.Free(64)
 	var buf_size, buf_size1, ch, i, mf_needed, mp3out, mp3size, pcm_samples_per_frame, ret, v1 int32
 	var cfg, esv uintptr
+	var v2 bool
 	var _ /* in_buffer at bp+16 */ [2]uintptr
 	var _ /* in_buffer_ptr at bp+32 */ [2]uintptr
 	var _ /* mfbuf at bp+0 */ [2]uintptr
 	var _ /* n_in at bp+48 */ int32
 	var _ /* n_out at bp+52 */ int32
-	_, _, _, _, _, _, _, _, _, _, _, _ = buf_size, buf_size1, cfg, ch, esv, i, mf_needed, mp3out, mp3size, pcm_samples_per_frame, ret, v1
+	_, _, _, _, _, _, _, _, _, _, _, _, _ = buf_size, buf_size1, cfg, ch, esv, i, mf_needed, mp3out, mp3size, pcm_samples_per_frame, ret, v1, v2
 	cfg = gfc + 24
 	esv = gfc + 27888
 	pcm_samples_per_frame = int32(576) * (*SessionConfig_t)(unsafe.Pointer(cfg)).Fmode_gr
@@ -12357,7 +10843,7 @@ func lame_encode_buffer_sample_t(tls *libc.TLS, gfc uintptr, nsamples int32, mp3
 	}
 	/* copy out any tags that may have been written into bitstream */
 	if mp3buf_size == 0 {
-		v1 = int32(__INT_MAX__)
+		v1 = int32(INT_MAX1)
 	} else {
 		v1 = mp3buf_size
 	} /* if user specifed buffer size = 0, dont check size */
@@ -12395,9 +10881,10 @@ func lame_encode_buffer_sample_t(tls *libc.TLS, gfc uintptr, nsamples int32, mp3
 		}
 		/* update mfbuf[] counters */
 		*(*int32)(unsafe.Pointer(esv + 58796)) += *(*int32)(unsafe.Pointer(bp + 52))
-		if libc.BoolInt64(!((*EncStateVar_t)(unsafe.Pointer(esv)).Fmf_size <= libc.Int32FromInt32(3)*libc.Int32FromInt32(1152)+libc.Int32FromInt32(ENCDELAY)-libc.Int32FromInt32(MDCTDELAY))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__19)), __ccgo_ts+3608, int32(1768), __ccgo_ts+5618)
+		if v2 = (*EncStateVar_t)(unsafe.Pointer(esv)).Fmf_size <= libc.Int32FromInt32(3)*libc.Int32FromInt32(1152)+libc.Int32FromInt32(ENCDELAY)-libc.Int32FromInt32(MDCTDELAY); !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+5752, __ccgo_ts+3768, int32(1768), uintptr(unsafe.Pointer(&__func__19)))
 		}
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		/* lame_encode_flush may have set gfc->mf_sample_to_encode to 0
 		 * so we have to reinitialize it here when that happened.
 		 */
@@ -12416,7 +10903,7 @@ func lame_encode_buffer_sample_t(tls *libc.TLS, gfc uintptr, nsamples int32, mp3
 			/* mp3buf_size-mp3size = amount of space avalable  */
 			buf_size1 = mp3buf_size - mp3size
 			if mp3buf_size == 0 {
-				buf_size1 = int32(__INT_MAX__)
+				buf_size1 = int32(INT_MAX1)
 			}
 			ret = lame_encode_mp3_frame(tls, gfc, (*(*[2]uintptr)(unsafe.Pointer(bp)))[0], (*(*[2]uintptr)(unsafe.Pointer(bp)))[int32(1)], mp3buf, buf_size1)
 			if ret < 0 {
@@ -12438,25 +10925,26 @@ func lame_encode_buffer_sample_t(tls *libc.TLS, gfc uintptr, nsamples int32, mp3
 						break
 					}
 					*(*sample_t)(unsafe.Pointer((*(*[2]uintptr)(unsafe.Pointer(bp)))[ch] + uintptr(i)*4)) = *(*sample_t)(unsafe.Pointer((*(*[2]uintptr)(unsafe.Pointer(bp)))[ch] + uintptr(i+pcm_samples_per_frame)*4))
-					goto _3
-				_3:
+					goto _4
+				_4:
 					;
 					i = i + 1
 				}
-				goto _2
-			_2:
+				goto _3
+			_3:
 				;
 				ch = ch + 1
 			}
 		}
 	}
-	if libc.BoolInt64(!(nsamples == libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__19)), __ccgo_ts+3608, int32(1808), __ccgo_ts+5641)
+	if v2 = nsamples == 0; !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+5775, __ccgo_ts+3768, int32(1808), uintptr(unsafe.Pointer(&__func__19)))
 	}
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	return mp3size
 }
 
-var __func__19 = [28]int8{'l', 'a', 'm', 'e', '_', 'e', 'n', 'c', 'o', 'd', 'e', '_', 'b', 'u', 'f', 'f', 'e', 'r', '_', 's', 'a', 'm', 'p', 'l', 'e', '_', 't'}
+var __func__19 = [28]uint8{'l', 'a', 'm', 'e', '_', 'e', 'n', 'c', 'o', 'd', 'e', '_', 'b', 'u', 'f', 'f', 'e', 'r', '_', 's', 'a', 'm', 'p', 'l', 'e', '_', 't'}
 
 type PCMSampleType = int32
 
@@ -12710,7 +11198,7 @@ func lame_encode_flush_nogap(tls *libc.TLS, gfp uintptr, mp3buffer uintptr, mp3b
 			flush_bitstream(tls, gfc)
 			/* if user specifed buffer size = 0, dont check size */
 			if mp3buffer_size == 0 {
-				mp3buffer_size = int32(__INT_MAX__)
+				mp3buffer_size = int32(INT_MAX1)
 			}
 			rc = copy_buffer(tls, gfc, mp3buffer, mp3buffer_size, int32(1))
 			save_gain_values(tls, gfc)
@@ -12832,7 +11320,7 @@ func lame_encode_flush(tls *libc.TLS, gfp uintptr, mp3buffer uintptr, mp3buffer_
 	mp3buffer_size_remaining = mp3buffer_size - mp3count
 	/* if user specifed buffer size = 0, dont check size */
 	if mp3buffer_size == 0 {
-		mp3buffer_size_remaining = int32(__INT_MAX__)
+		mp3buffer_size_remaining = int32(INT_MAX1)
 	}
 	/* mp3 related stuff.  bit buffer might still contain some mp3 data */
 	flush_bitstream(tls, gfc)
@@ -12847,7 +11335,7 @@ func lame_encode_flush(tls *libc.TLS, gfp uintptr, mp3buffer uintptr, mp3buffer_
 	mp3buffer_size_remaining = mp3buffer_size - mp3count
 	/* if user specifed buffer size = 0, dont check size */
 	if mp3buffer_size == 0 {
-		mp3buffer_size_remaining = int32(__INT_MAX__)
+		mp3buffer_size_remaining = int32(INT_MAX1)
 	}
 	if (*lame_global_flags)(unsafe.Pointer(gfp)).Fwrite_id3tag_automatic != 0 {
 		/* write a id3 tag to the bitstream */
@@ -12919,17 +11407,17 @@ func lame_mp3_tags_fid(tls *libc.TLS, gfp uintptr, fpStream uintptr) {
 		return
 	}
 	/* Write Xing header again */
-	if fpStream != 0 && !(libc.Xfseek(tls, fpStream, 0, SEEK_SET) != 0) {
+	if fpStream != 0 && !(libc.Xfseek(tls, fpStream, 0, 0) != 0) {
 		rc = PutVbrTag(tls, gfp, fpStream)
 		switch rc {
 		default:
 			/* OK */
 		case -int32(1):
-			lame_errorf(tls, gfc, __ccgo_ts+5655, 0)
+			lame_errorf(tls, gfc, __ccgo_ts+5789, 0)
 		case -int32(2):
-			lame_errorf(tls, gfc, __ccgo_ts+5690, 0)
+			lame_errorf(tls, gfc, __ccgo_ts+5824, 0)
 		case -int32(3):
-			lame_errorf(tls, gfc, __ccgo_ts+5744, 0)
+			lame_errorf(tls, gfc, __ccgo_ts+5878, 0)
 			break
 		}
 	}
@@ -12995,7 +11483,7 @@ func lame_init_old(tls *libc.TLS, gfp uintptr) (r int32) {
 	(*lame_global_flags)(unsafe.Pointer(gfp)).Foriginal = int32(1)
 	(*lame_global_flags)(unsafe.Pointer(gfp)).Fsamplerate_in = int32(44100)
 	(*lame_global_flags)(unsafe.Pointer(gfp)).Fnum_channels = int32(2)
-	(*lame_global_flags)(unsafe.Pointer(gfp)).Fnum_samples = uint64(libc.Uint32FromInt32(__INT_MAX__)*libc.Uint32FromUint32(2) + libc.Uint32FromUint32(1))
+	(*lame_global_flags)(unsafe.Pointer(gfp)).Fnum_samples = uint64(0xffffffff)
 	(*lame_global_flags)(unsafe.Pointer(gfp)).Fwrite_lame_tag = int32(1)
 	(*lame_global_flags)(unsafe.Pointer(gfp)).Fquality = -int32(1)
 	(*lame_global_flags)(unsafe.Pointer(gfp)).Fshort_blocks = int32(short_block_not_set)
@@ -13349,11 +11837,13 @@ func lame_bitrate_block_type_hist(tls *libc.TLS, gfp uintptr, bitrate_btype_coun
 	}
 }
 
+const INT_MAX2 = 0x7fffffff
 const LAME_ID2 = 0xFFF88E3B
-const M_PI4 = 3.14159265358979323846264338327950288
+const M_PI4 = 3.14159265358979323846
 const M_SQRT23 = 1.4142135623730951
 const NL = 36
 const NS = 12
+const UINT_MAX2 = 0xffffffff
 
 var enwindow = [285]FLOAT{
 	0:   float32(float64(-libc.Float64FromFloat64(4.77e-07)*float64(0.740951125354959)) / float64(2.384e-06)),
@@ -14471,7 +12961,7 @@ func mdct_sub48(tls *libc.TLS, gfc uintptr, w0 uintptr, w1 uintptr) {
 	}
 }
 
-const M_SQRT24 = 1.41421356237309504880168872420969808
+const M_SQRT24 = 1.41421356237309504880
 
 func min_int(tls *libc.TLS, a int32, b int32) (r int32) {
 	if a < b {
@@ -15465,59 +13955,49 @@ func apply_preset(tls *libc.TLS, gfp uintptr, preset int32, enforce int32) (r in
 	return preset
 }
 
-const DBL_DECIMAL_DIG = "__DBL_DECIMAL_DIG__"
-const DBL_DIG = "__DBL_DIG__"
-const DBL_EPSILON = "__DBL_EPSILON__"
-const DBL_HAS_SUBNORM = "__DBL_HAS_DENORM__"
-const DBL_MANT_DIG = "__DBL_MANT_DIG__"
-const DBL_MAX = "__DBL_MAX__"
-const DBL_MAX_10_EXP = "__DBL_MAX_10_EXP__"
-const DBL_MAX_EXP = "__DBL_MAX_EXP__"
-const DBL_MIN = "__DBL_MIN__"
-const DBL_MIN_10_EXP = "__DBL_MIN_10_EXP__"
-const DBL_MIN_EXP = "__DBL_MIN_EXP__"
-const DBL_NORM_MAX = "__DBL_NORM_MAX__"
-const DBL_TRUE_MIN = "__DBL_DENORM_MIN__"
-const DECIMAL_DIG = "__DECIMAL_DIG__"
+const DBL_DECIMAL_DIG = 17
+const DBL_DIG = 15
+const DBL_EPSILON = 2.22044604925031308085e-16
+const DBL_HAS_SUBNORM = 1
+const DBL_MANT_DIG = 53
+const DBL_MAX = 1.79769313486231570815e+308
+const DBL_MAX_10_EXP = 308
+const DBL_MAX_EXP = 1024
+const DBL_MIN = 2.22507385850720138309e-308
+const DBL_TRUE_MIN = 4.94065645841246544177e-324
+const DECIMAL_DIG = 17
 const DELBARK1 = 0.34
 const FLOAT8_MAX1 = "DBL_MAX"
 const FLOAT_MAX1 = "FLT_MAX"
-const FLT_DECIMAL_DIG = "__FLT_DECIMAL_DIG__"
-const FLT_DIG = "__FLT_DIG__"
-const FLT_EPSILON = "__FLT_EPSILON__"
-const FLT_EVAL_METHOD = "__FLT_EVAL_METHOD__"
-const FLT_HAS_SUBNORM = "__FLT_HAS_DENORM__"
-const FLT_MANT_DIG = "__FLT_MANT_DIG__"
-const FLT_MAX = "__FLT_MAX__"
-const FLT_MAX_10_EXP = "__FLT_MAX_10_EXP__"
-const FLT_MAX_EXP = "__FLT_MAX_EXP__"
-const FLT_MIN = "__FLT_MIN__"
-const FLT_MIN_10_EXP = "__FLT_MIN_10_EXP__"
-const FLT_MIN_EXP = "__FLT_MIN_EXP__"
-const FLT_NORM_MAX = "__FLT_NORM_MAX__"
-const FLT_RADIX = "__FLT_RADIX__"
-const FLT_TRUE_MIN = "__FLT_DENORM_MIN__"
+const FLT_DECIMAL_DIG = 9
+const FLT_DIG = 6
+const FLT_EPSILON = 1.1920928955078125e-07
+const FLT_EVAL_METHOD = 0
+const FLT_HAS_SUBNORM = 1
+const FLT_MANT_DIG = 24
+const FLT_MAX = 3.4028234663852886e+38
+const FLT_MAX_10_EXP = 38
+const FLT_MAX_EXP = 128
+const FLT_MIN = 1.17549435082228750797e-38
+const FLT_RADIX = 2
+const FLT_TRUE_MIN = 1.40129846432481707092e-45
 const I1LIMIT = 8
 const I2LIMIT = 23
-const LDBL_DECIMAL_DIG = "__LDBL_DECIMAL_DIG__"
-const LDBL_DIG = "__LDBL_DIG__"
-const LDBL_EPSILON = "__LDBL_EPSILON__"
-const LDBL_HAS_SUBNORM = "__LDBL_HAS_DENORM__"
-const LDBL_MANT_DIG = "__LDBL_MANT_DIG__"
-const LDBL_MAX = "__LDBL_MAX__"
-const LDBL_MAX_10_EXP = "__LDBL_MAX_10_EXP__"
-const LDBL_MAX_EXP = "__LDBL_MAX_EXP__"
-const LDBL_MIN = "__LDBL_MIN__"
-const LDBL_MIN_10_EXP = "__LDBL_MIN_10_EXP__"
-const LDBL_MIN_EXP = "__LDBL_MIN_EXP__"
-const LDBL_NORM_MAX = "__LDBL_NORM_MAX__"
-const LDBL_TRUE_MIN = "__LDBL_DENORM_MIN__"
+const LDBL_DECIMAL_DIG = "DECIMAL_DIG"
+const LDBL_DIG = 15
+const LDBL_EPSILON = 2.22044604925031308085e-16
+const LDBL_HAS_SUBNORM = 1
+const LDBL_MANT_DIG = 53
+const LDBL_MAX = 1.79769313486231570815e+308
+const LDBL_MAX_10_EXP = 308
+const LDBL_MAX_EXP = 1024
+const LDBL_MIN = 2.22507385850720138309e-308
+const LDBL_TRUE_MIN = 4.94065645841246544177e-324
 const MLIMIT = 15
 const M_LN101 = 2.302585092994046
 const M_PI5 = 3.141592653589793
 const M_SQRT25 = 1.4142135623730951
 const NSFIRLEN = 21
-const __FLT_EPSILON__1 = 1.1920929e-07
 
 /*
    L3psycho_anal.  Compute psycho acoustics.
@@ -15646,32 +14126,39 @@ var tab_mask_add_delta = [9]int32{
 }
 
 func mask_add_delta(tls *libc.TLS, i int32) (r int32) {
-	if libc.BoolInt64(!(i < libc.Int32FromUint64(libc.Uint64FromInt64(36)/libc.Uint64FromInt64(4)))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__20)), __ccgo_ts+5798, int32(282), __ccgo_ts+5886)
+	var v1 bool
+	_ = v1
+	if v1 = i < libc.Int32FromUint64(libc.Uint64FromInt64(36)/libc.Uint64FromInt64(4)); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+5932, __ccgo_ts+5959, int32(282), uintptr(unsafe.Pointer(&__func__20)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	return tab_mask_add_delta[i]
 }
 
-var __func__20 = [15]int8{'m', 'a', 's', 'k', '_', 'a', 'd', 'd', '_', 'd', 'e', 'l', 't', 'a'}
+var __func__20 = [15]uint8{'m', 'a', 's', 'k', '_', 'a', 'd', 'd', '_', 'd', 'e', 'l', 't', 'a'}
 
 func init_mask_add_max_values(tls *libc.TLS) {
 	var _ma_max_i1, _ma_max_i2, _ma_max_m FLOAT
-	_, _, _ = _ma_max_i1, _ma_max_i2, _ma_max_m
+	var v1 bool
+	_, _, _, _ = _ma_max_i1, _ma_max_i2, _ma_max_m, v1
 	_ma_max_i1 = float32(libc.Xpow(tls, libc.Float64FromInt32(10), float64(libc.Int32FromInt32(I1LIMIT)+libc.Int32FromInt32(1))/libc.Float64FromFloat64(16)))
 	_ma_max_i2 = float32(libc.Xpow(tls, libc.Float64FromInt32(10), float64(libc.Int32FromInt32(I2LIMIT)+libc.Int32FromInt32(1))/libc.Float64FromFloat64(16)))
 	_ma_max_m = float32(libc.Xpow(tls, libc.Float64FromInt32(10), float64(libc.Int32FromInt32(MLIMIT))/libc.Float64FromFloat64(10)))
-	if libc.BoolInt64(!(libc.Xfabs(tls, float64(ma_max_i1-_ma_max_i1)) <= libc.Float64FromFloat32(1.1920929e-07))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__21)), __ccgo_ts+5798, int32(294), __ccgo_ts+5913)
+	if v1 = libc.Xfabs(tls, float64(ma_max_i1-_ma_max_i1)) <= libc.Float64FromFloat32(1.1920928955078125e-07); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6047, __ccgo_ts+5959, int32(294), uintptr(unsafe.Pointer(&__func__21)))
 	}
-	if libc.BoolInt64(!(libc.Xfabs(tls, float64(ma_max_i2-_ma_max_i2)) <= libc.Float64FromFloat32(1.1920929e-07))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__21)), __ccgo_ts+5798, int32(295), __ccgo_ts+5957)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = libc.Xfabs(tls, float64(ma_max_i2-_ma_max_i2)) <= libc.Float64FromFloat32(1.1920928955078125e-07); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6091, __ccgo_ts+5959, int32(295), uintptr(unsafe.Pointer(&__func__21)))
 	}
-	if libc.BoolInt64(!(libc.Xfabs(tls, float64(ma_max_m-_ma_max_m)) <= libc.Float64FromFloat32(1.1920929e-07))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__21)), __ccgo_ts+5798, int32(296), __ccgo_ts+6001)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = libc.Xfabs(tls, float64(ma_max_m-_ma_max_m)) <= libc.Float64FromFloat32(1.1920928955078125e-07); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6135, __ccgo_ts+5959, int32(296), uintptr(unsafe.Pointer(&__func__21)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 }
 
-var __func__21 = [25]int8{'i', 'n', 'i', 't', '_', 'm', 'a', 's', 'k', '_', 'a', 'd', 'd', '_', 'm', 'a', 'x', '_', 'v', 'a', 'l', 'u', 'e', 's'}
+var __func__21 = [25]uint8{'i', 'n', 'i', 't', '_', 'm', 'a', 's', 'k', '_', 'a', 'd', 'd', '_', 'm', 'a', 'x', '_', 'v', 'a', 'l', 'u', 'e', 's'}
 
 // C documentation
 //
@@ -15739,7 +14226,8 @@ var table2 = [10]FLOAT{
 func convert_partition2scalefac(tls *libc.TLS, gd uintptr, eb uintptr, thr uintptr, enn_out uintptr, thm_out uintptr) {
 	var b, b_lim, bo_sb, n, npart, sb, v3, v4 int32
 	var enn, thmm, w_curr, w_next, v1 FLOAT
-	_, _, _, _, _, _, _, _, _, _, _, _, _ = b, b_lim, bo_sb, enn, n, npart, sb, thmm, w_curr, w_next, v1, v3, v4
+	var v5 bool
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _ = b, b_lim, bo_sb, enn, n, npart, sb, thmm, w_curr, w_next, v1, v3, v4, v5
 	n = (*PsyConst_CB2SB_t)(unsafe.Pointer(gd)).Fn_sb
 	v1 = libc.Float32FromFloat32(0)
 	thmm = v1
@@ -15760,12 +14248,14 @@ func convert_partition2scalefac(tls *libc.TLS, gd uintptr, eb uintptr, thr uintp
 		}
 		b_lim = v4
 		for b < b_lim {
-			if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(eb + uintptr(b)*4)) >= libc.Float32FromInt32(0))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__22)), __ccgo_ts+5798, int32(372), __ccgo_ts+6044)
-			} /* iff failed, it may indicate some index error elsewhere */
-			if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) >= libc.Float32FromInt32(0))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__22)), __ccgo_ts+5798, int32(373), __ccgo_ts+6055)
+			if v5 = *(*FLOAT)(unsafe.Pointer(eb + uintptr(b)*4)) >= libc.Float32FromInt32(0); !v5 {
+				libc.X__assert_fail(tls, __ccgo_ts+6178, __ccgo_ts+5959, int32(372), uintptr(unsafe.Pointer(&__func__22)))
 			}
+			_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0) /* iff failed, it may indicate some index error elsewhere */
+			if v5 = *(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) >= libc.Float32FromInt32(0); !v5 {
+				libc.X__assert_fail(tls, __ccgo_ts+6189, __ccgo_ts+5959, int32(373), uintptr(unsafe.Pointer(&__func__22)))
+			}
+			_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			enn = enn + *(*FLOAT)(unsafe.Pointer(eb + uintptr(b)*4))
 			thmm = thmm + *(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4))
 			b = b + 1
@@ -15776,12 +14266,14 @@ func convert_partition2scalefac(tls *libc.TLS, gd uintptr, eb uintptr, thr uintp
 			sb = sb + 1
 			break
 		}
-		if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(eb + uintptr(b)*4)) >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__22)), __ccgo_ts+5798, int32(384), __ccgo_ts+6044)
-		} /* iff failed, it may indicate some index error elsewhere */
-		if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__22)), __ccgo_ts+5798, int32(385), __ccgo_ts+6055)
+		if v5 = *(*FLOAT)(unsafe.Pointer(eb + uintptr(b)*4)) >= libc.Float32FromInt32(0); !v5 {
+			libc.X__assert_fail(tls, __ccgo_ts+6178, __ccgo_ts+5959, int32(384), uintptr(unsafe.Pointer(&__func__22)))
 		}
+		_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0) /* iff failed, it may indicate some index error elsewhere */
+		if v5 = *(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) >= libc.Float32FromInt32(0); !v5 {
+			libc.X__assert_fail(tls, __ccgo_ts+6189, __ccgo_ts+5959, int32(385), uintptr(unsafe.Pointer(&__func__22)))
+		}
+		_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		/* at transition sfb -> sfb+1 */
 		w_curr = *(*FLOAT)(unsafe.Pointer(gd + 1112 + uintptr(sb)*4))
 		w_next = libc.Float32FromFloat32(1) - w_curr
@@ -15804,14 +14296,14 @@ func convert_partition2scalefac(tls *libc.TLS, gd uintptr, eb uintptr, thr uintp
 		}
 		*(*FLOAT)(unsafe.Pointer(enn_out + uintptr(sb)*4)) = libc.Float32FromInt32(0)
 		*(*FLOAT)(unsafe.Pointer(thm_out + uintptr(sb)*4)) = libc.Float32FromInt32(0)
-		goto _5
-	_5:
+		goto _9
+	_9:
 		;
 		sb = sb + 1
 	}
 }
 
-var __func__22 = [27]int8{'c', 'o', 'n', 'v', 'e', 'r', 't', '_', 'p', 'a', 'r', 't', 'i', 't', 'i', 'o', 'n', '2', 's', 'c', 'a', 'l', 'e', 'f', 'a', 'c'}
+var __func__22 = [27]uint8{'c', 'o', 'n', 'v', 'e', 'r', 't', '_', 'p', 'a', 'r', 't', 'i', 't', 'i', 'o', 'n', '2', 's', 'c', 'a', 'l', 'e', 'f', 'a', 'c'}
 
 func convert_partition2scalefac_s(tls *libc.TLS, gfc uintptr, eb uintptr, thr uintptr, chn int32, sblock int32) {
 	bp := tls.Alloc(112)
@@ -15907,7 +14399,8 @@ func NS_INTERP(tls *libc.TLS, x FLOAT, y FLOAT, r FLOAT) (r1 FLOAT) {
 func pecalc_s(tls *libc.TLS, mr uintptr, masking_lower FLOAT) (r FLOAT) {
 	var en, pe_s, thm, x FLOAT
 	var sb, sblock uint32
-	_, _, _, _, _, _ = en, pe_s, sb, sblock, thm, x
+	var v3 bool
+	_, _, _, _, _, _, _ = en, pe_s, sb, sblock, thm, x, v3
 	pe_s = libc.Float32FromFloat32(1236.28) / libc.Float32FromInt32(4)
 	sb = uint32(0)
 	for {
@@ -15920,9 +14413,10 @@ func pecalc_s(tls *libc.TLS, mr uintptr, masking_lower FLOAT) (r FLOAT) {
 				break
 			}
 			thm = *(*FLOAT)(unsafe.Pointer(mr + 88 + uintptr(sb)*12 + uintptr(sblock)*4))
-			if libc.BoolInt64(!(uint64(sb) < libc.Uint64FromInt64(48)/libc.Uint64FromInt64(4))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__23)), __ccgo_ts+5798, int32(493), __ccgo_ts+6067)
+			if v3 = uint64(sb) < libc.Uint64FromInt64(48)/libc.Uint64FromInt64(4); !v3 {
+				libc.X__assert_fail(tls, __ccgo_ts+6201, __ccgo_ts+5959, int32(493), uintptr(unsafe.Pointer(&__func__23)))
 			}
+			_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			if thm > libc.Float32FromFloat32(0) {
 				x = FLOAT(thm * masking_lower)
 				en = *(*FLOAT)(unsafe.Pointer(mr + 244 + 88 + uintptr(sb)*12 + uintptr(sblock)*4))
@@ -15930,9 +14424,10 @@ func pecalc_s(tls *libc.TLS, mr uintptr, masking_lower FLOAT) (r FLOAT) {
 					if en > FLOAT(x*libc.Float32FromFloat32(1e+10)) {
 						pe_s = float32(float64(pe_s) + float64(float64(regcoef_s[sb])*float64(libc.Float64FromFloat32(10)*libc.Float64FromFloat64(2.302585092994046))))
 					} else {
-						if libc.BoolInt64(!(x > libc.Float32FromInt32(0))) != 0 {
-							libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__23)), __ccgo_ts+5798, int32(502), __ccgo_ts+6096)
+						if v3 = x > libc.Float32FromInt32(0); !v3 {
+							libc.X__assert_fail(tls, __ccgo_ts+6230, __ccgo_ts+5959, int32(502), uintptr(unsafe.Pointer(&__func__23)))
 						}
+						_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 						pe_s = float32(float64(pe_s) + float64(float64(regcoef_s[sb])*libc.Xlog10(tls, float64(en/x))))
 					}
 				}
@@ -15950,7 +14445,7 @@ func pecalc_s(tls *libc.TLS, mr uintptr, masking_lower FLOAT) (r FLOAT) {
 	return pe_s
 }
 
-var __func__23 = [9]int8{'p', 'e', 'c', 'a', 'l', 'c', '_', 's'}
+var __func__23 = [9]uint8{'p', 'e', 'c', 'a', 'l', 'c', '_', 's'}
 
 var regcoef_s = [12]FLOAT{
 	0:  float32(11.8),
@@ -15970,7 +14465,8 @@ var regcoef_s = [12]FLOAT{
 func pecalc_l(tls *libc.TLS, mr uintptr, masking_lower FLOAT) (r FLOAT) {
 	var en, pe_l, thm, x FLOAT
 	var sb uint32
-	_, _, _, _, _ = en, pe_l, sb, thm, x
+	var v2 bool
+	_, _, _, _, _, _ = en, pe_l, sb, thm, x, v2
 	pe_l = libc.Float32FromFloat32(1124.23) / libc.Float32FromInt32(4)
 	sb = uint32(0)
 	for {
@@ -15978,9 +14474,10 @@ func pecalc_l(tls *libc.TLS, mr uintptr, masking_lower FLOAT) (r FLOAT) {
 			break
 		}
 		thm = *(*FLOAT)(unsafe.Pointer(mr + uintptr(sb)*4))
-		if libc.BoolInt64(!(uint64(sb) < libc.Uint64FromInt64(84)/libc.Uint64FromInt64(4))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__24)), __ccgo_ts+5798, int32(546), __ccgo_ts+6102)
+		if v2 = uint64(sb) < libc.Uint64FromInt64(84)/libc.Uint64FromInt64(4); !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+6236, __ccgo_ts+5959, int32(546), uintptr(unsafe.Pointer(&__func__24)))
 		}
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		if thm > libc.Float32FromFloat32(0) {
 			x = FLOAT(thm * masking_lower)
 			en = *(*FLOAT)(unsafe.Pointer(mr + 244 + uintptr(sb)*4))
@@ -15988,9 +14485,10 @@ func pecalc_l(tls *libc.TLS, mr uintptr, masking_lower FLOAT) (r FLOAT) {
 				if en > FLOAT(x*libc.Float32FromFloat32(1e+10)) {
 					pe_l = float32(float64(pe_l) + float64(float64(regcoef_l[sb])*float64(libc.Float64FromFloat32(10)*libc.Float64FromFloat64(2.302585092994046))))
 				} else {
-					if libc.BoolInt64(!(x > libc.Float32FromInt32(0))) != 0 {
-						libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__24)), __ccgo_ts+5798, int32(555), __ccgo_ts+6096)
+					if v2 = x > libc.Float32FromInt32(0); !v2 {
+						libc.X__assert_fail(tls, __ccgo_ts+6230, __ccgo_ts+5959, int32(555), uintptr(unsafe.Pointer(&__func__24)))
 					}
+					_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 					pe_l = float32(float64(pe_l) + float64(float64(regcoef_l[sb])*libc.Xlog10(tls, float64(en/x))))
 				}
 			}
@@ -16003,7 +14501,7 @@ func pecalc_l(tls *libc.TLS, mr uintptr, masking_lower FLOAT) (r FLOAT) {
 	return pe_l
 }
 
-var __func__24 = [9]int8{'p', 'e', 'c', 'a', 'l', 'c', '_', 'l'}
+var __func__24 = [9]uint8{'p', 'e', 'c', 'a', 'l', 'c', '_', 'l'}
 
 var regcoef_l = [21]FLOAT{
 	0:  float32(6.8),
@@ -16032,7 +14530,8 @@ var regcoef_l = [21]FLOAT{
 func calc_energy(tls *libc.TLS, l uintptr, fftenergy uintptr, eb uintptr, max uintptr, avg uintptr) {
 	var b, i, j, v2 int32
 	var ebb, el, m FLOAT
-	_, _, _, _, _, _, _ = b, ebb, el, i, j, m, v2
+	var v4 bool
+	_, _, _, _, _, _, _, _ = b, ebb, el, i, j, m, v2, v4
 	v2 = libc.Int32FromInt32(0)
 	j = v2
 	b = v2
@@ -16048,9 +14547,10 @@ func calc_energy(tls *libc.TLS, l uintptr, fftenergy uintptr, eb uintptr, max ui
 				break
 			}
 			el = *(*FLOAT)(unsafe.Pointer(fftenergy + uintptr(j)*4))
-			if libc.BoolInt64(!(el >= libc.Float32FromInt32(0))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__25)), __ccgo_ts+5798, int32(576), __ccgo_ts+6131)
+			if v4 = el >= libc.Float32FromInt32(0); !v4 {
+				libc.X__assert_fail(tls, __ccgo_ts+6265, __ccgo_ts+5959, int32(576), uintptr(unsafe.Pointer(&__func__25)))
 			}
+			_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			ebb = ebb + el
 			if m < el {
 				m = el
@@ -16064,21 +14564,26 @@ func calc_energy(tls *libc.TLS, l uintptr, fftenergy uintptr, eb uintptr, max ui
 		*(*FLOAT)(unsafe.Pointer(eb + uintptr(b)*4)) = ebb
 		*(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4)) = m
 		*(*FLOAT)(unsafe.Pointer(avg + uintptr(b)*4)) = FLOAT(ebb * *(*FLOAT)(unsafe.Pointer(l + 512 + uintptr(b)*4)))
-		if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(l + 512 + uintptr(b)*4)) >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__25)), __ccgo_ts+5798, int32(584), __ccgo_ts+6139)
+		if v4 = *(*FLOAT)(unsafe.Pointer(l + 512 + uintptr(b)*4)) >= libc.Float32FromInt32(0); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+6273, __ccgo_ts+5959, int32(584), uintptr(unsafe.Pointer(&__func__25)))
 		}
-		if libc.BoolInt64(!(ebb >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__25)), __ccgo_ts+5798, int32(585), __ccgo_ts+6160)
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v4 = ebb >= libc.Float32FromInt32(0); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+6294, __ccgo_ts+5959, int32(585), uintptr(unsafe.Pointer(&__func__25)))
 		}
-		if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(eb + uintptr(b)*4)) >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__25)), __ccgo_ts+5798, int32(586), __ccgo_ts+6044)
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v4 = *(*FLOAT)(unsafe.Pointer(eb + uintptr(b)*4)) >= libc.Float32FromInt32(0); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+6178, __ccgo_ts+5959, int32(586), uintptr(unsafe.Pointer(&__func__25)))
 		}
-		if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4)) >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__25)), __ccgo_ts+5798, int32(587), __ccgo_ts+6169)
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v4 = *(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4)) >= libc.Float32FromInt32(0); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+6303, __ccgo_ts+5959, int32(587), uintptr(unsafe.Pointer(&__func__25)))
 		}
-		if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(avg + uintptr(b)*4)) >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__25)), __ccgo_ts+5798, int32(588), __ccgo_ts+6181)
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v4 = *(*FLOAT)(unsafe.Pointer(avg + uintptr(b)*4)) >= libc.Float32FromInt32(0); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+6315, __ccgo_ts+5959, int32(588), uintptr(unsafe.Pointer(&__func__25)))
 		}
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		goto _1
 	_1:
 		;
@@ -16086,28 +14591,31 @@ func calc_energy(tls *libc.TLS, l uintptr, fftenergy uintptr, eb uintptr, max ui
 	}
 }
 
-var __func__25 = [12]int8{'c', 'a', 'l', 'c', '_', 'e', 'n', 'e', 'r', 'g', 'y'}
+var __func__25 = [12]uint8{'c', 'a', 'l', 'c', '_', 'e', 'n', 'e', 'r', 'g', 'y'}
 
 func calc_mask_index_l(tls *libc.TLS, gfc uintptr, max uintptr, avg uintptr, mask_idx uintptr) {
 	var a, m FLOAT
 	var b, k, last_tab_entry int32
 	var gdl uintptr
-	_, _, _, _, _, _ = a, b, gdl, k, last_tab_entry, m
+	var v1 bool
+	_, _, _, _, _, _, _ = a, b, gdl, k, last_tab_entry, m, v1
 	gdl = (*lame_internal_flags)(unsafe.Pointer(gfc)).Fcd_psy + 4608
 	last_tab_entry = libc.Int32FromUint64(libc.Uint64FromInt64(36)/libc.Uint64FromInt64(4) - libc.Uint64FromInt32(1))
 	b = 0
 	a = *(*FLOAT)(unsafe.Pointer(avg + uintptr(b)*4)) + *(*FLOAT)(unsafe.Pointer(avg + uintptr(b+int32(1))*4))
-	if libc.BoolInt64(!(a >= libc.Float32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__26)), __ccgo_ts+5798, int32(603), __ccgo_ts+6193)
+	if v1 = a >= libc.Float32FromInt32(0); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6327, __ccgo_ts+5959, int32(603), uintptr(unsafe.Pointer(&__func__26)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	if a > libc.Float32FromFloat32(0) {
 		m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4))
 		if m < *(*FLOAT)(unsafe.Pointer(max + uintptr(b+int32(1))*4)) {
 			m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b+int32(1))*4))
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b+int32(1))*4))-libc.Int32FromInt32(1) > libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__26)), __ccgo_ts+5798, int32(608), __ccgo_ts+6200)
+		if v1 = *(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b+int32(1))*4))-int32(1) > 0; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+6334, __ccgo_ts+5959, int32(608), uintptr(unsafe.Pointer(&__func__26)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		a = float32(libc.Float32FromFloat32(20)*(FLOAT(m*libc.Float32FromFloat32(2))-a)) / FLOAT(a*float32(*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b+int32(1))*4))-libc.Int32FromInt32(1)))
 		k = int32(a)
 		if k > last_tab_entry {
@@ -16123,9 +14631,10 @@ func calc_mask_index_l(tls *libc.TLS, gfc uintptr, max uintptr, avg uintptr, mas
 			break
 		}
 		a = *(*FLOAT)(unsafe.Pointer(avg + uintptr(b-int32(1))*4)) + *(*FLOAT)(unsafe.Pointer(avg + uintptr(b)*4)) + *(*FLOAT)(unsafe.Pointer(avg + uintptr(b+int32(1))*4))
-		if libc.BoolInt64(!(a >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__26)), __ccgo_ts+5798, int32(622), __ccgo_ts+6193)
+		if v1 = a >= libc.Float32FromInt32(0); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+6327, __ccgo_ts+5959, int32(622), uintptr(unsafe.Pointer(&__func__26)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		if a > libc.Float32FromFloat32(0) {
 			m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b-int32(1))*4))
 			if m < *(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4)) {
@@ -16134,9 +14643,10 @@ func calc_mask_index_l(tls *libc.TLS, gfc uintptr, max uintptr, avg uintptr, mas
 			if m < *(*FLOAT)(unsafe.Pointer(max + uintptr(b+int32(1))*4)) {
 				m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b+int32(1))*4))
 			}
-			if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b+int32(1))*4))-libc.Int32FromInt32(1) > libc.Int32FromInt32(0))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__26)), __ccgo_ts+5798, int32(629), __ccgo_ts+6250)
+			if v1 = *(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b+int32(1))*4))-int32(1) > 0; !v1 {
+				libc.X__assert_fail(tls, __ccgo_ts+6384, __ccgo_ts+5959, int32(629), uintptr(unsafe.Pointer(&__func__26)))
 			}
+			_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			a = float32(libc.Float32FromFloat32(20)*(FLOAT(m*libc.Float32FromFloat32(3))-a)) / FLOAT(a*float32(*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b+int32(1))*4))-libc.Int32FromInt32(1)))
 			k = int32(a)
 			if k > last_tab_entry {
@@ -16146,29 +14656,33 @@ func calc_mask_index_l(tls *libc.TLS, gfc uintptr, max uintptr, avg uintptr, mas
 		} else {
 			*(*uint8)(unsafe.Pointer(mask_idx + uintptr(b))) = uint8(0)
 		}
-		goto _1
-	_1:
+		goto _3
+	_3:
 		;
 		b = b + 1
 	}
-	if libc.BoolInt64(!(b > libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__26)), __ccgo_ts+5798, int32(641), __ccgo_ts+6323)
+	if v1 = b > 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6457, __ccgo_ts+5959, int32(641), uintptr(unsafe.Pointer(&__func__26)))
 	}
-	if libc.BoolInt64(!(b == (*PsyConst_CB2SB_t)(unsafe.Pointer(gdl)).Fnpart-libc.Int32FromInt32(1))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__26)), __ccgo_ts+5798, int32(642), __ccgo_ts+6329)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = b == (*PsyConst_CB2SB_t)(unsafe.Pointer(gdl)).Fnpart-int32(1); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6463, __ccgo_ts+5959, int32(642), uintptr(unsafe.Pointer(&__func__26)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	a = *(*FLOAT)(unsafe.Pointer(avg + uintptr(b-int32(1))*4)) + *(*FLOAT)(unsafe.Pointer(avg + uintptr(b)*4))
-	if libc.BoolInt64(!(a >= libc.Float32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__26)), __ccgo_ts+5798, int32(645), __ccgo_ts+6193)
+	if v1 = a >= libc.Float32FromInt32(0); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6327, __ccgo_ts+5959, int32(645), uintptr(unsafe.Pointer(&__func__26)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	if a > libc.Float32FromFloat32(0) {
 		m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b-int32(1))*4))
 		if m < *(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4)) {
 			m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4))
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b)*4))-libc.Int32FromInt32(1) > libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__26)), __ccgo_ts+5798, int32(650), __ccgo_ts+6349)
+		if v1 = *(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b)*4))-int32(1) > 0; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+6483, __ccgo_ts+5959, int32(650), uintptr(unsafe.Pointer(&__func__26)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		a = float32(libc.Float32FromFloat32(20)*(FLOAT(m*libc.Float32FromFloat32(2))-a)) / FLOAT(a*float32(*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gdl + 1716 + uintptr(b)*4))-libc.Int32FromInt32(1)))
 		k = int32(a)
 		if k > last_tab_entry {
@@ -16178,12 +14692,13 @@ func calc_mask_index_l(tls *libc.TLS, gfc uintptr, max uintptr, avg uintptr, mas
 	} else {
 		*(*uint8)(unsafe.Pointer(mask_idx + uintptr(b))) = uint8(0)
 	}
-	if libc.BoolInt64(!(b == (*PsyConst_CB2SB_t)(unsafe.Pointer(gdl)).Fnpart-libc.Int32FromInt32(1))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__26)), __ccgo_ts+5798, int32(661), __ccgo_ts+6399)
+	if v1 = b == (*PsyConst_CB2SB_t)(unsafe.Pointer(gdl)).Fnpart-int32(1); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6533, __ccgo_ts+5959, int32(661), uintptr(unsafe.Pointer(&__func__26)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 }
 
-var __func__26 = [18]int8{'c', 'a', 'l', 'c', '_', 'm', 'a', 's', 'k', '_', 'i', 'n', 'd', 'e', 'x', '_', 'l'}
+var __func__26 = [18]uint8{'c', 'a', 'l', 'c', '_', 'm', 'a', 's', 'k', '_', 'i', 'n', 'd', 'e', 'x', '_', 'l'}
 
 func vbrpsy_compute_fft_l(tls *libc.TLS, gfc uintptr, buffer uintptr, chn int32, gr_out int32, fftenergy uintptr, wsamp_l uintptr) {
 	var cfg, plt, psv, v1 uintptr
@@ -16340,10 +14855,11 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 	var attack_intensity, en_subshort [12]FLOAT
 	var cfg, firbuf, pf, pfe, plt, psv, v1 uintptr
 	var chn, i, j, n_chn_out, n_chn_psy, ns_uselongblock, v2 int32
-	var enn, factor, l, m, p, r, sum1, sum2, u, v, x, x1, v11 FLOAT
+	var enn, factor, l, m, p, r, sum1, sum2, u, v, x, x1, v13 FLOAT
+	var v4 bool
 	var _ /* en_short at bp+4608 */ [4]FLOAT
 	var _ /* ns_hpfsmpl at bp+0 */ [2][576]FLOAT
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = attack_intensity, cfg, chn, en_subshort, enn, factor, firbuf, i, j, l, m, n_chn_out, n_chn_psy, ns_uselongblock, p, pf, pfe, plt, psv, r, sum1, sum2, u, v, x, x1, v1, v11, v2
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = attack_intensity, cfg, chn, en_subshort, enn, factor, firbuf, i, j, l, m, n_chn_out, n_chn_psy, ns_uselongblock, p, pf, pfe, plt, psv, r, sum1, sum2, u, v, x, x1, v1, v13, v2, v4
 	cfg = gfc + 24
 	psv = gfc + 21628
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fanalysis != 0 {
@@ -16370,6 +14886,10 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 		}
 		/* apply high pass filter of fs/4 */
 		firbuf = *(*uintptr)(unsafe.Pointer(buffer + uintptr(chn)*8)) + uintptr(libc.Int32FromInt32(576)-libc.Int32FromInt32(350)-libc.Int32FromInt32(NSFIRLEN)+libc.Int32FromInt32(192))*4
+		if v4 = libc.Bool(libc.Uint64FromInt64(40)/libc.Uint64FromInt64(4) == libc.Uint64FromInt32((libc.Int32FromInt32(NSFIRLEN)-libc.Int32FromInt32(1))/libc.Int32FromInt32(2))); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+6555, __ccgo_ts+5959, int32(795), uintptr(unsafe.Pointer(&__func__27)))
+		}
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		i = 0
 		for {
 			if !(i < int32(576)) {
@@ -16384,14 +14904,14 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 				}
 				sum1 = sum1 + FLOAT(fircoef1[j]*(*(*sample_t)(unsafe.Pointer(firbuf + uintptr(i+j)*4))+*(*sample_t)(unsafe.Pointer(firbuf + uintptr(i+int32(NSFIRLEN)-j)*4))))
 				sum2 = sum2 + FLOAT(fircoef1[j+int32(1)]*(*(*sample_t)(unsafe.Pointer(firbuf + uintptr(i+j+int32(1))*4))+*(*sample_t)(unsafe.Pointer(firbuf + uintptr(i+int32(NSFIRLEN)-j-int32(1))*4))))
-				goto _5
-			_5:
+				goto _6
+			_6:
 				;
 				j = j + int32(2)
 			}
 			*(*FLOAT)(unsafe.Pointer(bp + uintptr(chn)*2304 + uintptr(i)*4)) = sum1 + sum2
-			goto _4
-		_4:
+			goto _5
+		_5:
 			;
 			i = i + 1
 		}
@@ -16427,8 +14947,8 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 				r = *(*FLOAT)(unsafe.Pointer(bp + 1*2304 + uintptr(i)*4))
 				*(*FLOAT)(unsafe.Pointer(bp + uintptr(i)*4)) = l + r
 				*(*FLOAT)(unsafe.Pointer(bp + 1*2304 + uintptr(i)*4)) = l - r
-				goto _7
-			_7:
+				goto _8
+			_8:
 				;
 				i = i + 1
 				j = j - 1
@@ -16444,13 +14964,14 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 				break
 			}
 			en_subshort[i] = *(*FLOAT)(unsafe.Pointer(psv + 6072 + uintptr(chn)*36 + uintptr(i+int32(6))*4))
-			if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(psv + 6072 + uintptr(chn)*36 + uintptr(i+int32(4))*4)) > libc.Float32FromInt32(0))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__27)), __ccgo_ts+5798, int32(836), __ccgo_ts+6421)
+			if v4 = *(*FLOAT)(unsafe.Pointer(psv + 6072 + uintptr(chn)*36 + uintptr(i+int32(4))*4)) > libc.Float32FromInt32(0); !v4 {
+				libc.X__assert_fail(tls, __ccgo_ts+6601, __ccgo_ts+5959, int32(836), uintptr(unsafe.Pointer(&__func__27)))
 			}
+			_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			attack_intensity[i] = en_subshort[i] / *(*FLOAT)(unsafe.Pointer(psv + 6072 + uintptr(chn)*36 + uintptr(i+int32(4))*4))
 			*(*FLOAT)(unsafe.Pointer(bp + 4608)) += en_subshort[i]
-			goto _8
-		_8:
+			goto _9
+		_9:
 			;
 			i = i + 1
 		}
@@ -16468,33 +14989,35 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 				if float64(p) < libc.Xfabs(tls, float64(*(*FLOAT)(unsafe.Pointer(pf)))) {
 					p = float32(libc.Xfabs(tls, float64(*(*FLOAT)(unsafe.Pointer(pf)))))
 				}
-				goto _10
-			_10:
+				goto _12
+			_12:
 				;
 				pf += 4
 			}
-			v11 = p
-			en_subshort[i+int32(3)] = v11
-			*(*FLOAT)(unsafe.Pointer(psv + 6072 + uintptr(chn)*36 + uintptr(i)*4)) = v11
+			v13 = p
+			en_subshort[i+int32(3)] = v13
+			*(*FLOAT)(unsafe.Pointer(psv + 6072 + uintptr(chn)*36 + uintptr(i)*4)) = v13
 			*(*FLOAT)(unsafe.Pointer(bp + 4608 + uintptr(int32(1)+i/int32(3))*4)) += p
 			if p > en_subshort[i+int32(3)-int32(2)] {
-				if libc.BoolInt64(!(en_subshort[i+int32(3)-int32(2)] > libc.Float32FromInt32(0))) != 0 {
-					libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__27)), __ccgo_ts+5798, int32(850), __ccgo_ts+6459)
+				if v4 = en_subshort[i+int32(3)-int32(2)] > libc.Float32FromInt32(0); !v4 {
+					libc.X__assert_fail(tls, __ccgo_ts+6639, __ccgo_ts+5959, int32(850), uintptr(unsafe.Pointer(&__func__27)))
 				}
+				_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 				p = p / en_subshort[i+int32(3)-int32(2)]
 			} else {
 				if en_subshort[i+int32(3)-int32(2)] > FLOAT(p*libc.Float32FromFloat32(10)) {
-					if libc.BoolInt64(!(p > libc.Float32FromInt32(0))) != 0 {
-						libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__27)), __ccgo_ts+5798, int32(854), __ccgo_ts+6486)
+					if v4 = p > libc.Float32FromInt32(0); !v4 {
+						libc.X__assert_fail(tls, __ccgo_ts+6666, __ccgo_ts+5959, int32(854), uintptr(unsafe.Pointer(&__func__27)))
 					}
+					_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 					p = en_subshort[i+int32(3)-int32(2)] / FLOAT(p*libc.Float32FromFloat32(10))
 				} else {
 					p = float32(0)
 				}
 			}
 			attack_intensity[i+int32(3)] = p
-			goto _9
-		_9:
+			goto _11
+		_11:
 			;
 			i = i + 1
 		}
@@ -16513,8 +15036,8 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 				}
 			}
 			*(*FLOAT)(unsafe.Pointer(sub_short_factor + uintptr(chn)*12 + uintptr(i)*4)) = factor
-			goto _12
-		_12:
+			goto _16
+		_16:
 			;
 			i = i + 1
 		}
@@ -16528,8 +15051,8 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 				if x < attack_intensity[i] {
 					x = attack_intensity[i]
 				}
-				goto _13
-			_13:
+				goto _17
+			_17:
 				;
 				i = i + 1
 			}
@@ -16548,8 +15071,8 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 					*(*int32)(unsafe.Pointer(ns_attacks + uintptr(chn)*16 + uintptr(i/int32(3))*4)) = i%int32(3) + int32(1)
 				}
 			}
-			goto _14
-		_14:
+			goto _18
+		_18:
 			;
 			i = i + 1
 		}
@@ -16565,11 +15088,11 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 			u = (*(*[4]FLOAT)(unsafe.Pointer(bp + 4608)))[i-int32(1)]
 			v = (*(*[4]FLOAT)(unsafe.Pointer(bp + 4608)))[i]
 			if u > v {
-				v11 = u
+				v13 = u
 			} else {
-				v11 = v
+				v13 = v
 			}
-			m = v11
+			m = v13
 			if m < libc.Float32FromInt32(40000) { /* (2) */
 				if u < FLOAT(libc.Float32FromFloat32(1.7)*v) && v < FLOAT(libc.Float32FromFloat32(1.7)*u) { /* (1) */
 					if i == int32(1) && *(*int32)(unsafe.Pointer(ns_attacks + uintptr(chn)*16)) <= *(*int32)(unsafe.Pointer(ns_attacks + uintptr(chn)*16 + uintptr(i)*4)) {
@@ -16578,8 +15101,8 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 					*(*int32)(unsafe.Pointer(ns_attacks + uintptr(chn)*16 + uintptr(i)*4)) = 0
 				}
 			}
-			goto _15
-		_15:
+			goto _19
+		_19:
 			;
 			i = i + 1
 		}
@@ -16611,14 +15134,14 @@ func vbrpsy_attack_detection(tls *libc.TLS, gfc uintptr, buffer uintptr, gr_out 
 		 * into masking_ratio to return to calling program.
 		 */
 		*(*FLOAT)(unsafe.Pointer(energy + uintptr(chn)*4)) = *(*FLOAT)(unsafe.Pointer(psv + 6056 + uintptr(chn)*4))
-		goto _6
-	_6:
+		goto _7
+	_7:
 		;
 		chn = chn + 1
 	}
 }
 
-var __func__27 = [24]int8{'v', 'b', 'r', 'p', 's', 'y', '_', 'a', 't', 't', 'a', 'c', 'k', '_', 'd', 'e', 't', 'e', 'c', 't', 'i', 'o', 'n'}
+var __func__27 = [24]uint8{'v', 'b', 'r', 'p', 's', 'y', '_', 'a', 't', 't', 'a', 'c', 'k', '_', 'd', 'e', 't', 'e', 'c', 't', 'i', 'o', 'n'}
 
 var fircoef1 = [10]FLOAT{
 	0: FLOAT(-libc.Float64FromFloat64(8.65163e-18) * libc.Float64FromInt32(2)),
@@ -16659,22 +15182,25 @@ func vbrpsy_calc_mask_index_s(tls *libc.TLS, gfc uintptr, max uintptr, avg uintp
 	var a, m FLOAT
 	var b, k, last_tab_entry int32
 	var gds uintptr
-	_, _, _, _, _, _ = a, b, gds, k, last_tab_entry, m
+	var v1 bool
+	_, _, _, _, _, _, _ = a, b, gds, k, last_tab_entry, m, v1
 	gds = (*lame_internal_flags)(unsafe.Pointer(gfc)).Fcd_psy + 6776
 	last_tab_entry = libc.Int32FromUint64(libc.Uint64FromInt64(36)/libc.Uint64FromInt64(4) - libc.Uint64FromInt32(1))
 	b = 0
 	a = *(*FLOAT)(unsafe.Pointer(avg + uintptr(b)*4)) + *(*FLOAT)(unsafe.Pointer(avg + uintptr(b+int32(1))*4))
-	if libc.BoolInt64(!(a >= libc.Float32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__28)), __ccgo_ts+5798, int32(978), __ccgo_ts+6193)
+	if v1 = a >= libc.Float32FromInt32(0); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6327, __ccgo_ts+5959, int32(978), uintptr(unsafe.Pointer(&__func__28)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	if a > libc.Float32FromFloat32(0) {
 		m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4))
 		if m < *(*FLOAT)(unsafe.Pointer(max + uintptr(b+int32(1))*4)) {
 			m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b+int32(1))*4))
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b+int32(1))*4))-libc.Int32FromInt32(1) > libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__28)), __ccgo_ts+5798, int32(983), __ccgo_ts+6492)
+		if v1 = *(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b+int32(1))*4))-int32(1) > 0; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+6672, __ccgo_ts+5959, int32(983), uintptr(unsafe.Pointer(&__func__28)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		a = float32(libc.Float32FromFloat32(20)*(FLOAT(m*libc.Float32FromFloat32(2))-a)) / FLOAT(a*float32(*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b+int32(1))*4))-libc.Int32FromInt32(1)))
 		k = int32(a)
 		if k > last_tab_entry {
@@ -16690,12 +15216,14 @@ func vbrpsy_calc_mask_index_s(tls *libc.TLS, gfc uintptr, max uintptr, avg uintp
 			break
 		}
 		a = *(*FLOAT)(unsafe.Pointer(avg + uintptr(b-int32(1))*4)) + *(*FLOAT)(unsafe.Pointer(avg + uintptr(b)*4)) + *(*FLOAT)(unsafe.Pointer(avg + uintptr(b+int32(1))*4))
-		if libc.BoolInt64(!(b+libc.Int32FromInt32(1) < (*PsyConst_CB2SB_t)(unsafe.Pointer(gds)).Fnpart)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__28)), __ccgo_ts+5798, int32(997), __ccgo_ts+6542)
+		if v1 = b+int32(1) < (*PsyConst_CB2SB_t)(unsafe.Pointer(gds)).Fnpart; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+6722, __ccgo_ts+5959, int32(997), uintptr(unsafe.Pointer(&__func__28)))
 		}
-		if libc.BoolInt64(!(a >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__28)), __ccgo_ts+5798, int32(998), __ccgo_ts+6193)
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v1 = a >= libc.Float32FromInt32(0); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+6327, __ccgo_ts+5959, int32(998), uintptr(unsafe.Pointer(&__func__28)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		if float64(a) > float64(0) {
 			m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b-int32(1))*4))
 			if m < *(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4)) {
@@ -16704,9 +15232,10 @@ func vbrpsy_calc_mask_index_s(tls *libc.TLS, gfc uintptr, max uintptr, avg uintp
 			if m < *(*FLOAT)(unsafe.Pointer(max + uintptr(b+int32(1))*4)) {
 				m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b+int32(1))*4))
 			}
-			if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b+int32(1))*4))-libc.Int32FromInt32(1) > libc.Int32FromInt32(0))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__28)), __ccgo_ts+5798, int32(1005), __ccgo_ts+6561)
+			if v1 = *(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b+int32(1))*4))-int32(1) > 0; !v1 {
+				libc.X__assert_fail(tls, __ccgo_ts+6741, __ccgo_ts+5959, int32(1005), uintptr(unsafe.Pointer(&__func__28)))
 			}
+			_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			a = float32(libc.Float32FromFloat32(20)*(FLOAT(m*libc.Float32FromFloat32(3))-a)) / FLOAT(a*float32(*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b)*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b+int32(1))*4))-libc.Int32FromInt32(1)))
 			k = int32(a)
 			if k > last_tab_entry {
@@ -16716,29 +15245,33 @@ func vbrpsy_calc_mask_index_s(tls *libc.TLS, gfc uintptr, max uintptr, avg uintp
 		} else {
 			*(*uint8)(unsafe.Pointer(mask_idx + uintptr(b))) = uint8(0)
 		}
-		goto _1
-	_1:
+		goto _3
+	_3:
 		;
 		b = b + 1
 	}
-	if libc.BoolInt64(!(b > libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__28)), __ccgo_ts+5798, int32(1017), __ccgo_ts+6323)
+	if v1 = b > 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6457, __ccgo_ts+5959, int32(1017), uintptr(unsafe.Pointer(&__func__28)))
 	}
-	if libc.BoolInt64(!(b == (*PsyConst_CB2SB_t)(unsafe.Pointer(gds)).Fnpart-libc.Int32FromInt32(1))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__28)), __ccgo_ts+5798, int32(1018), __ccgo_ts+6634)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = b == (*PsyConst_CB2SB_t)(unsafe.Pointer(gds)).Fnpart-int32(1); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6814, __ccgo_ts+5959, int32(1018), uintptr(unsafe.Pointer(&__func__28)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	a = *(*FLOAT)(unsafe.Pointer(avg + uintptr(b-int32(1))*4)) + *(*FLOAT)(unsafe.Pointer(avg + uintptr(b)*4))
-	if libc.BoolInt64(!(a >= libc.Float32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__28)), __ccgo_ts+5798, int32(1021), __ccgo_ts+6193)
+	if v1 = a >= libc.Float32FromInt32(0); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6327, __ccgo_ts+5959, int32(1021), uintptr(unsafe.Pointer(&__func__28)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	if a > libc.Float32FromFloat32(0) {
 		m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b-int32(1))*4))
 		if m < *(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4)) {
 			m = *(*FLOAT)(unsafe.Pointer(max + uintptr(b)*4))
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b)*4))-libc.Int32FromInt32(1) > libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__28)), __ccgo_ts+5798, int32(1026), __ccgo_ts+6654)
+		if v1 = *(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b)*4))-int32(1) > 0; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+6834, __ccgo_ts+5959, int32(1026), uintptr(unsafe.Pointer(&__func__28)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		a = float32(libc.Float32FromFloat32(20)*(FLOAT(m*libc.Float32FromFloat32(2))-a)) / FLOAT(a*float32(*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b-int32(1))*4))+*(*int32)(unsafe.Pointer(gds + 1716 + uintptr(b)*4))-libc.Int32FromInt32(1)))
 		k = int32(a)
 		if k > last_tab_entry {
@@ -16748,12 +15281,13 @@ func vbrpsy_calc_mask_index_s(tls *libc.TLS, gfc uintptr, max uintptr, avg uintp
 	} else {
 		*(*uint8)(unsafe.Pointer(mask_idx + uintptr(b))) = uint8(0)
 	}
-	if libc.BoolInt64(!(b == (*PsyConst_CB2SB_t)(unsafe.Pointer(gds)).Fnpart-libc.Int32FromInt32(1))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__28)), __ccgo_ts+5798, int32(1037), __ccgo_ts+6704)
+	if v1 = b == (*PsyConst_CB2SB_t)(unsafe.Pointer(gds)).Fnpart-int32(1); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+6884, __ccgo_ts+5959, int32(1037), uintptr(unsafe.Pointer(&__func__28)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 }
 
-var __func__28 = [25]int8{'v', 'b', 'r', 'p', 's', 'y', '_', 'c', 'a', 'l', 'c', '_', 'm', 'a', 's', 'k', '_', 'i', 'n', 'd', 'e', 'x', '_', 's'}
+var __func__28 = [25]uint8{'v', 'b', 'r', 'p', 's', 'y', '_', 'c', 'a', 'l', 'c', '_', 'm', 'a', 's', 'k', '_', 'i', 'n', 'd', 'e', 'x', '_', 's'}
 
 func vbrpsy_compute_masking_s(tls *libc.TLS, gfc uintptr, fftenergy_s uintptr, eb uintptr, thr uintptr, chn int32, sblock int32) {
 	bp := tls.Alloc(576)
@@ -16761,10 +15295,11 @@ func vbrpsy_compute_masking_s(tls *libc.TLS, gfc uintptr, fftenergy_s uintptr, e
 	var avg_mask, ebb, ecb, el, m, masking_lower, x FLOAT
 	var b, dd, dd_n, delta, i, j, kk, last, n, v2 int32
 	var gds, psv uintptr
+	var v4 bool
 	var _ /* avg at bp+256 */ [64]FLOAT
 	var _ /* mask_idx_s at bp+512 */ [64]uint8
 	var _ /* max at bp+0 */ [64]FLOAT
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = avg_mask, b, dd, dd_n, delta, ebb, ecb, el, gds, i, j, kk, last, m, masking_lower, n, psv, x, v2
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = avg_mask, b, dd, dd_n, delta, ebb, ecb, el, gds, i, j, kk, last, m, masking_lower, n, psv, x, v2, v4
 	psv = gfc + 21628
 	gds = (*lame_internal_flags)(unsafe.Pointer(gfc)).Fcd_psy + 6776
 	libc.Xmemset(tls, bp, 0, uint64(256))
@@ -16796,28 +15331,33 @@ func vbrpsy_compute_masking_s(tls *libc.TLS, gfc uintptr, fftenergy_s uintptr, e
 			j = j + 1
 		}
 		*(*FLOAT)(unsafe.Pointer(eb + uintptr(b)*4)) = ebb
-		if libc.BoolInt64(!(ebb >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__29)), __ccgo_ts+5798, int32(1064), __ccgo_ts+6160)
+		if v4 = ebb >= libc.Float32FromInt32(0); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+6294, __ccgo_ts+5959, int32(1064), uintptr(unsafe.Pointer(&__func__29)))
 		}
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		(*(*[64]FLOAT)(unsafe.Pointer(bp)))[b] = m
-		if libc.BoolInt64(!(n > libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__29)), __ccgo_ts+5798, int32(1066), __ccgo_ts+6726)
+		if v4 = n > 0; !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+6906, __ccgo_ts+5959, int32(1066), uintptr(unsafe.Pointer(&__func__29)))
 		}
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		(*(*[64]FLOAT)(unsafe.Pointer(bp + 256)))[b] = FLOAT(ebb * *(*FLOAT)(unsafe.Pointer(gds + 512 + uintptr(b)*4)))
-		if libc.BoolInt64(!((*(*[64]FLOAT)(unsafe.Pointer(bp + 256)))[b] >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__29)), __ccgo_ts+5798, int32(1068), __ccgo_ts+6181)
+		if v4 = (*(*[64]FLOAT)(unsafe.Pointer(bp + 256)))[b] >= libc.Float32FromInt32(0); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+6315, __ccgo_ts+5959, int32(1068), uintptr(unsafe.Pointer(&__func__29)))
 		}
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		goto _1
 	_1:
 		;
 		b = b + 1
 	}
-	if libc.BoolInt64(!(b == (*PsyConst_CB2SB_t)(unsafe.Pointer(gds)).Fnpart)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__29)), __ccgo_ts+5798, int32(1070), __ccgo_ts+6732)
+	if v4 = b == (*PsyConst_CB2SB_t)(unsafe.Pointer(gds)).Fnpart; !v4 {
+		libc.X__assert_fail(tls, __ccgo_ts+6912, __ccgo_ts+5959, int32(1070), uintptr(unsafe.Pointer(&__func__29)))
 	}
-	if libc.BoolInt64(!(j == libc.Int32FromInt32(129))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__29)), __ccgo_ts+5798, int32(1071), __ccgo_ts+6748)
+	_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v4 = j == int32(129); !v4 {
+		libc.X__assert_fail(tls, __ccgo_ts+6928, __ccgo_ts+5959, int32(1071), uintptr(unsafe.Pointer(&__func__29)))
 	}
+	_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	vbrpsy_calc_mask_index_s(tls, gfc, bp, bp+256, bp+512)
 	v2 = libc.Int32FromInt32(0)
 	b = v2
@@ -16868,11 +15408,12 @@ func vbrpsy_compute_masking_s(tls *libc.TLS, gfc uintptr, fftenergy_s uintptr, e
 		if masking_lower < libc.Float32FromInt32(1) {
 			*(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) *= masking_lower
 		}
-		if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__29)), __ccgo_ts+5798, int32(1135), __ccgo_ts+6055)
+		if v4 = *(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) >= libc.Float32FromInt32(0); !v4 {
+			libc.X__assert_fail(tls, __ccgo_ts+6189, __ccgo_ts+5959, int32(1135), uintptr(unsafe.Pointer(&__func__29)))
 		}
-		goto _4
-	_4:
+		_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		goto _9
+	_9:
 		;
 		b = b + 1
 	}
@@ -16882,14 +15423,14 @@ func vbrpsy_compute_masking_s(tls *libc.TLS, gfc uintptr, fftenergy_s uintptr, e
 		}
 		*(*FLOAT)(unsafe.Pointer(eb + uintptr(b)*4)) = libc.Float32FromInt32(0)
 		*(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) = libc.Float32FromInt32(0)
-		goto _6
-	_6:
+		goto _12
+	_12:
 		;
 		b = b + 1
 	}
 }
 
-var __func__29 = [25]int8{'v', 'b', 'r', 'p', 's', 'y', '_', 'c', 'o', 'm', 'p', 'u', 't', 'e', '_', 'm', 'a', 's', 'k', 'i', 'n', 'g', '_', 's'}
+var __func__29 = [25]uint8{'v', 'b', 'r', 'p', 's', 'y', '_', 'c', 'o', 'm', 'p', 'u', 't', 'e', '_', 'm', 'a', 's', 'k', 'i', 'n', 'g', '_', 's'}
 
 func vbrpsy_compute_masking_l(tls *libc.TLS, gfc uintptr, fftenergy uintptr, eb_l uintptr, thr uintptr, chn int32) {
 	bp := tls.Alloc(592)
@@ -16898,10 +15439,11 @@ func vbrpsy_compute_masking_l(tls *libc.TLS, gfc uintptr, fftenergy uintptr, eb_
 	var b, dd, dd_n, delta, k, kk, last int32
 	var gdl, psv uintptr
 	var v3 float64
+	var v6 bool
 	var _ /* avg at bp+256 */ [64]FLOAT
 	var _ /* mask_idx_l at bp+512 */ [66]uint8
 	var _ /* max at bp+0 */ [64]FLOAT
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = avg_mask, b, dd, dd_n, delta, ecb, ecb_limit, ecb_limit1, ecb_limit_1, ecb_limit_2, gdl, k, kk, last, masking_lower, psv, t, x, v2, v3
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = avg_mask, b, dd, dd_n, delta, ecb, ecb_limit, ecb_limit1, ecb_limit_1, ecb_limit_2, gdl, k, kk, last, masking_lower, psv, t, x, v2, v3, v6
 	psv = gfc + 21628
 	gdl = (*lame_internal_flags)(unsafe.Pointer(gfc)).Fcd_psy + 4608
 	/*********************************************************************
@@ -17026,9 +15568,10 @@ func vbrpsy_compute_masking_l(tls *libc.TLS, gfc uintptr, fftenergy uintptr, eb_
 		if masking_lower < libc.Float32FromInt32(1) {
 			*(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) *= masking_lower
 		}
-		if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) >= libc.Float32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__30)), __ccgo_ts+5798, int32(1266), __ccgo_ts+6055)
+		if v6 = *(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) >= libc.Float32FromInt32(0); !v6 {
+			libc.X__assert_fail(tls, __ccgo_ts+6189, __ccgo_ts+5959, int32(1266), uintptr(unsafe.Pointer(&__func__30)))
 		}
+		_ = v6 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		goto _1
 	_1:
 		;
@@ -17040,14 +15583,14 @@ func vbrpsy_compute_masking_l(tls *libc.TLS, gfc uintptr, fftenergy uintptr, eb_
 		}
 		*(*FLOAT)(unsafe.Pointer(eb_l + uintptr(b)*4)) = libc.Float32FromInt32(0)
 		*(*FLOAT)(unsafe.Pointer(thr + uintptr(b)*4)) = libc.Float32FromInt32(0)
-		goto _6
-	_6:
+		goto _7
+	_7:
 		;
 		b = b + 1
 	}
 }
 
-var __func__30 = [25]int8{'v', 'b', 'r', 'p', 's', 'y', '_', 'c', 'o', 'm', 'p', 'u', 't', 'e', '_', 'm', 'a', 's', 'k', 'i', 'n', 'g', '_', 'l'}
+var __func__30 = [25]uint8{'v', 'b', 'r', 'p', 's', 'y', '_', 'c', 'o', 'm', 'p', 'u', 't', 'e', '_', 'm', 'a', 's', 'k', 'i', 'n', 'g', '_', 'l'}
 
 func vbrpsy_compute_block_type(tls *libc.TLS, cfg uintptr, uselongblock uintptr) {
 	var chn, v1 int32
@@ -17078,7 +15621,8 @@ func vbrpsy_compute_block_type(tls *libc.TLS, cfg uintptr, uselongblock uintptr)
 
 func vbrpsy_apply_block_type(tls *libc.TLS, psv uintptr, nch int32, uselongblock uintptr, blocktype_d uintptr) {
 	var blocktype, chn int32
-	_, _ = blocktype, chn
+	var v2 bool
+	_, _, _ = blocktype, chn, v2
 	/* update the blocktype of the previous granule, since it depends on what
 	 * happend in this granule */
 	chn = 0
@@ -17090,9 +15634,10 @@ func vbrpsy_apply_block_type(tls *libc.TLS, psv uintptr, nch int32, uselongblock
 		/* disable short blocks */
 		if *(*int32)(unsafe.Pointer(uselongblock + uintptr(chn)*4)) != 0 {
 			/* no attack : use long blocks */
-			if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(psv + 6232 + uintptr(chn)*4)) != libc.Int32FromInt32(START_TYPE))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__31)), __ccgo_ts+5798, int32(1312), __ccgo_ts+6757)
+			if v2 = *(*int32)(unsafe.Pointer(psv + 6232 + uintptr(chn)*4)) != int32(START_TYPE); !v2 {
+				libc.X__assert_fail(tls, __ccgo_ts+6937, __ccgo_ts+5959, int32(1312), uintptr(unsafe.Pointer(&__func__31)))
 			}
+			_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			if *(*int32)(unsafe.Pointer(psv + 6232 + uintptr(chn)*4)) == int32(SHORT_TYPE) {
 				blocktype = int32(STOP_TYPE)
 			}
@@ -17115,7 +15660,7 @@ func vbrpsy_apply_block_type(tls *libc.TLS, psv uintptr, nch int32, uselongblock
 	}
 }
 
-var __func__31 = [24]int8{'v', 'b', 'r', 'p', 's', 'y', '_', 'a', 'p', 'p', 'l', 'y', '_', 'b', 'l', 'o', 'c', 'k', '_', 't', 'y', 'p', 'e'}
+var __func__31 = [24]uint8{'v', 'b', 'r', 'p', 's', 'y', '_', 'a', 'p', 'p', 'l', 'y', '_', 'b', 'l', 'o', 'c', 'k', '_', 't', 'y', 'p', 'e'}
 
 /***************************************************************
  * compute M/S thresholds from Johnston & Ferreira 1992 ICASSP paper
@@ -17124,7 +15669,8 @@ var __func__31 = [24]int8{'v', 'b', 'r', 'p', 's', 'y', '_', 'a', 'p', 'p', 'l',
 func vbrpsy_compute_MS_thresholds(tls *libc.TLS, eb uintptr, thr uintptr, cb_mld uintptr, ath_cb uintptr, athlower FLOAT, msfix FLOAT, n int32) {
 	var ath, ebM, ebS, f, mld_m, mld_s, msfix2, rmid, rside, thmL, thmLR, thmM, thmMS, thmR, thmS, tmp_l, tmp_m, tmp_r, tmp_s, v2, v3, v4 FLOAT
 	var b int32
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = ath, b, ebM, ebS, f, mld_m, mld_s, msfix2, rmid, rside, thmL, thmLR, thmM, thmMS, thmR, thmS, tmp_l, tmp_m, tmp_r, tmp_s, v2, v3, v4
+	var v11 bool
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = ath, b, ebM, ebS, f, mld_m, mld_s, msfix2, rmid, rside, thmL, thmLR, thmM, thmMS, thmR, thmS, tmp_l, tmp_m, tmp_r, tmp_s, v11, v2, v3, v4
 	msfix2 = FLOAT(msfix * libc.Float32FromFloat32(2))
 	b = 0
 	for {
@@ -17208,9 +15754,10 @@ func vbrpsy_compute_MS_thresholds(tls *libc.TLS, eb uintptr, thr uintptr, cb_mld
 				f = FLOAT(thmLR*msfix2) / thmMS
 				thmM = thmM * f
 				thmS = thmS * f
-				if libc.BoolInt64(!(thmMS > libc.Float32FromFloat32(0))) != 0 {
-					libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__32)), __ccgo_ts+5798, int32(1384), __ccgo_ts+6795)
+				if v11 = thmMS > libc.Float32FromFloat32(0); !v11 {
+					libc.X__assert_fail(tls, __ccgo_ts+6975, __ccgo_ts+5959, int32(1384), uintptr(unsafe.Pointer(&__func__32)))
 				}
+				_ = v11 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			}
 			if thmM < rmid {
 				v2 = thmM
@@ -17240,7 +15787,7 @@ func vbrpsy_compute_MS_thresholds(tls *libc.TLS, eb uintptr, thr uintptr, cb_mld
 	}
 }
 
-var __func__32 = [29]int8{'v', 'b', 'r', 'p', 's', 'y', '_', 'c', 'o', 'm', 'p', 'u', 't', 'e', '_', 'M', 'S', '_', 't', 'h', 'r', 'e', 's', 'h', 'o', 'l', 'd', 's'}
+var __func__32 = [29]uint8{'v', 'b', 'r', 'p', 's', 'y', '_', 'c', 'o', 'm', 'p', 'u', 't', 'e', '_', 'M', 'S', '_', 't', 'h', 'r', 'e', 's', 'h', 'o', 'l', 'd', 's'}
 
 /*
  * NOTE: the bitrate reduction from the inter-channel masking effect is low
@@ -17581,10 +16128,11 @@ func stereo_demask(tls *libc.TLS, f float64) (r FLOAT) {
 func init_numline(tls *libc.TLS, gd uintptr, sfreq FLOAT, fft_size int32, mdct_size int32, sbmax int32, scalepos uintptr) {
 	var b_frq [65]FLOAT
 	var bark1, bo_w, deltafreq, f_tmp, freq, mdct_freq_frac FLOAT
-	var bo, end, i, i1, i2, j, j2, ni, nl, nl1, sfb, start, v4 int32
+	var bo, end, i, i1, i2, j, j2, ni, nl, nl1, sfb, start, v5 int32
 	var partition [513]int32
 	var v3 float32
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = b_frq, bark1, bo, bo_w, deltafreq, end, f_tmp, freq, i, i1, i2, j, j2, mdct_freq_frac, ni, nl, nl1, partition, sfb, start, v3, v4
+	var v4 bool
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = b_frq, bark1, bo, bo_w, deltafreq, end, f_tmp, freq, i, i1, i2, j, j2, mdct_freq_frac, ni, nl, nl1, partition, sfb, start, v3, v4, v5
 	mdct_freq_frac = sfreq / float32(libc.Float32FromFloat32(2)*float32(mdct_size))
 	deltafreq = float32(fft_size) / float32(libc.Float32FromFloat32(2)*float32(mdct_size))
 	partition = [513]int32{}
@@ -17620,12 +16168,13 @@ func init_numline(tls *libc.TLS, gd uintptr, sfreq FLOAT, fft_size int32, mdct_s
 		*(*FLOAT)(unsafe.Pointer(gd + 512 + uintptr(i)*4)) = v3
 		ni = i + int32(1)
 		for j < j2 {
-			if libc.BoolInt64(!(j < libc.Int32FromInt32(BLKSIZE)/libc.Int32FromInt32(2)+libc.Int32FromInt32(1))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__33)), __ccgo_ts+5798, int32(1742), __ccgo_ts+6807)
+			if v4 = j < libc.Int32FromInt32(BLKSIZE)/libc.Int32FromInt32(2)+libc.Int32FromInt32(1); !v4 {
+				libc.X__assert_fail(tls, __ccgo_ts+6987, __ccgo_ts+5959, int32(1742), uintptr(unsafe.Pointer(&__func__33)))
 			}
-			v4 = j
+			_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
+			v5 = j
 			j = j + 1
-			partition[v4] = i
+			partition[v5] = i
 		}
 		if j > fft_size/int32(2) {
 			j = fft_size / int32(2)
@@ -17637,9 +16186,10 @@ func init_numline(tls *libc.TLS, gd uintptr, sfreq FLOAT, fft_size int32, mdct_s
 		;
 		i = i + 1
 	}
-	if libc.BoolInt64(!(i < libc.Int32FromInt32(CBANDS))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__33)), __ccgo_ts+5798, int32(1751), __ccgo_ts+6820)
+	if v4 = i < int32(CBANDS); !v4 {
+		libc.X__assert_fail(tls, __ccgo_ts+7000, __ccgo_ts+5959, int32(1751), uintptr(unsafe.Pointer(&__func__33)))
 	}
+	_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	b_frq[i] = FLOAT(sfreq * float32(j))
 	(*PsyConst_CB2SB_t)(unsafe.Pointer(gd)).Fn_sb = sbmax
 	(*PsyConst_CB2SB_t)(unsafe.Pointer(gd)).Fnpart = ni
@@ -17653,8 +16203,8 @@ func init_numline(tls *libc.TLS, gd uintptr, sfreq FLOAT, fft_size int32, mdct_s
 		freq = FLOAT(sfreq * float32(j+nl1/libc.Int32FromInt32(2)))
 		*(*FLOAT)(unsafe.Pointer(gd + 768 + uintptr(i)*4)) = stereo_demask(tls, float64(freq))
 		j = j + nl1
-		goto _5
-	_5:
+		goto _7
+	_7:
 		;
 		i = i + 1
 	}
@@ -17663,8 +16213,8 @@ func init_numline(tls *libc.TLS, gd uintptr, sfreq FLOAT, fft_size int32, mdct_s
 			break
 		}
 		*(*FLOAT)(unsafe.Pointer(gd + 768 + uintptr(i)*4)) = libc.Float32FromInt32(1)
-		goto _6
-	_6:
+		goto _8
+	_8:
 		;
 		i = i + 1
 	}
@@ -17698,14 +16248,14 @@ func init_numline(tls *libc.TLS, gd uintptr, sfreq FLOAT, fft_size int32, mdct_s
 		}
 		*(*FLOAT)(unsafe.Pointer(gd + 1112 + uintptr(sfb)*4)) = bo_w
 		*(*FLOAT)(unsafe.Pointer(gd + 1024 + uintptr(sfb)*4)) = stereo_demask(tls, float64(mdct_freq_frac*float32(start)))
-		goto _7
-	_7:
+		goto _9
+	_9:
 		;
 		sfb = sfb + 1
 	}
 }
 
-var __func__33 = [13]int8{'i', 'n', 'i', 't', '_', 'n', 'u', 'm', 'l', 'i', 'n', 'e'}
+var __func__33 = [13]uint8{'i', 'n', 'i', 't', '_', 'n', 'u', 'm', 'l', 'i', 'n', 'e'}
 
 func compute_bark_values(tls *libc.TLS, gd uintptr, sfreq FLOAT, fft_size int32, bval uintptr, bval_width uintptr) {
 	var bark1, bark2 FLOAT
@@ -17847,12 +16397,13 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 	var b, i, j, k, sb, v1 int32
 	var bvl_a, bvl_b, eql_balance, freq, freq1, freq2, freq_inc, level, level1, minval_low, msfix, sfreq, snr_l_a, snr_l_b, snr_s_a, snr_s_b, xav, xbv, v4, v9 FLOAT
 	var cfg, gd, gfc, psv uintptr
-	var m, m1, sk_l, sk_s, x2, y, v27 float32
+	var m, m1, sk_l, sk_s, x2, y, v33 float32
 	var snr, snr1, x, x1 float64
+	var v10 bool
 	var _ /* bval at bp+0 */ [64]FLOAT
 	var _ /* bval_width at bp+256 */ [64]FLOAT
 	var _ /* norm at bp+512 */ [64]FLOAT
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = b, bvl_a, bvl_b, cfg, eql_balance, freq, freq1, freq2, freq_inc, gd, gfc, i, j, k, level, level1, m, m1, minval_low, msfix, psv, sb, sfreq, sk_l, sk_s, snr, snr1, snr_l_a, snr_l_b, snr_s_a, snr_s_b, x, x1, x2, xav, xbv, y, v1, v27, v4, v9
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = b, bvl_a, bvl_b, cfg, eql_balance, freq, freq1, freq2, freq_inc, gd, gfc, i, j, k, level, level1, m, m1, minval_low, msfix, psv, sb, sfreq, sk_l, sk_s, snr, snr1, snr_l_a, snr_l_b, snr_s_a, snr_s_b, x, x1, x2, xav, xbv, y, v1, v10, v33, v4, v9
 	gfc = (*lame_global_flags)(unsafe.Pointer(gfp)).Finternal_flags
 	cfg = gfc + 24
 	psv = gfc + 21628
@@ -17956,9 +16507,10 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 	 ************************************************************************/
 	/* compute numlines, bo, bm, bval, bval_width, mld */
 	init_numline(tls, gd+4608, sfreq, int32(BLKSIZE), int32(576), int32(SBMAX_l), gfc+21424)
-	if libc.BoolInt64(!((*PsyConst_t)(unsafe.Pointer(gd)).Fl.Fnpart < libc.Int32FromInt32(CBANDS))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__34)), __ccgo_ts+5798, int32(1941), __ccgo_ts+6831)
+	if v10 = (*PsyConst_t)(unsafe.Pointer(gd)).Fl.Fnpart < int32(CBANDS); !v10 {
+		libc.X__assert_fail(tls, __ccgo_ts+7011, __ccgo_ts+5959, int32(1941), uintptr(unsafe.Pointer(&__func__34)))
 	}
+	_ = v10 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	compute_bark_values(tls, gd+4608, sfreq, int32(BLKSIZE), bp, bp+256)
 	/* compute the spreading function */
 	i = 0
@@ -17971,8 +16523,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 			snr = float64(FLOAT(snr_l_b*((*(*[64]FLOAT)(unsafe.Pointer(bp)))[i]-bvl_a))/(bvl_b-bvl_a) + FLOAT(snr_l_a*(bvl_b-(*(*[64]FLOAT)(unsafe.Pointer(bp)))[i]))/(bvl_b-bvl_a))
 		}
 		(*(*[64]FLOAT)(unsafe.Pointer(bp + 512)))[i] = float32(libc.Xpow(tls, float64(10), snr/float64(10)))
-		goto _10
-	_10:
+		goto _11
+	_11:
 		;
 		i = i + 1
 	}
@@ -17988,7 +16540,7 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 			break
 		}
 		/* ATH */
-		x = libc.Float64FromFloat32(3.40282347e+38)
+		x = libc.Float64FromFloat32(3.4028234663852886e+38)
 		k = 0
 		for {
 			if !(k < *(*int32)(unsafe.Pointer(gd + 4608 + 1716 + uintptr(i)*4))) {
@@ -18002,8 +16554,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 			if x > float64(level) {
 				x = float64(level)
 			}
-			goto _12
-		_12:
+			goto _13
+		_13:
 			;
 			k = k + 1
 			j = j + 1
@@ -18028,8 +16580,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 		}
 		x = x - float64(8)
 		*(*FLOAT)(unsafe.Pointer(gd + 4608 + 256 + uintptr(i)*4)) = FLOAT(libc.Xpow(tls, float64(10), x/float64(10)) * float64(*(*int32)(unsafe.Pointer(gd + 4608 + 1716 + uintptr(i)*4))))
-		goto _11
-	_11:
+		goto _12
+	_12:
 		;
 		i = i + 1
 	}
@@ -18037,9 +16589,10 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 	 * do the same things for short blocks
 	 ************************************************************************/
 	init_numline(tls, gd+6776, sfreq, int32(BLKSIZE_s), int32(192), int32(SBMAX_s), gfc+21424+92)
-	if libc.BoolInt64(!((*PsyConst_t)(unsafe.Pointer(gd)).Fs.Fnpart < libc.Int32FromInt32(CBANDS))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__34)), __ccgo_ts+5798, int32(2001), __ccgo_ts+6852)
+	if v10 = (*PsyConst_t)(unsafe.Pointer(gd)).Fs.Fnpart < int32(CBANDS); !v10 {
+		libc.X__assert_fail(tls, __ccgo_ts+7032, __ccgo_ts+5959, int32(2001), uintptr(unsafe.Pointer(&__func__34)))
 	}
+	_ = v10 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	compute_bark_values(tls, gd+6776, sfreq, int32(BLKSIZE_s), bp, bp+256)
 	/* SNR formula. short block is normalized by SNR. is it still right ? */
 	j = 0
@@ -18054,7 +16607,7 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 		}
 		(*(*[64]FLOAT)(unsafe.Pointer(bp + 512)))[i] = float32(libc.Xpow(tls, float64(10), snr1/float64(10)))
 		/* ATH */
-		x1 = libc.Float64FromFloat32(3.40282347e+38)
+		x1 = libc.Float64FromFloat32(3.4028234663852886e+38)
 		k = 0
 		for {
 			if !(k < *(*int32)(unsafe.Pointer(gd + 6776 + 1716 + uintptr(i)*4))) {
@@ -18068,8 +16621,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 			if x1 > float64(level1) {
 				x1 = float64(level1)
 			}
-			goto _14
-		_14:
+			goto _16
+		_16:
 			;
 			k = k + 1
 			j = j + 1
@@ -18096,8 +16649,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 		}
 		x1 = x1 - libc.Float64FromInt32(8)
 		*(*FLOAT)(unsafe.Pointer(gd + 6776 + 256 + uintptr(i)*4)) = FLOAT(libc.Xpow(tls, float64(10), x1/libc.Float64FromInt32(10)) * float64(*(*int32)(unsafe.Pointer(gd + 6776 + 1716 + uintptr(i)*4))))
-		goto _13
-	_13:
+		goto _15
+	_15:
 		;
 		i = i + 1
 	}
@@ -18128,8 +16681,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 		if *(*int32)(unsafe.Pointer(gd + 4608 + 1204 + uintptr(b)*8 + 1*4)) > (*PsyConst_t)(unsafe.Pointer(gd)).Fl.Fnpart-int32(1) {
 			*(*int32)(unsafe.Pointer(gd + 4608 + 1204 + uintptr(b)*8 + 1*4)) = (*PsyConst_t)(unsafe.Pointer(gd)).Fl.Fnpart - int32(1)
 		}
-		goto _15
-	_15:
+		goto _17
+	_17:
 		;
 		b = b + 1
 	}
@@ -18139,12 +16692,14 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 	(*ATH_t)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).FATH)).Fdecay = float32(libc.Xpow(tls, float64(10), float64(-libc.Float64FromFloat64(12)/float64(10)*(float64(float64(576)*float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fmode_gr))/float64(sfreq)))))
 	(*ATH_t)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).FATH)).Fadjust_factor = float32(0.01) /* minimum, for leading low loudness */
 	(*ATH_t)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).FATH)).Fadjust_limit = float32(1)     /* on lead, allow adjust up to maximum */
-	if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(gd + 4608 + 2060 + uintptr(libc.Int32FromInt32(SBMAX_l)-libc.Int32FromInt32(1))*4)) <= (*PsyConst_t)(unsafe.Pointer(gd)).Fl.Fnpart)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__34)), __ccgo_ts+5798, int32(2089), __ccgo_ts+6873)
+	if v10 = *(*int32)(unsafe.Pointer(gd + 4608 + 2060 + uintptr(libc.Int32FromInt32(SBMAX_l)-libc.Int32FromInt32(1))*4)) <= (*PsyConst_t)(unsafe.Pointer(gd)).Fl.Fnpart; !v10 {
+		libc.X__assert_fail(tls, __ccgo_ts+7053, __ccgo_ts+5959, int32(2089), uintptr(unsafe.Pointer(&__func__34)))
 	}
-	if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(gd + 6776 + 2060 + uintptr(libc.Int32FromInt32(SBMAX_s)-libc.Int32FromInt32(1))*4)) <= (*PsyConst_t)(unsafe.Pointer(gd)).Fs.Fnpart)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__34)), __ccgo_ts+5798, int32(2090), __ccgo_ts+6910)
+	_ = v10 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v10 = *(*int32)(unsafe.Pointer(gd + 6776 + 2060 + uintptr(libc.Int32FromInt32(SBMAX_s)-libc.Int32FromInt32(1))*4)) <= (*PsyConst_t)(unsafe.Pointer(gd)).Fs.Fnpart; !v10 {
+		libc.X__assert_fail(tls, __ccgo_ts+7090, __ccgo_ts+5959, int32(2090), uintptr(unsafe.Pointer(&__func__34)))
 	}
+	_ = v10 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).FATHtype != -int32(1) {
 		freq_inc = float32((*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_out) / float32(libc.Int32FromInt32(BLKSIZE))
 		eql_balance = float32(0)
@@ -18159,8 +16714,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 			freq2 = freq2 + freq_inc
 			*(*FLOAT)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).FATH + 724 + uintptr(i)*4)) = float32(float64(1) / libc.Xpow(tls, libc.Float64FromInt32(10), float64(ATHformula(tls, cfg, freq2)/libc.Float32FromInt32(10))))
 			eql_balance = eql_balance + *(*FLOAT)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).FATH + 724 + uintptr(i)*4))
-			goto _16
-		_16:
+			goto _20
+		_20:
 			;
 			i = i + 1
 		}
@@ -18173,8 +16728,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 				break
 			} /* scale weights */
 			*(*FLOAT)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).FATH + 724 + uintptr(i)*4)) *= eql_balance
-			goto _17
-		_17:
+			goto _21
+		_21:
 		}
 	}
 	v1 = libc.Int32FromInt32(0)
@@ -18190,19 +16745,20 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 				break
 			}
 			j = j + 1
-			goto _21
-		_21:
+			goto _25
+		_25:
 			;
 			i = i + 1
 		}
-		goto _19
-	_19:
+		goto _23
+	_23:
 		;
 		b = b + 1
 	}
-	if libc.BoolInt64(!(j == libc.Int32FromInt32(129))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__34)), __ccgo_ts+5798, int32(2116), __ccgo_ts+6748)
+	if v10 = j == int32(129); !v10 {
+		libc.X__assert_fail(tls, __ccgo_ts+6928, __ccgo_ts+5959, int32(2116), uintptr(unsafe.Pointer(&__func__34)))
 	}
+	_ = v10 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	v1 = libc.Int32FromInt32(0)
 	j = v1
 	b = v1
@@ -18216,19 +16772,20 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 				break
 			}
 			j = j + 1
-			goto _24
-		_24:
+			goto _29
+		_29:
 			;
 			i = i + 1
 		}
-		goto _22
-	_22:
+		goto _27
+	_27:
 		;
 		b = b + 1
 	}
-	if libc.BoolInt64(!(j == libc.Int32FromInt32(513))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__34)), __ccgo_ts+5798, int32(2122), __ccgo_ts+6947)
+	if v10 = j == int32(513); !v10 {
+		libc.X__assert_fail(tls, __ccgo_ts+7127, __ccgo_ts+5959, int32(2122), uintptr(unsafe.Pointer(&__func__34)))
 	}
+	_ = v10 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	/* short block attack threshold */
 	x2 = (*lame_global_flags)(unsafe.Pointer(gfp)).Fattackthre
 	y = (*lame_global_flags)(unsafe.Pointer(gfp)).Fattackthre_s
@@ -18247,13 +16804,13 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 	sk_s = -libc.Float32FromFloat32(10)
 	sk_l = -libc.Float32FromFloat32(4.7)
 	if (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q < int32(4) {
-		v27 = sk[0]
-		sk_s = v27
-		sk_l = v27
+		v33 = sk[0]
+		sk_s = v33
+		sk_l = v33
 	} else {
-		v27 = sk[(*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q] + float32((*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q_frac*(sk[(*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q]-sk[(*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q+int32(1)]))
-		sk_s = v27
-		sk_l = v27
+		v33 = sk[(*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q] + float32((*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q_frac*(sk[(*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q]-sk[(*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q+int32(1)]))
+		sk_s = v33
+		sk_l = v33
 	}
 	b = 0
 	for {
@@ -18262,8 +16819,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 		}
 		m = float32((*PsyConst_t)(unsafe.Pointer(gd)).Fs.Fnpart-b) / float32((*PsyConst_t)(unsafe.Pointer(gd)).Fs.Fnpart)
 		*(*FLOAT)(unsafe.Pointer(gd + 6776 + uintptr(b)*4)) = libc.Xpowf(tls, libc.Float32FromFloat32(10), float32(float32(sk_s*m)*libc.Float32FromFloat32(0.1)))
-		goto _29
-	_29:
+		goto _35
+	_35:
 		;
 		b = b + 1
 	}
@@ -18272,8 +16829,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 			break
 		}
 		*(*FLOAT)(unsafe.Pointer(gd + 6776 + uintptr(b)*4)) = libc.Float32FromFloat32(1)
-		goto _30
-	_30:
+		goto _36
+	_36:
 		;
 		b = b + 1
 	}
@@ -18284,8 +16841,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 		}
 		m1 = float32((*PsyConst_t)(unsafe.Pointer(gd)).Fl.Fnpart-b) / float32((*PsyConst_t)(unsafe.Pointer(gd)).Fl.Fnpart)
 		*(*FLOAT)(unsafe.Pointer(gd + 4608 + uintptr(b)*4)) = libc.Xpowf(tls, libc.Float32FromFloat32(10), float32(float32(sk_l*m1)*libc.Float32FromFloat32(0.1)))
-		goto _31
-	_31:
+		goto _37
+	_37:
 		;
 		b = b + 1
 	}
@@ -18294,8 +16851,8 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 			break
 		}
 		*(*FLOAT)(unsafe.Pointer(gd + 4608 + uintptr(b)*4)) = libc.Float32FromFloat32(1)
-		goto _32
-	_32:
+		goto _38
+	_38:
 		;
 		b = b + 1
 	}
@@ -18304,7 +16861,7 @@ func psymodel_init(tls *libc.TLS, gfp uintptr) (r int32) {
 	return 0
 }
 
-var __func__34 = [14]int8{'p', 's', 'y', 'm', 'o', 'd', 'e', 'l', '_', 'i', 'n', 'i', 't'}
+var __func__34 = [14]uint8{'p', 's', 'y', 'm', 'o', 'd', 'e', 'l', '_', 'i', 'n', 'i', 't'}
 
 var sk = [11]float32{
 	0:  float32(-libc.Float64FromFloat64(7.4)),
@@ -18322,9 +16879,8 @@ var sk = [11]float32{
 
 const FLOAT8_MAX2 = 1e99
 const FLOAT_MAX2 = 1e37
-const M_LN102 = 2.30258509299404568401799145468436421
-const M_PI6 = 3.14159265358979323846264338327950288
-const __FLT_EPSILON__2 = 1.19209290e-7
+const M_LN102 = 2.30258509299404568402
+const M_PI6 = 3.14159265358979323846
 
 // C documentation
 //
@@ -18391,20 +16947,23 @@ func init_xrpow(tls *libc.TLS, gfc uintptr, cod_info uintptr, xrpow uintptr) (r 
 	bp := tls.Alloc(16)
 	defer tls.Free(16)
 	var i, j, upper int32
+	var v1 bool
 	var _ /* sum at bp+0 */ FLOAT
-	_, _, _ = i, j, upper
+	_, _, _, _ = i, j, upper, v1
 	*(*FLOAT)(unsafe.Pointer(bp)) = libc.Float32FromInt32(0)
 	upper = (*gr_info)(unsafe.Pointer(cod_info)).Fmax_nonzero_coeff
-	if libc.BoolInt64(!(xrpow != libc.UintptrFromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__35)), __ccgo_ts+6956, int32(117), __ccgo_ts+7044)
+	if v1 = xrpow != libc.UintptrFromInt32(0); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+7136, __ccgo_ts+7150, int32(117), uintptr(unsafe.Pointer(&__func__35)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	(*gr_info)(unsafe.Pointer(cod_info)).Fxrpow_max = libc.Float32FromInt32(0)
 	/*  check if there is some energy we have to quantize
 	 *  and calculate xrpow matching our fresh scalefactors
 	 */
-	if libc.BoolInt64(!(0 <= upper && upper <= int32(575))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__35)), __ccgo_ts+6956, int32(123), __ccgo_ts+7058)
+	if v1 = 0 <= upper && upper <= int32(575); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+7238, __ccgo_ts+7150, int32(123), uintptr(unsafe.Pointer(&__func__35)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	libc.Xmemset(tls, xrpow+uintptr(upper)*4, 0, libc.Uint64FromInt32(libc.Int32FromInt32(576)-upper)*uint64(4))
 	(*(*func(*libc.TLS, uintptr, uintptr, int32, uintptr))(unsafe.Pointer(&struct{ uintptr }{(*lame_internal_flags)(unsafe.Pointer(gfc)).Finit_xrpow_core})))(tls, cod_info, xrpow, upper, bp)
 	/*  return 1 if we have something to quantize, else 0
@@ -18420,8 +16979,8 @@ func init_xrpow(tls *libc.TLS, gfc uintptr, cod_info uintptr, xrpow uintptr) (r 
 				break
 			}
 			*(*int32)(unsafe.Pointer(gfc + 87416 + 168 + uintptr(i)*4)) = j
-			goto _1
-		_1:
+			goto _3
+		_3:
 			;
 			i = i + 1
 		}
@@ -18431,7 +16990,7 @@ func init_xrpow(tls *libc.TLS, gfc uintptr, cod_info uintptr, xrpow uintptr) (r 
 	return 0
 }
 
-var __func__35 = [11]int8{'i', 'n', 'i', 't', '_', 'x', 'r', 'p', 'o', 'w'}
+var __func__35 = [11]uint8{'i', 'n', 'i', 't', '_', 'x', 'r', 'p', 'o', 'w'}
 
 // C documentation
 //
@@ -18714,18 +17273,20 @@ const BINSEARCH_UP = 1
 const BINSEARCH_DOWN = 2
 
 func bin_search_StepSize(tls *libc.TLS, gfc uintptr, cod_info uintptr, desired_rate int32, ch int32, xrpow uintptr) (r int32) {
-	var CurrentStep, flag_GoneOver, nBits, start, step, v2 int32
+	var CurrentStep, flag_GoneOver, nBits, start, step, v5 int32
 	var Direction binsearchDirection_t
-	_, _, _, _, _, _, _ = CurrentStep, Direction, flag_GoneOver, nBits, start, step, v2
+	var v1 bool
+	_, _, _, _, _, _, _, _ = CurrentStep, Direction, flag_GoneOver, nBits, start, step, v1, v5
 	CurrentStep = *(*int32)(unsafe.Pointer(gfc + 87416 + 160 + uintptr(ch)*4))
 	flag_GoneOver = 0
 	start = *(*int32)(unsafe.Pointer(gfc + 87416 + 152 + uintptr(ch)*4))
 	Direction = int32(BINSEARCH_NONE)
 	(*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain = start
 	desired_rate = desired_rate - (*gr_info)(unsafe.Pointer(cod_info)).Fpart2_length
-	if libc.BoolInt64(!(CurrentStep != 0)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__36)), __ccgo_ts+6956, int32(379), __ccgo_ts+7085)
+	if v1 = CurrentStep != 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+7265, __ccgo_ts+7150, int32(379), uintptr(unsafe.Pointer(&__func__36)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	for {
 		nBits = count_bits(tls, gfc, xrpow, cod_info, uintptr(0))
 		if CurrentStep == int32(1) || nBits == desired_rate {
@@ -18761,31 +17322,33 @@ func bin_search_StepSize(tls *libc.TLS, gfc uintptr, cod_info uintptr, desired_r
 			(*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain = int32(255)
 			flag_GoneOver = int32(1)
 		}
-		goto _1
-	_1:
+		goto _2
+	_2:
 	}
-	if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__36)), __ccgo_ts+6956, int32(418), __ccgo_ts+7097)
+	if v1 = (*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain >= 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+7277, __ccgo_ts+7150, int32(418), uintptr(unsafe.Pointer(&__func__36)))
 	}
-	if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain < libc.Int32FromInt32(256))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__36)), __ccgo_ts+6956, int32(419), __ccgo_ts+7124)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = (*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain < int32(256); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+7304, __ccgo_ts+7150, int32(419), uintptr(unsafe.Pointer(&__func__36)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	for nBits > desired_rate && (*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain < int32(255) {
 		(*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain = (*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain + 1
 		nBits = count_bits(tls, gfc, xrpow, cod_info, uintptr(0))
 	}
 	if start-(*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain >= int32(4) {
-		v2 = int32(4)
+		v5 = int32(4)
 	} else {
-		v2 = int32(2)
+		v5 = int32(2)
 	}
-	*(*int32)(unsafe.Pointer(gfc + 87416 + 160 + uintptr(ch)*4)) = v2
+	*(*int32)(unsafe.Pointer(gfc + 87416 + 160 + uintptr(ch)*4)) = v5
 	*(*int32)(unsafe.Pointer(gfc + 87416 + 152 + uintptr(ch)*4)) = (*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain
 	(*gr_info)(unsafe.Pointer(cod_info)).Fpart2_3_length = nBits
 	return nBits
 }
 
-var __func__36 = [20]int8{'b', 'i', 'n', '_', 's', 'e', 'a', 'r', 'c', 'h', '_', 'S', 't', 'e', 'p', 'S', 'i', 'z', 'e'}
+var __func__36 = [20]uint8{'b', 'i', 'n', '_', 's', 'e', 'a', 'r', 'c', 'h', '_', 'S', 't', 'e', 'p', 'S', 'i', 'z', 'e'}
 
 // C documentation
 //
@@ -19281,7 +17844,8 @@ func inc_subblock_gain(tls *libc.TLS, gfc uintptr, cod_info uintptr, xrpow uintp
 	var amp, amp1 FLOAT
 	var gain, j, l, s, s1, s2, sfb, width, window, v3 int32
 	var scalefac uintptr
-	_, _, _, _, _, _, _, _, _, _, _, _, _ = amp, amp1, gain, j, l, s, s1, s2, scalefac, sfb, width, window, v3
+	var v7 bool
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _ = amp, amp1, gain, j, l, s, s1, s2, scalefac, sfb, width, window, v3, v7
 	scalefac = cod_info + 4608
 	/* subbloc_gain can't do anything in the long block region */
 	sfb = 0
@@ -19349,9 +17913,10 @@ func inc_subblock_gain(tls *libc.TLS, gfc uintptr, cod_info uintptr, xrpow uintp
 			}
 			width = *(*int32)(unsafe.Pointer(cod_info + 4872 + uintptr(sfb)*4))
 			s = *(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4))
-			if libc.BoolInt64(!(s >= libc.Int32FromInt32(0))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__37)), __ccgo_ts+6956, int32(888), __ccgo_ts+7152)
+			if v7 = s >= 0; !v7 {
+				libc.X__assert_fail(tls, __ccgo_ts+7332, __ccgo_ts+7150, int32(888), uintptr(unsafe.Pointer(&__func__37)))
 			}
+			_ = v7 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			s = s - int32(4)>>(*gr_info)(unsafe.Pointer(cod_info)).Fscalefac_scale
 			if s >= 0 {
 				*(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4)) = s
@@ -19360,9 +17925,10 @@ func inc_subblock_gain(tls *libc.TLS, gfc uintptr, cod_info uintptr, xrpow uintp
 			}
 			*(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4)) = 0
 			gain = int32(210) + s<<((*gr_info)(unsafe.Pointer(cod_info)).Fscalefac_scale+int32(1))
-			if libc.BoolInt64(!(0 <= gain && gain < libc.Int32FromInt32(256)+libc.Int32FromInt32(1))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__37)), __ccgo_ts+6956, int32(899), __ccgo_ts+7159)
+			if v7 = 0 <= gain && gain < libc.Int32FromInt32(256)+libc.Int32FromInt32(1); !v7 {
+				libc.X__assert_fail(tls, __ccgo_ts+7339, __ccgo_ts+7150, int32(899), uintptr(unsafe.Pointer(&__func__37)))
 			}
+			_ = v7 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			amp = ipow20[gain]
 			j = j + width*(window+int32(1))
 			l = -width
@@ -19374,8 +17940,8 @@ func inc_subblock_gain(tls *libc.TLS, gfc uintptr, cod_info uintptr, xrpow uintp
 				if *(*FLOAT)(unsafe.Pointer(xrpow + uintptr(j+l)*4)) > (*gr_info)(unsafe.Pointer(cod_info)).Fxrpow_max {
 					(*gr_info)(unsafe.Pointer(cod_info)).Fxrpow_max = *(*FLOAT)(unsafe.Pointer(xrpow + uintptr(j+l)*4))
 				}
-				goto _7
-			_7:
+				goto _9
+			_9:
 				;
 				l = l + 1
 			}
@@ -19385,6 +17951,10 @@ func inc_subblock_gain(tls *libc.TLS, gfc uintptr, cod_info uintptr, xrpow uintp
 			;
 			sfb = sfb + int32(3)
 		}
+		if v7 = libc.Bool(libc.Bool(0 <= int32(202)) && libc.Bool(int32(202) < libc.Int32FromInt32(256)+libc.Int32FromInt32(1))); !v7 {
+			libc.X__assert_fail(tls, __ccgo_ts+7365, __ccgo_ts+7150, int32(911), uintptr(unsafe.Pointer(&__func__37)))
+		}
+		_ = v7 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		amp1 = ipow20[int32(202)]
 		j = j + *(*int32)(unsafe.Pointer(cod_info + 4872 + uintptr(sfb)*4))*(window+int32(1))
 		l = -*(*int32)(unsafe.Pointer(cod_info + 4872 + uintptr(sfb)*4))
@@ -19396,8 +17966,8 @@ func inc_subblock_gain(tls *libc.TLS, gfc uintptr, cod_info uintptr, xrpow uintp
 			if *(*FLOAT)(unsafe.Pointer(xrpow + uintptr(j+l)*4)) > (*gr_info)(unsafe.Pointer(cod_info)).Fxrpow_max {
 				(*gr_info)(unsafe.Pointer(cod_info)).Fxrpow_max = *(*FLOAT)(unsafe.Pointer(xrpow + uintptr(j+l)*4))
 			}
-			goto _8
-		_8:
+			goto _11
+		_11:
 			;
 			l = l + 1
 		}
@@ -19409,7 +17979,7 @@ func inc_subblock_gain(tls *libc.TLS, gfc uintptr, cod_info uintptr, xrpow uintp
 	return 0
 }
 
-var __func__37 = [18]int8{'i', 'n', 'c', '_', 's', 'u', 'b', 'b', 'l', 'o', 'c', 'k', '_', 'g', 'a', 'i', 'n'}
+var __func__37 = [18]uint8{'i', 'n', 'c', '_', 's', 'u', 'b', 'b', 'l', 'o', 'c', 'k', '_', 'g', 'a', 'i', 'n'}
 
 // C documentation
 //
@@ -19492,13 +18062,14 @@ func outer_loop(tls *libc.TLS, gfc uintptr, cod_info uintptr, l3_xmin uintptr, x
 	defer tls.Free(8256)
 	var age, bEndOfSearch, bRefine, best_ggain_pass1, best_part2_3_length, better, huff_bits, maxggain, search_limit, v1 int32
 	var cfg uintptr
+	var v4 bool
 	var _ /* best_noise_info at bp+7724 */ calc_noise_result
 	var _ /* cod_info_w at bp+0 */ gr_info
 	var _ /* distort at bp+7568 */ [39]FLOAT
 	var _ /* noise_info at bp+8224 */ calc_noise_result
 	var _ /* prev_noise at bp+7748 */ calc_noise_data
 	var _ /* save_xrpow at bp+5264 */ [576]FLOAT
-	_, _, _, _, _, _, _, _, _, _, _ = age, bEndOfSearch, bRefine, best_ggain_pass1, best_part2_3_length, better, cfg, huff_bits, maxggain, search_limit, v1
+	_, _, _, _, _, _, _, _, _, _, _, _ = age, bEndOfSearch, bRefine, best_ggain_pass1, best_part2_3_length, better, cfg, huff_bits, maxggain, search_limit, v1, v4
 	cfg = gfc + 24
 	best_part2_3_length = int32(9999999)
 	bEndOfSearch = 0
@@ -19643,9 +18214,10 @@ func outer_loop(tls *libc.TLS, gfc uintptr, cod_info uintptr, l3_xmin uintptr, x
 			bEndOfSearch = int32(1)
 		}
 	}
-	if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain+(*gr_info)(unsafe.Pointer(cod_info)).Fscalefac_scale <= libc.Int32FromInt32(255))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__38)), __ccgo_ts+6956, int32(1185), __ccgo_ts+7185)
+	if v4 = (*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain+(*gr_info)(unsafe.Pointer(cod_info)).Fscalefac_scale <= int32(255); !v4 {
+		libc.X__assert_fail(tls, __ccgo_ts+7389, __ccgo_ts+7150, int32(1185), uintptr(unsafe.Pointer(&__func__38)))
 	}
+	_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	/*  finish up
 	 */
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr == int32(vbr_rh) || (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr == int32(vbr_mtrh) || (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr == int32(vbr_mt) {
@@ -19659,7 +18231,7 @@ func outer_loop(tls *libc.TLS, gfc uintptr, cod_info uintptr, l3_xmin uintptr, x
 	return (*(*calc_noise_result)(unsafe.Pointer(bp + 7724))).Fover_count
 }
 
-var __func__38 = [11]int8{'o', 'u', 't', 'e', 'r', '_', 'l', 'o', 'o', 'p'} /* maximum allowed bits */
+var __func__38 = [11]uint8{'o', 'u', 't', 'e', 'r', '_', 'l', 'o', 'o', 'p'} /* maximum allowed bits */
 
 /************************************************************************
  *
@@ -19702,30 +18274,35 @@ func VBR_encode_granule(tls *libc.TLS, gfc uintptr, cod_info uintptr, l3_xmin ui
 	bp := tls.Alloc(7568)
 	defer tls.Free(7568)
 	var Max_bits, dbits, found, over, real_bits, sfb21_extra, this_bits int32
+	var v1 bool
 	var _ /* bst_cod_info at bp+0 */ gr_info
 	var _ /* bst_xrpow at bp+5264 */ [576]FLOAT
-	_, _, _, _, _, _, _ = Max_bits, dbits, found, over, real_bits, sfb21_extra, this_bits
+	_, _, _, _, _, _, _, _ = Max_bits, dbits, found, over, real_bits, sfb21_extra, this_bits, v1
 	Max_bits = max_bits
 	real_bits = max_bits + int32(1)
 	this_bits = (max_bits + min_bits) / int32(2)
 	found = 0
 	sfb21_extra = (*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_qnt.Fsfb21_extra
-	if libc.BoolInt64(!(Max_bits <= libc.Int32FromInt32(MAX_BITS_PER_CHANNEL))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__39)), __ccgo_ts+6956, int32(1257), __ccgo_ts+7243)
+	if v1 = Max_bits <= int32(MAX_BITS_PER_CHANNEL); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+7447, __ccgo_ts+7150, int32(1257), uintptr(unsafe.Pointer(&__func__39)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	libc.Xmemset(tls, bp+2304, 0, uint64(2304))
 	/*  search within round about 40 bits of optimal
 	 */
 	for cond := true; cond; cond = dbits > int32(12) {
-		if libc.BoolInt64(!(this_bits >= min_bits)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__39)), __ccgo_ts+6956, int32(1263), __ccgo_ts+7276)
+		if v1 = this_bits >= min_bits; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+7480, __ccgo_ts+7150, int32(1263), uintptr(unsafe.Pointer(&__func__39)))
 		}
-		if libc.BoolInt64(!(this_bits <= max_bits)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__39)), __ccgo_ts+6956, int32(1264), __ccgo_ts+7298)
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v1 = this_bits <= max_bits; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+7502, __ccgo_ts+7150, int32(1264), uintptr(unsafe.Pointer(&__func__39)))
 		}
-		if libc.BoolInt64(!(min_bits <= max_bits)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__39)), __ccgo_ts+6956, int32(1265), __ccgo_ts+7320)
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v1 = min_bits <= max_bits; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+7524, __ccgo_ts+7150, int32(1265), uintptr(unsafe.Pointer(&__func__39)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		if this_bits > Max_bits-int32(42) {
 			(*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_qnt.Fsfb21_extra = 0
 		} else {
@@ -19773,12 +18350,13 @@ func VBR_encode_granule(tls *libc.TLS, gfc uintptr, cod_info uintptr, l3_xmin ui
 	if found == int32(2) {
 		libc.Xmemcpy(tls, cod_info+2304, bp+2304, libc.Uint64FromInt64(4)*libc.Uint64FromInt32(576))
 	}
-	if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(cod_info)).Fpart2_3_length <= Max_bits)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__39)), __ccgo_ts+6956, int32(1321), __ccgo_ts+7341)
+	if v1 = (*gr_info)(unsafe.Pointer(cod_info)).Fpart2_3_length <= Max_bits; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+7545, __ccgo_ts+7150, int32(1321), uintptr(unsafe.Pointer(&__func__39)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 }
 
-var __func__39 = [19]int8{'V', 'B', 'R', '_', 'e', 'n', 'c', 'o', 'd', 'e', '_', 'g', 'r', 'a', 'n', 'u', 'l', 'e'}
+var __func__39 = [19]uint8{'V', 'B', 'R', '_', 'e', 'n', 'c', 'o', 'd', 'e', '_', 'g', 'r', 'a', 'n', 'u', 'l', 'e'}
 
 /************************************************************************
  *
@@ -20225,13 +18803,14 @@ func VBR_new_iteration_loop(tls *libc.TLS, gfc uintptr, pe uintptr, ms_ener_rati
 	defer tls.Free(9936)
 	var analog_silence, ch, fullframebits, gr, i, j, unused, used_bits int32
 	var cfg, cod_info, cod_info1, const_l3_xmin, const_max_bits, const_xrpow, eov, l3_side uintptr
+	var v5 bool
 	var _ /* frameBits at bp+9840 */ [15]int32
 	var _ /* l3_xmin at bp+0 */ [2][2][39]FLOAT
 	var _ /* max_bits at bp+9900 */ [2][2]int32
 	var _ /* mean_bits at bp+9920 */ int32
 	var _ /* pad at bp+9916 */ int32
 	var _ /* xrpow at bp+624 */ [2][2][576]FLOAT
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = analog_silence, cfg, ch, cod_info, cod_info1, const_l3_xmin, const_max_bits, const_xrpow, eov, fullframebits, gr, i, j, l3_side, unused, used_bits
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = analog_silence, cfg, ch, cod_info, cod_info1, const_l3_xmin, const_max_bits, const_xrpow, eov, fullframebits, gr, i, j, l3_side, unused, used_bits, v5
 	cfg = gfc + 24
 	eov = gfc + 86688
 	l3_side = gfc + 320
@@ -20320,9 +18899,10 @@ func VBR_new_iteration_loop(tls *libc.TLS, gfc uintptr, pe uintptr, ms_ener_rati
 	}
 	if used_bits <= (*(*[15]int32)(unsafe.Pointer(bp + 9840)))[(*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index] {
 		fullframebits = ResvFrameBegin(tls, gfc, bp+9920)
-		if libc.BoolInt64(!(used_bits <= fullframebits)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__40)), __ccgo_ts+6956, int32(1736), __ccgo_ts+7378)
+		if v5 = used_bits <= fullframebits; !v5 {
+			libc.X__assert_fail(tls, __ccgo_ts+7582, __ccgo_ts+7150, int32(1736), uintptr(unsafe.Pointer(&__func__40)))
 		}
+		_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		gr = 0
 		for {
 			if !(gr < (*SessionConfig_t)(unsafe.Pointer(cfg)).Fmode_gr) {
@@ -20335,13 +18915,13 @@ func VBR_new_iteration_loop(tls *libc.TLS, gfc uintptr, pe uintptr, ms_ener_rati
 				}
 				cod_info1 = l3_side + uintptr(gr)*10528 + uintptr(ch)*5264
 				ResvAdjust(tls, gfc, cod_info1)
-				goto _6
-			_6:
+				goto _7
+			_7:
 				;
 				ch = ch + 1
 			}
-			goto _5
-		_5:
+			goto _6
+		_6:
 			;
 			gr = gr + 1
 		}
@@ -20349,12 +18929,12 @@ func VBR_new_iteration_loop(tls *libc.TLS, gfc uintptr, pe uintptr, ms_ener_rati
 	} else {
 		/* SHOULD NOT HAPPEN INTERNAL ERROR
 		 */
-		lame_errorf(tls, gfc, __ccgo_ts+7405, 0)
+		lame_errorf(tls, gfc, __ccgo_ts+7609, 0)
 		libc.Xexit(tls, -int32(1))
 	}
 }
 
-var __func__40 = [23]int8{'V', 'B', 'R', '_', 'n', 'e', 'w', '_', 'i', 't', 'e', 'r', 'a', 't', 'i', 'o', 'n', '_', 'l', 'o', 'o', 'p'}
+var __func__40 = [23]uint8{'V', 'B', 'R', '_', 'n', 'e', 'w', '_', 'i', 't', 'e', 'r', 'a', 't', 'i', 'o', 'n', '_', 'l', 'o', 'o', 'p'}
 
 /********************************************************************
  *
@@ -20556,13 +19136,14 @@ func ABR_iteration_loop(tls *libc.TLS, gfc uintptr, pe uintptr, ms_ener_ratio ui
 	var adjust, masking_lower_db FLOAT
 	var ath_over, ch, gr int32
 	var cfg, cod_info, eov, l3_side uintptr
+	var v4 bool
 	var _ /* analog_silence_bits at bp+2484 */ int32
 	var _ /* l3_xmin at bp+0 */ [39]FLOAT
 	var _ /* max_frame_bits at bp+2480 */ int32
 	var _ /* mean_bits at bp+2476 */ int32
 	var _ /* targ_bits at bp+2460 */ [2][2]int32
 	var _ /* xrpow at bp+156 */ [576]FLOAT
-	_, _, _, _, _, _, _, _, _ = adjust, ath_over, cfg, ch, cod_info, eov, gr, l3_side, masking_lower_db
+	_, _, _, _, _, _, _, _, _, _ = adjust, ath_over, cfg, ch, cod_info, eov, gr, l3_side, masking_lower_db, v4
 	cfg = gfc + 24
 	eov = gfc + 86688
 	l3_side = gfc + 320
@@ -20634,13 +19215,14 @@ func ABR_iteration_loop(tls *libc.TLS, gfc uintptr, pe uintptr, ms_ener_ratio ui
 		;
 		(*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index = (*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index + 1
 	}
-	if libc.BoolInt64(!((*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index <= (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr_max_bitrate_index)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__41)), __ccgo_ts+6956, int32(1968), __ccgo_ts+7461)
+	if v4 = (*EncResult_t)(unsafe.Pointer(eov)).Fbitrate_index <= (*SessionConfig_t)(unsafe.Pointer(cfg)).Fvbr_max_bitrate_index; !v4 {
+		libc.X__assert_fail(tls, __ccgo_ts+7665, __ccgo_ts+7150, int32(1968), uintptr(unsafe.Pointer(&__func__41)))
 	}
+	_ = v4 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	ResvFrameEnd(tls, gfc, *(*int32)(unsafe.Pointer(bp + 2476)))
 }
 
-var __func__41 = [19]int8{'A', 'B', 'R', '_', 'i', 't', 'e', 'r', 'a', 't', 'i', 'o', 'n', '_', 'l', 'o', 'o', 'p'}
+var __func__41 = [19]uint8{'A', 'B', 'R', '_', 'i', 't', 'e', 'r', 'a', 't', 'i', 'o', 'n', '_', 'l', 'o', 'o', 'p'}
 
 /************************************************************************
  *
@@ -20658,11 +19240,12 @@ func CBR_iteration_loop(tls *libc.TLS, gfc uintptr, pe uintptr, ms_ener_ratio ui
 	var adjust, masking_lower_db FLOAT
 	var cfg, cod_info, l3_side uintptr
 	var ch, gr, max_bits int32
+	var v3 bool
 	var _ /* l3_xmin at bp+0 */ [39]FLOAT
 	var _ /* mean_bits at bp+2472 */ int32
 	var _ /* targ_bits at bp+2464 */ [2]int32
 	var _ /* xrpow at bp+156 */ [576]FLOAT
-	_, _, _, _, _, _, _, _ = adjust, cfg, ch, cod_info, gr, l3_side, masking_lower_db, max_bits
+	_, _, _, _, _, _, _, _, _ = adjust, cfg, ch, cod_info, gr, l3_side, masking_lower_db, max_bits, v3
 	cfg = gfc + 24
 	l3_side = gfc + 320
 	ResvFrameBegin(tls, gfc, bp+2472)
@@ -20707,12 +19290,14 @@ func CBR_iteration_loop(tls *libc.TLS, gfc uintptr, pe uintptr, ms_ener_ratio ui
 				outer_loop(tls, gfc, cod_info, bp, bp+156, ch, (*(*[2]int32)(unsafe.Pointer(bp + 2464)))[ch])
 			}
 			iteration_finish_one(tls, gfc, gr, ch)
-			if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(cod_info)).Fpart2_3_length <= libc.Int32FromInt32(MAX_BITS_PER_CHANNEL))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__42)), __ccgo_ts+6956, int32(2044), __ccgo_ts+7510)
+			if v3 = (*gr_info)(unsafe.Pointer(cod_info)).Fpart2_3_length <= int32(MAX_BITS_PER_CHANNEL); !v3 {
+				libc.X__assert_fail(tls, __ccgo_ts+7714, __ccgo_ts+7150, int32(2044), uintptr(unsafe.Pointer(&__func__42)))
 			}
-			if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(cod_info)).Fpart2_3_length <= (*(*[2]int32)(unsafe.Pointer(bp + 2464)))[ch])) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__42)), __ccgo_ts+6956, int32(2045), __ccgo_ts+7559)
+			_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
+			if v3 = (*gr_info)(unsafe.Pointer(cod_info)).Fpart2_3_length <= (*(*[2]int32)(unsafe.Pointer(bp + 2464)))[ch]; !v3 {
+				libc.X__assert_fail(tls, __ccgo_ts+7763, __ccgo_ts+7150, int32(2045), uintptr(unsafe.Pointer(&__func__42)))
 			}
+			_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			goto _2
 		_2:
 			;
@@ -20726,12 +19311,13 @@ func CBR_iteration_loop(tls *libc.TLS, gfc uintptr, pe uintptr, ms_ener_ratio ui
 	ResvFrameEnd(tls, gfc, *(*int32)(unsafe.Pointer(bp + 2472)))
 }
 
-var __func__42 = [19]int8{'C', 'B', 'R', '_', 'i', 't', 'e', 'r', 'a', 't', 'i', 'o', 'n', '_', 'l', 'o', 'o', 'p'}
+var __func__42 = [19]uint8{'C', 'B', 'R', '_', 'i', 't', 'e', 'r', 'a', 't', 'i', 'o', 'n', '_', 'l', 'o', 'o', 'p'}
 
+const DBL_EPSILON1 = 2.220446049250313e-16
 const FLOAT_MAX3 = 1e+37
-const M_SQRT26 = 1.41421356237309504880168872420969808
+const FLT_MAX1 = 3.40282346638528859812e+38
+const M_SQRT26 = 1.41421356237309504880
 const NSATHSCALE = 100
-const __DBL_EPSILON__1 = 2.220446049250313e-16
 
 /*
 compute the ATH for each scalefactor band
@@ -21187,9 +19773,10 @@ func on_pe(tls *libc.TLS, gfc uintptr, pe uintptr, targ_bits uintptr, mean_bits 
 	var add_bits [2]int32
 	var bits, ch, max_bits, sum, v2 int32
 	var cfg uintptr
+	var v8 bool
 	var _ /* extra_bits at bp+0 */ int32
 	var _ /* tbits at bp+4 */ int32
-	_, _, _, _, _, _, _ = add_bits, bits, cfg, ch, max_bits, sum, v2
+	_, _, _, _, _, _, _, _ = add_bits, bits, cfg, ch, max_bits, sum, v2, v8
 	cfg = gfc + 24
 	*(*int32)(unsafe.Pointer(bp)) = 0
 	add_bits = [2]int32{}
@@ -21288,25 +19875,29 @@ func on_pe(tls *libc.TLS, gfc uintptr, pe uintptr, targ_bits uintptr, mean_bits 
 			;
 			ch = ch + 1
 		}
-		if libc.BoolInt64(!(sum <= libc.Int32FromInt32(MAX_BITS_PER_GRANULE))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__43)), __ccgo_ts+7601, int32(484), __ccgo_ts+7693)
+		if v8 = sum <= int32(MAX_BITS_PER_GRANULE); !v8 {
+			libc.X__assert_fail(tls, __ccgo_ts+7805, __ccgo_ts+7833, int32(484), uintptr(unsafe.Pointer(&__func__43)))
 		}
+		_ = v8 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	}
 	return max_bits
 }
 
-var __func__43 = [6]int8{'o', 'n', '_', 'p', 'e'}
+var __func__43 = [6]uint8{'o', 'n', '_', 'p', 'e'}
 
 func reduce_side(tls *libc.TLS, targ_bits uintptr, ms_ener_ratio FLOAT, mean_bits int32, max_bits int32) {
 	var fac FLOAT
 	var move_bits int32
-	_, _ = fac, move_bits
-	if libc.BoolInt64(!(max_bits <= libc.Int32FromInt32(MAX_BITS_PER_GRANULE))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__44)), __ccgo_ts+7601, int32(499), __ccgo_ts+7721)
+	var v1 bool
+	_, _, _ = fac, move_bits, v1
+	if v1 = max_bits <= int32(MAX_BITS_PER_GRANULE); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+7925, __ccgo_ts+7833, int32(499), uintptr(unsafe.Pointer(&__func__44)))
 	}
-	if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(targ_bits))+*(*int32)(unsafe.Pointer(targ_bits + 1*4)) <= libc.Int32FromInt32(MAX_BITS_PER_GRANULE))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__44)), __ccgo_ts+7601, int32(500), __ccgo_ts+7754)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = *(*int32)(unsafe.Pointer(targ_bits))+*(*int32)(unsafe.Pointer(targ_bits + 1*4)) <= int32(MAX_BITS_PER_GRANULE); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+7958, __ccgo_ts+7833, int32(500), uintptr(unsafe.Pointer(&__func__44)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	/*  ms_ener_ratio = 0:  allocate 66/33  mid/side  fac=.33
 	 *  ms_ener_ratio =.5:  allocate 50/50 mid/side   fac= 0 */
 	/* 75/25 split is fac=.5 */
@@ -21346,18 +19937,21 @@ func reduce_side(tls *libc.TLS, targ_bits uintptr, ms_ener_ratio FLOAT, mean_bit
 		*(*int32)(unsafe.Pointer(targ_bits)) = max_bits * *(*int32)(unsafe.Pointer(targ_bits)) / move_bits
 		*(*int32)(unsafe.Pointer(targ_bits + 1*4)) = max_bits * *(*int32)(unsafe.Pointer(targ_bits + 1*4)) / move_bits
 	}
-	if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(targ_bits)) <= libc.Int32FromInt32(MAX_BITS_PER_CHANNEL))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__44)), __ccgo_ts+7601, int32(543), __ccgo_ts+7806)
+	if v1 = *(*int32)(unsafe.Pointer(targ_bits)) <= int32(MAX_BITS_PER_CHANNEL); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+8010, __ccgo_ts+7833, int32(543), uintptr(unsafe.Pointer(&__func__44)))
 	}
-	if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(targ_bits + 1*4)) <= libc.Int32FromInt32(MAX_BITS_PER_CHANNEL))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__44)), __ccgo_ts+7601, int32(544), __ccgo_ts+7843)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = *(*int32)(unsafe.Pointer(targ_bits + 1*4)) <= int32(MAX_BITS_PER_CHANNEL); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+8047, __ccgo_ts+7833, int32(544), uintptr(unsafe.Pointer(&__func__44)))
 	}
-	if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(targ_bits))+*(*int32)(unsafe.Pointer(targ_bits + 1*4)) <= libc.Int32FromInt32(MAX_BITS_PER_GRANULE))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__44)), __ccgo_ts+7601, int32(545), __ccgo_ts+7754)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = *(*int32)(unsafe.Pointer(targ_bits))+*(*int32)(unsafe.Pointer(targ_bits + 1*4)) <= int32(MAX_BITS_PER_GRANULE); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+7958, __ccgo_ts+7833, int32(545), uintptr(unsafe.Pointer(&__func__44)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 }
 
-var __func__44 = [12]int8{'r', 'e', 'd', 'u', 'c', 'e', '_', 's', 'i', 'd', 'e'}
+var __func__44 = [12]uint8{'r', 'e', 'd', 'u', 'c', 'e', '_', 's', 'i', 'd', 'e'}
 
 /**
  *  Robert Hegemann 2001-04-27:
@@ -21480,7 +20074,7 @@ func calc_xmin(tls *libc.TLS, gfc uintptr, ratio uintptr, cod_info uintptr, pxmi
 		} else {
 			v3 = 0
 		}
-		*(*int8)(unsafe.Pointer(cod_info + 5220 + uintptr(gsfb))) = int8(v3)
+		*(*uint8)(unsafe.Pointer(cod_info + 5220 + uintptr(gsfb))) = libc.Uint8FromInt32(v3)
 		v7 = pxmin
 		pxmin += 4
 		*(*FLOAT)(unsafe.Pointer(v7)) = xmin
@@ -21606,7 +20200,7 @@ func calc_xmin(tls *libc.TLS, gfc uintptr, ratio uintptr, cod_info uintptr, pxmi
 			} else {
 				v3 = 0
 			}
-			*(*int8)(unsafe.Pointer(cod_info + 5220 + uintptr(gsfb+b))) = int8(v3)
+			*(*uint8)(unsafe.Pointer(cod_info + 5220 + uintptr(gsfb+b))) = libc.Uint8FromInt32(v3)
 			v7 = pxmin
 			pxmin += 4
 			*(*FLOAT)(unsafe.Pointer(v7)) = xmin1
@@ -21711,11 +20305,12 @@ func calc_noise_core_c(tls *libc.TLS, cod_info uintptr, startline uintptr, l int
 func calc_noise(tls *libc.TLS, cod_info uintptr, l3_xmin uintptr, distort uintptr, res uintptr, prev_noise uintptr) (r int32) {
 	bp := tls.Alloc(16)
 	defer tls.Free(16)
-	var distort_, max_noise, noise, over_noise_db, r_l3_xmin, step, tot_noise_db, v5 FLOAT
+	var distort_, max_noise, noise, over_noise_db, r_l3_xmin, step, tot_noise_db, v6 FLOAT
 	var l, over, s, sfb, tmp, usefullsize, v3 int32
 	var scalefac, v2, v4 uintptr
+	var v5 bool
 	var _ /* j at bp+0 */ int32
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = distort_, l, max_noise, noise, over, over_noise_db, r_l3_xmin, s, scalefac, sfb, step, tmp, tot_noise_db, usefullsize, v2, v3, v4, v5
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = distort_, l, max_noise, noise, over, over_noise_db, r_l3_xmin, s, scalefac, sfb, step, tmp, tot_noise_db, usefullsize, v2, v3, v4, v5, v6
 	over = 0
 	over_noise_db = libc.Float32FromInt32(0)
 	tot_noise_db = libc.Float32FromInt32(0)           /*    0 dB relative to masking */
@@ -21747,9 +20342,10 @@ func calc_noise(tls *libc.TLS, cod_info uintptr, l3_xmin uintptr, distort uintpt
 			distort_ = FLOAT(r_l3_xmin * *(*FLOAT)(unsafe.Pointer(prev_noise + 164 + uintptr(sfb)*4)))
 			noise = *(*FLOAT)(unsafe.Pointer(prev_noise + 320 + uintptr(sfb)*4))
 		} else {
-			if libc.BoolInt64(!(0 <= s+int32(Q_MAX2) && s < libc.Int32FromInt32(256)+libc.Int32FromInt32(1))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__45)), __ccgo_ts+7601, int32(850), __ccgo_ts+7880)
+			if v5 = 0 <= s+int32(Q_MAX2) && s < libc.Int32FromInt32(256)+libc.Int32FromInt32(1); !v5 {
+				libc.X__assert_fail(tls, __ccgo_ts+8084, __ccgo_ts+7833, int32(850), uintptr(unsafe.Pointer(&__func__45)))
 			}
+			_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			step = pow20[s+int32(Q_MAX2)]
 			l = *(*int32)(unsafe.Pointer(cod_info + 4872 + uintptr(sfb)*4)) >> int32(1)
 			if *(*int32)(unsafe.Pointer(bp))+*(*int32)(unsafe.Pointer(cod_info + 4872 + uintptr(sfb)*4)) > (*gr_info)(unsafe.Pointer(cod_info)).Fmax_nonzero_coeff {
@@ -21769,11 +20365,11 @@ func calc_noise(tls *libc.TLS, cod_info uintptr, l3_xmin uintptr, distort uintpt
 			distort_ = FLOAT(r_l3_xmin * noise)
 			/* multiplying here is adding in dB, but can overflow */
 			if distort_ > libc.Float32FromFloat32(1e-20) {
-				v5 = distort_
+				v6 = distort_
 			} else {
-				v5 = libc.Float32FromFloat32(1e-20)
+				v6 = libc.Float32FromFloat32(1e-20)
 			}
-			noise = float32(libc.Xlog10(tls, float64(v5)))
+			noise = float32(libc.Xlog10(tls, float64(v6)))
 			if prev_noise != 0 {
 				/* save noise values */
 				*(*FLOAT)(unsafe.Pointer(prev_noise + 320 + uintptr(sfb)*4)) = noise
@@ -21802,11 +20398,11 @@ func calc_noise(tls *libc.TLS, cod_info uintptr, l3_xmin uintptr, distort uintpt
 			over_noise_db = over_noise_db + noise
 		}
 		if max_noise > noise {
-			v5 = max_noise
+			v6 = max_noise
 		} else {
-			v5 = noise
+			v6 = noise
 		}
-		max_noise = v5
+		max_noise = v6
 		goto _1
 	_1:
 		;
@@ -21819,7 +20415,7 @@ func calc_noise(tls *libc.TLS, cod_info uintptr, l3_xmin uintptr, distort uintpt
 	return over
 }
 
-var __func__45 = [11]int8{'c', 'a', 'l', 'c', '_', 'n', 'o', 'i', 's', 'e'}
+var __func__45 = [11]uint8{'c', 'a', 'l', 'c', '_', 'n', 'o', 'i', 's', 'e'}
 
 /************************************************************************
  *
@@ -21840,10 +20436,11 @@ func set_pinfo(tls *libc.TLS, gfc uintptr, cod_info uintptr, ratio uintptr, gr i
 	var cfg, scalefac uintptr
 	var en0, en1, ifqstep, v4 FLOAT
 	var v1 float64
+	var v5 bool
 	var _ /* l3_xmin at bp+0 */ [39]FLOAT
 	var _ /* noise at bp+312 */ calc_noise_result
 	var _ /* xfsf at bp+156 */ [39]FLOAT
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = bw, cfg, en0, en1, end, i, ifqstep, j, l, scalefac, sfb, sfb2, start, v1, v4
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = bw, cfg, en0, en1, end, i, ifqstep, j, l, scalefac, sfb, sfb2, start, v1, v4, v5
 	cfg = gfc + 24
 	if (*gr_info)(unsafe.Pointer(cod_info)).Fscalefac_scale == 0 {
 		v1 = float64(0.5)
@@ -21900,9 +20497,10 @@ func set_pinfo(tls *libc.TLS, gfc uintptr, cod_info uintptr, ratio uintptr, gr i
 			*(*float64)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).Fpinfo + 199160 + uintptr(gr)*352 + uintptr(ch)*176 + uintptr(sfb)*8)) = float64(-ifqstep * float32(pretab[sfb]))
 		}
 		if sfb < int32(SBPSY_l) {
-			if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4)) >= libc.Int32FromInt32(0))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__46)), __ccgo_ts+7601, int32(981), __ccgo_ts+7909)
-			} /* scfsi should be decoded by caller side */
+			if v5 = *(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4)) >= 0; !v5 {
+				libc.X__assert_fail(tls, __ccgo_ts+8113, __ccgo_ts+7833, int32(981), uintptr(unsafe.Pointer(&__func__46)))
+			}
+			_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0) /* scfsi should be decoded by caller side */
 			*(*float64)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).Fpinfo + 199160 + uintptr(gr)*352 + uintptr(ch)*176 + uintptr(sfb)*8)) -= float64(ifqstep * float32(*(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4))))
 		}
 		goto _2
@@ -21933,8 +20531,8 @@ func set_pinfo(tls *libc.TLS, gfc uintptr, cod_info uintptr, ratio uintptr, gr i
 					}
 					en0 = en0 + FLOAT(*(*FLOAT)(unsafe.Pointer(cod_info + uintptr(j)*4))**(*FLOAT)(unsafe.Pointer(cod_info + uintptr(j)*4)))
 					j = j + 1
-					goto _7
-				_7:
+					goto _8
+				_8:
 					;
 					l = l + 1
 				}
@@ -21968,13 +20566,13 @@ func set_pinfo(tls *libc.TLS, gfc uintptr, cod_info uintptr, ratio uintptr, gr i
 					*(*float64)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).Fpinfo + 199864 + uintptr(gr)*624 + uintptr(ch)*312 + uintptr(int32(3)*sfb+i)*8)) -= float64(ifqstep * float32(*(*int32)(unsafe.Pointer(scalefac + uintptr(sfb2)*4))))
 				}
 				sfb2 = sfb2 + 1
-				goto _6
-			_6:
+				goto _7
+			_7:
 				;
 				i = i + 1
 			}
-			goto _5
-		_5:
+			goto _6
+		_6:
 			;
 			sfb = sfb + 1
 		}
@@ -21989,7 +20587,7 @@ func set_pinfo(tls *libc.TLS, gfc uintptr, cod_info uintptr, ratio uintptr, gr i
 	*(*int32)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).Fpinfo + 203272 + uintptr(gr)*8 + uintptr(ch)*4)) = (*(*calc_noise_result)(unsafe.Pointer(bp + 312))).Fover_SSD
 }
 
-var __func__46 = [10]int8{'s', 'e', 't', '_', 'p', 'i', 'n', 'f', 'o'}
+var __func__46 = [10]uint8{'s', 'e', 't', '_', 'p', 'i', 'n', 'f', 'o'}
 
 /************************************************************************
  *
@@ -22055,7 +20653,6 @@ func set_frame_pinfo(tls *libc.TLS, gfc uintptr, ratio uintptr) {
 }
 
 const FLOAT_MAX4 = 1e37
-const __DBL_EPSILON__2 = 2.2204460492503131e-16
 
 /*
   ResvFrameBegin:
@@ -22102,7 +20699,8 @@ const __DBL_EPSILON__2 = 2.2204460492503131e-16
 func ResvFrameBegin(tls *libc.TLS, gfc uintptr, mean_bits uintptr) (r int32) {
 	var cfg, esv, l3_side uintptr
 	var frameLength, fullFrameBits, maxmp3buf, meanBits, resvLimit, v1 int32
-	_, _, _, _, _, _, _, _, _ = cfg, esv, frameLength, fullFrameBits, l3_side, maxmp3buf, meanBits, resvLimit, v1
+	var v2 bool
+	_, _, _, _, _, _, _, _, _, _ = cfg, esv, frameLength, fullFrameBits, l3_side, maxmp3buf, meanBits, resvLimit, v1, v2
 	cfg = gfc + 24
 	esv = gfc + 27888
 	l3_side = gfc + 320
@@ -22168,12 +20766,14 @@ func ResvFrameBegin(tls *libc.TLS, gfc uintptr, mean_bits uintptr) (r int32) {
 	if fullFrameBits > maxmp3buf {
 		fullFrameBits = maxmp3buf
 	}
-	if libc.BoolInt64(!(libc.Int32FromInt32(0) == (*EncStateVar_t)(unsafe.Pointer(esv)).FResvMax%libc.Int32FromInt32(8))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__47)), __ccgo_ts+7928, int32(154), __ccgo_ts+8017)
+	if v2 = 0 == (*EncStateVar_t)(unsafe.Pointer(esv)).FResvMax%int32(8); !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+8132, __ccgo_ts+8154, int32(154), uintptr(unsafe.Pointer(&__func__47)))
 	}
-	if libc.BoolInt64(!((*EncStateVar_t)(unsafe.Pointer(esv)).FResvMax >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__47)), __ccgo_ts+7928, int32(155), __ccgo_ts+8039)
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v2 = (*EncStateVar_t)(unsafe.Pointer(esv)).FResvMax >= 0; !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+8243, __ccgo_ts+8154, int32(155), uintptr(unsafe.Pointer(&__func__47)))
 	}
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	(*III_side_info_t)(unsafe.Pointer(l3_side)).FresvDrain_pre = 0
 	if (*lame_internal_flags)(unsafe.Pointer(gfc)).Fpinfo != libc.UintptrFromInt32(0) {
 		(*plotting_data)(unsafe.Pointer((*lame_internal_flags)(unsafe.Pointer(gfc)).Fpinfo)).Fmean_bits = meanBits / int32(2) /* expected bits per channel per granule [is this also right for mono/stereo, MPEG-1/2 ?] */
@@ -22183,7 +20783,7 @@ func ResvFrameBegin(tls *libc.TLS, gfc uintptr, mean_bits uintptr) (r int32) {
 	return fullFrameBits
 }
 
-var __func__47 = [15]int8{'R', 'e', 's', 'v', 'F', 'r', 'a', 'm', 'e', 'B', 'e', 'g', 'i', 'n'}
+var __func__47 = [15]uint8{'R', 'e', 's', 'v', 'F', 'r', 'a', 'm', 'e', 'B', 'e', 'g', 'i', 'n'}
 
 // C documentation
 //
@@ -22262,7 +20862,8 @@ func ResvAdjust(tls *libc.TLS, gfc uintptr, gi uintptr) {
 func ResvFrameEnd(tls *libc.TLS, gfc uintptr, mean_bits int32) {
 	var cfg, esv, l3_side uintptr
 	var mdb_bytes, over_bits, stuffingBits, v1 int32
-	_, _, _, _, _, _, _ = cfg, esv, l3_side, mdb_bytes, over_bits, stuffingBits, v1
+	var v2 bool
+	_, _, _, _, _, _, _, _ = cfg, esv, l3_side, mdb_bytes, over_bits, stuffingBits, v1, v2
 	cfg = gfc + 24
 	esv = gfc + 27888
 	l3_side = gfc + 320
@@ -22278,12 +20879,14 @@ func ResvFrameEnd(tls *libc.TLS, gfc uintptr, mean_bits int32) {
 	}
 	over_bits = (*EncStateVar_t)(unsafe.Pointer(esv)).FResvSize - stuffingBits - (*EncStateVar_t)(unsafe.Pointer(esv)).FResvMax
 	if over_bits > 0 {
-		if libc.BoolInt64(!(libc.Int32FromInt32(0) == over_bits%libc.Int32FromInt32(8))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__48)), __ccgo_ts+7928, int32(259), __ccgo_ts+8057)
+		if v2 = 0 == over_bits%int32(8); !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+8261, __ccgo_ts+8154, int32(259), uintptr(unsafe.Pointer(&__func__48)))
 		}
-		if libc.BoolInt64(!(over_bits >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__48)), __ccgo_ts+7928, int32(260), __ccgo_ts+8076)
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v2 = over_bits >= 0; !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+8280, __ccgo_ts+8154, int32(260), uintptr(unsafe.Pointer(&__func__48)))
 		}
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		stuffingBits = stuffingBits + over_bits
 	}
 	/* NOTE: enabling the NEW_DRAIN code fixes some problems with FhG decoder
@@ -22316,7 +20919,9 @@ func ResvFrameEnd(tls *libc.TLS, gfc uintptr, mean_bits int32) {
 	*(*int32)(unsafe.Pointer(esv + 26888)) -= stuffingBits
 }
 
-var __func__48 = [13]int8{'R', 'e', 's', 'v', 'F', 'r', 'a', 'm', 'e', 'E', 'n', 'd'}
+var __func__48 = [13]uint8{'R', 'e', 's', 'v', 'F', 'r', 'a', 'm', 'e', 'E', 'n', 'd'}
+
+const INT_MAX3 = 2147483647
 
 /*
  * input stream description
@@ -22505,16 +21110,19 @@ func lame_set_analysis(tls *libc.TLS, gfp uintptr, analysis int32) (r int32) {
 }
 
 func lame_get_analysis(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fanalysis && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fanalysis)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__49)), __ccgo_ts+8091, int32(247), __ccgo_ts+8178)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fanalysis && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fanalysis; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8295, __ccgo_ts+8336, int32(247), uintptr(unsafe.Pointer(&__func__49)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Fanalysis
 	}
 	return 0
 }
 
-var __func__49 = [18]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'a', 'n', 'a', 'l', 'y', 's', 'i', 's'}
+var __func__49 = [18]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'a', 'n', 'a', 'l', 'y', 's', 'i', 's'}
 
 // C documentation
 //
@@ -22535,16 +21143,19 @@ func lame_set_bWriteVbrTag(tls *libc.TLS, gfp uintptr, bWriteVbrTag int32) (r in
 }
 
 func lame_get_bWriteVbrTag(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fwrite_lame_tag && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fwrite_lame_tag)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__50)), __ccgo_ts+8091, int32(276), __ccgo_ts+8219)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fwrite_lame_tag && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fwrite_lame_tag; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8423, __ccgo_ts+8336, int32(276), uintptr(unsafe.Pointer(&__func__50)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Fwrite_lame_tag
 	}
 	return 0
 }
 
-var __func__50 = [22]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'b', 'W', 'r', 'i', 't', 'e', 'V', 'b', 'r', 'T', 'a', 'g'}
+var __func__50 = [22]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'b', 'W', 'r', 'i', 't', 'e', 'V', 'b', 'r', 'T', 'a', 'g'}
 
 // C documentation
 //
@@ -22565,16 +21176,19 @@ func lame_set_decode_only(tls *libc.TLS, gfp uintptr, decode_only int32) (r int3
 }
 
 func lame_get_decode_only(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdecode_only && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdecode_only)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__51)), __ccgo_ts+8091, int32(306), __ccgo_ts+8272)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdecode_only && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdecode_only; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8476, __ccgo_ts+8336, int32(306), uintptr(unsafe.Pointer(&__func__51)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Fdecode_only
 	}
 	return 0
 }
 
-var __func__51 = [21]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'd', 'e', 'c', 'o', 'd', 'e', '_', 'o', 'n', 'l', 'y'}
+var __func__51 = [21]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'd', 'e', 'c', 'o', 'd', 'e', '_', 'o', 'n', 'l', 'y'}
 
 // C documentation
 //
@@ -22644,16 +21258,19 @@ func lame_set_mode(tls *libc.TLS, gfp uintptr, mode MPEG_mode) (r int32) {
 }
 
 func lame_get_mode(tls *libc.TLS, gfp uintptr) (r MPEG_mode) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!((*lame_global_flags)(unsafe.Pointer(gfp)).Fmode < int32(MAX_INDICATOR))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__52)), __ccgo_ts+8091, int32(395), __ccgo_ts+8319)
+		if v1 = (*lame_global_flags)(unsafe.Pointer(gfp)).Fmode < int32(MAX_INDICATOR); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8523, __ccgo_ts+8336, int32(395), uintptr(unsafe.Pointer(&__func__52)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Fmode
 	}
 	return int32(NOT_SET)
 }
 
-var __func__52 = [14]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'm', 'o', 'd', 'e'}
+var __func__52 = [14]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'm', 'o', 'd', 'e'}
 
 // C documentation
 //
@@ -22701,16 +21318,19 @@ func lame_set_force_ms(tls *libc.TLS, gfp uintptr, force_ms int32) (r int32) {
 }
 
 func lame_get_force_ms(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fforce_ms && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fforce_ms)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__53)), __ccgo_ts+8091, int32(465), __ccgo_ts+8345)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fforce_ms && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fforce_ms; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8549, __ccgo_ts+8336, int32(465), uintptr(unsafe.Pointer(&__func__53)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Fforce_ms
 	}
 	return 0
 }
 
-var __func__53 = [18]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'f', 'o', 'r', 'c', 'e', '_', 'm', 's'}
+var __func__53 = [18]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'f', 'o', 'r', 'c', 'e', '_', 'm', 's'}
 
 // C documentation
 //
@@ -22731,16 +21351,19 @@ func lame_set_free_format(tls *libc.TLS, gfp uintptr, free_format int32) (r int3
 }
 
 func lame_get_free_format(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Ffree_format && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Ffree_format)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__54)), __ccgo_ts+8091, int32(494), __ccgo_ts+8386)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Ffree_format && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Ffree_format; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8590, __ccgo_ts+8336, int32(494), uintptr(unsafe.Pointer(&__func__54)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Ffree_format
 	}
 	return 0
 }
 
-var __func__54 = [21]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'f', 'r', 'e', 'e', '_', 'f', 'o', 'r', 'm', 'a', 't'}
+var __func__54 = [21]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'f', 'r', 'e', 'e', '_', 'f', 'o', 'r', 'm', 'a', 't'}
 
 // C documentation
 //
@@ -22761,16 +21384,19 @@ func lame_set_findReplayGain(tls *libc.TLS, gfp uintptr, findReplayGain int32) (
 }
 
 func lame_get_findReplayGain(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).FfindReplayGain && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).FfindReplayGain)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__55)), __ccgo_ts+8091, int32(524), __ccgo_ts+8433)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).FfindReplayGain && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).FfindReplayGain; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8637, __ccgo_ts+8336, int32(524), uintptr(unsafe.Pointer(&__func__55)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).FfindReplayGain
 	}
 	return 0
 }
 
-var __func__55 = [24]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'f', 'i', 'n', 'd', 'R', 'e', 'p', 'l', 'a', 'y', 'G', 'a', 'i', 'n'}
+var __func__55 = [24]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'f', 'i', 'n', 'd', 'R', 'e', 'p', 'l', 'a', 'y', 'G', 'a', 'i', 'n'}
 
 // C documentation
 //
@@ -22784,16 +21410,19 @@ func lame_set_decode_on_the_fly(tls *libc.TLS, gfp uintptr, decode_on_the_fly in
 }
 
 func lame_get_decode_on_the_fly(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdecode_on_the_fly && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdecode_on_the_fly)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__56)), __ccgo_ts+8091, int32(560), __ccgo_ts+8486)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdecode_on_the_fly && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdecode_on_the_fly; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8690, __ccgo_ts+8336, int32(560), uintptr(unsafe.Pointer(&__func__56)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Fdecode_on_the_fly
 	}
 	return 0
 }
 
-var __func__56 = [27]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'd', 'e', 'c', 'o', 'd', 'e', '_', 'o', 'n', '_', 't', 'h', 'e', '_', 'f', 'l', 'y'}
+var __func__56 = [27]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'd', 'e', 'c', 'o', 'd', 'e', '_', 'o', 'n', '_', 't', 'h', 'e', '_', 'f', 'l', 'y'}
 
 // C documentation
 //
@@ -22969,16 +21598,19 @@ func lame_set_copyright(tls *libc.TLS, gfp uintptr, copyright int32) (r int32) {
 }
 
 func lame_get_copyright(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fcopyright && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fcopyright)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__57)), __ccgo_ts+8091, int32(782), __ccgo_ts+8545)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fcopyright && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fcopyright; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8749, __ccgo_ts+8336, int32(782), uintptr(unsafe.Pointer(&__func__57)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Fcopyright
 	}
 	return 0
 }
 
-var __func__57 = [19]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'c', 'o', 'p', 'y', 'r', 'i', 'g', 'h', 't'}
+var __func__57 = [19]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'c', 'o', 'p', 'y', 'r', 'i', 'g', 'h', 't'}
 
 // C documentation
 //
@@ -22999,16 +21631,19 @@ func lame_set_original(tls *libc.TLS, gfp uintptr, original int32) (r int32) {
 }
 
 func lame_get_original(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Foriginal && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Foriginal)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__58)), __ccgo_ts+8091, int32(811), __ccgo_ts+8588)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Foriginal && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Foriginal; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8792, __ccgo_ts+8336, int32(811), uintptr(unsafe.Pointer(&__func__58)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Foriginal
 	}
 	return 0
 }
 
-var __func__58 = [18]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'o', 'r', 'i', 'g', 'i', 'n', 'a', 'l'}
+var __func__58 = [18]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'o', 'r', 'i', 'g', 'i', 'n', 'a', 'l'}
 
 // C documentation
 //
@@ -23032,16 +21667,19 @@ func lame_set_error_protection(tls *libc.TLS, gfp uintptr, error_protection int3
 }
 
 func lame_get_error_protection(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Ferror_protection && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Ferror_protection)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__59)), __ccgo_ts+8091, int32(843), __ccgo_ts+8629)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Ferror_protection && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Ferror_protection; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8833, __ccgo_ts+8336, int32(843), uintptr(unsafe.Pointer(&__func__59)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Ferror_protection
 	}
 	return 0
 }
 
-var __func__59 = [26]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'e', 'r', 'r', 'o', 'r', '_', 'p', 'r', 'o', 't', 'e', 'c', 't', 'i', 'o', 'n'}
+var __func__59 = [26]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'e', 'r', 'r', 'o', 'r', '_', 'p', 'r', 'o', 't', 'e', 'c', 't', 'i', 'o', 'n'}
 
 // C documentation
 //
@@ -23081,16 +21719,19 @@ func lame_set_extension(tls *libc.TLS, gfp uintptr, extension int32) (r int32) {
 }
 
 func lame_get_extension(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fextension && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fextension)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__60)), __ccgo_ts+8091, int32(900), __ccgo_ts+8686)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fextension && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fextension; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8890, __ccgo_ts+8336, int32(900), uintptr(unsafe.Pointer(&__func__60)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Fextension
 	}
 	return 0
 }
 
-var __func__60 = [19]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'e', 'x', 't', 'e', 'n', 's', 'i', 'o', 'n'}
+var __func__60 = [19]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'e', 'x', 't', 'e', 'n', 's', 'i', 'o', 'n'}
 
 // C documentation
 //
@@ -23140,16 +21781,19 @@ func lame_set_disable_reservoir(tls *libc.TLS, gfp uintptr, disable_reservoir in
 }
 
 func lame_get_disable_reservoir(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdisable_reservoir && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdisable_reservoir)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__61)), __ccgo_ts+8091, int32(962), __ccgo_ts+8729)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdisable_reservoir && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).Fdisable_reservoir; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8933, __ccgo_ts+8336, int32(962), uintptr(unsafe.Pointer(&__func__61)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Fdisable_reservoir
 	}
 	return 0
 }
 
-var __func__61 = [27]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'd', 'i', 's', 'a', 'b', 'l', 'e', '_', 'r', 'e', 's', 'e', 'r', 'v', 'o', 'i', 'r'}
+var __func__61 = [27]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'd', 'i', 's', 'a', 'b', 'l', 'e', '_', 'r', 'e', 's', 'e', 'r', 'v', 'o', 'i', 'r'}
 
 func lame_set_experimentalX(tls *libc.TLS, gfp uintptr, experimentalX int32) (r int32) {
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
@@ -23274,16 +21918,19 @@ func lame_set_VBR(tls *libc.TLS, gfp uintptr, VBR vbr_mode) (r int32) {
 }
 
 func lame_get_VBR(tls *libc.TLS, gfp uintptr) (r vbr_mode) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!((*lame_global_flags)(unsafe.Pointer(gfp)).FVBR < int32(vbr_max_indicator))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__62)), __ccgo_ts+8091, int32(1118), __ccgo_ts+8788)
+		if v1 = (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR < int32(vbr_max_indicator); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+8992, __ccgo_ts+8336, int32(1118), uintptr(unsafe.Pointer(&__func__62)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR
 	}
 	return int32(vbr_off)
 }
 
-var __func__62 = [13]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'V', 'B', 'R'}
+var __func__62 = [13]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'V', 'B', 'R'}
 
 // C documentation
 //
@@ -23313,16 +21960,19 @@ func lame_set_VBR_q(tls *libc.TLS, gfp uintptr, VBR_q int32) (r int32) {
 }
 
 func lame_get_VBR_q(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q && int32(10) > (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__63)), __ccgo_ts+8091, int32(1155), __ccgo_ts+8817)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q && int32(10) > (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+9021, __ccgo_ts+8336, int32(1155), uintptr(unsafe.Pointer(&__func__63)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_q
 	}
 	return 0
 }
 
-var __func__63 = [15]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'V', 'B', 'R', '_', 'q'}
+var __func__63 = [15]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'V', 'B', 'R', '_', 'q'}
 
 func lame_set_VBR_quality(tls *libc.TLS, gfp uintptr, VBR_q float32) (r int32) {
 	var ret int32
@@ -23421,16 +22071,19 @@ func lame_set_VBR_hard_min(tls *libc.TLS, gfp uintptr, VBR_hard_min int32) (r in
 }
 
 func lame_get_VBR_hard_min(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_hard_min && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_hard_min)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__64)), __ccgo_ts+8091, int32(1280), __ccgo_ts+8852)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_hard_min && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_hard_min; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+9056, __ccgo_ts+8336, int32(1280), uintptr(unsafe.Pointer(&__func__64)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).FVBR_hard_min
 	}
 	return 0
 }
 
-var __func__64 = [22]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'V', 'B', 'R', '_', 'h', 'a', 'r', 'd', '_', 'm', 'i', 'n'}
+var __func__64 = [22]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'V', 'B', 'R', '_', 'h', 'a', 'r', 'd', '_', 'm', 'i', 'n'}
 
 /********************************************************************
  * Filtering control
@@ -23783,16 +22436,19 @@ func lame_set_useTemporal(tls *libc.TLS, gfp uintptr, useTemporal int32) (r int3
 }
 
 func lame_get_useTemporal(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).FuseTemporal && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).FuseTemporal)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__65)), __ccgo_ts+8091, int32(1701), __ccgo_ts+8901)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).FuseTemporal && int32(1) >= (*lame_global_flags)(unsafe.Pointer(gfp)).FuseTemporal; !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+9105, __ccgo_ts+8336, int32(1701), uintptr(unsafe.Pointer(&__func__65)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).FuseTemporal
 	}
 	return 0
 }
 
-var __func__65 = [21]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'u', 's', 'e', 'T', 'e', 'm', 'p', 'o', 'r', 'a', 'l'}
+var __func__65 = [21]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'u', 's', 'e', 'T', 'e', 'm', 'p', 'o', 'r', 'a', 'l'}
 
 // C documentation
 //
@@ -23810,8 +22466,8 @@ func lame_set_interChRatio(tls *libc.TLS, gfp uintptr, ratio float32) (r int32) 
 
 func lame_get_interChRatio(tls *libc.TLS, gfp uintptr) (r float32) {
 	var v1 int32
-	var v2 bool
-	_, _ = v1, v2
+	var v2, v3 bool
+	_, _, _ = v1, v2, v3
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
 		if v2 = libc.Float32FromInt32(0) <= (*lame_global_flags)(unsafe.Pointer(gfp)).FinterChRatio && float64((*lame_global_flags)(unsafe.Pointer(gfp)).FinterChRatio) <= float64(1); !v2 {
 			if libc.Xfabs(tls, float64((*lame_global_flags)(unsafe.Pointer(gfp)).FinterChRatio)) > libc.Xfabs(tls, float64(-libc.Int32FromInt32(1))) {
@@ -23820,15 +22476,16 @@ func lame_get_interChRatio(tls *libc.TLS, gfp uintptr) (r float32) {
 				v1 = libc.BoolInt32(libc.Xfabs(tls, float64((*lame_global_flags)(unsafe.Pointer(gfp)).FinterChRatio-float32(-libc.Int32FromInt32(1)))) <= float64(libc.Xfabs(tls, float64(-libc.Int32FromInt32(1)))*libc.Float64FromFloat32(1e-06)))
 			}
 		}
-		if libc.BoolInt64(!(v2 || v1 != 0)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__66)), __ccgo_ts+8091, int32(1726), __ccgo_ts+8948)
+		if v3 = v2 || v1 != 0; !v3 {
+			libc.X__assert_fail(tls, __ccgo_ts+9152, __ccgo_ts+8336, int32(1726), uintptr(unsafe.Pointer(&__func__66)))
 		}
+		_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).FinterChRatio
 	}
 	return libc.Float32FromInt32(0)
 }
 
-var __func__66 = [22]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'i', 'n', 't', 'e', 'r', 'C', 'h', 'R', 'a', 't', 'i', 'o'}
+var __func__66 = [22]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'i', 'n', 't', 'e', 'r', 'C', 'h', 'R', 'a', 't', 'i', 'o'}
 
 // C documentation
 //
@@ -23845,16 +22502,19 @@ func lame_set_substep(tls *libc.TLS, gfp uintptr, method int32) (r int32) {
 }
 
 func lame_get_substep(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fsubstep_shaping && (*lame_global_flags)(unsafe.Pointer(gfp)).Fsubstep_shaping <= int32(7))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__67)), __ccgo_ts+8091, int32(1751), __ccgo_ts+9030)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Fsubstep_shaping && (*lame_global_flags)(unsafe.Pointer(gfp)).Fsubstep_shaping <= int32(7); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+9234, __ccgo_ts+8336, int32(1751), uintptr(unsafe.Pointer(&__func__67)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Fsubstep_shaping
 	}
 	return 0
 }
 
-var __func__67 = [17]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 's', 'u', 'b', 's', 't', 'e', 'p'}
+var __func__67 = [17]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 's', 'u', 'b', 's', 't', 'e', 'p'}
 
 // C documentation
 //
@@ -24053,16 +22713,19 @@ func lame_set_emphasis(tls *libc.TLS, gfp uintptr, emphasis int32) (r int32) {
 }
 
 func lame_get_emphasis(tls *libc.TLS, gfp uintptr) (r int32) {
+	var v1 bool
+	_ = v1
 	if is_lame_global_flags_valid(tls, gfp) != 0 {
-		if libc.BoolInt64(!(0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Femphasis && (*lame_global_flags)(unsafe.Pointer(gfp)).Femphasis < int32(4))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__68)), __ccgo_ts+8091, int32(1949), __ccgo_ts+9085)
+		if v1 = 0 <= (*lame_global_flags)(unsafe.Pointer(gfp)).Femphasis && (*lame_global_flags)(unsafe.Pointer(gfp)).Femphasis < int32(4); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+9289, __ccgo_ts+8336, int32(1949), uintptr(unsafe.Pointer(&__func__68)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		return (*lame_global_flags)(unsafe.Pointer(gfp)).Femphasis
 	}
 	return 0
 }
 
-var __func__68 = [18]int8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'e', 'm', 'p', 'h', 'a', 's', 'i', 's'}
+var __func__68 = [18]uint8{'l', 'a', 'm', 'e', '_', 'g', 'e', 't', '_', 'e', 'm', 'p', 'h', 'a', 's', 'i', 's'}
 
 /***************************************************************/
 /* internal variables, cannot be set...                        */
@@ -24274,7 +22937,7 @@ func lame_get_totalframes(tls *libc.TLS, gfp uintptr) (r int32) {
 					return 0
 				} /* unlikely to happen, so what, no estimate! */
 				frames_f = libc.Xfloor(tls, resampled_samples_to_encode/float64(pcm_samples_per_frame))
-				if frames_f >= float64(libc.Int32FromInt32(__INT_MAX__)-libc.Int32FromInt32(2)) {
+				if frames_f >= float64(libc.Int32FromInt32(INT_MAX3)-libc.Int32FromInt32(2)) {
 					return 0
 				} /* overflow, happens eventually, no estimate! */
 				frames = int32(frames_f)
@@ -24429,6 +23092,8 @@ func lame_get_maximum_number_of_samples(tls *libc.TLS, gfp lame_t, buffer_size s
 	}
 	return int32(LAME_GENERICERROR)
 }
+
+const INT_MAX4 = 0x7fffffff
 
 var t1HB = [4]uint16_t{
 	0: uint16(1),
@@ -27681,15 +26346,18 @@ var subdv_table = [23]struct {
 func quantize_lines_xrpow_01(tls *libc.TLS, l uint32, istep FLOAT, xr uintptr, ix uintptr) {
 	var compareval0, xr_0, xr_1 FLOAT
 	var i uint32
-	var ix_0, ix_1, v2, v3 int32
-	_, _, _, _, _, _, _, _ = compareval0, i, ix_0, ix_1, xr_0, xr_1, v2, v3
+	var ix_0, ix_1, v4, v5 int32
+	var v1 bool
+	_, _, _, _, _, _, _, _, _ = compareval0, i, ix_0, ix_1, xr_0, xr_1, v1, v4, v5
 	compareval0 = (libc.Float32FromFloat32(1) - libc.Float32FromFloat32(0.4054)) / istep
-	if libc.BoolInt64(!(l > libc.Uint32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__69)), __ccgo_ts+9125, int32(119), __ccgo_ts+9213)
+	if v1 = l > uint32(0); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+9329, __ccgo_ts+9335, int32(119), uintptr(unsafe.Pointer(&__func__69)))
 	}
-	if libc.BoolInt64(!(l%libc.Uint32FromInt32(2) == libc.Uint32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__69)), __ccgo_ts+9125, int32(120), __ccgo_ts+9219)
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v1 = l%uint32(2) == uint32(0); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+9423, __ccgo_ts+9335, int32(120), uintptr(unsafe.Pointer(&__func__69)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	i = uint32(0)
 	for {
 		if !(i < l) {
@@ -27698,27 +26366,27 @@ func quantize_lines_xrpow_01(tls *libc.TLS, l uint32, istep FLOAT, xr uintptr, i
 		xr_0 = *(*FLOAT)(unsafe.Pointer(xr + uintptr(i+uint32(0))*4))
 		xr_1 = *(*FLOAT)(unsafe.Pointer(xr + uintptr(i+uint32(1))*4))
 		if compareval0 > xr_0 {
-			v2 = 0
+			v4 = 0
 		} else {
-			v2 = int32(1)
+			v4 = int32(1)
 		}
-		ix_0 = v2
+		ix_0 = v4
 		if compareval0 > xr_1 {
-			v3 = 0
+			v5 = 0
 		} else {
-			v3 = int32(1)
+			v5 = int32(1)
 		}
-		ix_1 = v3
+		ix_1 = v5
 		*(*int32)(unsafe.Pointer(ix + uintptr(i+uint32(0))*4)) = ix_0
 		*(*int32)(unsafe.Pointer(ix + uintptr(i+uint32(1))*4)) = ix_1
-		goto _1
-	_1:
+		goto _3
+	_3:
 		;
 		i = i + uint32(2)
 	}
 }
 
-var __func__69 = [24]int8{'q', 'u', 'a', 'n', 't', 'i', 'z', 'e', '_', 'l', 'i', 'n', 'e', 's', '_', 'x', 'r', 'p', 'o', 'w', '_', '0', '1'}
+var __func__69 = [24]uint8{'q', 'u', 'a', 'n', 't', 'i', 'z', 'e', '_', 'l', 'i', 'n', 'e', 's', '_', 'x', 'r', 'p', 'o', 'w', '_', '0', '1'}
 
 /*********************************************************************
  * XRPOW_FTOI is a macro to convert floats to ints.
@@ -27734,77 +26402,79 @@ var __func__69 = [24]int8{'q', 'u', 'a', 'n', 't', 'i', 'z', 'e', '_', 'l', 'i',
  *********************************************************************/
 
 func quantize_lines_xrpow(tls *libc.TLS, l uint32, istep FLOAT, xr uintptr, ix uintptr) {
-	var remaining, v1 uint32
+	var remaining, v2 uint32
 	var rx0, rx01, rx1, rx11, rx2, rx3 int32
 	var x0, x01, x1, x11, x2, x3 FLOAT
-	var v2 uintptr
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = remaining, rx0, rx01, rx1, rx11, rx2, rx3, x0, x01, x1, x11, x2, x3, v1, v2
-	if libc.BoolInt64(!(l > libc.Uint32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__70)), __ccgo_ts+9125, int32(227), __ccgo_ts+9213)
+	var v1 bool
+	var v3 uintptr
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = remaining, rx0, rx01, rx1, rx11, rx2, rx3, x0, x01, x1, x11, x2, x3, v1, v2, v3
+	if v1 = l > uint32(0); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+9329, __ccgo_ts+9335, int32(227), uintptr(unsafe.Pointer(&__func__70)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	l = l >> int32(1)
 	remaining = l % uint32(2)
 	l = l >> int32(1)
 	for {
-		v1 = l
+		v2 = l
 		l = l - 1
-		if !(v1 != 0) {
+		if !(v2 != 0) {
 			break
 		}
-		v2 = xr
+		v3 = xr
 		xr += 4
-		x0 = FLOAT(*(*FLOAT)(unsafe.Pointer(v2)) * istep)
-		v2 = xr
+		x0 = FLOAT(*(*FLOAT)(unsafe.Pointer(v3)) * istep)
+		v3 = xr
 		xr += 4
-		x1 = FLOAT(*(*FLOAT)(unsafe.Pointer(v2)) * istep)
+		x1 = FLOAT(*(*FLOAT)(unsafe.Pointer(v3)) * istep)
 		rx0 = int32(x0)
-		v2 = xr
+		v3 = xr
 		xr += 4
-		x2 = FLOAT(*(*FLOAT)(unsafe.Pointer(v2)) * istep)
+		x2 = FLOAT(*(*FLOAT)(unsafe.Pointer(v3)) * istep)
 		rx1 = int32(x1)
-		v2 = xr
+		v3 = xr
 		xr += 4
-		x3 = FLOAT(*(*FLOAT)(unsafe.Pointer(v2)) * istep)
+		x3 = FLOAT(*(*FLOAT)(unsafe.Pointer(v3)) * istep)
 		rx2 = int32(x2)
 		x0 = x0 + adj43[rx0]
 		rx3 = int32(x3)
 		x1 = x1 + adj43[rx1]
-		v2 = ix
+		v3 = ix
 		ix += 4
-		*(*int32)(unsafe.Pointer(v2)) = int32(x0)
+		*(*int32)(unsafe.Pointer(v3)) = int32(x0)
 		x2 = x2 + adj43[rx2]
-		v2 = ix
+		v3 = ix
 		ix += 4
-		*(*int32)(unsafe.Pointer(v2)) = int32(x1)
+		*(*int32)(unsafe.Pointer(v3)) = int32(x1)
 		x3 = x3 + adj43[rx3]
-		v2 = ix
+		v3 = ix
 		ix += 4
-		*(*int32)(unsafe.Pointer(v2)) = int32(x2)
-		v2 = ix
+		*(*int32)(unsafe.Pointer(v3)) = int32(x2)
+		v3 = ix
 		ix += 4
-		*(*int32)(unsafe.Pointer(v2)) = int32(x3)
+		*(*int32)(unsafe.Pointer(v3)) = int32(x3)
 	}
 	if remaining != 0 {
-		v2 = xr
+		v3 = xr
 		xr += 4
-		x01 = FLOAT(*(*FLOAT)(unsafe.Pointer(v2)) * istep)
-		v2 = xr
+		x01 = FLOAT(*(*FLOAT)(unsafe.Pointer(v3)) * istep)
+		v3 = xr
 		xr += 4
-		x11 = FLOAT(*(*FLOAT)(unsafe.Pointer(v2)) * istep)
+		x11 = FLOAT(*(*FLOAT)(unsafe.Pointer(v3)) * istep)
 		rx01 = int32(x01)
 		rx11 = int32(x11)
 		x01 = x01 + adj43[rx01]
 		x11 = x11 + adj43[rx11]
-		v2 = ix
+		v3 = ix
 		ix += 4
-		*(*int32)(unsafe.Pointer(v2)) = int32(x01)
-		v2 = ix
+		*(*int32)(unsafe.Pointer(v3)) = int32(x01)
+		v3 = ix
 		ix += 4
-		*(*int32)(unsafe.Pointer(v2)) = int32(x11)
+		*(*int32)(unsafe.Pointer(v3)) = int32(x11)
 	}
 }
 
-var __func__70 = [21]int8{'q', 'u', 'a', 'n', 't', 'i', 'z', 'e', '_', 'l', 'i', 'n', 'e', 's', '_', 'x', 'r', 'p', 'o', 'w'}
+var __func__70 = [21]uint8{'q', 'u', 'a', 'n', 't', 'i', 'z', 'e', '_', 'l', 'i', 'n', 'e', 's', '_', 'x', 'r', 'p', 'o', 'w'}
 
 /*********************************************************************
  * Quantization function
@@ -27815,7 +26485,8 @@ var __func__70 = [21]int8{'q', 'u', 'a', 'n', 't', 'i', 'z', 'e', '_', 'l', 'i',
 func quantize_xrpow(tls *libc.TLS, xp uintptr, pi uintptr, istep FLOAT, cod_info uintptr, prev_noise uintptr) {
 	var acc_iData, acc_xp, iData uintptr
 	var accumulate, accumulate01, j, l, prev_data_use, sfb, sfbmax, step, usefullsize, v2 int32
-	_, _, _, _, _, _, _, _, _, _, _, _, _ = acc_iData, acc_xp, accumulate, accumulate01, iData, j, l, prev_data_use, sfb, sfbmax, step, usefullsize, v2
+	var v3 bool
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _ = acc_iData, acc_xp, accumulate, accumulate01, iData, j, l, prev_data_use, sfb, sfbmax, step, usefullsize, v2, v3
 	j = 0
 	accumulate = 0
 	accumulate01 = 0
@@ -27846,9 +26517,10 @@ func quantize_xrpow(tls *libc.TLS, xp uintptr, pi uintptr, istep FLOAT, cod_info
 			}
 			step = (*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain - (*(*int32)(unsafe.Pointer(cod_info + 4608 + uintptr(sfb)*4))+v2)<<((*gr_info)(unsafe.Pointer(cod_info)).Fscalefac_scale+int32(1)) - *(*int32)(unsafe.Pointer(cod_info + 4808 + uintptr(*(*int32)(unsafe.Pointer(cod_info + 5028 + uintptr(sfb)*4)))*4))*int32(8)
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(cod_info + 4872 + uintptr(sfb)*4)) >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__71)), __ccgo_ts+9125, int32(322), __ccgo_ts+9230)
+		if v3 = *(*int32)(unsafe.Pointer(cod_info + 4872 + uintptr(sfb)*4)) >= 0; !v3 {
+			libc.X__assert_fail(tls, __ccgo_ts+9434, __ccgo_ts+9335, int32(322), uintptr(unsafe.Pointer(&__func__71)))
 		}
+		_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		if prev_data_use != 0 && *(*int32)(unsafe.Pointer(prev_noise + 8 + uintptr(sfb)*4)) == step {
 			/* do not recompute this part,
 			   but compute accumulated lines */
@@ -27929,7 +26601,7 @@ func quantize_xrpow(tls *libc.TLS, xp uintptr, pi uintptr, istep FLOAT, cod_info
 	}
 }
 
-var __func__71 = [15]int8{'q', 'u', 'a', 'n', 't', 'i', 'z', 'e', '_', 'x', 'r', 'p', 'o', 'w'}
+var __func__71 = [15]uint8{'q', 'u', 'a', 'n', 't', 'i', 'z', 'e', '_', 'x', 'r', 'p', 'o', 'w'}
 
 /*************************************************************************/
 /*	      ix_max							 */
@@ -28210,8 +26882,9 @@ func noquant_count_bits(tls *libc.TLS, gfc uintptr, gi uintptr, prev_noise uintp
 	defer tls.Free(16)
 	var a1, a2, i, p, sfb, x1, x2, x3, x4, v1 int32
 	var cfg, ix uintptr
+	var v5 bool
 	var _ /* bits at bp+0 */ int32
-	_, _, _, _, _, _, _, _, _, _, _, _ = a1, a2, cfg, i, ix, p, sfb, x1, x2, x3, x4, v1
+	_, _, _, _, _, _, _, _, _, _, _, _, _ = a1, a2, cfg, i, ix, p, sfb, x1, x2, x3, x4, v1, v5
 	cfg = gfc + 24
 	*(*int32)(unsafe.Pointer(bp)) = 0
 	ix = gi + 2304
@@ -28281,18 +26954,20 @@ func noquant_count_bits(tls *libc.TLS, gfc uintptr, gi uintptr, prev_noise uintp
 		a2 = (*gr_info)(unsafe.Pointer(gi)).Fbig_values
 	} else {
 		if (*gr_info)(unsafe.Pointer(gi)).Fblock_type == NORM_TYPE {
-			if libc.BoolInt64(!(i <= libc.Int32FromInt32(576))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__72)), __ccgo_ts+9125, int32(711), __ccgo_ts+9256)
-			} /* bv_scf has 576 entries (0..575) */
-			v1 = int32(*(*int8)(unsafe.Pointer(gfc + 87416 + 332 + uintptr(i-int32(2)))))
+			if v5 = i <= int32(576); !v5 {
+				libc.X__assert_fail(tls, __ccgo_ts+9460, __ccgo_ts+9335, int32(711), uintptr(unsafe.Pointer(&__func__72)))
+			}
+			_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0) /* bv_scf has 576 entries (0..575) */
+			v1 = libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(gfc + 87416 + 332 + uintptr(i-int32(2)))))
 			(*gr_info)(unsafe.Pointer(gi)).Fregion0_count = v1
 			a1 = v1
-			v1 = int32(*(*int8)(unsafe.Pointer(gfc + 87416 + 332 + uintptr(i-int32(1)))))
+			v1 = libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(gfc + 87416 + 332 + uintptr(i-int32(1)))))
 			(*gr_info)(unsafe.Pointer(gi)).Fregion1_count = v1
 			a2 = v1
-			if libc.BoolInt64(!(a1+a2+libc.Int32FromInt32(2) < libc.Int32FromInt32(SBPSY_l))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__72)), __ccgo_ts+9125, int32(715), __ccgo_ts+9265)
+			if v5 = a1+a2+int32(2) < int32(SBPSY_l); !v5 {
+				libc.X__assert_fail(tls, __ccgo_ts+9469, __ccgo_ts+9335, int32(715), uintptr(unsafe.Pointer(&__func__72)))
 			}
+			_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			a2 = *(*int32)(unsafe.Pointer(gfc + 21424 + uintptr(a1+a2+int32(2))*4))
 			a1 = *(*int32)(unsafe.Pointer(gfc + 21424 + uintptr(a1+int32(1))*4))
 			if a2 < i {
@@ -28323,12 +26998,14 @@ func noquant_count_bits(tls *libc.TLS, gfc uintptr, gi uintptr, prev_noise uintp
 		v1 = i
 	}
 	a2 = v1
-	if libc.BoolInt64(!(a1 >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__72)), __ccgo_ts+9125, int32(739), __ccgo_ts+9287)
+	if v5 = a1 >= 0; !v5 {
+		libc.X__assert_fail(tls, __ccgo_ts+9491, __ccgo_ts+9335, int32(739), uintptr(unsafe.Pointer(&__func__72)))
 	}
-	if libc.BoolInt64(!(a2 >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__72)), __ccgo_ts+9125, int32(740), __ccgo_ts+9295)
+	_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v5 = a2 >= 0; !v5 {
+		libc.X__assert_fail(tls, __ccgo_ts+9499, __ccgo_ts+9335, int32(740), uintptr(unsafe.Pointer(&__func__72)))
 	}
+	_ = v5 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	/* Count the number of bits necessary to code the bigvalues region. */
 	if 0 < a1 {
 		*(*int32)(unsafe.Pointer(gi + 4796)) = (*(*func(*libc.TLS, uintptr, uintptr, uintptr) int32)(unsafe.Pointer(&struct{ uintptr }{(*lame_internal_flags)(unsafe.Pointer(gfc)).Fchoose_table})))(tls, ix, ix+uintptr(a1)*4, bp)
@@ -28353,33 +27030,37 @@ func noquant_count_bits(tls *libc.TLS, gfc uintptr, gi uintptr, prev_noise uintp
 	return *(*int32)(unsafe.Pointer(bp))
 }
 
-var __func__72 = [19]int8{'n', 'o', 'q', 'u', 'a', 'n', 't', '_', 'c', 'o', 'u', 'n', 't', '_', 'b', 'i', 't', 's'}
+var __func__72 = [19]uint8{'n', 'o', 'q', 'u', 'a', 'n', 't', '_', 'c', 'o', 'u', 'n', 't', '_', 'b', 'i', 't', 's'}
 
 func count_bits(tls *libc.TLS, gfc uintptr, xr uintptr, gi uintptr, prev_noise uintptr) (r int32) {
-	var gain, j, k, sfb, width, v3 int32
+	var gain, j, k, sfb, width, v7 int32
 	var ix uintptr
 	var roundfac, w FLOAT
-	_, _, _, _, _, _, _, _, _ = gain, ix, j, k, roundfac, sfb, w, width, v3
+	var v1, v2 bool
+	_, _, _, _, _, _, _, _, _, _, _ = gain, ix, j, k, roundfac, sfb, w, width, v1, v2, v7
 	ix = gi + 2304
-	if libc.BoolInt64(!(0 <= (*gr_info)(unsafe.Pointer(gi)).Fglobal_gain && (*gr_info)(unsafe.Pointer(gi)).Fglobal_gain < libc.Int32FromInt32(256)+libc.Int32FromInt32(1))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__73)), __ccgo_ts+9125, int32(774), __ccgo_ts+9303)
+	if v1 = 0 <= (*gr_info)(unsafe.Pointer(gi)).Fglobal_gain && (*gr_info)(unsafe.Pointer(gi)).Fglobal_gain < libc.Int32FromInt32(256)+libc.Int32FromInt32(1); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+9507, __ccgo_ts+9335, int32(774), uintptr(unsafe.Pointer(&__func__73)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	/* since quantize_xrpow uses table lookup, we need to check this first: */
 	w = float32(libc.Int32FromInt32(IXMAX_VAL)) / ipow20[(*gr_info)(unsafe.Pointer(gi)).Fglobal_gain]
 	if (*gr_info)(unsafe.Pointer(gi)).Fxrpow_max > w {
 		return int32(LARGE_BITS)
 	}
-	if libc.BoolInt64(!(0 <= (*gr_info)(unsafe.Pointer(gi)).Fglobal_gain && (*gr_info)(unsafe.Pointer(gi)).Fglobal_gain < libc.Int32FromInt32(256)+libc.Int32FromInt32(1))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__73)), __ccgo_ts+9125, int32(779), __ccgo_ts+9303)
+	if v1 = 0 <= (*gr_info)(unsafe.Pointer(gi)).Fglobal_gain && (*gr_info)(unsafe.Pointer(gi)).Fglobal_gain < libc.Int32FromInt32(256)+libc.Int32FromInt32(1); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+9507, __ccgo_ts+9335, int32(779), uintptr(unsafe.Pointer(&__func__73)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	quantize_xrpow(tls, xr, ix, ipow20[(*gr_info)(unsafe.Pointer(gi)).Fglobal_gain], gi, prev_noise)
 	if (*lame_internal_flags)(unsafe.Pointer(gfc)).Fsv_qnt.Fsubstep_shaping&int32(2) != 0 {
 		j = 0
 		/* 0.634521682242439 = 0.5946*2**(.5*0.1875) */
 		gain = (*gr_info)(unsafe.Pointer(gi)).Fglobal_gain + (*gr_info)(unsafe.Pointer(gi)).Fscalefac_scale
-		if libc.BoolInt64(!(0 <= gain && gain < libc.Int32FromInt32(256)+libc.Int32FromInt32(1))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__73)), __ccgo_ts+9125, int32(785), __ccgo_ts+7159)
+		if v1 = 0 <= gain && gain < libc.Int32FromInt32(256)+libc.Int32FromInt32(1); !v1 {
+			libc.X__assert_fail(tls, __ccgo_ts+7339, __ccgo_ts+9335, int32(785), uintptr(unsafe.Pointer(&__func__73)))
 		}
+		_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		roundfac = float32(float64(0.634521682242439) / float64(ipow20[gain]))
 		sfb = 0
 		for {
@@ -28387,9 +27068,10 @@ func count_bits(tls *libc.TLS, gfc uintptr, xr uintptr, gi uintptr, prev_noise u
 				break
 			}
 			width = *(*int32)(unsafe.Pointer(gi + 4872 + uintptr(sfb)*4))
-			if libc.BoolInt64(!(width >= libc.Int32FromInt32(0))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__73)), __ccgo_ts+9125, int32(788), __ccgo_ts+9351)
+			if v2 = width >= 0; !v2 {
+				libc.X__assert_fail(tls, __ccgo_ts+9555, __ccgo_ts+9335, int32(788), uintptr(unsafe.Pointer(&__func__73)))
 			}
+			_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			if !(*(*int32)(unsafe.Pointer(gfc + 87416 + 168 + uintptr(sfb)*4)) != 0) {
 				j = j + width
 			} else {
@@ -28400,19 +27082,19 @@ func count_bits(tls *libc.TLS, gfc uintptr, xr uintptr, gi uintptr, prev_noise u
 						break
 					}
 					if *(*FLOAT)(unsafe.Pointer(xr + uintptr(k)*4)) >= roundfac {
-						v3 = *(*int32)(unsafe.Pointer(ix + uintptr(k)*4))
+						v7 = *(*int32)(unsafe.Pointer(ix + uintptr(k)*4))
 					} else {
-						v3 = 0
+						v7 = 0
 					}
-					*(*int32)(unsafe.Pointer(ix + uintptr(k)*4)) = v3
-					goto _2
-				_2:
+					*(*int32)(unsafe.Pointer(ix + uintptr(k)*4)) = v7
+					goto _6
+				_6:
 					;
 					k = k + 1
 				}
 			}
-			goto _1
-		_1:
+			goto _4
+		_4:
 			;
 			sfb = sfb + 1
 		}
@@ -28420,7 +27102,7 @@ func count_bits(tls *libc.TLS, gfc uintptr, xr uintptr, gi uintptr, prev_noise u
 	return noquant_count_bits(tls, gfc, gi, prev_noise)
 }
 
-var __func__73 = [11]int8{'c', 'o', 'u', 'n', 't', '_', 'b', 'i', 't', 's'}
+var __func__73 = [11]uint8{'c', 'o', 'u', 'n', 't', '_', 'b', 'i', 't', 's'}
 
 /*
 **********************************************************************
@@ -28531,12 +27213,13 @@ func best_huffman_divide(tls *libc.TLS, gfc uintptr, gi uintptr) {
 	defer tls.Free(5632)
 	var a1, a2, i, p, v1 int32
 	var cfg, ix uintptr
+	var v2 bool
 	var _ /* cod_info2 at bp+0 */ gr_info
 	var _ /* r01_bits at bp+5264 */ [23]int32
 	var _ /* r01_div at bp+5356 */ [23]int32
 	var _ /* r0_tbl at bp+5448 */ [23]int32
 	var _ /* r1_tbl at bp+5540 */ [23]int32
-	_, _, _, _, _, _, _ = a1, a2, cfg, i, ix, p, v1
+	_, _, _, _, _, _, _, _ = a1, a2, cfg, i, ix, p, v1, v2
 	cfg = gfc + 24
 	ix = gi + 2304
 	/* SHORT BLOCK stuff fails for MPEG2 */
@@ -28562,9 +27245,10 @@ func best_huffman_divide(tls *libc.TLS, gfc uintptr, gi uintptr) {
 	v1 = libc.Int32FromInt32(0)
 	a2 = v1
 	a1 = v1
-	if libc.BoolInt64(!(i <= libc.Int32FromInt32(576))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__74)), __ccgo_ts+9125, int32(922), __ccgo_ts+9256)
+	if v2 = i <= int32(576); !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+9460, __ccgo_ts+9335, int32(922), uintptr(unsafe.Pointer(&__func__74)))
 	}
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	for {
 		if !(i > (*(*gr_info)(unsafe.Pointer(bp))).Fbig_values) {
 			break
@@ -28572,8 +27256,8 @@ func best_huffman_divide(tls *libc.TLS, gfc uintptr, gi uintptr) {
 		p = ((*(*int32)(unsafe.Pointer(ix + uintptr(i-int32(4))*4))*int32(2)+*(*int32)(unsafe.Pointer(ix + uintptr(i-int32(3))*4)))*int32(2)+*(*int32)(unsafe.Pointer(ix + uintptr(i-int32(2))*4)))*int32(2) + *(*int32)(unsafe.Pointer(ix + uintptr(i-int32(1))*4))
 		a1 = a1 + libc.Int32FromUint8(t32l[p])
 		a2 = a2 + libc.Int32FromUint8(t33l[p])
-		goto _2
-	_2:
+		goto _3
+	_3:
 		;
 		i = i - int32(4)
 	}
@@ -28605,7 +27289,7 @@ func best_huffman_divide(tls *libc.TLS, gfc uintptr, gi uintptr) {
 	}
 }
 
-var __func__74 = [20]int8{'b', 'e', 's', 't', '_', 'h', 'u', 'f', 'f', 'm', 'a', 'n', '_', 'd', 'i', 'v', 'i', 'd', 'e'}
+var __func__74 = [20]uint8{'b', 'e', 's', 't', '_', 'h', 'u', 'f', 'f', 'm', 'a', 'n', '_', 'd', 'i', 'v', 'i', 'd', 'e'}
 
 var slen1_n = [16]int32{
 	0:  int32(1),
@@ -28755,8 +27439,9 @@ func scfsi_calc(tls *libc.TLS, ch int32, l3_side uintptr) {
 //	 */
 func best_scalefac_store(tls *libc.TLS, gfc uintptr, gr int32, ch int32, l3_side uintptr) {
 	var cfg, gi uintptr
-	var i, j, l, recalc, s, sfb, width, v3 int32
-	_, _, _, _, _, _, _, _, _, _ = cfg, gi, i, j, l, recalc, s, sfb, width, v3
+	var i, j, l, recalc, s, sfb, width, v4 int32
+	var v2 bool
+	_, _, _, _, _, _, _, _, _, _, _ = cfg, gi, i, j, l, recalc, s, sfb, width, v2, v4
 	cfg = gfc + 24
 	/* use scalefac_scale if we can */
 	gi = l3_side + uintptr(gr)*10528 + uintptr(ch)*5264
@@ -28771,9 +27456,10 @@ func best_scalefac_store(tls *libc.TLS, gfc uintptr, gr int32, ch int32, l3_side
 			break
 		}
 		width = *(*int32)(unsafe.Pointer(gi + 4872 + uintptr(sfb)*4))
-		if libc.BoolInt64(!(width >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__75)), __ccgo_ts+9125, int32(1037), __ccgo_ts+9351)
+		if v2 = width >= 0; !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+9555, __ccgo_ts+9335, int32(1037), uintptr(unsafe.Pointer(&__func__75)))
 		}
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		l = j
 		j = j + width
 		for {
@@ -28783,15 +27469,15 @@ func best_scalefac_store(tls *libc.TLS, gfc uintptr, gr int32, ch int32, l3_side
 			if *(*int32)(unsafe.Pointer(gi + 2304 + uintptr(l)*4)) != 0 {
 				break
 			}
-			goto _2
-		_2:
+			goto _3
+		_3:
 			;
 			l = l + 1
 		}
 		if l == j {
-			v3 = -libc.Int32FromInt32(2)
-			recalc = v3
-			*(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) = v3
+			v4 = -libc.Int32FromInt32(2)
+			recalc = v4
+			*(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) = v4
 		} /* anything goes. */
 		/*  only best_scalefac_store and calc_scfsi
 		 *  know--and only they should know--about the magic number -2.
@@ -28811,8 +27497,8 @@ func best_scalefac_store(tls *libc.TLS, gfc uintptr, gr int32, ch int32, l3_side
 			if *(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) > 0 {
 				s = s | *(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4))
 			}
-			goto _4
-		_4:
+			goto _5
+		_5:
 			;
 			sfb = sfb + 1
 		}
@@ -28825,14 +27511,14 @@ func best_scalefac_store(tls *libc.TLS, gfc uintptr, gr int32, ch int32, l3_side
 				if *(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) > 0 {
 					*(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) >>= int32(1)
 				}
-				goto _5
-			_5:
+				goto _6
+			_6:
 				;
 				sfb = sfb + 1
 			}
-			v3 = libc.Int32FromInt32(1)
-			recalc = v3
-			(*gr_info)(unsafe.Pointer(gi)).Fscalefac_scale = v3
+			v4 = libc.Int32FromInt32(1)
+			recalc = v4
+			(*gr_info)(unsafe.Pointer(gi)).Fscalefac_scale = v4
 		}
 	}
 	if !((*gr_info)(unsafe.Pointer(gi)).Fpreflag != 0) && (*gr_info)(unsafe.Pointer(gi)).Fblock_type != int32(SHORT_TYPE) && (*SessionConfig_t)(unsafe.Pointer(cfg)).Fmode_gr == int32(2) {
@@ -28844,8 +27530,8 @@ func best_scalefac_store(tls *libc.TLS, gfc uintptr, gr int32, ch int32, l3_side
 			if *(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) < pretab[sfb] && *(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) != -int32(2) {
 				break
 			}
-			goto _7
-		_7:
+			goto _8
+		_8:
 			;
 			sfb = sfb + 1
 		}
@@ -28858,14 +27544,14 @@ func best_scalefac_store(tls *libc.TLS, gfc uintptr, gr int32, ch int32, l3_side
 				if *(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) > 0 {
 					*(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) -= pretab[sfb]
 				}
-				goto _8
-			_8:
+				goto _9
+			_9:
 				;
 				sfb = sfb + 1
 			}
-			v3 = libc.Int32FromInt32(1)
-			recalc = v3
-			(*gr_info)(unsafe.Pointer(gi)).Fpreflag = v3
+			v4 = libc.Int32FromInt32(1)
+			recalc = v4
+			(*gr_info)(unsafe.Pointer(gi)).Fpreflag = v4
 		}
 	}
 	i = 0
@@ -28874,8 +27560,8 @@ func best_scalefac_store(tls *libc.TLS, gfc uintptr, gr int32, ch int32, l3_side
 			break
 		}
 		*(*int32)(unsafe.Pointer(l3_side + 21072 + uintptr(ch)*16 + uintptr(i)*4)) = 0
-		goto _10
-	_10:
+		goto _11
+	_11:
 		;
 		i = i + 1
 	}
@@ -28891,8 +27577,8 @@ func best_scalefac_store(tls *libc.TLS, gfc uintptr, gr int32, ch int32, l3_side
 		if *(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) == -int32(2) {
 			*(*int32)(unsafe.Pointer(gi + 4608 + uintptr(sfb)*4)) = 0 /* if anything goes, then 0 is a good choice */
 		}
-		goto _11
-	_11:
+		goto _12
+	_12:
 		;
 		sfb = sfb + 1
 	}
@@ -28901,7 +27587,7 @@ func best_scalefac_store(tls *libc.TLS, gfc uintptr, gr int32, ch int32, l3_side
 	}
 }
 
-var __func__75 = [20]int8{'b', 'e', 's', 't', '_', 's', 'c', 'a', 'l', 'e', 'f', 'a', 'c', '_', 's', 't', 'o', 'r', 'e'}
+var __func__75 = [20]uint8{'b', 'e', 's', 't', '_', 's', 'c', 'a', 'l', 'e', 'f', 'a', 'c', '_', 's', 't', 'o', 'r', 'e'}
 
 func all_scalefactors_not_negative(tls *libc.TLS, scalefac uintptr, n int32) (r int32) {
 	var i int32
@@ -28996,14 +27682,16 @@ var scale_long = [16]int32{
 func mpeg1_scale_bitcount(tls *libc.TLS, gfc uintptr, cod_info uintptr) (r int32) {
 	var k, max_slen1, max_slen2, sfb int32
 	var scalefac, tab uintptr
-	_, _, _, _, _, _ = k, max_slen1, max_slen2, scalefac, sfb, tab
+	var v1 bool
+	_, _, _, _, _, _, _ = k, max_slen1, max_slen2, scalefac, sfb, tab, v1
 	max_slen1 = 0
 	max_slen2 = 0
 	scalefac = cod_info + 4608
 	_ = gfc
-	if libc.BoolInt64(!(all_scalefactors_not_negative(tls, scalefac, (*gr_info)(unsafe.Pointer(cod_info)).Fsfbmax) != 0)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__76)), __ccgo_ts+9125, int32(1145), __ccgo_ts+9362)
+	if v1 = all_scalefactors_not_negative(tls, scalefac, (*gr_info)(unsafe.Pointer(cod_info)).Fsfbmax) != 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+9566, __ccgo_ts+9335, int32(1145), uintptr(unsafe.Pointer(&__func__76)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	if (*gr_info)(unsafe.Pointer(cod_info)).Fblock_type == int32(SHORT_TYPE) {
 		tab = uintptr(unsafe.Pointer(&scale_short))
 		if (*gr_info)(unsafe.Pointer(cod_info)).Fmixed_block_flag != 0 {
@@ -29020,8 +27708,8 @@ func mpeg1_scale_bitcount(tls *libc.TLS, gfc uintptr, cod_info uintptr) (r int32
 				if *(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4)) < pretab[sfb] {
 					break
 				}
-				goto _1
-			_1:
+				goto _2
+			_2:
 				;
 				sfb = sfb + 1
 			}
@@ -29033,8 +27721,8 @@ func mpeg1_scale_bitcount(tls *libc.TLS, gfc uintptr, cod_info uintptr) (r int32
 						break
 					}
 					*(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4)) -= pretab[sfb]
-					goto _2
-				_2:
+					goto _3
+				_3:
 					;
 					sfb = sfb + 1
 				}
@@ -29049,8 +27737,8 @@ func mpeg1_scale_bitcount(tls *libc.TLS, gfc uintptr, cod_info uintptr) (r int32
 		if max_slen1 < *(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4)) {
 			max_slen1 = *(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4))
 		}
-		goto _3
-	_3:
+		goto _4
+	_4:
 		;
 		sfb = sfb + 1
 	}
@@ -29061,8 +27749,8 @@ func mpeg1_scale_bitcount(tls *libc.TLS, gfc uintptr, cod_info uintptr) (r int32
 		if max_slen2 < *(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4)) {
 			max_slen2 = *(*int32)(unsafe.Pointer(scalefac + uintptr(sfb)*4))
 		}
-		goto _4
-	_4:
+		goto _5
+	_5:
 		;
 		sfb = sfb + 1
 	}
@@ -29080,15 +27768,15 @@ func mpeg1_scale_bitcount(tls *libc.TLS, gfc uintptr, cod_info uintptr) (r int32
 			(*gr_info)(unsafe.Pointer(cod_info)).Fpart2_length = *(*int32)(unsafe.Pointer(tab + uintptr(k)*4))
 			(*gr_info)(unsafe.Pointer(cod_info)).Fscalefac_compress = k
 		}
-		goto _5
-	_5:
+		goto _6
+	_6:
 		;
 		k = k + 1
 	}
 	return libc.BoolInt32((*gr_info)(unsafe.Pointer(cod_info)).Fpart2_length == int32(LARGE_BITS))
 }
 
-var __func__76 = [21]int8{'m', 'p', 'e', 'g', '1', '_', 's', 'c', 'a', 'l', 'e', '_', 'b', 'i', 't', 'c', 'o', 'u', 'n', 't'}
+var __func__76 = [21]uint8{'m', 'p', 'e', 'g', '1', '_', 's', 'c', 'a', 'l', 'e', '_', 'b', 'i', 't', 'c', 'o', 'u', 'n', 't'}
 
 // C documentation
 //
@@ -29141,7 +27829,8 @@ func mpeg2_scale_bitcount(tls *libc.TLS, gfc uintptr, cod_info uintptr) (r int32
 	var i, nr_sfb, over, partition, row_in_table, sfb, slen1, slen2, slen3, slen4, table_number, window int32
 	var max_sfac [4]int32
 	var partition_table, scalefac uintptr
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = i, max_sfac, nr_sfb, over, partition, partition_table, row_in_table, scalefac, sfb, slen1, slen2, slen3, slen4, table_number, window
+	var v9 bool
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = i, max_sfac, nr_sfb, over, partition, partition_table, row_in_table, scalefac, sfb, slen1, slen2, slen3, slen4, table_number, window, v9
 	scalefac = cod_info + 4608
 	/*
 	   Set partition table. Note that should try to use table one,
@@ -29272,14 +27961,15 @@ func mpeg2_scale_bitcount(tls *libc.TLS, gfc uintptr, cod_info uintptr) (r int32
 		case int32(2):
 			(*gr_info)(unsafe.Pointer(cod_info)).Fscalefac_compress = int32(500) + slen1*int32(3) + slen2
 		default:
-			lame_errorf(tls, gfc, __ccgo_ts+9420, 0)
+			lame_errorf(tls, gfc, __ccgo_ts+9624, 0)
 			break
 		}
 	}
 	if !(over != 0) {
-		if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(cod_info)).Fsfb_partition_table != 0)) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__77)), __ccgo_ts+9125, int32(1308), __ccgo_ts+9458)
+		if v9 = (*gr_info)(unsafe.Pointer(cod_info)).Fsfb_partition_table != 0; !v9 {
+			libc.X__assert_fail(tls, __ccgo_ts+9662, __ccgo_ts+9335, int32(1308), uintptr(unsafe.Pointer(&__func__77)))
 		}
+		_ = v9 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		(*gr_info)(unsafe.Pointer(cod_info)).Fpart2_length = 0
 		partition = 0
 		for {
@@ -29287,8 +27977,8 @@ func mpeg2_scale_bitcount(tls *libc.TLS, gfc uintptr, cod_info uintptr) (r int32
 				break
 			}
 			*(*int32)(unsafe.Pointer(cod_info + 4844)) += *(*int32)(unsafe.Pointer(cod_info + 5200 + uintptr(partition)*4)) * *(*int32)(unsafe.Pointer((*gr_info)(unsafe.Pointer(cod_info)).Fsfb_partition_table + uintptr(partition)*4))
-			goto _9
-		_9:
+			goto _10
+		_10:
 			;
 			partition = partition + 1
 		}
@@ -29296,7 +27986,7 @@ func mpeg2_scale_bitcount(tls *libc.TLS, gfc uintptr, cod_info uintptr) (r int32
 	return over
 }
 
-var __func__77 = [21]int8{'m', 'p', 'e', 'g', '2', '_', 's', 'c', 'a', 'l', 'e', '_', 'b', 'i', 't', 'c', 'o', 'u', 'n', 't'}
+var __func__77 = [21]uint8{'m', 'p', 'e', 'g', '2', '_', 's', 'c', 'a', 'l', 'e', '_', 'b', 'i', 't', 'c', 'o', 'u', 'n', 't'}
 
 /*
 Since no bands have been over-amplified, we can set scalefac_compress
@@ -29357,15 +28047,15 @@ func huffman_init(tls *libc.TLS, gfc uintptr) {
 			   than bigvalues */
 			bv_index = subdv_table[scfb_anz].Fregion0_count
 		}
-		*(*int8)(unsafe.Pointer(gfc + 87416 + 332 + uintptr(i-int32(2)))) = int8(bv_index)
+		*(*uint8)(unsafe.Pointer(gfc + 87416 + 332 + uintptr(i-int32(2)))) = libc.Uint8FromInt32(bv_index)
 		bv_index = subdv_table[scfb_anz].Fregion1_count
-		for *(*int32)(unsafe.Pointer(gfc + 21424 + uintptr(bv_index+int32(*(*int8)(unsafe.Pointer(gfc + 87416 + 332 + uintptr(i-int32(2)))))+int32(2))*4)) > i {
+		for *(*int32)(unsafe.Pointer(gfc + 21424 + uintptr(bv_index+libc.Int32FromUint8(*(*uint8)(unsafe.Pointer(gfc + 87416 + 332 + uintptr(i-int32(2)))))+int32(2))*4)) > i {
 			bv_index = bv_index - 1
 		}
 		if bv_index < 0 {
 			bv_index = subdv_table[scfb_anz].Fregion1_count
 		}
-		*(*int8)(unsafe.Pointer(gfc + 87416 + 332 + uintptr(i-int32(1)))) = int8(bv_index)
+		*(*uint8)(unsafe.Pointer(gfc + 87416 + 332 + uintptr(i-int32(1)))) = libc.Uint8FromInt32(bv_index)
 		goto _1
 	_1:
 		;
@@ -29373,10 +28063,10 @@ func huffman_init(tls *libc.TLS, gfc uintptr) {
 	}
 }
 
+const DBL_EPSILON2 = 2.22044604925031308085e-16
 const FLOAT8_MAX3 = "DBL_MAX"
 const FLOAT_MAX5 = "FLT_MAX"
 const M_PI7 = 3.141592653589793
-const __FLT_EPSILON__3 = 1.1920929e-07
 
 /***********************************************************************
 *
@@ -29388,7 +28078,7 @@ const __FLT_EPSILON__3 = 1.1920929e-07
 func free_id3tag(tls *libc.TLS, gfc uintptr) {
 	var node, p, q, r uintptr
 	_, _, _, _ = node, p, q, r
-	*(*int8)(unsafe.Pointer(gfc + 88352 + 68)) = 0
+	*(*uint8)(unsafe.Pointer(gfc + 88352 + 68)) = uint8(0)
 	if (*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Ftitle != uintptr(0) {
 		libc.Xfree(tls, (*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Ftitle)
 		(*lame_internal_flags)(unsafe.Pointer(gfc)).Ftag_spec.Ftitle = uintptr(0)
@@ -29838,12 +28528,13 @@ func gcd(tls *libc.TLS, i int32, j int32) (r int32) {
 }
 
 func fill_buffer_resample(tls *libc.TLS, gfc uintptr, outbuf uintptr, desired_len int32, inbuf uintptr, len1 int32, num_used uintptr, ch int32) (r int32) {
-	var BLACKSIZE, bpc, filter_l, i, j, j2, joff, k, n_shift, v9 int32
+	var BLACKSIZE, bpc, filter_l, i, j, j2, joff, k, n_shift, v12 int32
 	var cfg, esv, inbuf_old uintptr
-	var fcn, intratio, offset, sum, xvalue, v8 FLOAT
+	var fcn, intratio, offset, sum, xvalue, v11 FLOAT
 	var resample_ratio, time0 float64
 	var y, v4 sample_t
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = BLACKSIZE, bpc, cfg, esv, fcn, filter_l, i, inbuf_old, intratio, j, j2, joff, k, n_shift, offset, resample_ratio, sum, time0, xvalue, y, v4, v8, v9
+	var v7 bool
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = BLACKSIZE, bpc, cfg, esv, fcn, filter_l, i, inbuf_old, intratio, j, j2, joff, k, n_shift, offset, resample_ratio, sum, time0, xvalue, y, v11, v12, v4, v7
 	cfg = gfc + 24
 	esv = gfc + 27888
 	resample_ratio = float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_in) / float64((*SessionConfig_t)(unsafe.Pointer(cfg)).Fsamplerate_out)
@@ -29852,7 +28543,7 @@ func fill_buffer_resample(tls *libc.TLS, gfc uintptr, outbuf uintptr, desired_le
 	if bpc > int32(BPC) {
 		bpc = int32(BPC)
 	}
-	intratio = FLOAT(libc.Bool32(libc.Xfabs(tls, resample_ratio-libc.Xfloor(tls, float64(0.5)+resample_ratio)) < libc.Float64FromFloat32(1.1920929e-07)))
+	intratio = FLOAT(libc.Bool32(libc.Xfabs(tls, resample_ratio-libc.Xfloor(tls, float64(0.5)+resample_ratio)) < libc.Float64FromFloat32(1.1920928955078125e-07)))
 	fcn = float32(float64(1) / resample_ratio)
 	if float64(fcn) > float64(1) {
 		fcn = float32(1)
@@ -29932,9 +28623,10 @@ func fill_buffer_resample(tls *libc.TLS, gfc uintptr, outbuf uintptr, desired_le
 		/* blackman filter.  by default, window centered at j+.5(filter_l%2) */
 		/* but we want a window centered at time0.   */
 		offset = float32(time0 - *(*float64)(unsafe.Pointer(esv + 9344 + uintptr(ch)*8)) - (float64(j) + float64(libc.Float64FromFloat64(0.5)*float64(filter_l%libc.Int32FromInt32(2)))))
-		if libc.BoolInt64(!(libc.Xfabs(tls, float64(offset)) <= libc.Float64FromFloat64(0.501))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__78)), __ccgo_ts+9488, int32(604), __ccgo_ts+9572)
+		if v7 = libc.Xfabs(tls, float64(offset)) <= float64(0.501); !v7 {
+			libc.X__assert_fail(tls, __ccgo_ts+9692, __ccgo_ts+9713, int32(604), uintptr(unsafe.Pointer(&__func__78)))
 		}
+		_ = v7 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		/* find the closest precomputed window for this offset: */
 		joff = int32(libc.Xfloor(tls, float64(FLOAT(FLOAT(offset*libc.Float32FromInt32(2))*float32(bpc))+float32(bpc))+float64(0.5)))
 		xvalue = float32(0)
@@ -29944,21 +28636,23 @@ func fill_buffer_resample(tls *libc.TLS, gfc uintptr, outbuf uintptr, desired_le
 				break
 			}
 			j2 = i + j - filter_l/int32(2)
-			if libc.BoolInt64(!(j2 < len1)) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__78)), __ccgo_ts+9488, int32(613), __ccgo_ts+9593)
+			if v7 = j2 < len1; !v7 {
+				libc.X__assert_fail(tls, __ccgo_ts+9797, __ccgo_ts+9713, int32(613), uintptr(unsafe.Pointer(&__func__78)))
 			}
-			if libc.BoolInt64(!(j2+BLACKSIZE >= libc.Int32FromInt32(0))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__78)), __ccgo_ts+9488, int32(614), __ccgo_ts+9602)
+			_ = v7 || libc.Bool(libc.Int32FromInt32(0) != 0)
+			if v7 = j2+BLACKSIZE >= 0; !v7 {
+				libc.X__assert_fail(tls, __ccgo_ts+9806, __ccgo_ts+9713, int32(614), uintptr(unsafe.Pointer(&__func__78)))
 			}
+			_ = v7 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			if j2 < 0 {
-				v8 = *(*FLOAT)(unsafe.Pointer(inbuf_old + uintptr(BLACKSIZE+j2)*4))
+				v11 = *(*FLOAT)(unsafe.Pointer(inbuf_old + uintptr(BLACKSIZE+j2)*4))
 			} else {
-				v8 = *(*sample_t)(unsafe.Pointer(inbuf + uintptr(j2)*4))
+				v11 = *(*sample_t)(unsafe.Pointer(inbuf + uintptr(j2)*4))
 			}
-			y = v8
+			y = v11
 			xvalue = xvalue + FLOAT(y**(*sample_t)(unsafe.Pointer(*(*uintptr)(unsafe.Pointer(esv + 9376 + uintptr(joff)*8)) + uintptr(i)*4)))
-			goto _7
-		_7:
+			goto _8
+		_8:
 			;
 			i = i + 1
 		}
@@ -29972,11 +28666,11 @@ func fill_buffer_resample(tls *libc.TLS, gfc uintptr, outbuf uintptr, desired_le
 	/* last k sample used data from [j-filter_l/2,j+filter_l-filter_l/2]  */
 	/* how many samples of input data were used:  */
 	if len1 < filter_l+j-filter_l/int32(2) {
-		v9 = len1
+		v12 = len1
 	} else {
-		v9 = filter_l + j - filter_l/int32(2)
+		v12 = filter_l + j - filter_l/int32(2)
 	}
-	*(*int32)(unsafe.Pointer(num_used)) = v9
+	*(*int32)(unsafe.Pointer(num_used)) = v12
 	/* adjust our input time counter.  Incriment by the number of samples used,
 	 * then normalize so that next output sample is at time 0, next
 	 * input buffer is at time itime[ch] */
@@ -29989,8 +28683,8 @@ func fill_buffer_resample(tls *libc.TLS, gfc uintptr, outbuf uintptr, desired_le
 				break
 			}
 			*(*FLOAT)(unsafe.Pointer(inbuf_old + uintptr(i)*4)) = *(*sample_t)(unsafe.Pointer(inbuf + uintptr(*(*int32)(unsafe.Pointer(num_used))+i-BLACKSIZE)*4))
-			goto _10
-		_10:
+			goto _13
+		_13:
 			;
 			i = i + 1
 		}
@@ -30005,8 +28699,8 @@ func fill_buffer_resample(tls *libc.TLS, gfc uintptr, outbuf uintptr, desired_le
 				break
 			}
 			*(*FLOAT)(unsafe.Pointer(inbuf_old + uintptr(i)*4)) = *(*FLOAT)(unsafe.Pointer(inbuf_old + uintptr(i+*(*int32)(unsafe.Pointer(num_used)))*4))
-			goto _11
-		_11:
+			goto _14
+		_14:
 			;
 			i = i + 1
 		}
@@ -30017,20 +28711,21 @@ func fill_buffer_resample(tls *libc.TLS, gfc uintptr, outbuf uintptr, desired_le
 				break
 			}
 			*(*FLOAT)(unsafe.Pointer(inbuf_old + uintptr(i)*4)) = *(*sample_t)(unsafe.Pointer(inbuf + uintptr(j)*4))
-			goto _12
-		_12:
+			goto _15
+		_15:
 			;
 			i = i + 1
 			j = j + 1
 		}
-		if libc.BoolInt64(!(j == *(*int32)(unsafe.Pointer(num_used)))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__78)), __ccgo_ts+9488, int32(655), __ccgo_ts+9622)
+		if v7 = j == *(*int32)(unsafe.Pointer(num_used)); !v7 {
+			libc.X__assert_fail(tls, __ccgo_ts+9826, __ccgo_ts+9713, int32(655), uintptr(unsafe.Pointer(&__func__78)))
 		}
+		_ = v7 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	}
 	return k /* return the number samples created at the new samplerate */
 }
 
-var __func__78 = [21]int8{'f', 'i', 'l', 'l', '_', 'b', 'u', 'f', 'f', 'e', 'r', '_', 'r', 'e', 's', 'a', 'm', 'p', 'l', 'e'}
+var __func__78 = [21]uint8{'f', 'i', 'l', 'l', '_', 'b', 'u', 'f', 'f', 'e', 'r', '_', 'r', 'e', 's', 'a', 'm', 'p', 'l', 'e'}
 
 func isResamplingNecessary(tls *libc.TLS, cfg uintptr) (r int32) {
 	var h, l, v1 int32
@@ -30102,8 +28797,8 @@ func fill_buffer(tls *libc.TLS, gfc uintptr, mfbuf uintptr, in_buffer uintptr, n
 ***********************************************************************/
 
 func lame_report_def(tls *libc.TLS, format uintptr, args va_list) {
-	libc.Xvfprintf(tls, libc.X__stderrp, format, args)
-	libc.Xfflush(tls, libc.X__stderrp) /* an debug function should flush immediately */
+	libc.Xvfprintf(tls, libc.Xstderr, format, args)
+	libc.Xfflush(tls, libc.Xstderr) /* an debug function should flush immediately */
 }
 
 type __ccgo_fp__Xlame_report_fnc_0 = func(*libc.TLS, uintptr, uintptr)
@@ -30193,9 +28888,8 @@ const DOUBLEX = "FLOAT"
 const FLOAT8_MAX4 = 1e99
 const FLOAT_MAX6 = 1e37
 const MAGIC_INT_def = 1258291200
-const M_PI8 = 3.14159265358979323846264338327950288
+const M_PI8 = 3.14159265358979323846
 const ROUNDFAC_def = 0.4054
-const __FLT_EPSILON__4 = 1.19209290e-7
 
 type algo_s = struct {
 	Falloc     alloc_sf_f
@@ -30327,9 +29021,12 @@ func find_lowest_scalefac(tls *libc.TLS, xr34 FLOAT) (r uint8_t) {
 }
 
 func k_34_4(tls *libc.TLS, x uintptr, l3 uintptr) {
-	if libc.BoolInt64(!(*(*FLOAT)(unsafe.Pointer(x)) <= libc.Float32FromInt32(IXMAX_VAL) && *(*FLOAT)(unsafe.Pointer(x + 1*4)) <= libc.Float32FromInt32(IXMAX_VAL) && *(*FLOAT)(unsafe.Pointer(x + 2*4)) <= libc.Float32FromInt32(IXMAX_VAL) && *(*FLOAT)(unsafe.Pointer(x + 3*4)) <= libc.Float32FromInt32(IXMAX_VAL))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__79)), __ccgo_ts+9637, int32(193), __ccgo_ts+9728)
+	var v1 bool
+	_ = v1
+	if v1 = *(*FLOAT)(unsafe.Pointer(x)) <= libc.Float32FromInt32(IXMAX_VAL) && *(*FLOAT)(unsafe.Pointer(x + 1*4)) <= libc.Float32FromInt32(IXMAX_VAL) && *(*FLOAT)(unsafe.Pointer(x + 2*4)) <= libc.Float32FromInt32(IXMAX_VAL) && *(*FLOAT)(unsafe.Pointer(x + 3*4)) <= libc.Float32FromInt32(IXMAX_VAL); !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+9841, __ccgo_ts+9922, int32(193), uintptr(unsafe.Pointer(&__func__79)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	*(*int32)(unsafe.Pointer(l3)) = int32(*(*FLOAT)(unsafe.Pointer(x)))
 	*(*int32)(unsafe.Pointer(l3 + 1*4)) = int32(*(*FLOAT)(unsafe.Pointer(x + 1*4)))
 	*(*int32)(unsafe.Pointer(l3 + 2*4)) = int32(*(*FLOAT)(unsafe.Pointer(x + 2*4)))
@@ -30344,7 +29041,7 @@ func k_34_4(tls *libc.TLS, x uintptr, l3 uintptr) {
 	*(*int32)(unsafe.Pointer(l3 + 3*4)) = int32(*(*FLOAT)(unsafe.Pointer(x + 3*4)))
 }
 
-var __func__79 = [7]int8{'k', '_', '3', '4', '_', '4'}
+var __func__79 = [7]uint8{'k', '_', '3', '4', '_', '4'}
 
 /*  do call the calc_sfb_noise_* functions only with sf values
  *  for which holds: sfpow34*xr34 <= IXMAX_VAL
@@ -30565,11 +29262,12 @@ func find_scalefac_x34(tls *libc.TLS, xr uintptr, xr34 uintptr, l3_xmin FLOAT, b
 //	/* a variation for vbr-mtrh */
 func block_sf(tls *libc.TLS, that uintptr, l3_xmin uintptr, vbrsf uintptr, vbrsfmin uintptr) (r int32) {
 	var energy_above_cutoff, width, xr, xr34_orig uintptr
-	var i, j, l, m, max_nonzero_coeff, w, v1 uint32
+	var i, j, l, m, max_nonzero_coeff, w, v2 uint32
 	var m1, m2, maxsf uint8_t
 	var m_o, psymax, sfb int32
 	var max_xr34 FLOAT
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = energy_above_cutoff, i, j, l, m, m1, m2, m_o, max_nonzero_coeff, max_xr34, maxsf, psymax, sfb, w, width, xr, xr34_orig, v1
+	var v1 bool
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = energy_above_cutoff, i, j, l, m, m1, m2, m_o, max_nonzero_coeff, max_xr34, maxsf, psymax, sfb, w, width, xr, xr34_orig, v1, v2
 	xr = (*algo_t)(unsafe.Pointer(that)).Fcod_info
 	xr34_orig = (*algo_t)(unsafe.Pointer(that)).Fxr34orig
 	width = (*algo_t)(unsafe.Pointer(that)).Fcod_info + 4872
@@ -30581,9 +29279,10 @@ func block_sf(tls *libc.TLS, that uintptr, l3_xmin uintptr, vbrsf uintptr, vbrsf
 	j = uint32(0)
 	i = uint32(0)
 	psymax = (*gr_info)(unsafe.Pointer((*algo_t)(unsafe.Pointer(that)).Fcod_info)).Fpsymax
-	if libc.BoolInt64(!((*gr_info)(unsafe.Pointer((*algo_t)(unsafe.Pointer(that)).Fcod_info)).Fmax_nonzero_coeff >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__80)), __ccgo_ts+9637, int32(408), __ccgo_ts+9809)
+	if v1 = (*gr_info)(unsafe.Pointer((*algo_t)(unsafe.Pointer(that)).Fcod_info)).Fmax_nonzero_coeff >= 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+10013, __ccgo_ts+9922, int32(408), uintptr(unsafe.Pointer(&__func__80)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	(*algo_t)(unsafe.Pointer(that)).Fmingain_l = 0
 	*(*int32)(unsafe.Pointer(that + 44)) = 0
 	*(*int32)(unsafe.Pointer(that + 44 + 1*4)) = 0
@@ -30605,12 +29304,12 @@ func block_sf(tls *libc.TLS, that uintptr, l3_xmin uintptr, vbrsf uintptr, vbrsf
 			*(*int32)(unsafe.Pointer(that + 44 + uintptr(i)*4)) = libc.Int32FromUint8(m1)
 		}
 		i = i + 1
-		v1 = i
-		if v1 > uint32(2) {
+		v2 = i
+		if v2 > uint32(2) {
 			i = uint32(0)
 		}
 		if sfb < psymax && w > uint32(2) { /* mpeg2.5 at 8 kHz doesn't use all scalefactors, unused have width 2 */
-			if *(*int8)(unsafe.Pointer(energy_above_cutoff + uintptr(sfb))) != 0 {
+			if *(*uint8)(unsafe.Pointer(energy_above_cutoff + uintptr(sfb))) != 0 {
 				m2 = (*(*func(*libc.TLS, uintptr, uintptr, FLOAT, uint32, uint8_t) uint8_t)(unsafe.Pointer(&struct{ uintptr }{(*algo_t)(unsafe.Pointer(that)).Ffind})))(tls, xr+uintptr(j)*4, xr34_orig+uintptr(j)*4, *(*FLOAT)(unsafe.Pointer(l3_xmin + uintptr(sfb)*4)), l, m1)
 				if libc.Int32FromUint8(maxsf) < libc.Int32FromUint8(m2) {
 					maxsf = m2
@@ -30638,8 +29337,8 @@ func block_sf(tls *libc.TLS, that uintptr, l3_xmin uintptr, vbrsf uintptr, vbrsf
 		}
 		*(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4)) = libc.Int32FromUint8(maxsf)
 		*(*int32)(unsafe.Pointer(vbrsfmin + uintptr(sfb)*4)) = 0
-		goto _2
-	_2:
+		goto _3
+	_3:
 		;
 		sfb = sfb + 1
 	}
@@ -30653,8 +29352,8 @@ func block_sf(tls *libc.TLS, that uintptr, l3_xmin uintptr, vbrsf uintptr, vbrsf
 			if *(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4)) == int32(255) {
 				*(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4)) = m_o
 			}
-			goto _3
-		_3:
+			goto _4
+		_4:
 			;
 			sfb = sfb + 1
 		}
@@ -30662,7 +29361,7 @@ func block_sf(tls *libc.TLS, that uintptr, l3_xmin uintptr, vbrsf uintptr, vbrsf
 	return libc.Int32FromUint8(maxsf)
 }
 
-var __func__80 = [9]int8{'b', 'l', 'o', 'c', 'k', '_', 's', 'f'}
+var __func__80 = [9]uint8{'b', 'l', 'o', 'c', 'k', '_', 's', 'f'}
 
 /***********************************************************************
  *
@@ -30679,13 +29378,14 @@ func quantize_x34(tls *libc.TLS, that uintptr) {
 	bp := tls.Alloc(32)
 	defer tls.Free(32)
 	var cod_info, l3, xr34_orig uintptr
-	var i, j, m, max_nonzero_coeff, remaining, sfb, w, v3 uint32
+	var i, j, m, max_nonzero_coeff, remaining, sfb, w, v7 uint32
 	var ifqstep, s, v1 int32
 	var sfac uint8_t
-	var sfpow34, v5, v6, v7 FLOAT
+	var sfpow34, v10, v11, v9 FLOAT
+	var v2 bool
 	var _ /* tmp_l3 at bp+16 */ [4]int32
 	var _ /* x at bp+0 */ [4]FLOAT
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = cod_info, i, ifqstep, j, l3, m, max_nonzero_coeff, remaining, s, sfac, sfb, sfpow34, w, xr34_orig, v1, v3, v5, v6, v7
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = cod_info, i, ifqstep, j, l3, m, max_nonzero_coeff, remaining, s, sfac, sfb, sfpow34, w, xr34_orig, v1, v10, v11, v2, v7, v9
 	xr34_orig = (*algo_t)(unsafe.Pointer(that)).Fxr34orig
 	cod_info = (*algo_t)(unsafe.Pointer(that)).Fcod_info
 	if (*gr_info)(unsafe.Pointer(cod_info)).Fscalefac_scale == 0 {
@@ -30698,12 +29398,14 @@ func quantize_x34(tls *libc.TLS, that uintptr) {
 	j = uint32(0)
 	sfb = uint32(0)
 	max_nonzero_coeff = libc.Uint32FromInt32((*gr_info)(unsafe.Pointer(cod_info)).Fmax_nonzero_coeff)
-	if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(cod_info)).Fmax_nonzero_coeff >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__81)), __ccgo_ts+9637, int32(511), __ccgo_ts+9848)
+	if v2 = (*gr_info)(unsafe.Pointer(cod_info)).Fmax_nonzero_coeff >= 0; !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+10052, __ccgo_ts+9922, int32(511), uintptr(unsafe.Pointer(&__func__81)))
 	}
-	if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(cod_info)).Fmax_nonzero_coeff < libc.Int32FromInt32(576))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__81)), __ccgo_ts+9637, int32(512), __ccgo_ts+9881)
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v2 = (*gr_info)(unsafe.Pointer(cod_info)).Fmax_nonzero_coeff < int32(576); !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+10085, __ccgo_ts+9922, int32(512), uintptr(unsafe.Pointer(&__func__81)))
 	}
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	for j <= max_nonzero_coeff {
 		if (*gr_info)(unsafe.Pointer(cod_info)).Fpreflag != 0 {
 			v1 = pretab[sfb]
@@ -30715,26 +29417,28 @@ func quantize_x34(tls *libc.TLS, that uintptr) {
 		sfpow34 = ipow20[sfac]
 		w = libc.Uint32FromInt32(*(*int32)(unsafe.Pointer(cod_info + 4872 + uintptr(sfb)*4)))
 		m = max_nonzero_coeff - j + libc.Uint32FromInt32(1)
-		if libc.BoolInt64(!((*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain-s >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__81)), __ccgo_ts+9637, int32(524), __ccgo_ts+9915)
+		if v2 = (*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain-s >= 0; !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+10119, __ccgo_ts+9922, int32(524), uintptr(unsafe.Pointer(&__func__81)))
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(cod_info + 4872 + uintptr(sfb)*4)) >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__81)), __ccgo_ts+9637, int32(525), __ccgo_ts+9230)
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v2 = *(*int32)(unsafe.Pointer(cod_info + 4872 + uintptr(sfb)*4)) >= 0; !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+9434, __ccgo_ts+9922, int32(525), uintptr(unsafe.Pointer(&__func__81)))
 		}
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		j = j + w
 		sfb = sfb + 1
 		if w <= m {
-			v3 = w
+			v7 = w
 		} else {
-			v3 = m
+			v7 = m
 		}
-		i = v3
+		i = v7
 		remaining = i & uint32(0x03)
 		i = i >> uint32(2)
 		for {
-			v3 = i
+			v7 = i
 			i = i - 1
-			if !(v3 > uint32(0)) {
+			if !(v7 > uint32(0)) {
 				break
 			}
 			(*(*[4]FLOAT)(unsafe.Pointer(bp)))[0] = FLOAT(sfpow34 * *(*FLOAT)(unsafe.Pointer(xr34_orig)))
@@ -30746,13 +29450,13 @@ func quantize_x34(tls *libc.TLS, that uintptr) {
 			xr34_orig = xr34_orig + uintptr(4)*4
 		}
 		if remaining != 0 {
-			v7 = libc.Float32FromInt32(0)
-			(*(*[4]FLOAT)(unsafe.Pointer(bp)))[int32(3)] = v7
-			v6 = v7
-			(*(*[4]FLOAT)(unsafe.Pointer(bp)))[int32(2)] = v6
-			v5 = v6
-			(*(*[4]FLOAT)(unsafe.Pointer(bp)))[int32(1)] = v5
-			(*(*[4]FLOAT)(unsafe.Pointer(bp)))[0] = v5
+			v11 = libc.Float32FromInt32(0)
+			(*(*[4]FLOAT)(unsafe.Pointer(bp)))[int32(3)] = v11
+			v10 = v11
+			(*(*[4]FLOAT)(unsafe.Pointer(bp)))[int32(2)] = v10
+			v9 = v10
+			(*(*[4]FLOAT)(unsafe.Pointer(bp)))[int32(1)] = v9
+			(*(*[4]FLOAT)(unsafe.Pointer(bp)))[0] = v9
 			switch remaining {
 			case uint32(3):
 				(*(*[4]FLOAT)(unsafe.Pointer(bp)))[int32(2)] = FLOAT(sfpow34 * *(*FLOAT)(unsafe.Pointer(xr34_orig + 2*4)))
@@ -30780,7 +29484,7 @@ func quantize_x34(tls *libc.TLS, that uintptr) {
 	}
 }
 
-var __func__81 = [13]int8{'q', 'u', 'a', 'n', 't', 'i', 'z', 'e', '_', 'x', '3', '4'}
+var __func__81 = [13]uint8{'q', 'u', 'a', 'n', 't', 'i', 'z', 'e', '_', 'x', '3', '4'}
 
 var max_range_short = [39]uint8_t{
 	0:  uint8(15),
@@ -31140,9 +29844,10 @@ func short_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin 
 	bp := tls.Alloc(160)
 	defer tls.Free(160)
 	var cfg, cod_info, gfc uintptr
-	var delta, maxminsfb, maxover0, maxover1, mover, psymax, sfb, v, v0, v1, v2 int32
+	var delta, maxminsfb, maxover0, maxover1, mover, psymax, sfb, v, v0, v1, v3 int32
+	var v2 bool
 	var _ /* sf_temp at bp+0 */ [39]int32
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _ = cfg, cod_info, delta, gfc, maxminsfb, maxover0, maxover1, mover, psymax, sfb, v, v0, v1, v2
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = cfg, cod_info, delta, gfc, maxminsfb, maxover0, maxover1, mover, psymax, sfb, v, v0, v1, v2, v3
 	cod_info = (*algo_t)(unsafe.Pointer(that)).Fcod_info
 	gfc = (*algo_t)(unsafe.Pointer(that)).Fgfc
 	cfg = gfc + 24
@@ -31156,9 +29861,10 @@ func short_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin 
 		if !(sfb < psymax) {
 			break
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4)) >= *(*int32)(unsafe.Pointer(vbrsfmin + uintptr(sfb)*4)))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__82)), __ccgo_ts+9637, int32(783), __ccgo_ts+9948)
+		if v2 = *(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4)) >= *(*int32)(unsafe.Pointer(vbrsfmin + uintptr(sfb)*4)); !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+10152, __ccgo_ts+9922, int32(783), uintptr(unsafe.Pointer(&__func__82)))
 		}
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		v = vbrmax - *(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4))
 		if delta < v {
 			delta = v
@@ -31179,11 +29885,11 @@ func short_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin 
 	if (*SessionConfig_t)(unsafe.Pointer(cfg)).Fnoise_shaping == int32(2) {
 		/* allow scalefac_scale=1 */
 		if maxover0 < maxover1 {
-			v2 = maxover0
+			v3 = maxover0
 		} else {
-			v2 = maxover1
+			v3 = maxover1
 		}
-		mover = v2
+		mover = v3
 	} else {
 		mover = maxover0
 	}
@@ -31217,19 +29923,20 @@ func short_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin 
 			break
 		}
 		(*(*[39]int32)(unsafe.Pointer(bp)))[sfb] = *(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4)) - vbrmax
-		goto _3
-	_3:
+		goto _4
+	_4:
 		;
 		sfb = sfb + 1
 	}
 	set_subblock_gain(tls, cod_info, that+44, bp)
 	set_scalefacs(tls, cod_info, vbrsfmin, bp, uintptr(unsafe.Pointer(&max_range_short)))
-	if libc.BoolInt64(!(checkScalefactor(tls, cod_info, vbrsfmin) != 0)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__82)), __ccgo_ts+9637, int32(836), __ccgo_ts+9976)
+	if v2 = checkScalefactor(tls, cod_info, vbrsfmin) != 0; !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+10180, __ccgo_ts+9922, int32(836), uintptr(unsafe.Pointer(&__func__82)))
 	}
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 }
 
-var __func__82 = [22]int8{'s', 'h', 'o', 'r', 't', '_', 'b', 'l', 'o', 'c', 'k', '_', 'c', 'o', 'n', 's', 't', 'r', 'a', 'i', 'n'}
+var __func__82 = [22]uint8{'s', 'h', 'o', 'r', 't', '_', 'b', 'l', 'o', 'c', 'k', '_', 'c', 'o', 'n', 's', 't', 'r', 'a', 'i', 'n'}
 
 /******************************************************************
  *
@@ -31240,10 +29947,11 @@ var __func__82 = [22]int8{'s', 'h', 'o', 'r', 't', '_', 'b', 'l', 'o', 'c', 'k',
 func long_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin uintptr, vbrmax int32) {
 	bp := tls.Alloc(160)
 	defer tls.Free(160)
-	var a, b, delta, gain, gain1, maxminsfb, maxover0, maxover0p, maxover1, maxover1p, mover, psymax, sfb, v, v0, v0p, v1, v1p, vm0p, vm1p, v5 int32
+	var a, b, delta, gain, gain1, maxminsfb, maxover0, maxover0p, maxover1, maxover1p, mover, psymax, sfb, v, v0, v0p, v1, v1p, vm0p, vm1p, v6 int32
 	var cfg, cod_info, gfc, max_rangep, v11 uintptr
+	var v3 bool
 	var _ /* sf_temp at bp+0 */ [39]int32
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = a, b, cfg, cod_info, delta, gain, gain1, gfc, max_rangep, maxminsfb, maxover0, maxover0p, maxover1, maxover1p, mover, psymax, sfb, v, v0, v0p, v1, v1p, vm0p, vm1p, v11, v5
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = a, b, cfg, cod_info, delta, gain, gain1, gfc, max_rangep, maxminsfb, maxover0, maxover0p, maxover1, maxover1p, mover, psymax, sfb, v, v0, v0p, v1, v1p, vm0p, vm1p, v11, v3, v6
 	cod_info = (*algo_t)(unsafe.Pointer(that)).Fcod_info
 	gfc = (*algo_t)(unsafe.Pointer(that)).Fgfc
 	cfg = gfc + 24
@@ -31267,9 +29975,10 @@ func long_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin u
 		if !(sfb < psymax) {
 			break
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4)) >= *(*int32)(unsafe.Pointer(vbrsfmin + uintptr(sfb)*4)))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__83)), __ccgo_ts+9637, int32(869), __ccgo_ts+9948)
+		if v3 = *(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4)) >= *(*int32)(unsafe.Pointer(vbrsfmin + uintptr(sfb)*4)); !v3 {
+			libc.X__assert_fail(tls, __ccgo_ts+10152, __ccgo_ts+9922, int32(869), uintptr(unsafe.Pointer(&__func__83)))
 		}
+		_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		v = vbrmax - *(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4))
 		if delta < v {
 			delta = v
@@ -31311,8 +30020,8 @@ func long_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin u
 				vm1p = 0
 				break
 			}
-			goto _3
-		_3:
+			goto _4
+		_4:
 			;
 			sfb = sfb + 1
 		}
@@ -31332,8 +30041,8 @@ func long_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin u
 				vm1p = 0
 				break
 			}
-			goto _4
-		_4:
+			goto _5
+		_5:
 			;
 			sfb = sfb + 1
 		}
@@ -31349,23 +30058,23 @@ func long_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin u
 		maxover1p = maxover0p
 	}
 	if maxover0 < maxover0p {
-		v5 = maxover0
+		v6 = maxover0
 	} else {
-		v5 = maxover0p
+		v6 = maxover0p
 	}
-	mover = v5
+	mover = v6
 	if mover < maxover1 {
-		v5 = mover
+		v6 = mover
 	} else {
-		v5 = maxover1
+		v6 = maxover1
 	}
-	mover = v5
+	mover = v6
 	if mover < maxover1p {
-		v5 = mover
+		v6 = mover
 	} else {
-		v5 = maxover1p
+		v6 = maxover1p
 	}
-	mover = v5
+	mover = v6
 	if delta > mover {
 		delta = mover
 	}
@@ -31395,7 +30104,10 @@ func long_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin u
 					(*gr_info)(unsafe.Pointer(cod_info)).Fscalefac_scale = int32(1)
 					(*gr_info)(unsafe.Pointer(cod_info)).Fpreflag = int32(1)
 				} else {
-					libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__83)), __ccgo_ts+9637, int32(963), __ccgo_ts+3745) /* this should not happen */
+					if v3 = libc.Bool(0 != 0); !v3 {
+						libc.X__assert_fail(tls, __ccgo_ts+3879, __ccgo_ts+9922, int32(963), uintptr(unsafe.Pointer(&__func__83)))
+					}
+					_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0) /* this should not happen */
 				}
 			}
 		}
@@ -31414,18 +30126,19 @@ func long_block_constrain(tls *libc.TLS, that uintptr, vbrsf uintptr, vbrsfmin u
 			break
 		}
 		(*(*[39]int32)(unsafe.Pointer(bp)))[sfb] = *(*int32)(unsafe.Pointer(vbrsf + uintptr(sfb)*4)) - vbrmax
-		goto _8
-	_8:
+		goto _10
+	_10:
 		;
 		sfb = sfb + 1
 	}
 	set_scalefacs(tls, cod_info, vbrsfmin, bp, max_rangep)
-	if libc.BoolInt64(!(checkScalefactor(tls, cod_info, vbrsfmin) != 0)) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__83)), __ccgo_ts+9637, int32(979), __ccgo_ts+9976)
+	if v3 = checkScalefactor(tls, cod_info, vbrsfmin) != 0; !v3 {
+		libc.X__assert_fail(tls, __ccgo_ts+10180, __ccgo_ts+9922, int32(979), uintptr(unsafe.Pointer(&__func__83)))
 	}
+	_ = v3 || libc.Bool(libc.Int32FromInt32(0) != 0)
 }
 
-var __func__83 = [21]int8{'l', 'o', 'n', 'g', '_', 'b', 'l', 'o', 'c', 'k', '_', 'c', 'o', 'n', 's', 't', 'r', 'a', 'i', 'n'}
+var __func__83 = [21]uint8{'l', 'o', 'n', 'g', '_', 'b', 'l', 'o', 'c', 'k', '_', 'c', 'o', 'n', 's', 't', 'r', 'a', 'i', 'n'}
 
 func bitcount(tls *libc.TLS, that uintptr) {
 	var rc int32
@@ -31435,7 +30148,7 @@ func bitcount(tls *libc.TLS, that uintptr) {
 		return
 	}
 	/*  this should not happen due to the way the scalefactors are selected  */
-	lame_errorf(tls, (*algo_t)(unsafe.Pointer(that)).Fgfc, __ccgo_ts+10013, 0)
+	lame_errorf(tls, (*algo_t)(unsafe.Pointer(that)).Fgfc, __ccgo_ts+10217, 0)
 	libc.Xexit(tls, -int32(1))
 }
 
@@ -31485,7 +30198,8 @@ func tryGlobalStepsize(tls *libc.TLS, that uintptr, sfwork uintptr, vbrsfmin uin
 func searchGlobalStepsizeMax(tls *libc.TLS, that uintptr, sfwork uintptr, vbrsfmin uintptr, target int32) {
 	var cod_info uintptr
 	var curr, gain, gain_ok, l, nbits, r int32
-	_, _, _, _, _, _, _ = cod_info, curr, gain, gain_ok, l, nbits, r
+	var v1 bool
+	_, _, _, _, _, _, _, _ = cod_info, curr, gain, gain_ok, l, nbits, r, v1
 	cod_info = (*algo_t)(unsafe.Pointer(that)).Fcod_info
 	gain = (*gr_info)(unsafe.Pointer(cod_info)).Fglobal_gain
 	curr = gain
@@ -31493,9 +30207,10 @@ func searchGlobalStepsizeMax(tls *libc.TLS, that uintptr, sfwork uintptr, vbrsfm
 	nbits = int32(LARGE_BITS)
 	l = gain
 	r = int32(512)
-	if libc.BoolInt64(!(gain >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__84)), __ccgo_ts+9637, int32(1051), __ccgo_ts+10075)
+	if v1 = gain >= 0; !v1 {
+		libc.X__assert_fail(tls, __ccgo_ts+10279, __ccgo_ts+9922, int32(1051), uintptr(unsafe.Pointer(&__func__84)))
 	}
+	_ = v1 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	for l <= r {
 		curr = (l + r) >> int32(1)
 		nbits = tryGlobalStepsize(tls, that, sfwork, vbrsfmin, curr-gain)
@@ -31515,12 +30230,13 @@ func searchGlobalStepsizeMax(tls *libc.TLS, that uintptr, sfwork uintptr, vbrsfm
 	}
 }
 
-var __func__84 = [24]int8{'s', 'e', 'a', 'r', 'c', 'h', 'G', 'l', 'o', 'b', 'a', 'l', 'S', 't', 'e', 'p', 's', 'i', 'z', 'e', 'M', 'a', 'x'}
+var __func__84 = [24]uint8{'s', 'e', 'a', 'r', 'c', 'h', 'G', 'l', 'o', 'b', 'a', 'l', 'S', 't', 'e', 'p', 's', 'i', 'z', 'e', 'M', 'a', 'x'}
 
 func sfDepth(tls *libc.TLS, sfwork uintptr) (r int32) {
 	var di, m int32
 	var i, j uint32
-	_, _, _, _ = di, i, j, m
+	var v2 bool
+	_, _, _, _, _ = di, i, j, m, v2
 	m = 0
 	j = libc.Uint32FromInt32(libc.Int32FromInt32(SBMAX_s) * libc.Int32FromInt32(3))
 	i = libc.Uint32FromInt32(0)
@@ -31532,28 +30248,32 @@ func sfDepth(tls *libc.TLS, sfwork uintptr) (r int32) {
 		if m < di {
 			m = di
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(sfwork + uintptr(i)*4)) >= libc.Int32FromInt32(0))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__85)), __ccgo_ts+9637, int32(1084), __ccgo_ts+10085)
+		if v2 = *(*int32)(unsafe.Pointer(sfwork + uintptr(i)*4)) >= 0; !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+10289, __ccgo_ts+9922, int32(1084), uintptr(unsafe.Pointer(&__func__85)))
 		}
-		if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(sfwork + uintptr(i)*4)) <= libc.Int32FromInt32(255))) != 0 {
-			libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__85)), __ccgo_ts+9637, int32(1085), __ccgo_ts+10100)
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
+		if v2 = *(*int32)(unsafe.Pointer(sfwork + uintptr(i)*4)) <= int32(255); !v2 {
+			libc.X__assert_fail(tls, __ccgo_ts+10304, __ccgo_ts+9922, int32(1085), uintptr(unsafe.Pointer(&__func__85)))
 		}
+		_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 		goto _1
 	_1:
 		;
 		j = j - 1
 		i = i + 1
 	}
-	if libc.BoolInt64(!(m >= libc.Int32FromInt32(0))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__85)), __ccgo_ts+9637, int32(1087), __ccgo_ts+10117)
+	if v2 = m >= 0; !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+10321, __ccgo_ts+9922, int32(1087), uintptr(unsafe.Pointer(&__func__85)))
 	}
-	if libc.BoolInt64(!(m <= libc.Int32FromInt32(255))) != 0 {
-		libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__85)), __ccgo_ts+9637, int32(1088), __ccgo_ts+10124)
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
+	if v2 = m <= int32(255); !v2 {
+		libc.X__assert_fail(tls, __ccgo_ts+10328, __ccgo_ts+9922, int32(1088), uintptr(unsafe.Pointer(&__func__85)))
 	}
+	_ = v2 || libc.Bool(libc.Int32FromInt32(0) != 0)
 	return m
 }
 
-var __func__85 = [8]int8{'s', 'f', 'D', 'e', 'p', 't', 'h'}
+var __func__85 = [8]uint8{'s', 'f', 'D', 'e', 'p', 't', 'h'}
 
 func cutDistribution(tls *libc.TLS, sfwork uintptr, sf_out uintptr, cut int32) {
 	var i, j uint32
@@ -31740,6 +30460,7 @@ func VBR_encode_frame(tls *libc.TLS, gfc uintptr, xr34orig uintptr, l3_xmin uint
 	var ch, gr, max_nbits_fr, nch, ngr, ok, sum_fr, sum_gr, use_nbits_fr, vbrmax int32
 	var f, f1, f2 [2]float32
 	var s, s1, s2 float32
+	var v31 bool
 	var _ /* max_nbits_ch at bp+1472 */ [2][2]int32
 	var _ /* max_nbits_gr at bp+1488 */ [2]int32
 	var _ /* sfwork_ at bp+0 */ [2][2][39]int32
@@ -31747,7 +30468,7 @@ func VBR_encode_frame(tls *libc.TLS, gfc uintptr, xr34orig uintptr, l3_xmin uint
 	var _ /* use_nbits_ch at bp+1496 */ [2][2]int32
 	var _ /* use_nbits_gr at bp+1512 */ [2]int32
 	var _ /* vbrsfmin_ at bp+624 */ [2][2][39]int32
-	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = cfg, ch, f, f1, f2, gr, max_nbits_fr, nch, ngr, ok, s, s1, s2, sfwork, sfwork1, sum_fr, sum_gr, that, that1, that2, use_nbits_fr, vbrmax, vbrsfmin, vbrsfmin1, v3
+	_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _ = cfg, ch, f, f1, f2, gr, max_nbits_fr, nch, ngr, ok, s, s1, s2, sfwork, sfwork1, sum_fr, sum_gr, that, that1, that2, use_nbits_fr, vbrmax, vbrsfmin, vbrsfmin1, v3, v31
 	cfg = gfc + 24
 	ngr = (*SessionConfig_t)(unsafe.Pointer(cfg)).Fmode_gr
 	nch = (*SessionConfig_t)(unsafe.Pointer(cfg)).Fchannels_out
@@ -32271,9 +30992,10 @@ func VBR_encode_frame(tls *libc.TLS, gfc uintptr, xr34orig uintptr, l3_xmin uint
 				outOfBitsStrategy(tls, that2, sfwork1, vbrsfmin1, *(*int32)(unsafe.Pointer(bp + 1472 + uintptr(gr)*8 + uintptr(ch)*4)))
 			}
 			*(*int32)(unsafe.Pointer(bp + 1496 + uintptr(gr)*8 + uintptr(ch)*4)) = reduce_bit_usage(tls, gfc, gr, ch)
-			if libc.BoolInt64(!(*(*int32)(unsafe.Pointer(bp + 1496 + uintptr(gr)*8 + uintptr(ch)*4)) <= *(*int32)(unsafe.Pointer(bp + 1472 + uintptr(gr)*8 + uintptr(ch)*4)))) != 0 {
-				libc.X__assert_rtn(tls, uintptr(unsafe.Pointer(&__func__86)), __ccgo_ts+9637, int32(1565), __ccgo_ts+10133)
+			if v31 = *(*int32)(unsafe.Pointer(bp + 1496 + uintptr(gr)*8 + uintptr(ch)*4)) <= *(*int32)(unsafe.Pointer(bp + 1472 + uintptr(gr)*8 + uintptr(ch)*4)); !v31 {
+				libc.X__assert_fail(tls, __ccgo_ts+10337, __ccgo_ts+9922, int32(1565), uintptr(unsafe.Pointer(&__func__86)))
 			}
+			_ = v31 || libc.Bool(libc.Int32FromInt32(0) != 0)
 			*(*int32)(unsafe.Pointer(bp + 1512 + uintptr(gr)*4)) += *(*int32)(unsafe.Pointer(bp + 1496 + uintptr(gr)*8 + uintptr(ch)*4))
 			goto _30
 		_30:
@@ -32291,12 +31013,12 @@ func VBR_encode_frame(tls *libc.TLS, gfc uintptr, xr34orig uintptr, l3_xmin uint
 	if use_nbits_fr <= max_nbits_fr {
 		return use_nbits_fr
 	}
-	lame_errorf(tls, gfc, __ccgo_ts+10178, libc.VaList(bp+1528, max_nbits_fr, use_nbits_fr))
+	lame_errorf(tls, gfc, __ccgo_ts+10382, libc.VaList(bp+1528, max_nbits_fr, use_nbits_fr))
 	libc.Xexit(tls, -int32(1))
 	return r
 }
 
-var __func__86 = [17]int8{'V', 'B', 'R', '_', 'e', 'n', 'c', 'o', 'd', 'e', '_', 'f', 'r', 'a', 'm', 'e'}
+var __func__86 = [17]uint8{'V', 'B', 'R', '_', 'e', 'n', 'c', 'o', 'd', 'e', '_', 'f', 'r', 'a', 'm', 'e'}
 
 const P = " "
 
@@ -32339,7 +31061,7 @@ func get_lame_version(tls *libc.TLS) (r uintptr) {
 /* primary to write screen reports */
 /* Here we can also add informations about compile time configurations */
 
-var str = __ccgo_ts + 10264
+var str = __ccgo_ts + 10468
 
 // C documentation
 //
@@ -32357,7 +31079,7 @@ func get_lame_short_version(tls *libc.TLS) (r uintptr) {
 /* adding date and time to version string makes it harder for output
    validation */
 
-var str1 = __ccgo_ts + 10264
+var str1 = __ccgo_ts + 10468
 
 // C documentation
 //
@@ -32377,7 +31099,7 @@ adding date and time to version string makes it harder for output
 
 	validation
 */
-var str2 = __ccgo_ts + 10270
+var str2 = __ccgo_ts + 10474
 
 // C documentation
 //
@@ -32393,7 +31115,7 @@ func get_lame_tag_encoder_short_version(tls *libc.TLS) (r uintptr) {
 	return str3
 }
 
-var str3 = __ccgo_ts + 10270
+var str3 = __ccgo_ts + 10474
 
 // C documentation
 //
@@ -32406,7 +31128,7 @@ func get_psy_version(tls *libc.TLS) (r uintptr) {
 	return str4
 }
 
-var str4 = __ccgo_ts + 10281
+var str4 = __ccgo_ts + 10485
 
 // C documentation
 //
@@ -32419,7 +31141,7 @@ func get_lame_url(tls *libc.TLS) (r uintptr) {
 	return str5
 }
 
-var str5 = __ccgo_ts + 10285
+var str5 = __ccgo_ts + 10489
 
 // C documentation
 //
@@ -32447,7 +31169,7 @@ func get_lame_version_numerical(tls *libc.TLS, lvp uintptr) {
 	/*@=mustfree@ */
 }
 
-var features = __ccgo_ts + 3507 /* obsolete */
+var features = __ccgo_ts + 3641 /* obsolete */
 
 func get_lame_os_bitness(tls *libc.TLS) (r uintptr) {
 	switch libc.Uint64FromInt64(8) {
@@ -32461,11 +31183,11 @@ func get_lame_os_bitness(tls *libc.TLS) (r uintptr) {
 	return r
 }
 
-var strXX = __ccgo_ts + 3507
+var strXX = __ccgo_ts + 3641
 
-var str32 = __ccgo_ts + 10304
+var str32 = __ccgo_ts + 10508
 
-var str64 = __ccgo_ts + 10311
+var str64 = __ccgo_ts + 10515
 
 func __ccgo_fp(f interface{}) uintptr {
 	type iface [2]uintptr
@@ -32974,24 +31696,6 @@ var largetbl = [256]uint32_t{
 	254: uint32(0x0d000a),
 	255: uint32(0x0a0006),
 }
-
-/*===---- float.h - Characteristics of floating point types ----------------===
- *
- * Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
- * See https://llvm.org/LICENSE.txt for license information.
- * SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
- *
- *===-----------------------------------------------------------------------===
- */
-
-/* On various platforms, fall back to the system's float.h, which might have
- * additional definitions and/or implementation-defined values.
- */
-
-/* Characteristics of floating point types, C99 5.2.4.2.2 */
-
-/* C23 5.2.5.3.3p29-30 */
-/* C23 5.2.5.3.3p32 */
 
 // C documentation
 //
@@ -33669,4 +32373,4 @@ var table56 = [16]uint32_t{
 
 var __ccgo_ts = (*reflect.StringHeader)(unsafe.Pointer(&__ccgo_ts1)).Data
 
-var __ccgo_ts1 = "/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/VbrTag.c\x00gfc->VBR_seek_table.bag\x00Error: can't allocate VbrFrames buffer\n\x00ID3\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/bitstream.c\x008 <= bit_rate && bit_rate <= 640\x00j < MAX_LENGTH - 2\x00bs->buf_byte_idx < BUFFER_SIZE\x00esv->header[esv->w_ptr].write_timing >= bs->totbit\x00j < MAX_LENGTH\x00bs->buf_bit_idx < MAX_LENGTH\x00remainingBits >= 0\x00remainingBits == 0\x00l3_side->main_data_begin >= 0\x000 <= gi->region0_count && gi->region0_count < 16\x000 <= gi->region1_count && gi->region1_count < 8\x00esv->header[old].ptr == cfg->sideinfo_len * 8\x00Error: MAX_HEADER_BUF too small in bitstream.c \n\x00gi->count1table_select < 2\x00v <= 1\x00tableindex < 32u\x00gi->l3_enc[i] >= 0\x00gi->l3_enc[i+1] >= 0\x00linbits_x1 <= h->linmax\x00linbits_x2 <= h->linmax\x00(x1 | x2) < 16u\x00cbits <= MAX_LENGTH\x00xbits <= MAX_LENGTH\x000 <= bigvalues && bigvalues <= 576\x00gi->region0_count >= -1\x00gi->region1_count >= -1\x00(size_t) i < dimension_of(gfc->scalefac_band.l)\x00data_bits == gi->part2_length\x00data_bits == gi->part2_3_length + gi->part2_length\x00gi->sfb_partition_table\x00data_bits == gi->part2_3_length\x00scale_bits == gi->part2_length\x00strange error flushing buffer ... \n\x00esv->header[last_ptr].write_timing + getframebits(gfc) == gfc->bs.totbit\x00Internal buffer inconsistency. flushbits <> ResvSize\x00bit reservoir error: \nl3_side->main_data_begin: %i \nResvoir size:             %i \nresv drain (post)         %i \nresv drain (pre)          %i \nheader and sideinfo:      %i \ndata bits:                %i \ntotal bits:               %i (remainder: %i) \nbitsperframe:             %i \n\x00This is a fatal error.  It has several possible causes:\x0090%%  LAME compiled with buggy version of gcc using advanced optimizations\x00 9%%  Your system is overclocked\x00 1%%  bug in LAME encoding library\x00gfc->bs.totbit % 8 == 0\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/encoder.c\x000 <= eov->bitrate_index && eov->bitrate_index < 16\x000 <= eov->mode_ext && eov->mode_ext < 4\x00gfc->sv_enc.mf_size >= (BLKSIZE + framesize - FFTOFFSET)\x00gfc->sv_enc.mf_size >= (512 + framesize - 32)\x00Blues\x00Classic Rock\x00Country\x00Dance\x00Disco\x00Funk\x00Grunge\x00Hip-Hop\x00Jazz\x00Metal\x00New Age\x00Oldies\x00Other\x00Pop\x00R&B\x00Rap\x00Reggae\x00Rock\x00Techno\x00Industrial\x00Alternative\x00Ska\x00Death Metal\x00Pranks\x00Soundtrack\x00Euro-Techno\x00Ambient\x00Trip-Hop\x00Vocal\x00Jazz+Funk\x00Fusion\x00Trance\x00Classical\x00Instrumental\x00Acid\x00House\x00Game\x00Sound Clip\x00Gospel\x00Noise\x00Alternative Rock\x00Bass\x00Soul\x00Punk\x00Space\x00Meditative\x00Instrumental Pop\x00Instrumental Rock\x00Ethnic\x00Gothic\x00Darkwave\x00Techno-Industrial\x00Electronic\x00Pop-Folk\x00Eurodance\x00Dream\x00Southern Rock\x00Comedy\x00Cult\x00Gangsta\x00Top 40\x00Christian Rap\x00Pop/Funk\x00Jungle\x00Native US\x00Cabaret\x00New Wave\x00Psychedelic\x00Rave\x00Showtunes\x00Trailer\x00Lo-Fi\x00Tribal\x00Acid Punk\x00Acid Jazz\x00Polka\x00Retro\x00Musical\x00Rock & Roll\x00Hard Rock\x00Folk\x00Folk-Rock\x00National Folk\x00Swing\x00Fast Fusion\x00Bebob\x00Latin\x00Revival\x00Celtic\x00Bluegrass\x00Avantgarde\x00Gothic Rock\x00Progressive Rock\x00Psychedelic Rock\x00Symphonic Rock\x00Slow Rock\x00Big Band\x00Chorus\x00Easy Listening\x00Acoustic\x00Humour\x00Speech\x00Chanson\x00Opera\x00Chamber Music\x00Sonata\x00Symphony\x00Booty Bass\x00Primus\x00Porn Groove\x00Satire\x00Slow Jam\x00Club\x00Tango\x00Samba\x00Folklore\x00Ballad\x00Power Ballad\x00Rhythmic Soul\x00Freestyle\x00Duet\x00Punk Rock\x00Drum Solo\x00A Cappella\x00Euro-House\x00Dance Hall\x00Goa\x00Drum & Bass\x00Club-House\x00Hardcore\x00Terror\x00Indie\x00BritPop\x00Negerpunk\x00Polsk Punk\x00Beat\x00Christian Gangsta\x00Heavy Metal\x00Black Metal\x00Crossover\x00Contemporary Christian\x00Christian Rock\x00Merengue\x00Salsa\x00Thrash Metal\x00Anime\x00JPop\x00SynthPop\x00LAME %s version %s (%s)\x00LAME version %s (%s)\x00%lu\x00PNG\x00GIF8\x00\x00image/jpeg\x00image/png\x00image/gif\x00%d\x00Warning: highpass filter disabled.  highpass frequency too small\n\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/lame.c\x00cfg->samplerate_index >=0\x00cfg->samplerate_index >= 0\x000\x00gfp->VBR_q <= 9\x00gfp->VBR_q >= 0\x00LAME %s %s (%s)\n\x00, \x00MMX\x003DNow! (ASM used)\x003DNow!\x00SSE (ASM used)\x00SSE\x00SSE2 (ASM used)\x00SSE2\x00CPU features: %s\n\x00Autoconverting from stereo to mono. Setting encoding to mono mode.\n\x00Resampling:  input %g kHz  output %g kHz\n\x00Using polyphase highpass filter, transition band: %5.0f Hz - %5.0f Hz\n\x00Using polyphase lowpass filter, transition band: %5.0f Hz - %5.0f Hz\n\x00polyphase lowpass filter disabled\n\x00Warning: many decoders cannot handle free format bitstreams\n\x00Warning: many decoders cannot handle free format bitrates >320 kbps (see documentation)\n\x00\nmisc:\n\n\x00\tscaling: %g\n\x00\tch0 (left) scaling: %g\n\x00\tch1 (right) scaling: %g\n\x00normal\x00best (outside loop)\x00best (inside loop, slow)\x00\thuffman search: %s\n\x00\texperimental Y=%d\n\x00\t...\n\x00\nstream format:\n\n\x002.5\x001\x002\x00?\x00\tMPEG-%s Layer 3\n\x00joint stereo\x00stereo\x00dual channel\x00mono\x00not set (error)\x00unknown (error)\x00\t%d channel - %s\n\x00off\x00all\x00\tpadding: %s\n\x00(default)\x00(free format)\x00\tconstant bitrate - CBR %s\n\x00\tvariable bitrate - ABR %s\n\x00\tvariable bitrate - VBR rh %s\n\x00\tvariable bitrate - VBR mt %s\n\x00\tvariable bitrate - VBR mtrh %s\n\x00\t ?? oops, some new one ?? \n\x00\tusing LAME Tag\n\x00\npsychoacoustic:\n\n\x00allowed\x00channel coupled\x00dispensed\x00forced\x00\tusing short blocks: %s\n\x00\tsubblock gain: %d\n\x00\tadjust masking: %g dB\n\x00\tadjust masking short: %g dB\n\x00\tquantization comparison: %d\n\x00\t ^ comparison short blocks: %d\n\x00\tnoise shaping: %d\n\x00\t ^ amplification: %d\n\x00\t ^ stopping: %d\n\x00using\x00the only masking for short blocks\x00the only masking\x00not used\x00\tATH: %s\n\x00\t ^ type: %d\n\x00\t ^ shape: %g%s\n\x00 (only for type 4)\x00\t ^ level adjustement: %g dB\n\x00\t ^ adjust type: %d\n\x00\t ^ adjust sensitivity power: %f\n\x00\texperimental psy tunings by Naoki Shibata\n\x00\t   adjust masking bass=%g dB, alto=%g dB, treble=%g dB, sfb21=%g dB\n\x00yes\x00no\x00\tusing temporal masking effect: %s\n\x00\tinterchannel masking ratio: %g\n\x00\n\x00Error: can't allocate in_buffer buffer\n\x00MFSIZE >= mf_needed\x00esv->mf_size <= MFSIZE\x00nsamples == 0\x00Error: could not update LAME tag.\n\x00Error: could not update LAME tag, file not seekable.\n\x00Error: could not update LAME tag, file not readable.\n\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/psymodel.c\x00i < (int)dimension_of(tab)\x00fabs(ma_max_i1 - _ma_max_i1) <= FLT_EPSILON\x00fabs(ma_max_i2 - _ma_max_i2) <= FLT_EPSILON\x00fabs(ma_max_m - _ma_max_m ) <= FLT_EPSILON\x00eb[b] >= 0\x00thr[b] >= 0\x00sb < dimension_of(regcoef_s)\x00x > 0\x00sb < dimension_of(regcoef_l)\x00el >= 0\x00l->rnumlines[b] >= 0\x00ebb >= 0\x00max[b] >= 0\x00avg[b] >= 0\x00a >= 0\x00(gdl->numlines[b] + gdl->numlines[b + 1] - 1) > 0\x00(gdl->numlines[b - 1] + gdl->numlines[b] + gdl->numlines[b + 1] - 1) > 0\x00b > 0\x00b == gdl->npart - 1\x00(gdl->numlines[b - 1] + gdl->numlines[b] - 1) > 0\x00b == (gdl->npart - 1)\x00psv->last_en_subshort[chn][i + 4] > 0\x00en_subshort[i + 3 - 2] > 0\x00p > 0\x00(gds->numlines[b] + gds->numlines[b + 1] - 1) > 0\x00b + 1 < gds->npart\x00(gds->numlines[b - 1] + gds->numlines[b] + gds->numlines[b + 1] - 1) > 0\x00b == gds->npart - 1\x00(gds->numlines[b - 1] + gds->numlines[b] - 1) > 0\x00b == (gds->npart - 1)\x00n > 0\x00b == gds->npart\x00j == 129\x00psv->blocktype_old[chn] != START_TYPE\x00thmMS > 0.f\x00j < HBLKSIZE\x00i < CBANDS\x00gd->l.npart < CBANDS\x00gd->s.npart < CBANDS\x00gd->l.bo[SBMAX_l - 1] <= gd->l.npart\x00gd->s.bo[SBMAX_s - 1] <= gd->s.npart\x00j == 513\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/quantize.c\x00xrpow != NULL\x000 <= upper && upper <= 575\x00CurrentStep\x00cod_info->global_gain >= 0\x00cod_info->global_gain < 256\x00s >= 0\x000 <= gain && gain < Q_MAX\x00(cod_info->global_gain + cod_info->scalefac_scale) <= 255\x00Max_bits <= MAX_BITS_PER_CHANNEL\x00this_bits >= min_bits\x00this_bits <= max_bits\x00min_bits <= max_bits\x00cod_info->part2_3_length <= Max_bits\x00used_bits <= fullframebits\x00INTERNAL ERROR IN VBR NEW CODE, please send bug report\n\x00eov->bitrate_index <= cfg->vbr_max_bitrate_index\x00cod_info->part2_3_length <= MAX_BITS_PER_CHANNEL\x00cod_info->part2_3_length <= targ_bits[ch]\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/quantize_pvt.c\x00sum <= MAX_BITS_PER_GRANULE\x00max_bits <= MAX_BITS_PER_GRANULE\x00targ_bits[0] + targ_bits[1] <= MAX_BITS_PER_GRANULE\x00targ_bits[0] <= MAX_BITS_PER_CHANNEL\x00targ_bits[1] <= MAX_BITS_PER_CHANNEL\x000 <= (s+Q_MAX2) && s < Q_MAX\x00scalefac[sfb] >= 0\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/reservoir.c\x000 == esv->ResvMax % 8\x00esv->ResvMax >= 0\x000 == over_bits % 8\x00over_bits >= 0\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/set_get.c\x000 <= gfp->analysis && 1 >= gfp->analysis\x000 <= gfp->write_lame_tag && 1 >= gfp->write_lame_tag\x000 <= gfp->decode_only && 1 >= gfp->decode_only\x00gfp->mode < MAX_INDICATOR\x000 <= gfp->force_ms && 1 >= gfp->force_ms\x000 <= gfp->free_format && 1 >= gfp->free_format\x000 <= gfp->findReplayGain && 1 >= gfp->findReplayGain\x000 <= gfp->decode_on_the_fly && 1 >= gfp->decode_on_the_fly\x000 <= gfp->copyright && 1 >= gfp->copyright\x000 <= gfp->original && 1 >= gfp->original\x000 <= gfp->error_protection && 1 >= gfp->error_protection\x000 <= gfp->extension && 1 >= gfp->extension\x000 <= gfp->disable_reservoir && 1 >= gfp->disable_reservoir\x00gfp->VBR < vbr_max_indicator\x000 <= gfp->VBR_q && 10 > gfp->VBR_q\x000 <= gfp->VBR_hard_min && 1 >= gfp->VBR_hard_min\x000 <= gfp->useTemporal && 1 >= gfp->useTemporal\x00(0 <= gfp->interChRatio && gfp->interChRatio <= 1.0) || EQ(gfp->interChRatio, -1)\x000 <= gfp->substep_shaping && gfp->substep_shaping <= 7\x000 <= gfp->emphasis && gfp->emphasis < 4\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/takehiro.c\x00l > 0\x00l % 2 == 0\x00cod_info->width[sfb] >= 0\x00i <= 576\x00a1 + a2 + 2 < SBPSY_l\x00a1 >= 0\x00a2 >= 0\x000 <= gi->global_gain && gi->global_gain < Q_MAX\x00width >= 0\x00all_scalefactors_not_negative(scalefac, cod_info->sfbmax)\x00intensity stereo not implemented yet\n\x00cod_info->sfb_partition_table\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/util.c\x00fabs(offset) <= .501\x00j2 < len\x00j2 + BLACKSIZE >= 0\x00j == *num_used\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/vbrquantize.c\x00x[0] <= IXMAX_VAL && x[1] <= IXMAX_VAL && x[2] <= IXMAX_VAL && x[3] <= IXMAX_VAL\x00that->cod_info->max_nonzero_coeff >= 0\x00cod_info->max_nonzero_coeff >= 0\x00cod_info->max_nonzero_coeff < 576\x00(cod_info->global_gain - s) >= 0\x00vbrsf[sfb] >= vbrsfmin[sfb]\x00checkScalefactor(cod_info, vbrsfmin)\x00INTERNAL ERROR IN VBR NEW CODE (986), please send bug report\n\x00gain >= 0\x00sfwork[i] >= 0\x00sfwork[i] <= 255\x00m >= 0\x00m <= 255\x00use_nbits_ch[gr][ch] <= max_nbits_ch[gr][ch]\x00INTERNAL ERROR IN VBR NEW CODE (1313), please send bug report\nmaxbits=%d usedbits=%d\n\x003.100\x00LAME3.100 \x001.0\x00http://lame.sf.net\x0032bits\x0064bits\x00"
+var __ccgo_ts1 = "gfc->VBR_seek_table.bag\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/VbrTag.c\x00Error: can't allocate VbrFrames buffer\n\x00ID3\x008 <= bit_rate && bit_rate <= 640\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/bitstream.c\x00j < MAX_LENGTH - 2\x00bs->buf_byte_idx < BUFFER_SIZE\x00esv->header[esv->w_ptr].write_timing >= bs->totbit\x00j < MAX_LENGTH\x00bs->buf_bit_idx < MAX_LENGTH\x00remainingBits >= 0\x00remainingBits == 0\x00l3_side->main_data_begin >= 0\x000 <= gi->region0_count && gi->region0_count < 16\x000 <= gi->region1_count && gi->region1_count < 8\x00esv->header[old].ptr == cfg->sideinfo_len * 8\x00Error: MAX_HEADER_BUF too small in bitstream.c \n\x00gi->count1table_select < 2\x00v <= 1\x00tableindex < 32u\x00gi->l3_enc[i] >= 0\x00gi->l3_enc[i+1] >= 0\x00linbits_x1 <= h->linmax\x00linbits_x2 <= h->linmax\x00(x1 | x2) < 16u\x00cbits <= MAX_LENGTH\x00xbits <= MAX_LENGTH\x000 <= bigvalues && bigvalues <= 576\x00gi->region0_count >= -1\x00gi->region1_count >= -1\x00(size_t) i < dimension_of(gfc->scalefac_band.l)\x00data_bits == gi->part2_length\x00data_bits == gi->part2_3_length + gi->part2_length\x00gi->sfb_partition_table\x00data_bits == gi->part2_3_length\x00scale_bits == gi->part2_length\x00strange error flushing buffer ... \n\x00esv->header[last_ptr].write_timing + getframebits(gfc) == gfc->bs.totbit\x00Internal buffer inconsistency. flushbits <> ResvSize\x00bit reservoir error: \nl3_side->main_data_begin: %i \nResvoir size:             %i \nresv drain (post)         %i \nresv drain (pre)          %i \nheader and sideinfo:      %i \ndata bits:                %i \ntotal bits:               %i (remainder: %i) \nbitsperframe:             %i \n\x00This is a fatal error.  It has several possible causes:\x0090%%  LAME compiled with buggy version of gcc using advanced optimizations\x00 9%%  Your system is overclocked\x00 1%%  bug in LAME encoding library\x00gfc->bs.totbit % 8 == 0\x000 <= eov->bitrate_index && eov->bitrate_index < 16\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/encoder.c\x000 <= eov->mode_ext && eov->mode_ext < 4\x00gfc->sv_enc.mf_size >= (BLKSIZE + framesize - FFTOFFSET)\x00gfc->sv_enc.mf_size >= (512 + framesize - 32)\x00Blues\x00Classic Rock\x00Country\x00Dance\x00Disco\x00Funk\x00Grunge\x00Hip-Hop\x00Jazz\x00Metal\x00New Age\x00Oldies\x00Other\x00Pop\x00R&B\x00Rap\x00Reggae\x00Rock\x00Techno\x00Industrial\x00Alternative\x00Ska\x00Death Metal\x00Pranks\x00Soundtrack\x00Euro-Techno\x00Ambient\x00Trip-Hop\x00Vocal\x00Jazz+Funk\x00Fusion\x00Trance\x00Classical\x00Instrumental\x00Acid\x00House\x00Game\x00Sound Clip\x00Gospel\x00Noise\x00Alternative Rock\x00Bass\x00Soul\x00Punk\x00Space\x00Meditative\x00Instrumental Pop\x00Instrumental Rock\x00Ethnic\x00Gothic\x00Darkwave\x00Techno-Industrial\x00Electronic\x00Pop-Folk\x00Eurodance\x00Dream\x00Southern Rock\x00Comedy\x00Cult\x00Gangsta\x00Top 40\x00Christian Rap\x00Pop/Funk\x00Jungle\x00Native US\x00Cabaret\x00New Wave\x00Psychedelic\x00Rave\x00Showtunes\x00Trailer\x00Lo-Fi\x00Tribal\x00Acid Punk\x00Acid Jazz\x00Polka\x00Retro\x00Musical\x00Rock & Roll\x00Hard Rock\x00Folk\x00Folk-Rock\x00National Folk\x00Swing\x00Fast Fusion\x00Bebob\x00Latin\x00Revival\x00Celtic\x00Bluegrass\x00Avantgarde\x00Gothic Rock\x00Progressive Rock\x00Psychedelic Rock\x00Symphonic Rock\x00Slow Rock\x00Big Band\x00Chorus\x00Easy Listening\x00Acoustic\x00Humour\x00Speech\x00Chanson\x00Opera\x00Chamber Music\x00Sonata\x00Symphony\x00Booty Bass\x00Primus\x00Porn Groove\x00Satire\x00Slow Jam\x00Club\x00Tango\x00Samba\x00Folklore\x00Ballad\x00Power Ballad\x00Rhythmic Soul\x00Freestyle\x00Duet\x00Punk Rock\x00Drum Solo\x00A Cappella\x00Euro-House\x00Dance Hall\x00Goa\x00Drum & Bass\x00Club-House\x00Hardcore\x00Terror\x00Indie\x00BritPop\x00Negerpunk\x00Polsk Punk\x00Beat\x00Christian Gangsta\x00Heavy Metal\x00Black Metal\x00Crossover\x00Contemporary Christian\x00Christian Rock\x00Merengue\x00Salsa\x00Thrash Metal\x00Anime\x00JPop\x00SynthPop\x00LAME %s version %s (%s)\x00LAME version %s (%s)\x00%lu\x00sizeof(*src) == sizeof(**dst)\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/id3tag.c\x00sizeof(*src) >= 2\x00PNG\x00GIF8\x00\x00image/jpeg\x00image/png\x00image/gif\x00%d\x00Warning: highpass filter disabled.  highpass frequency too small\n\x00cfg->samplerate_index >=0\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/lame.c\x00cfg->samplerate_index >= 0\x000\x00gfp->VBR_q <= 9\x00gfp->VBR_q >= 0\x00LAME %s %s (%s)\n\x00, \x00MMX\x003DNow! (ASM used)\x003DNow!\x00SSE (ASM used)\x00SSE\x00SSE2 (ASM used)\x00SSE2\x00CPU features: %s\n\x00Autoconverting from stereo to mono. Setting encoding to mono mode.\n\x00Resampling:  input %g kHz  output %g kHz\n\x00Using polyphase highpass filter, transition band: %5.0f Hz - %5.0f Hz\n\x00Using polyphase lowpass filter, transition band: %5.0f Hz - %5.0f Hz\n\x00polyphase lowpass filter disabled\n\x00Warning: many decoders cannot handle free format bitstreams\n\x00Warning: many decoders cannot handle free format bitrates >320 kbps (see documentation)\n\x00\nmisc:\n\n\x00\tscaling: %g\n\x00\tch0 (left) scaling: %g\n\x00\tch1 (right) scaling: %g\n\x00normal\x00best (outside loop)\x00best (inside loop, slow)\x00\thuffman search: %s\n\x00\texperimental Y=%d\n\x00\t...\n\x00\nstream format:\n\n\x002.5\x001\x002\x00?\x00\tMPEG-%s Layer 3\n\x00joint stereo\x00stereo\x00dual channel\x00mono\x00not set (error)\x00unknown (error)\x00\t%d channel - %s\n\x00off\x00all\x00\tpadding: %s\n\x00(default)\x00(free format)\x00\tconstant bitrate - CBR %s\n\x00\tvariable bitrate - ABR %s\n\x00\tvariable bitrate - VBR rh %s\n\x00\tvariable bitrate - VBR mt %s\n\x00\tvariable bitrate - VBR mtrh %s\n\x00\t ?? oops, some new one ?? \n\x00\tusing LAME Tag\n\x00\npsychoacoustic:\n\n\x00allowed\x00channel coupled\x00dispensed\x00forced\x00\tusing short blocks: %s\n\x00\tsubblock gain: %d\n\x00\tadjust masking: %g dB\n\x00\tadjust masking short: %g dB\n\x00\tquantization comparison: %d\n\x00\t ^ comparison short blocks: %d\n\x00\tnoise shaping: %d\n\x00\t ^ amplification: %d\n\x00\t ^ stopping: %d\n\x00using\x00the only masking for short blocks\x00the only masking\x00not used\x00\tATH: %s\n\x00\t ^ type: %d\n\x00\t ^ shape: %g%s\n\x00 (only for type 4)\x00\t ^ level adjustement: %g dB\n\x00\t ^ adjust type: %d\n\x00\t ^ adjust sensitivity power: %f\n\x00\texperimental psy tunings by Naoki Shibata\n\x00\t   adjust masking bass=%g dB, alto=%g dB, treble=%g dB, sfb21=%g dB\n\x00yes\x00no\x00\tusing temporal masking effect: %s\n\x00\tinterchannel masking ratio: %g\n\x00\n\x00Error: can't allocate in_buffer buffer\n\x00MFSIZE >= mf_needed\x00esv->mf_size <= MFSIZE\x00nsamples == 0\x00Error: could not update LAME tag.\n\x00Error: could not update LAME tag, file not seekable.\n\x00Error: could not update LAME tag, file not readable.\n\x00i < (int)dimension_of(tab)\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/psymodel.c\x00fabs(ma_max_i1 - _ma_max_i1) <= FLT_EPSILON\x00fabs(ma_max_i2 - _ma_max_i2) <= FLT_EPSILON\x00fabs(ma_max_m - _ma_max_m ) <= FLT_EPSILON\x00eb[b] >= 0\x00thr[b] >= 0\x00sb < dimension_of(regcoef_s)\x00x > 0\x00sb < dimension_of(regcoef_l)\x00el >= 0\x00l->rnumlines[b] >= 0\x00ebb >= 0\x00max[b] >= 0\x00avg[b] >= 0\x00a >= 0\x00(gdl->numlines[b] + gdl->numlines[b + 1] - 1) > 0\x00(gdl->numlines[b - 1] + gdl->numlines[b] + gdl->numlines[b + 1] - 1) > 0\x00b > 0\x00b == gdl->npart - 1\x00(gdl->numlines[b - 1] + gdl->numlines[b] - 1) > 0\x00b == (gdl->npart - 1)\x00dimension_of(fircoef) == ((NSFIRLEN - 1) / 2)\x00psv->last_en_subshort[chn][i + 4] > 0\x00en_subshort[i + 3 - 2] > 0\x00p > 0\x00(gds->numlines[b] + gds->numlines[b + 1] - 1) > 0\x00b + 1 < gds->npart\x00(gds->numlines[b - 1] + gds->numlines[b] + gds->numlines[b + 1] - 1) > 0\x00b == gds->npart - 1\x00(gds->numlines[b - 1] + gds->numlines[b] - 1) > 0\x00b == (gds->npart - 1)\x00n > 0\x00b == gds->npart\x00j == 129\x00psv->blocktype_old[chn] != START_TYPE\x00thmMS > 0.f\x00j < HBLKSIZE\x00i < CBANDS\x00gd->l.npart < CBANDS\x00gd->s.npart < CBANDS\x00gd->l.bo[SBMAX_l - 1] <= gd->l.npart\x00gd->s.bo[SBMAX_s - 1] <= gd->s.npart\x00j == 513\x00xrpow != NULL\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/quantize.c\x000 <= upper && upper <= 575\x00CurrentStep\x00cod_info->global_gain >= 0\x00cod_info->global_gain < 256\x00s >= 0\x000 <= gain && gain < Q_MAX\x000 <= 202 && 202 < Q_MAX\x00(cod_info->global_gain + cod_info->scalefac_scale) <= 255\x00Max_bits <= MAX_BITS_PER_CHANNEL\x00this_bits >= min_bits\x00this_bits <= max_bits\x00min_bits <= max_bits\x00cod_info->part2_3_length <= Max_bits\x00used_bits <= fullframebits\x00INTERNAL ERROR IN VBR NEW CODE, please send bug report\n\x00eov->bitrate_index <= cfg->vbr_max_bitrate_index\x00cod_info->part2_3_length <= MAX_BITS_PER_CHANNEL\x00cod_info->part2_3_length <= targ_bits[ch]\x00sum <= MAX_BITS_PER_GRANULE\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/quantize_pvt.c\x00max_bits <= MAX_BITS_PER_GRANULE\x00targ_bits[0] + targ_bits[1] <= MAX_BITS_PER_GRANULE\x00targ_bits[0] <= MAX_BITS_PER_CHANNEL\x00targ_bits[1] <= MAX_BITS_PER_CHANNEL\x000 <= (s+Q_MAX2) && s < Q_MAX\x00scalefac[sfb] >= 0\x000 == esv->ResvMax % 8\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/reservoir.c\x00esv->ResvMax >= 0\x000 == over_bits % 8\x00over_bits >= 0\x000 <= gfp->analysis && 1 >= gfp->analysis\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/set_get.c\x000 <= gfp->write_lame_tag && 1 >= gfp->write_lame_tag\x000 <= gfp->decode_only && 1 >= gfp->decode_only\x00gfp->mode < MAX_INDICATOR\x000 <= gfp->force_ms && 1 >= gfp->force_ms\x000 <= gfp->free_format && 1 >= gfp->free_format\x000 <= gfp->findReplayGain && 1 >= gfp->findReplayGain\x000 <= gfp->decode_on_the_fly && 1 >= gfp->decode_on_the_fly\x000 <= gfp->copyright && 1 >= gfp->copyright\x000 <= gfp->original && 1 >= gfp->original\x000 <= gfp->error_protection && 1 >= gfp->error_protection\x000 <= gfp->extension && 1 >= gfp->extension\x000 <= gfp->disable_reservoir && 1 >= gfp->disable_reservoir\x00gfp->VBR < vbr_max_indicator\x000 <= gfp->VBR_q && 10 > gfp->VBR_q\x000 <= gfp->VBR_hard_min && 1 >= gfp->VBR_hard_min\x000 <= gfp->useTemporal && 1 >= gfp->useTemporal\x00(0 <= gfp->interChRatio && gfp->interChRatio <= 1.0) || EQ(gfp->interChRatio, -1)\x000 <= gfp->substep_shaping && gfp->substep_shaping <= 7\x000 <= gfp->emphasis && gfp->emphasis < 4\x00l > 0\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/takehiro.c\x00l % 2 == 0\x00cod_info->width[sfb] >= 0\x00i <= 576\x00a1 + a2 + 2 < SBPSY_l\x00a1 >= 0\x00a2 >= 0\x000 <= gi->global_gain && gi->global_gain < Q_MAX\x00width >= 0\x00all_scalefactors_not_negative(scalefac, cod_info->sfbmax)\x00intensity stereo not implemented yet\n\x00cod_info->sfb_partition_table\x00fabs(offset) <= .501\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/util.c\x00j2 < len\x00j2 + BLACKSIZE >= 0\x00j == *num_used\x00x[0] <= IXMAX_VAL && x[1] <= IXMAX_VAL && x[2] <= IXMAX_VAL && x[3] <= IXMAX_VAL\x00/Users/svk/Documents/Projects.nosync/svk-wav2mp3/build/lame-3.100/libmp3lame/vbrquantize.c\x00that->cod_info->max_nonzero_coeff >= 0\x00cod_info->max_nonzero_coeff >= 0\x00cod_info->max_nonzero_coeff < 576\x00(cod_info->global_gain - s) >= 0\x00vbrsf[sfb] >= vbrsfmin[sfb]\x00checkScalefactor(cod_info, vbrsfmin)\x00INTERNAL ERROR IN VBR NEW CODE (986), please send bug report\n\x00gain >= 0\x00sfwork[i] >= 0\x00sfwork[i] <= 255\x00m >= 0\x00m <= 255\x00use_nbits_ch[gr][ch] <= max_nbits_ch[gr][ch]\x00INTERNAL ERROR IN VBR NEW CODE (1313), please send bug report\nmaxbits=%d usedbits=%d\n\x003.100\x00LAME3.100 \x001.0\x00http://lame.sf.net\x0032bits\x0064bits\x00"

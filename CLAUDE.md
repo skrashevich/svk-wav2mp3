@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Pure-Go Build
 
-No system dependencies required. LAME 3.100 is transpiled from C to Go using `modernc.org/ccgo` and lives in `internal/lame/`. The build uses `CGO_ENABLED=0` (no C compiler needed). The transpiled code uses `modernc.org/libc` as its runtime.
+No system dependencies required. LAME 3.100 is transpiled from C to Go using `modernc.org/ccgo` and lives in `lame/`. The build uses `CGO_ENABLED=0` (no C compiler needed). The transpiled code uses `modernc.org/libc` as its runtime. The `lame` package is a public, reusable library importable as `github.com/svk/wav2mp3/lame`.
 
 ## Commands
 
@@ -34,7 +34,7 @@ WAV file → WAVReader → normalizePCM → MP3Writer (LAME) → MP3 file → id
 
 ### Package responsibilities
 
-- **`internal/lame`** — pure-Go LAME 3.100 encoder, transpiled from C via ccgo. Provides `Encoder` with `Write`/`Flush`/`Close` and VBR/CBR configuration.
+- **`lame`** — pure-Go LAME 3.100 encoder, transpiled from C via ccgo. Public library (`github.com/svk/wav2mp3/lame`). Provides `Encoder` with `Write`/`Flush`/`Close` and VBR/CBR configuration.
 - **`internal/config`** — `ConvertOptions` and `ID3Tags` structs. No logic.
 - **`internal/validate`** — validates `ConvertOptions` before conversion starts (file existence, extension, bitrate/quality ranges).
 - **`internal/converter`** — the conversion core:
@@ -51,9 +51,9 @@ LAME ID3 tag writing is disabled (`SetWriteID3TagAutomatic(false)`). Tags are wr
 ### Cleanup on error
 `converter.Convert` uses a `defer` that calls `os.Remove(outputPath)` unless `success = true` is reached. This prevents partial MP3 files on error or context cancellation.
 
-## internal/lame package (pure-Go LAME)
+## lame package (pure-Go LAME)
 - Transpiled from LAME 3.100 C source using `modernc.org/ccgo` v4
-- Platform-specific generated files: `lame_darwin_arm64.go`, `lame_linux_arm64.go`
+- Platform-specific generated files: `lame_darwin.go` (darwin/arm64+amd64), `lame_linux.go` (linux/arm64+amd64)
 - `encoder.go` provides the Go wrapper API: `NewEncoder`, `SetBrate`, `SetVBR`, `Write`, `Flush`, `Close`
 - `SetBrate(kbps int)` — CBR bitrate (not `SetBitrate`)
 - `initParams` is called automatically on first `Write`

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/svk/wav2mp3/internal/lame"
+	"github.com/svk/wav2mp3/lame"
 )
 
 // MP3Writer manages LAME encoder and MP3 data writing to file.

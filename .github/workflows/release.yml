@@ -10,85 +10,10 @@ permissions:
 
 env:
   GO_VERSION: '1.26'
-  LAME_C_FILES: >-
-    VbrTag.c bitstream.c encoder.c fft.c gain_analysis.c id3tag.c lame.c
-    mpglib_interface.c newmdct.c presets.c psymodel.c quantize.c
-    quantize_pvt.c reservoir.c set_get.c tables.c takehiro.c util.c
-    vbrquantize.c version.c
-  CCGO_FLAGS: >-
-    --package-name lame
-    -DHAVE_CONFIG_H
-    -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H
-    -ignore-asm-errors -ignore-unsupported-alignment
 
 jobs:
-  generate-amd64:
-    name: Generate amd64 transpiled files
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-go@v5
-        with:
-          go-version: ${{ env.GO_VERSION }}
-
-      - name: Install ccgo
-        run: go install modernc.org/ccgo/v4@latest
-
-      - name: Download and configure LAME
-        run: |
-          cd /tmp
-          wget -q https://sourceforge.net/projects/lame/files/lame/3.100/lame-3.100.tar.gz
-          tar xzf lame-3.100.tar.gz
-          cd lame-3.100
-          ./configure --disable-shared --disable-frontend --disable-decoder \
-            --disable-gtktest --enable-static --disable-rpath --disable-cpml \
-            --disable-nasm \
-            CFLAGS="-O2 -fno-strict-aliasing"
-          sed -i 's/#define HAVE_XMMINTRIN_H 1/\/* #undef HAVE_XMMINTRIN_H *\//' config.h
-
-      - name: Generate linux/amd64 (native)
-        run: |
-          LAME=/tmp/lame-3.100
-          SRCS=$(echo $LAME_C_FILES | tr ' ' '\n' | sed "s|^|${LAME}/libmp3lame/|" | tr '\n' ' ')
-          ccgo $CCGO_FLAGS \
-            -I${LAME}/include -I${LAME}/libmp3lame -I${LAME} \
-            -o internal/lame/lame_linux_amd64.go \
-            $SRCS
-
-      - name: Derive darwin/amd64 from darwin/arm64
-        run: |
-          # Both darwin/arm64 and darwin/amd64 are 64-bit little-endian with
-          # identical OS constants. The transpiled code is pure Go (no asm).
-          # Adapt the build tag and header comment.
-          sed \
-            -e 's|//go:build darwin && arm64|//go:build darwin \&\& amd64|' \
-            -e 's|darwin/arm64|darwin/amd64|g' \
-            internal/lame/lame_darwin_arm64.go > internal/lame/lame_darwin_amd64.go
-
-          echo "darwin/amd64 derived from darwin/arm64:"
-          head -5 internal/lame/lame_darwin_amd64.go
-          wc -l internal/lame/lame_darwin_amd64.go
-
-      - name: Smoke test — verify all 4 targets compile
-        run: |
-          for pair in linux/amd64 linux/arm64 darwin/amd64 darwin/arm64; do
-            GOOS=${pair%/*} GOARCH=${pair#*/} CGO_ENABLED=0 \
-              go build ./internal/lame/
-            echo "OK: $pair"
-          done
-
-      - name: Upload generated files
-        uses: actions/upload-artifact@v4
-        with:
-          name: lame-amd64
-          path: |
-            internal/lame/lame_linux_amd64.go
-            internal/lame/lame_darwin_amd64.go
-
   build:
     name: Build ${{ matrix.goos }}/${{ matrix.goarch }}
-    needs: generate-amd64
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -107,12 +32,6 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ env.GO_VERSION }}
-
-      - name: Download amd64 transpiled files
-        uses: actions/download-artifact@v4
-        with:
-          name: lame-amd64
-          path: internal/lame
 
       - name: Build binary
         env:

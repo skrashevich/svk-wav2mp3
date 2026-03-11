@@ -1,30 +1,25 @@
 # wav2mp3
 
-High-quality WAV → MP3 converter. Uses [libmp3lame](https://lame.sourceforge.io/) via CGo with VBR support, ID3v2 tags, and album cover embedding.
+High-quality WAV → MP3 converter. Pure Go, no CGO, no system dependencies. LAME 3.100 is [transpiled from C to Go](lame/) and linked statically.
 
-## Requirements
-
-- macOS (Apple Silicon or Intel)
-- Go 1.21+
-- libmp3lame:
-
-```bash
-brew install lame
-```
+Supports VBR/CBR encoding, ID3v2 tags, and album cover embedding.
 
 ## Installation
 
 ```bash
-git clone ...
-cd svk-wav2mp3
-make install        # builds and copies to /usr/local/bin/wav2mp3
+go install github.com/svk/wav2mp3/cmd/wav2mp3@latest
 ```
 
-Or just build:
+Or build from source:
 
 ```bash
 make build          # ./bin/wav2mp3
+make install        # copies to /usr/local/bin/wav2mp3
 ```
+
+### Platforms
+
+linux/amd64, linux/arm64, darwin/amd64, darwin/arm64
 
 ## Usage
 
@@ -101,6 +96,32 @@ Input:  song.wav (44100 Hz, Stereo, 16-bit, 3m 42s, 39.1 MB)
 Output: song.mp3 (VBR V2, elapsed 12.3s, 8.4 MB, compression 4.65x)
 Tags:   Title="Song Title", Artist="Artist Name", Cover=cover.jpg
 ```
+
+## Using the LAME encoder as a library
+
+The [`lame`](lame/) package is a standalone pure-Go MP3 encoder that can be used in any Go project:
+
+```bash
+go get github.com/svk/wav2mp3/lame
+```
+
+```go
+import "github.com/svk/wav2mp3/lame"
+
+f, _ := os.Create("output.mp3")
+enc := lame.NewEncoder(f)
+defer enc.Close()
+
+enc.SetInSamplerate(44100)
+enc.SetNumChannels(2)
+enc.SetVBR(lame.VBRDefault)
+enc.SetVBRQuality(2)
+
+enc.Write(pcmBytes) // int16 little-endian interleaved
+enc.Flush()
+```
+
+No CGO or system libraries required. See [`lame/README.md`](lame/README.md) for the full API reference.
 
 ## Development
 
