@@ -15,6 +15,11 @@ env:
     mpglib_interface.c newmdct.c presets.c psymodel.c quantize.c
     quantize_pvt.c reservoir.c set_get.c tables.c takehiro.c util.c
     vbrquantize.c version.c
+  CCGO_FLAGS: >-
+    --package-name lame
+    -DHAVE_CONFIG_H
+    -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H
+    -ignore-asm-errors -ignore-unsupported-alignment
 
 jobs:
   generate-amd64:
@@ -27,12 +32,8 @@ jobs:
         with:
           go-version: ${{ env.GO_VERSION }}
 
-      - name: Install ccgo v4 and v3
-        run: |
-          go install modernc.org/ccgo/v4@latest
-          go install modernc.org/ccgo/v3@latest
-          # v4 installs as "ccgo", v3 as "ccgo3" — check both
-          ls -la $(go env GOPATH)/bin/ccgo*
+      - name: Install ccgo
+        run: go install modernc.org/ccgo/v4@latest
 
       - name: Download and configure LAME
         run: |
@@ -44,37 +45,45 @@ jobs:
             --disable-gtktest --enable-static --disable-rpath --disable-cpml \
             --disable-nasm \
             CFLAGS="-O2 -fno-strict-aliasing"
-          # Disable SSE intrinsics that ccgo cannot transpile
           sed -i 's/#define HAVE_XMMINTRIN_H 1/\/* #undef HAVE_XMMINTRIN_H *\//' config.h
 
-      - name: Generate linux/amd64 (ccgo v4, native)
+      - name: Generate linux/amd64 (native)
         run: |
           LAME=/tmp/lame-3.100
           SRCS=$(echo $LAME_C_FILES | tr ' ' '\n' | sed "s|^|${LAME}/libmp3lame/|" | tr '\n' ' ')
-          ccgo --package-name lame \
-            -DHAVE_CONFIG_H \
-            -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H \
-            -ignore-asm-errors -ignore-unsupported-alignment \
+          ccgo $CCGO_FLAGS \
             -I${LAME}/include -I${LAME}/libmp3lame -I${LAME} \
             -o internal/lame/lame_linux_amd64.go \
             $SRCS
 
-      - name: Generate darwin/amd64 (ccgo v3, cross-OS)
+      - name: Generate darwin/amd64 (cross-OS, tolerate _Float128 warnings)
         run: |
           LAME=/tmp/lame-3.100
           SRCS=$(echo $LAME_C_FILES | tr ' ' '\n' | sed "s|^|${LAME}/libmp3lame/|" | tr '\n' ' ')
-          CCGO3=$(go env GOPATH)/bin/ccgo
-          # v3 uses different env vars for cross-compilation
-          # Try v3 first; if binary name conflicts, find the right one
-          ls $(go env GOPATH)/bin/ccgo*
+          # ccgo v4 exits non-zero due to _Float128 warnings in libc headers
+          # but may still produce valid output for LAME (which doesn't use _Float128)
           TARGET_GOOS=darwin TARGET_GOARCH=amd64 \
-          $CCGO3 --package-name lame \
-            -DHAVE_CONFIG_H \
-            -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H \
-            -ignore-asm-errors -ignore-unsupported-alignment \
+          ccgo $CCGO_FLAGS \
             -I${LAME}/include -I${LAME}/libmp3lame -I${LAME} \
             -o internal/lame/lame_darwin_amd64.go \
-            $SRCS
+            $SRCS || true
+
+          # Verify the file was actually generated and looks valid
+          if [ ! -f internal/lame/lame_darwin_amd64.go ]; then
+            echo "ERROR: darwin/amd64 file was not generated"
+            exit 1
+          fi
+          if ! head -5 internal/lame/lame_darwin_amd64.go | grep -q 'darwin && amd64'; then
+            echo "ERROR: generated file does not have correct build tag"
+            cat internal/lame/lame_darwin_amd64.go | head -10
+            exit 1
+          fi
+          LINES=$(wc -l < internal/lame/lame_darwin_amd64.go)
+          echo "Generated darwin/amd64: ${LINES} lines"
+          if [ "$LINES" -lt 10000 ]; then
+            echo "ERROR: generated file is suspiciously small (${LINES} lines)"
+            exit 1
+          fi
 
       - name: Verify generated files
         run: |
