@@ -61,10 +61,7 @@ func NewWAVReader(path string) (*WAVReader, error) {
 		FileSizeB:   fi.Size(),
 	}
 
-	numChans := int(dec.NumChans)
-	if numChans < 1 {
-		numChans = 1
-	}
+	numChans := max(int(dec.NumChans), 1)
 
 	// Buffer for chunkSamples frames * numChannels samples
 	pcmBuf := &audio.IntBuffer{

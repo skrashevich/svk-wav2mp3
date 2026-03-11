@@ -57,10 +57,7 @@ func TestMP3_SyncWord(t *testing.T) {
 	// Scan for a valid MP3 sync word: 0xFF followed by 0xE0..0xFF (11 sync bits set).
 	// MPEG-1 Layer 3 frames: 0xFF 0xFB (CBR), 0xFF 0xFA, 0xFF 0xF3, 0xFF 0xF2 are common.
 	found := false
-	limit := len(data) - 1
-	if limit > 4096 {
-		limit = 4096
-	}
+	limit := min(len(data)-1, 4096)
 	for i := 0; i < limit; i++ {
 		if data[i] == 0xFF && (data[i+1]&0xE0) == 0xE0 {
 			found = true
@@ -146,7 +143,6 @@ func TestMP3_DifferentSampleRates(t *testing.T) {
 	rates := []int{22050, 44100, 48000}
 
 	for _, rate := range rates {
-		rate := rate
 		t.Run("sampleRate="+itoa(rate), func(t *testing.T) {
 			var buf bytes.Buffer
 			enc := NewEncoder(&buf)
@@ -210,10 +206,7 @@ func TestMP3_MultipleWrites(t *testing.T) {
 	encChunk := setupStereoEncoder(t, &chunkBuf, sampleRate, bitrate)
 	const chunkSize = 4096
 	for offset := 0; offset < len(pcm); offset += chunkSize {
-		end := offset + chunkSize
-		if end > len(pcm) {
-			end = len(pcm)
-		}
+		end := min(offset+chunkSize, len(pcm))
 		if _, err := encChunk.Write(pcm[offset:end]); err != nil {
 			t.Fatalf("chunked Write at offset %d: %v", offset, err)
 		}

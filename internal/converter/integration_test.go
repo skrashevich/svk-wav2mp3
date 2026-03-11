@@ -42,17 +42,17 @@ func generateSineWAV(t *testing.T, sampleRate, numChannels, bitDepth int, durati
 	binary.Write(f, binary.LittleEndian, uint32(dataSize))
 
 	const freq = 440.0
-	for i := 0; i < numSamples; i++ {
+	for i := range numSamples {
 		t_ := float64(i) / float64(sampleRate)
 		switch bitDepth {
 		case 16:
 			s := int16(math.Sin(2*math.Pi*freq*t_) * 32000)
-			for ch := 0; ch < numChannels; ch++ {
+			for range numChannels {
 				binary.Write(f, binary.LittleEndian, s)
 			}
 		case 8:
 			s := uint8(math.Sin(2*math.Pi*freq*t_)*127 + 128)
-			for ch := 0; ch < numChannels; ch++ {
+			for range numChannels {
 				f.Write([]byte{s})
 			}
 		}
