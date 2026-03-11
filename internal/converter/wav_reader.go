@@ -22,10 +22,11 @@ type WAVInfo struct {
 
 // WAVReader reads a WAV file and provides PCM data in int16 chunks.
 type WAVReader struct {
-	file    *os.File
-	decoder *wav.Decoder
-	pcmBuf  *audio.IntBuffer // reusable buffer for chunked reading
-	Info    WAVInfo
+	file      *os.File
+	decoder   *wav.Decoder
+	pcmBuf    *audio.IntBuffer // reusable buffer for chunked reading
+	int16Buf  []int16          // reusable buffer for normalizePCM output
+	Info      WAVInfo
 }
 
 // NewWAVReader opens a WAV file and reads header.
@@ -74,10 +75,11 @@ func NewWAVReader(path string) (*WAVReader, error) {
 	}
 
 	return &WAVReader{
-		file:    f,
-		decoder: dec,
-		pcmBuf:  pcmBuf,
-		Info:    info,
+		file:     f,
+		decoder:  dec,
+		pcmBuf:   pcmBuf,
+		int16Buf: make([]int16, chunkSamples*numChans),
+		Info:     info,
 	}, nil
 }
 
@@ -96,31 +98,30 @@ func (r *WAVReader) ReadSamplesInt16() ([]int16, error) {
 	if n == 0 {
 		return nil, nil // EOF
 	}
-	samples := normalizePCM(r.pcmBuf.Data[:n], r.Info.BitDepth)
-	return samples, nil
+	normalizePCM(r.int16Buf[:n], r.pcmBuf.Data[:n], r.Info.BitDepth)
+	return r.int16Buf[:n], nil
 }
 
 // normalizePCM converts PCM samples of various bit depths to int16.
-func normalizePCM(samples []int, bitDepth int) []int16 {
-	out := make([]int16, len(samples))
+// Writes into dst to avoid per-chunk allocation.
+func normalizePCM(dst []int16, samples []int, bitDepth int) {
 	for i, s := range samples {
 		switch bitDepth {
 		case 8:
 			// 8-bit unsigned (0–255) → signed int16 (0–32767 after offset)
-			out[i] = int16((s - 128) << 8)
+			dst[i] = int16((s - 128) << 8)
 		case 16:
-			out[i] = int16(s)
+			dst[i] = int16(s)
 		case 24:
 			// 24-bit → 16-bit: drop 8 least significant bits
-			out[i] = int16(s >> 8)
+			dst[i] = int16(s >> 8)
 		case 32:
 			// 32-bit → 16-bit: drop 16 least significant bits
-			out[i] = int16(s >> 16)
+			dst[i] = int16(s >> 16)
 		default:
-			out[i] = int16(s)
+			dst[i] = int16(s)
 		}
 	}
-	return out
 }
 
 // TotalFrames returns total number of frames per channel (for progressbar).

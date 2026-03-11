@@ -61,6 +61,13 @@ type Encoder struct {
 	w           io.Writer
 	closed      bool
 	initialized bool
+
+	// Persistent C-side buffers, reused across Write calls to avoid
+	// repeated malloc/free. Grown as needed, freed in Close.
+	pcmBuf    uintptr
+	pcmBufCap int
+	mp3Buf    uintptr
+	mp3BufCap int
 }
 
 // NewEncoder creates a new LAME encoder that writes MP3 data to w.
@@ -144,6 +151,40 @@ func (e *Encoder) initParams() error {
 	return nil
 }
 
+// ensurePCMBuf ensures the persistent PCM buffer has at least size bytes.
+func (e *Encoder) ensurePCMBuf(size int) error {
+	if e.pcmBufCap >= size {
+		return nil
+	}
+	if e.pcmBuf != 0 {
+		libc.Xfree(e.tls, e.pcmBuf)
+	}
+	e.pcmBuf = libc.Xmalloc(e.tls, uint64(size))
+	if e.pcmBuf == 0 {
+		e.pcmBufCap = 0
+		return errors.New("failed to allocate PCM buffer")
+	}
+	e.pcmBufCap = size
+	return nil
+}
+
+// ensureMP3Buf ensures the persistent MP3 buffer has at least size bytes.
+func (e *Encoder) ensureMP3Buf(size int) error {
+	if e.mp3BufCap >= size {
+		return nil
+	}
+	if e.mp3Buf != 0 {
+		libc.Xfree(e.tls, e.mp3Buf)
+	}
+	e.mp3Buf = libc.Xmalloc(e.tls, uint64(size))
+	if e.mp3Buf == 0 {
+		e.mp3BufCap = 0
+		return errors.New("failed to allocate MP3 buffer")
+	}
+	e.mp3BufCap = size
+	return nil
+}
+
 // Write encodes PCM audio and writes MP3 bytes to the underlying writer.
 // pcm must contain int16 little-endian samples, interleaved for stereo
 // (L R L R …). On first call, LAME parameters are initialized automatically.
@@ -178,30 +219,26 @@ func (e *Encoder) Write(pcm []byte) (int, error) {
 
 	// MP3 output buffer: worst case is 1.25 * nsamples + 7200
 	mp3bufSize := int(float64(nsamples)*1.25) + 7200
-	mp3buf := libc.Xmalloc(e.tls, uint64(mp3bufSize))
-	if mp3buf == 0 {
-		return 0, errors.New("failed to allocate MP3 buffer")
+	if err := e.ensureMP3Buf(mp3bufSize); err != nil {
+		return 0, err
 	}
-	defer libc.Xfree(e.tls, mp3buf)
 
-	// Allocate C memory for PCM data
-	pcmBuf := libc.Xmalloc(e.tls, uint64(len(pcm)))
-	if pcmBuf == 0 {
-		return 0, errors.New("failed to allocate PCM buffer")
+	// Ensure C memory for PCM data
+	if err := e.ensurePCMBuf(len(pcm)); err != nil {
+		return 0, err
 	}
-	defer libc.Xfree(e.tls, pcmBuf)
 
 	// Copy PCM data to C memory
-	copy(unsafe.Slice((*byte)(unsafe.Pointer(pcmBuf)), len(pcm)), pcm)
+	copy(unsafe.Slice((*byte)(unsafe.Pointer(e.pcmBuf)), len(pcm)), pcm)
 
 	// Encode PCM data. For mono, use lame_encode_buffer (non-interleaved) because
 	// lame_encode_buffer_interleaved hardcodes jump=2 and reads out of bounds for mono.
 	// For stereo, use lame_encode_buffer_interleaved with the interleaved buffer.
 	var ret int32
 	if numChannels == 1 {
-		ret = lame_encode_buffer(e.tls, e.gfp, pcmBuf, pcmBuf, int32(nsamples), mp3buf, int32(mp3bufSize))
+		ret = lame_encode_buffer(e.tls, e.gfp, e.pcmBuf, e.pcmBuf, int32(nsamples), e.mp3Buf, int32(mp3bufSize))
 	} else {
-		ret = lame_encode_buffer_interleaved(e.tls, e.gfp, pcmBuf, int32(nsamples), mp3buf, int32(mp3bufSize))
+		ret = lame_encode_buffer_interleaved(e.tls, e.gfp, e.pcmBuf, int32(nsamples), e.mp3Buf, int32(mp3bufSize))
 	}
 	if ret < 0 {
 		return 0, fmt.Errorf("lame_encode_buffer failed: %d", ret)
@@ -209,7 +246,7 @@ func (e *Encoder) Write(pcm []byte) (int, error) {
 
 	if ret > 0 {
 		// Copy MP3 data from C memory and write to output
-		mp3data := unsafe.Slice((*byte)(unsafe.Pointer(mp3buf)), int(ret))
+		mp3data := unsafe.Slice((*byte)(unsafe.Pointer(e.mp3Buf)), int(ret))
 		if _, err := e.w.Write(mp3data); err != nil {
 			return 0, err
 		}
@@ -284,6 +321,14 @@ func (e *Encoder) Close() error {
 		return nil
 	}
 	e.closed = true
+	if e.pcmBuf != 0 {
+		libc.Xfree(e.tls, e.pcmBuf)
+		e.pcmBuf = 0
+	}
+	if e.mp3Buf != 0 {
+		libc.Xfree(e.tls, e.mp3Buf)
+		e.mp3Buf = 0
+	}
 	lame_close(e.tls, e.gfp)
 	e.tls.Close()
 	return nil

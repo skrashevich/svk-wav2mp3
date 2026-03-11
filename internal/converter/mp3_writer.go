@@ -1,9 +1,9 @@
 package converter
 
 import (
-	"encoding/binary"
 	"fmt"
 	"os"
+	"unsafe"
 
 	"github.com/svk/wav2mp3/lame"
 )
@@ -77,12 +77,10 @@ func NewMP3Writer(path string, cfg EncoderConfig) (*MP3Writer, error) {
 }
 
 // WriteSamples encodes and writes chunk of int16 samples.
-// go-lame.Write expects []byte (int16 little-endian interleaved).
+// Uses zero-copy reinterpretation: on little-endian platforms (arm64, amd64)
+// the in-memory layout of []int16 is already int16-LE interleaved bytes.
 func (w *MP3Writer) WriteSamples(samples []int16) error {
-	buf := make([]byte, len(samples)*2)
-	for i, s := range samples {
-		binary.LittleEndian.PutUint16(buf[i*2:], uint16(s))
-	}
+	buf := unsafe.Slice((*byte)(unsafe.Pointer(unsafe.SliceData(samples))), len(samples)*2)
 	if _, err := w.encoder.Write(buf); err != nil {
 		return fmt.Errorf("encoding error: %w", err)
 	}

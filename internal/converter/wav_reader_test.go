@@ -5,7 +5,8 @@ import "testing"
 func TestNormalizePCM_8bit(t *testing.T) {
 	// 8-bit: value 128 (silence) → 0
 	samples := []int{128, 0, 255}
-	result := normalizePCM(samples, 8)
+	result := make([]int16, len(samples))
+	normalizePCM(result, samples, 8)
 
 	if result[0] != 0 {
 		t.Errorf("128 (8-bit) should normalize to 0, got %d", result[0])
@@ -22,7 +23,8 @@ func TestNormalizePCM_8bit(t *testing.T) {
 
 func TestNormalizePCM_16bit(t *testing.T) {
 	samples := []int{0, 32767, -32768, 1000}
-	result := normalizePCM(samples, 16)
+	result := make([]int16, len(samples))
+	normalizePCM(result, samples, 16)
 
 	for i, s := range samples {
 		if result[i] != int16(s) {
@@ -34,7 +36,8 @@ func TestNormalizePCM_16bit(t *testing.T) {
 func TestNormalizePCM_24bit(t *testing.T) {
 	// 24-bit: >> 8
 	samples := []int{8388607, -8388608, 0, 256}
-	result := normalizePCM(samples, 24)
+	result := make([]int16, len(samples))
+	normalizePCM(result, samples, 24)
 
 	expected := []int16{
 		int16(8388607 >> 8),
@@ -52,7 +55,8 @@ func TestNormalizePCM_24bit(t *testing.T) {
 func TestNormalizePCM_32bit(t *testing.T) {
 	// 32-bit: >> 16
 	samples := []int{2147483647, -2147483648, 0, 65536}
-	result := normalizePCM(samples, 32)
+	result := make([]int16, len(samples))
+	normalizePCM(result, samples, 32)
 
 	expected := []int16{
 		int16(2147483647 >> 16),
@@ -68,7 +72,8 @@ func TestNormalizePCM_32bit(t *testing.T) {
 }
 
 func TestNormalizePCM_EmptyInput(t *testing.T) {
-	result := normalizePCM(nil, 16)
+	result := make([]int16, 0)
+	normalizePCM(result, nil, 16)
 	if len(result) != 0 {
 		t.Errorf("expected empty result, got %d elements", len(result))
 	}

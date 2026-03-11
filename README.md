@@ -116,9 +116,13 @@ enc.SetInSamplerate(44100)
 enc.SetNumChannels(2)
 enc.SetVBR(lame.VBRDefault)
 enc.SetVBRQuality(2)
+enc.SetVBRMinBitrateKbps(128) // optional: clamp VBR range
+enc.SetVBRMaxBitrateKbps(256)
 
 enc.Write(pcmBytes) // int16 little-endian interleaved
 enc.Flush()
+tag := enc.GetLametagFrame() // Xing/LAME VBR header
+// write tag at file offset 0 for accurate seek/duration
 ```
 
 No CGO or system libraries required. See [`lame/README.md`](lame/README.md) for the full API reference.
@@ -131,8 +135,11 @@ No CGO or system libraries required. See [`lame/README.md`](lame/README.md) for 
 | Pure Go (CGO_ENABLED=0) | **Yes** | **Yes** | No | No |
 | CBR | 32–320 kbps | 128 kbps only | Yes | Yes |
 | VBR | V0–V9 | **No** | **SEGFAULT** | Undocumented |
+| VBR bitrate clamping | **Yes** (min/max) | No | No | No |
 | Xing/LAME header | **Yes** | No | No | Unknown |
 | Joint Stereo | **Yes** | No | Yes | Yes |
+| Gapless encoding | **Yes** (FlushNogap) | No | No | No |
+| Streaming mode | **Yes** (DisableReservoir) | No | No | No |
 | ID3v2 tags + cover art | **Yes** | No | No | Tags only |
 | Bit depth 8/16/24/32 | **Yes** | 16-bit only | 16-bit only | 16-bit only |
 | Static binary | **Yes** | **Yes** | No | No |

@@ -107,8 +107,13 @@ LAME 3.100 is the gold standard of MP3 encoding. Shine was designed for embedded
 | **Xing/LAME VBR header** | Yes (seek + write) | **No** | **No** (confirmed by testing) | Unknown |
 | **ID3v2 tags** | Yes (bogem/id3v2, post-encoder) | **No** | **No** | Yes (built-in) |
 | **Album cover** | Yes (JPEG/PNG/GIF/WebP) | **No** | **No** | **No** |
+| **VBR bitrate clamping** | Yes (min/max kbps) | **No** | **No** | **No** |
 | **Lowpass/Highpass filters** | Yes | **No** | **No** | **No** |
 | **PCM scaling** | Yes (SetScale) | **No** | **No** | **No** |
+| **Gapless encoding** | Yes (FlushNogap) | **No** | **No** | **No** |
+| **Streaming mode** | Yes (DisableReservoir) | **No** | **No** | **No** |
+| **Strict ISO compliance** | Yes (SetStrictISO) | **No** | **No** | **No** |
+| **Encoding progress** | Yes (GetFrameNum/GetTotalFrames) | **No** | **No** | **No** |
 | **Bit depth: 8/16/24/32** | Yes (normalization → int16) | 16-bit only | 16-bit only | 16-bit only |
 | **Batch processing** | Yes (glob + recursion) | **No** (library) | **No** (library) | **No** (library) |
 | **Progress bar** | Yes | **No** | **No** | **No** |
@@ -125,14 +130,21 @@ enc.SetInSamplerate(44100)
 enc.SetNumChannels(2)
 enc.SetVBR(lame.VBRDefault)
 enc.SetVBRQuality(2.0)
+enc.SetVBRMinBitrateKbps(128)  // clamp VBR range
+enc.SetVBRMaxBitrateKbps(256)
 enc.SetQuality(2)
 enc.Write(pcmBytes)  // int16 LE interleaved
 enc.Flush()
+tag := enc.GetLametagFrame()  // VBR header for accurate seek
 enc.Close()
 ```
-- Rich API: 20+ configuration methods, 10+ getters
+- Rich API: 30+ configuration methods, 15+ getters
 - Auto-init on first `Write()`
 - Isolated TLS — safe to create multiple encoders in parallel
+- Persistent C-side buffers — zero malloc/free per Write call after first allocation
+- Gapless encoding via `FlushNogap()` for album tracks
+- Streaming mode via `SetDisableReservoir(true)` for independently decodable frames
+- Frame-level progress tracking via `GetFrameNum()`/`GetTotalFrames()`
 
 ### shine-mp3
 ```go
@@ -187,11 +199,15 @@ Several decisions distinguish this project:
 
 2. **VBR header via seek.** After encoding completes, the file is rewound to the beginning and a Xing/LAME frame is written for correct duration display in players.
 
-3. **Streaming processing.** WAV is read in chunks of 4096 frames (not loaded entirely into memory), allowing files of any size to be processed.
+3. **Pipelined I/O.** WAV reading and MP3 encoding run concurrently — a goroutine reads the next chunk while the current one is being encoded. WAV is read in chunks of 4096 frames (not loaded entirely into memory), allowing files of any size to be processed.
 
-4. **Bit depth normalization.** Automatic conversion of 8/16/24/32-bit PCM → int16 before passing to LAME.
+4. **Persistent C-side buffers.** The encoder allocates C memory (pcmBuf, mp3Buf) once on first Write and reuses them across all subsequent calls, eliminating ~200 malloc/free cycles per typical file. Buffers are freed on Close.
 
-5. **Atomic writes.** On error or context cancellation, the partially written MP3 file is removed via `defer`.
+5. **Zero-copy PCM transfer.** `WriteSamples` uses `unsafe.Slice` to reinterpret `[]int16` as `[]byte` directly, avoiding per-chunk allocation and byte-by-byte conversion loops. Safe on little-endian platforms (arm64, amd64).
+
+6. **Bit depth normalization.** Automatic conversion of 8/16/24/32-bit PCM → int16 before passing to LAME, using a reusable buffer to avoid per-chunk allocations.
+
+7. **Atomic writes.** On error or context cancellation, the partially written MP3 file is removed via `defer`.
 
 ---
 
@@ -358,8 +374,11 @@ System LAME VBR V0 compressed the file to 6.5 MB (vs 8.5 MB for CBR 320) at equi
 | CBR 128 kbps | Yes* | Yes | Yes | Yes (default) |
 | VBR V0 | Yes* | Yes | **SEGFAULT** | **No** |
 | VBR V2 | Yes* | Yes | Not tested | **No** |
+| VBR bitrate clamping | Yes* (min/max) | Yes | **No** | **No** |
 | Xing/LAME header | Yes* | Yes | **No** | **No** |
 | Joint Stereo | Yes* | Yes | Yes | **No** |
+| Gapless encoding | Yes* (FlushNogap) | Yes | **No** | **No** |
+| Streaming (no reservoir) | Yes* | Yes | **No** | **No** |
 
 \* svk-wav2mp3 uses the same LAME 3.100 engine; results are identical to the reference.
 
