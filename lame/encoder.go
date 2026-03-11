@@ -412,3 +412,137 @@ func (e *Encoder) SetPreset(preset int) error {
 	}
 	return nil
 }
+
+// SetVBRMeanBitrateKbps sets the target average bitrate for ABR/VBR modes in kbps.
+func (e *Encoder) SetVBRMeanBitrateKbps(kbps int) error {
+	if rc := lame_set_VBR_mean_bitrate_kbps(e.tls, e.gfp, int32(kbps)); rc < 0 {
+		return fmt.Errorf("lame_set_VBR_mean_bitrate_kbps(%d) failed: %d", kbps, rc)
+	}
+	return nil
+}
+
+// GetVBRMeanBitrateKbps returns the target average bitrate for ABR/VBR modes in kbps.
+func (e *Encoder) GetVBRMeanBitrateKbps() int {
+	return int(lame_get_VBR_mean_bitrate_kbps(e.tls, e.gfp))
+}
+
+// SetVBRMinBitrateKbps sets the minimum allowed bitrate in VBR mode in kbps.
+func (e *Encoder) SetVBRMinBitrateKbps(kbps int) error {
+	if rc := lame_set_VBR_min_bitrate_kbps(e.tls, e.gfp, int32(kbps)); rc < 0 {
+		return fmt.Errorf("lame_set_VBR_min_bitrate_kbps(%d) failed: %d", kbps, rc)
+	}
+	return nil
+}
+
+// GetVBRMinBitrateKbps returns the minimum allowed bitrate in VBR mode in kbps.
+func (e *Encoder) GetVBRMinBitrateKbps() int {
+	return int(lame_get_VBR_min_bitrate_kbps(e.tls, e.gfp))
+}
+
+// SetVBRMaxBitrateKbps sets the maximum allowed bitrate in VBR mode in kbps.
+func (e *Encoder) SetVBRMaxBitrateKbps(kbps int) error {
+	if rc := lame_set_VBR_max_bitrate_kbps(e.tls, e.gfp, int32(kbps)); rc < 0 {
+		return fmt.Errorf("lame_set_VBR_max_bitrate_kbps(%d) failed: %d", kbps, rc)
+	}
+	return nil
+}
+
+// GetVBRMaxBitrateKbps returns the maximum allowed bitrate in VBR mode in kbps.
+func (e *Encoder) GetVBRMaxBitrateKbps() int {
+	return int(lame_get_VBR_max_bitrate_kbps(e.tls, e.gfp))
+}
+
+// SetNumSamples sets the total number of input PCM samples (per channel).
+// Setting this before encoding enables LAME to produce a more accurate VBR header.
+func (e *Encoder) SetNumSamples(n uint64) error {
+	if rc := lame_set_num_samples(e.tls, e.gfp, n); rc < 0 {
+		return fmt.Errorf("lame_set_num_samples(%d) failed: %d", n, rc)
+	}
+	return nil
+}
+
+// GetNumSamples returns the total number of input PCM samples (per channel).
+func (e *Encoder) GetNumSamples() uint64 {
+	return lame_get_num_samples(e.tls, e.gfp)
+}
+
+// SetDisableReservoir disables the bit reservoir. When disabled, each MP3 frame
+// is independently decodable, which is useful for streaming applications.
+func (e *Encoder) SetDisableReservoir(disable bool) error {
+	val := int32(0)
+	if disable {
+		val = 1
+	}
+	if rc := lame_set_disable_reservoir(e.tls, e.gfp, val); rc < 0 {
+		return fmt.Errorf("lame_set_disable_reservoir(%d) failed: %d", val, rc)
+	}
+	return nil
+}
+
+// GetDisableReservoir returns whether the bit reservoir is disabled.
+func (e *Encoder) GetDisableReservoir() bool {
+	return lame_get_disable_reservoir(e.tls, e.gfp) != 0
+}
+
+// SetStrictISO enables strict ISO compliance mode.
+func (e *Encoder) SetStrictISO(strict bool) error {
+	val := int32(0)
+	if strict {
+		val = 1
+	}
+	if rc := lame_set_strict_ISO(e.tls, e.gfp, val); rc < 0 {
+		return fmt.Errorf("lame_set_strict_ISO(%d) failed: %d", val, rc)
+	}
+	return nil
+}
+
+// GetStrictISO returns whether strict ISO compliance mode is enabled.
+func (e *Encoder) GetStrictISO() bool {
+	return lame_get_strict_ISO(e.tls, e.gfp) != 0
+}
+
+// GetTotalFrames returns the estimated total number of MP3 frames for the input.
+// Requires SetNumSamples to have been called for an accurate estimate.
+func (e *Encoder) GetTotalFrames() int {
+	return int(lame_get_totalframes(e.tls, e.gfp))
+}
+
+// GetFrameNum returns the number of frames encoded so far.
+func (e *Encoder) GetFrameNum() int {
+	return int(lame_get_frameNum(e.tls, e.gfp))
+}
+
+// GetMode returns the current MPEG channel mode.
+func (e *Encoder) GetMode() int {
+	return int(lame_get_mode(e.tls, e.gfp))
+}
+
+// FlushNogap flushes the encoder without adding the end-of-stream padding.
+// This allows gapless encoding of consecutive tracks — after FlushNogap,
+// the encoder can accept more PCM data via Write for the next track.
+func (e *Encoder) FlushNogap() (int, error) {
+	if e.closed {
+		return 0, errors.New("encoder is closed")
+	}
+
+	mp3bufSize := 7200
+	mp3buf := libc.Xmalloc(e.tls, uint64(mp3bufSize))
+	if mp3buf == 0 {
+		return 0, errors.New("failed to allocate flush buffer")
+	}
+	defer libc.Xfree(e.tls, mp3buf)
+
+	ret := lame_encode_flush_nogap(e.tls, e.gfp, mp3buf, int32(mp3bufSize))
+	if ret < 0 {
+		return 0, fmt.Errorf("lame_encode_flush_nogap failed: %d", ret)
+	}
+
+	if ret > 0 {
+		mp3data := unsafe.Slice((*byte)(unsafe.Pointer(mp3buf)), int(ret))
+		if _, err := e.w.Write(mp3data); err != nil {
+			return int(ret), err
+		}
+	}
+
+	return int(ret), nil
+}
