@@ -2,23 +2,22 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## System Dependency
+## Pure-Go Build
 
-`brew install lame` is required before building. The Makefile auto-detects the Homebrew prefix (`brew --prefix`) and sets `CGO_CFLAGS`/`CGO_LDFLAGS` accordingly. On Apple Silicon, libmp3lame lives in `/opt/homebrew/lib/`; the x86_64 version in `/usr/local/lib/` is incompatible.
+No system dependencies required. LAME 3.100 is transpiled from C to Go using `modernc.org/ccgo` and lives in `internal/lame/`. The build uses `CGO_ENABLED=0` (no C compiler needed). The transpiled code uses `modernc.org/libc` as its runtime.
 
 ## Commands
 
 ```bash
-make build       # → ./bin/wav2mp3
-make test        # go test ./... -v -count=1  (CGO flags set automatically)
+make build       # → ./bin/wav2mp3 (CGO_ENABLED=0, pure Go)
+make test        # CGO_ENABLED=0 go test ./... -v -count=1
 make install     # copies to /usr/local/bin/wav2mp3
 make testdata    # regenerates testdata/fixtures/*.wav via go run testdata/gen_fixtures.go
 make fmt         # go fmt ./...
 make lint        # golangci-lint run ./...
 
 # Single package test
-CGO_LDFLAGS="-L/opt/homebrew/lib -lmp3lame" CGO_CFLAGS="-I/opt/homebrew/include" \
-  go test ./internal/converter/... -run TestConvert_Stereo24bit -v
+CGO_ENABLED=0 go test ./internal/converter/... -run TestConvert_Stereo24bit -v
 
 # Run binary directly
 ./bin/wav2mp3 -i input.wav --bitrate 320        # CBR
@@ -35,6 +34,7 @@ WAV file → WAVReader → normalizePCM → MP3Writer (LAME) → MP3 file → id
 
 ### Package responsibilities
 
+- **`internal/lame`** — pure-Go LAME 3.100 encoder, transpiled from C via ccgo. Provides `Encoder` with `Write`/`Flush`/`Close` and VBR/CBR configuration.
 - **`internal/config`** — `ConvertOptions` and `ID3Tags` structs. No logic.
 - **`internal/validate`** — validates `ConvertOptions` before conversion starts (file existence, extension, bitrate/quality ranges).
 - **`internal/converter`** — the conversion core:
@@ -51,11 +51,15 @@ LAME ID3 tag writing is disabled (`SetWriteID3TagAutomatic(false)`). Tags are wr
 ### Cleanup on error
 `converter.Convert` uses a `defer` that calls `os.Remove(outputPath)` unless `success = true` is reached. This prevents partial MP3 files on error or context cancellation.
 
-## go-lame API notes (non-obvious)
+## internal/lame package (pure-Go LAME)
+- Transpiled from LAME 3.100 C source using `modernc.org/ccgo` v4
+- Platform-specific generated files: `lame_darwin_arm64.go`, `lame_linux_arm64.go`
+- `encoder.go` provides the Go wrapper API: `NewEncoder`, `SetBrate`, `SetVBR`, `Write`, `Flush`, `Close`
 - `SetBrate(kbps int)` — CBR bitrate (not `SetBitrate`)
-- `lame.InitParams` is private; called automatically on first `Write`
+- `initParams` is called automatically on first `Write`
 - `encoder.Write([]byte)` expects int16 LE interleaved bytes
 - `encoder.Flush()` returns `(int, error)`
+- To regenerate for new platforms, use ccgo inside Docker (see `build/Dockerfile.ccgo`)
 
 ## Testing
 - Unit tests: `normalizePCM` (wav_reader_test.go), magic bytes (cover_test.go), validation (validate_test.go)

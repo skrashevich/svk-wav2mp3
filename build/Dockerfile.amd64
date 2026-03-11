@@ -1,0 +1,49 @@
+FROM --platform=linux/amd64 ubuntu:22.04 AS builder
+
+RUN apt-get update && apt-get install -y build-essential wget
+
+# Install Go
+RUN wget -q https://go.dev/dl/go1.24.1.linux-amd64.tar.gz && \
+    tar -C /usr/local -xzf go1.24.1.linux-amd64.tar.gz && \
+    rm go1.24.1.linux-amd64.tar.gz
+ENV PATH="/usr/local/go/bin:/root/go/bin:${PATH}"
+
+# Install ccgo
+RUN go install modernc.org/ccgo/v4@latest
+
+# Copy LAME source
+COPY lame-3.100 /src/lame-3.100
+
+# Configure LAME
+WORKDIR /src/lame-3.100
+RUN ./configure --disable-shared --disable-frontend --disable-decoder \
+    --disable-gtktest --enable-static --disable-rpath --disable-cpml \
+    CFLAGS="-O2 -fno-strict-aliasing"
+
+# Create output module
+RUN mkdir -p /output && cd /output && \
+    go mod init lamelib && \
+    go get modernc.org/libc@latest
+
+# Generate for linux/amd64
+WORKDIR /output
+RUN LAME=/src/lame-3.100 && \
+    ccgo --package-name lamelib \
+    -o lame_linux_amd64.go \
+    -DHAVE_CONFIG_H \
+    -I${LAME}/include -I${LAME}/libmp3lame -I${LAME} \
+    -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H \
+    -ignore-asm-errors -ignore-unsupported-alignment \
+    ${LAME}/libmp3lame/VbrTag.c ${LAME}/libmp3lame/bitstream.c \
+    ${LAME}/libmp3lame/encoder.c ${LAME}/libmp3lame/fft.c \
+    ${LAME}/libmp3lame/gain_analysis.c ${LAME}/libmp3lame/id3tag.c \
+    ${LAME}/libmp3lame/lame.c ${LAME}/libmp3lame/mpglib_interface.c \
+    ${LAME}/libmp3lame/newmdct.c ${LAME}/libmp3lame/presets.c \
+    ${LAME}/libmp3lame/psymodel.c ${LAME}/libmp3lame/quantize.c \
+    ${LAME}/libmp3lame/quantize_pvt.c ${LAME}/libmp3lame/reservoir.c \
+    ${LAME}/libmp3lame/set_get.c ${LAME}/libmp3lame/tables.c \
+    ${LAME}/libmp3lame/takehiro.c ${LAME}/libmp3lame/util.c \
+    ${LAME}/libmp3lame/vbrquantize.c ${LAME}/libmp3lame/version.c \
+    2>&1 && echo "SUCCESS" || echo "FAILED"
+
+CMD ["cat", "/output/lame_linux_amd64.go"]

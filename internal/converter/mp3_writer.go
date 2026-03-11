@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/viert/go-lame"
+	"github.com/svk/wav2mp3/internal/lame"
 )
 
 // MP3Writer manages LAME encoder and MP3 data writing to file.
 type MP3Writer struct {
 	file    *os.File
-	encoder *lame.Encoder
+	encoder *lame.Encoder // pure-Go transpiled LAME encoder
 }
 
 // EncoderConfig encoder parameters.
@@ -89,11 +89,23 @@ func (w *MP3Writer) WriteSamples(samples []int16) error {
 	return nil
 }
 
-// Close flushes LAME buffers and closes file.
+// Close flushes LAME buffers, writes the VBR/Xing header, and closes file.
 func (w *MP3Writer) Close() error {
 	if _, err := w.encoder.Flush(); err != nil {
 		return fmt.Errorf("LAME flush error: %w", err)
 	}
+
+	// Write LAME/Xing VBR header at the beginning of the file.
+	// This header contains accurate duration and bitrate information.
+	if tag := w.encoder.GetLametagFrame(); len(tag) > 0 {
+		if _, err := w.file.Seek(0, 0); err != nil {
+			return fmt.Errorf("seek for lametag: %w", err)
+		}
+		if _, err := w.file.Write(tag); err != nil {
+			return fmt.Errorf("write lametag: %w", err)
+		}
+	}
+
 	w.encoder.Close()
 	return w.file.Close()
 }

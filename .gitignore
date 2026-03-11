@@ -1,3 +1,5 @@
 bin/
 *.mp3
 .DS_Store
+build/lame-*
+.omc
