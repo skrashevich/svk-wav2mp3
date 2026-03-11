@@ -8,10 +8,22 @@ on:
 permissions:
   contents: write
 
+env:
+  CCGO_FLAGS: >-
+    --package-name lame
+    -DHAVE_CONFIG_H
+    -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H
+    -ignore-asm-errors -ignore-unsupported-alignment
+  LAME_SRCS: >-
+    VbrTag.c bitstream.c encoder.c fft.c gain_analysis.c id3tag.c lame.c
+    mpglib_interface.c newmdct.c presets.c psymodel.c quantize.c
+    quantize_pvt.c reservoir.c set_get.c tables.c takehiro.c util.c
+    vbrquantize.c version.c
+
 jobs:
   generate-amd64:
     name: Generate amd64 transpiled files
-    runs-on: ubuntu-latest
+    runs-on: macos-13
     steps:
       - uses: actions/checkout@v4
 
@@ -25,56 +37,30 @@ jobs:
       - name: Download and configure LAME
         run: |
           cd /tmp
-          wget -q https://sourceforge.net/projects/lame/files/lame/3.100/lame-3.100.tar.gz
-          tar xzf lame-3.100.tar.gz
+          curl -sL https://sourceforge.net/projects/lame/files/lame/3.100/lame-3.100.tar.gz | tar xz
           cd lame-3.100
           ./configure --disable-shared --disable-frontend --disable-decoder \
             --disable-gtktest --enable-static --disable-rpath --disable-cpml \
-            --disable-nasm \
             CFLAGS="-O2 -fno-strict-aliasing"
-          # Disable SSE intrinsics that ccgo cannot transpile
-          sed -i 's/#define HAVE_XMMINTRIN_H 1/\/\* #undef HAVE_XMMINTRIN_H \*\//' config.h
 
-      - name: Generate linux/amd64
+      - name: Generate darwin/amd64 (native)
         run: |
           LAME=/tmp/lame-3.100
-          ccgo --package-name lame \
-            -o internal/lame/lame_linux_amd64.go \
-            -DHAVE_CONFIG_H \
+          SRCS=$(echo $LAME_SRCS | tr ' ' '\n' | sed "s|^|${LAME}/libmp3lame/|" | tr '\n' ' ')
+          ccgo $CCGO_FLAGS \
             -I${LAME}/include -I${LAME}/libmp3lame -I${LAME} \
-            -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H \
-            -ignore-asm-errors -ignore-unsupported-alignment \
-            ${LAME}/libmp3lame/VbrTag.c ${LAME}/libmp3lame/bitstream.c \
-            ${LAME}/libmp3lame/encoder.c ${LAME}/libmp3lame/fft.c \
-            ${LAME}/libmp3lame/gain_analysis.c ${LAME}/libmp3lame/id3tag.c \
-            ${LAME}/libmp3lame/lame.c ${LAME}/libmp3lame/mpglib_interface.c \
-            ${LAME}/libmp3lame/newmdct.c ${LAME}/libmp3lame/presets.c \
-            ${LAME}/libmp3lame/psymodel.c ${LAME}/libmp3lame/quantize.c \
-            ${LAME}/libmp3lame/quantize_pvt.c ${LAME}/libmp3lame/reservoir.c \
-            ${LAME}/libmp3lame/set_get.c ${LAME}/libmp3lame/tables.c \
-            ${LAME}/libmp3lame/takehiro.c ${LAME}/libmp3lame/util.c \
-            ${LAME}/libmp3lame/vbrquantize.c ${LAME}/libmp3lame/version.c
-
-      - name: Generate darwin/amd64
-        run: |
-          LAME=/tmp/lame-3.100
-          TARGET_GOOS=darwin TARGET_GOARCH=amd64 \
-          ccgo --package-name lame \
             -o internal/lame/lame_darwin_amd64.go \
-            -DHAVE_CONFIG_H \
+            $SRCS
+
+      - name: Generate linux/amd64 (cross-OS)
+        run: |
+          LAME=/tmp/lame-3.100
+          SRCS=$(echo $LAME_SRCS | tr ' ' '\n' | sed "s|^|${LAME}/libmp3lame/|" | tr '\n' ' ')
+          TARGET_GOOS=linux TARGET_GOARCH=amd64 \
+          ccgo $CCGO_FLAGS \
             -I${LAME}/include -I${LAME}/libmp3lame -I${LAME} \
-            -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H \
-            -ignore-asm-errors -ignore-unsupported-alignment \
-            ${LAME}/libmp3lame/VbrTag.c ${LAME}/libmp3lame/bitstream.c \
-            ${LAME}/libmp3lame/encoder.c ${LAME}/libmp3lame/fft.c \
-            ${LAME}/libmp3lame/gain_analysis.c ${LAME}/libmp3lame/id3tag.c \
-            ${LAME}/libmp3lame/lame.c ${LAME}/libmp3lame/mpglib_interface.c \
-            ${LAME}/libmp3lame/newmdct.c ${LAME}/libmp3lame/presets.c \
-            ${LAME}/libmp3lame/psymodel.c ${LAME}/libmp3lame/quantize.c \
-            ${LAME}/libmp3lame/quantize_pvt.c ${LAME}/libmp3lame/reservoir.c \
-            ${LAME}/libmp3lame/set_get.c ${LAME}/libmp3lame/tables.c \
-            ${LAME}/libmp3lame/takehiro.c ${LAME}/libmp3lame/util.c \
-            ${LAME}/libmp3lame/vbrquantize.c ${LAME}/libmp3lame/version.c
+            -o internal/lame/lame_linux_amd64.go \
+            $SRCS
 
       - name: Upload generated files
         uses: actions/upload-artifact@v4
