@@ -139,6 +139,16 @@ No CGO or system libraries required. See [`lame/README.md`](lame/README.md) for 
 | Cross-compilation | Simple | Simple | Complex | Complex |
 | Status | Active | Minimal | Active | **Obsolete** |
 
+| Criterion | svk-wav2mp3 | shine-mp3 | go-lame (sjzar) | go-lame (viert) |
+|---|---|---|---|---|
+| MP3 Quality | ★★★★★ | ★★★ | ★★★★ (CBR only) | ★★★★★ |
+| Features | ★★★★★ | ★★ | ★★ (VBR=crash) | ★★★ |
+| Pure Go | ★★★★★ | ★★★★★ | ★ | ★ |
+| Portability | ★★★★★ | ★★★★★ | ★★★ | ★★ |
+| Code Size | ★★★ | ★★★★★ | ★★ | ★★★★ |
+| Documentation | ★★★★ | ★★ | ★★ | ★★ |
+| Maintainability | ★★★★ | ★★★ | ★★★ | ★ (obsolete) |
+
 **svk-wav2mp3** is the only Go project that combines LAME 3.100 quality (the gold standard of MP3 encoding), full VBR support with Xing/LAME headers, and pure Go without CGo. See the [full comparison with benchmarks](docs/mp3-encoders-comparison.md) for details.
 
 ## Development
