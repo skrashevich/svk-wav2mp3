@@ -1,0 +1,149 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-amd64:
+    name: Generate amd64 transpiled files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+
+      - name: Install ccgo
+        run: go install modernc.org/ccgo/v4@latest
+
+      - name: Download and configure LAME
+        run: |
+          cd /tmp
+          wget -q https://sourceforge.net/projects/lame/files/lame/3.100/lame-3.100.tar.gz
+          tar xzf lame-3.100.tar.gz
+          cd lame-3.100
+          ./configure --disable-shared --disable-frontend --disable-decoder \
+            --disable-gtktest --enable-static --disable-rpath --disable-cpml \
+            CFLAGS="-O2 -fno-strict-aliasing"
+
+      - name: Generate linux/amd64
+        run: |
+          LAME=/tmp/lame-3.100
+          ccgo --package-name lame \
+            -o internal/lame/lame_linux_amd64.go \
+            -DHAVE_CONFIG_H \
+            -I${LAME}/include -I${LAME}/libmp3lame -I${LAME} \
+            -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H \
+            -ignore-asm-errors -ignore-unsupported-alignment \
+            ${LAME}/libmp3lame/VbrTag.c ${LAME}/libmp3lame/bitstream.c \
+            ${LAME}/libmp3lame/encoder.c ${LAME}/libmp3lame/fft.c \
+            ${LAME}/libmp3lame/gain_analysis.c ${LAME}/libmp3lame/id3tag.c \
+            ${LAME}/libmp3lame/lame.c ${LAME}/libmp3lame/mpglib_interface.c \
+            ${LAME}/libmp3lame/newmdct.c ${LAME}/libmp3lame/presets.c \
+            ${LAME}/libmp3lame/psymodel.c ${LAME}/libmp3lame/quantize.c \
+            ${LAME}/libmp3lame/quantize_pvt.c ${LAME}/libmp3lame/reservoir.c \
+            ${LAME}/libmp3lame/set_get.c ${LAME}/libmp3lame/tables.c \
+            ${LAME}/libmp3lame/takehiro.c ${LAME}/libmp3lame/util.c \
+            ${LAME}/libmp3lame/vbrquantize.c ${LAME}/libmp3lame/version.c
+
+      - name: Generate darwin/amd64
+        run: |
+          LAME=/tmp/lame-3.100
+          TARGET_GOOS=darwin TARGET_GOARCH=amd64 \
+          ccgo --package-name lame \
+            -o internal/lame/lame_darwin_amd64.go \
+            -DHAVE_CONFIG_H \
+            -I${LAME}/include -I${LAME}/libmp3lame -I${LAME} \
+            -DNOANALYSIS -DLAME_LIBRARY_BUILD -DSTDC_HEADERS -DHAVE_STDINT_H \
+            -ignore-asm-errors -ignore-unsupported-alignment \
+            ${LAME}/libmp3lame/VbrTag.c ${LAME}/libmp3lame/bitstream.c \
+            ${LAME}/libmp3lame/encoder.c ${LAME}/libmp3lame/fft.c \
+            ${LAME}/libmp3lame/gain_analysis.c ${LAME}/libmp3lame/id3tag.c \
+            ${LAME}/libmp3lame/lame.c ${LAME}/libmp3lame/mpglib_interface.c \
+            ${LAME}/libmp3lame/newmdct.c ${LAME}/libmp3lame/presets.c \
+            ${LAME}/libmp3lame/psymodel.c ${LAME}/libmp3lame/quantize.c \
+            ${LAME}/libmp3lame/quantize_pvt.c ${LAME}/libmp3lame/reservoir.c \
+            ${LAME}/libmp3lame/set_get.c ${LAME}/libmp3lame/tables.c \
+            ${LAME}/libmp3lame/takehiro.c ${LAME}/libmp3lame/util.c \
+            ${LAME}/libmp3lame/vbrquantize.c ${LAME}/libmp3lame/version.c
+
+      - name: Upload generated files
+        uses: actions/upload-artifact@v4
+        with:
+          name: lame-amd64
+          path: |
+            internal/lame/lame_linux_amd64.go
+            internal/lame/lame_darwin_amd64.go
+
+  build:
+    name: Build ${{ matrix.goos }}/${{ matrix.goarch }}
+    needs: generate-amd64
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - goos: linux
+            goarch: amd64
+          - goos: linux
+            goarch: arm64
+          - goos: darwin
+            goarch: amd64
+          - goos: darwin
+            goarch: arm64
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+
+      - name: Download amd64 transpiled files
+        uses: actions/download-artifact@v4
+        with:
+          name: lame-amd64
+          path: .
+
+      - name: Build binary
+        env:
+          CGO_ENABLED: '0'
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+        run: |
+          VERSION=${GITHUB_REF_NAME}
+          OUTPUT=wav2mp3-${VERSION}-${{ matrix.goos }}-${{ matrix.goarch }}
+          go build -ldflags "-X main.version=${VERSION}" -o ${OUTPUT} ./cmd/wav2mp3
+          chmod +x ${OUTPUT}
+
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: wav2mp3-${{ matrix.goos }}-${{ matrix.goarch }}
+          path: wav2mp3-*
+
+  release:
+    name: Create Release
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all binaries
+        uses: actions/download-artifact@v4
+        with:
+          pattern: wav2mp3-*
+          merge-multiple: true
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ls -la wav2mp3-*
+          gh release create ${GITHUB_REF_NAME} wav2mp3-* \
+            --title "${GITHUB_REF_NAME}" \
+            --generate-notes
