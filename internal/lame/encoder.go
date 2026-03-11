@@ -155,10 +155,17 @@ func (e *Encoder) Write(pcm []byte) (int, error) {
 	// Copy PCM data to C memory
 	copy(unsafe.Slice((*byte)(unsafe.Pointer(pcmBuf)), len(pcm)), pcm)
 
-	// Encode using interleaved buffer
-	ret := lame_encode_buffer_interleaved(e.tls, e.gfp, pcmBuf, int32(nsamples), mp3buf, int32(mp3bufSize))
+	// Encode PCM data. For mono, use lame_encode_buffer (non-interleaved) because
+	// lame_encode_buffer_interleaved hardcodes jump=2 and reads out of bounds for mono.
+	// For stereo, use lame_encode_buffer_interleaved with the interleaved buffer.
+	var ret int32
+	if numChannels == 1 {
+		ret = lame_encode_buffer(e.tls, e.gfp, pcmBuf, pcmBuf, int32(nsamples), mp3buf, int32(mp3bufSize))
+	} else {
+		ret = lame_encode_buffer_interleaved(e.tls, e.gfp, pcmBuf, int32(nsamples), mp3buf, int32(mp3bufSize))
+	}
 	if ret < 0 {
-		return 0, fmt.Errorf("lame_encode_buffer_interleaved failed: %d", ret)
+		return 0, fmt.Errorf("lame_encode_buffer failed: %d", ret)
 	}
 
 	if ret > 0 {
