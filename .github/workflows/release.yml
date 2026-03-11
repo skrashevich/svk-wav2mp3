@@ -31,8 +31,9 @@ jobs:
           ./configure --disable-shared --disable-frontend --disable-decoder \
             --disable-gtktest --enable-static --disable-rpath --disable-cpml \
             --disable-nasm \
-            ac_cv_header_xmmintrin_h=no \
             CFLAGS="-O2 -fno-strict-aliasing"
+          # Disable SSE intrinsics that ccgo cannot transpile
+          sed -i 's/#define HAVE_XMMINTRIN_H 1/\/\* #undef HAVE_XMMINTRIN_H \*\//' config.h
 
       - name: Generate linux/amd64
         run: |
