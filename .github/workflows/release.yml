@@ -112,14 +112,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: lame-amd64
-          path: .
-
-      - name: Debug — list transpiled files
-        run: |
-          echo "=== All lame_*.go files ==="
-          find . -name 'lame_*.go' -ls
-          echo "=== internal/lame/ contents ==="
-          ls -la internal/lame/
+          path: internal/lame
 
       - name: Build binary
         env:
