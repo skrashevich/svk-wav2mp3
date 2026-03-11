@@ -123,6 +123,24 @@ enc.Flush()
 
 No CGO or system libraries required. See [`lame/README.md`](lame/README.md) for the full API reference.
 
+## How it compares to other Go MP3 encoders
+
+| Feature | svk-wav2mp3 | [shine-mp3](https://github.com/braheezy/shine-mp3) | [sjzar/go-lame](https://github.com/sjzar/go-lame) | [viert/go-lame](https://github.com/viert/lame) |
+|---|---|---|---|---|
+| Encoder core | LAME 3.100 | Shine (fixed-point) | LAME (CGo) | LAME (CGo) |
+| Pure Go (CGO_ENABLED=0) | **Yes** | **Yes** | No | No |
+| CBR | 32–320 kbps | 128 kbps only | Yes | Yes |
+| VBR | V0–V9 | **No** | **SEGFAULT** | Undocumented |
+| Xing/LAME header | **Yes** | No | No | Unknown |
+| Joint Stereo | **Yes** | No | Yes | Yes |
+| ID3v2 tags + cover art | **Yes** | No | No | Tags only |
+| Bit depth 8/16/24/32 | **Yes** | 16-bit only | 16-bit only | 16-bit only |
+| Static binary | **Yes** | **Yes** | No | No |
+| Cross-compilation | Simple | Simple | Complex | Complex |
+| Status | Active | Minimal | Active | **Obsolete** |
+
+**svk-wav2mp3** is the only Go project that combines LAME 3.100 quality (the gold standard of MP3 encoding), full VBR support with Xing/LAME headers, and pure Go without CGo. See the [full comparison with benchmarks](docs/mp3-encoders-comparison.md) for details.
+
 ## Development
 
 ```bash
