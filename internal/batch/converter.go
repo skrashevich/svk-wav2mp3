@@ -30,6 +30,10 @@ func ConvertBatch(ctx context.Context, opts BatchOptions) (*BatchStats, error) {
 	stats := &BatchStats{}
 	startTime := time.Now()
 
+	if len(opts.Patterns) == 0 {
+		return nil, fmt.Errorf("no patterns provided")
+	}
+
 	// Собираем все WAV файлы по glob-паттернам
 	matches, err := gatherFiles(ctx, opts)
 	if err != nil {
@@ -260,15 +264,20 @@ func printStats(stats *BatchStats) {
 	fmt.Fprintf(os.Stderr, "==============================\n")
 }
 
-// patternToGlob конвертирует паттерн filepath в glob-паттерн.
+// patternToGlob конвертирует паттерн filepath в glob-паттерн для рекурсивного поиска.
+// *.wav -> **/*.wav, test/*.wav -> test/**/*.wav, test -> test/*.wav
 func patternToGlob(pattern string) string {
-	// Заменяем * на ** для поддержки wildcard
-	pattern = strings.ReplaceAll(pattern, "*", "**")
-	// Добавляем .wav расширение если не указан
-	if !strings.HasSuffix(strings.ToLower(pattern), ".wav") {
-		pattern += ".wav"
+	if !strings.Contains(pattern, "*") {
+		// No wildcard — add /*.wav
+		return filepath.Join(pattern, "*.wav")
 	}
-	return pattern
+	// Replace single * with **/* for recursive doublestar matching
+	dir := filepath.Dir(pattern)
+	base := filepath.Base(pattern)
+	if dir == "." {
+		return "**/" + base
+	}
+	return dir + "/**/" + base
 }
 
 // globWAVFiles собирает WAV файлы по паттерну.

@@ -124,7 +124,7 @@ func TestPatternToGlob(t *testing.T) {
 			description: "Absolute path should work correctly",
 		},
 		{
-			input:       "test/*.wav",
+			input:       "test",
 			output:      "test/*.wav",
 			description: "Pattern without * should add *.wav",
 		},
@@ -212,9 +212,8 @@ func TestConvertBatchWithEmptyPatterns(t *testing.T) {
 func TestConvertBatchWithSingleFile(t *testing.T) {
 	tmpDir := t.TempDir()
 	srcFile := filepath.Join(tmpDir, "src.wav")
-	dstFile := filepath.Join(tmpDir, "dst.mp3")
 
-	// Создаем входной файл
+	// Создаем невалидный WAV (1 байт) — конвертация должна завершиться ошибкой
 	if err := os.WriteFile(srcFile, []byte{0x00}, 0644); err != nil {
 		t.Fatal(err)
 	}
@@ -234,15 +233,7 @@ func TestConvertBatchWithSingleFile(t *testing.T) {
 		t.Errorf("expected 1 total file, got %d", stats.TotalFiles)
 	}
 
-	if stats.Successful == 0 {
-		t.Error("expected successful conversion")
+	if stats.Failed != 1 {
+		t.Errorf("expected 1 failed conversion for invalid WAV, got %d", stats.Failed)
 	}
-
-	// Проверяем, что выходной файл создан
-	if _, err := os.Stat(dstFile); err != nil {
-		t.Errorf("output file not created: %v", err)
-	}
-
-	// Удаляем выходной файл после теста
-	os.Remove(dstFile)
 }
