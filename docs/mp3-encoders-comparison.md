@@ -225,20 +225,22 @@ Several decisions distinguish this project:
 
 ### Test Conditions
 
-- Platform: macOS (Darwin 25.3.0), Apple Silicon (arm64)
-- Each encoder was run at maximum quality
-- svk-wav2mp3: `--quality 0` (best algorithmic level)
+- Platform: macOS (Darwin 25.3.0), Apple M1 Pro (arm64)
+- Each encoder was run at maximum quality (`--quality 0`)
+- svk-wav2mp3 v0.1.2 with pipelined I/O, persistent buffers, and zero-copy PCM
 - sjzar/go-lame: `SetQuality(0)`, `SetBitrate(320)`
 - shine-mp3: 128 kbps CBR (only available mode, bitrate not configurable via API)
 
 ### Results
 
-| Encoder | Mode | Bitrate | File Size | Compression | Time | LAME Metadata |
-|---|---|---|---|---|---|---|
-| **svk-wav2mp3** | CBR 320 | 320 kbps | 8,865,600 (~8.5 MB) | 4.8x | **19.6s** | `LAME3.100` |
-| **svk-wav2mp3** | VBR V0 | ~245 kbps (avg) | 6,789,312 (~6.5 MB) | 6.3x | **4.4s** | `LAME3.100` |
-| **sjzar/go-lame** | CBR 320 | 320 kbps | 8,865,600 (~8.5 MB) | 4.8x | **12.0s** | — |
-| **shine-mp3** | CBR 128 | 128 kbps | 3,545,472 (~3.4 MB) | 12.0x | **3.2s** | — |
+| Encoder | Mode | Bitrate | File Size | Compression | Time | Speed | LAME Metadata |
+|---|---|---|---|---|---|---|---|
+| **svk-wav2mp3** | CBR 320 | 320 kbps | 8,865,600 (~8.5 MB) | 4.8x | **19.7s** | 11.2x RT | `LAME3.100` |
+| **svk-wav2mp3** | VBR V0 | ~245 kbps (avg) | 6,789,312 (~6.5 MB) | 6.3x | **4.3s** | 51.4x RT | `LAME3.100` |
+| **svk-wav2mp3** | VBR V2 | ~180 kbps (avg) | 4,966,944 (~4.7 MB) | 8.6x | **3.9s** | 56.7x RT | `LAME3.100` |
+| **svk-wav2mp3** | CBR 128 | 128 kbps | 3,546,240 (~3.4 MB) | 12.0x | **15.9s** | 13.9x RT | `LAME3.100` |
+| **sjzar/go-lame** | CBR 320 | 320 kbps | 8,865,600 (~8.5 MB) | 4.8x | **12.0s** | 18.4x RT | — |
+| **shine-mp3** | CBR 128 | 128 kbps | 3,545,472 (~3.4 MB) | 12.0x | **3.2s** | 69.1x RT | — |
 
 ### Results Analysis
 
@@ -248,10 +250,11 @@ Several decisions distinguish this project:
 - shine-mp3 at 128 kbps produces the smallest file but at significantly worse quality.
 
 **Encoding speed:**
-- sjzar/go-lame (CGo, native C) — **12.0s** for CBR 320 at quality 0.
-- svk-wav2mp3 (transpiled Go) — **19.6s** for CBR 320 at quality 0. Transpiled code is ~1.6x slower than native C via CGo, which is expected for ccgo transpilation.
-- svk-wav2mp3 VBR V0 — **4.4s**, significantly faster than CBR 320 due to adaptive bit allocation.
-- shine-mp3 — **3.2s**, fastest due to simplified psychoacoustic model (fixed-point).
+- sjzar/go-lame (CGo, native C) — **12.0s** for CBR 320 at quality 0 (18.4x real-time).
+- svk-wav2mp3 (transpiled Go) — **19.7s** for CBR 320 at quality 0 (11.2x real-time). Transpiled code is ~1.6x slower than native C via CGo, which is expected for ccgo transpilation.
+- svk-wav2mp3 VBR V0 — **4.3s** (51.4x real-time), significantly faster than CBR 320 due to adaptive bit allocation.
+- svk-wav2mp3 VBR V2 — **3.9s** (56.7x real-time), the fastest LAME mode with excellent quality.
+- shine-mp3 — **3.2s** (69.1x real-time), fastest due to simplified psychoacoustic model (fixed-point).
 
 **Metadata and headers:**
 - Only svk-wav2mp3 writes the `LAME3.100` tag and Xing/LAME VBR header, ensuring accurate duration detection in players.
@@ -308,14 +311,20 @@ Test file: [`svk-ne-spat.wav`](https://github.com/skrashevich/svk-wav2mp3/raw/re
 | Bit depth | 16 bit |
 | File size | 42,541,698 bytes (40.5 MB) |
 
-All encoders were run at maximum possible quality. Platform: Linux x86_64, Go 1.24.7.
+All encoders were run at maximum possible quality (`--quality 0`).
 
-> **Note:** svk-wav2mp3 was not tested directly, as the transpiled LAME code was only available for arm64 at the time. However, svk-wav2mp3 uses the same LAME 3.100 (transpiled via ccgo), so the result is identical to the system LAME with the same parameters. System `lame` 3.100 (64-bit, Ubuntu package) is used as the reference.
+**Platforms tested:**
+- macOS (Darwin 25.3.0), Apple M1 Pro (arm64) — svk-wav2mp3 v0.1.2
+- Linux x86_64 — system LAME, sjzar/go-lame, shine-mp3
 
 ### Encoder Configuration
 
 | Encoder | Settings |
 |---|---|
+| svk-wav2mp3 CBR 320 | `--bitrate 320 --quality 0` |
+| svk-wav2mp3 VBR V0 | `--vbr-quality 0 --quality 0` |
+| svk-wav2mp3 VBR V2 | `--vbr-quality 2 --quality 0` |
+| svk-wav2mp3 CBR 128 | `--bitrate 128 --quality 0` |
 | System LAME CBR 320 | `lame --cbr -b 320 -q 0` |
 | System LAME VBR V0 | `lame -V 0 -q 0` |
 | System LAME CBR 128 | `lame --cbr -b 128 -q 0` (for comparison with Shine) |
@@ -327,6 +336,10 @@ All encoders were run at maximum possible quality. Platform: Linux x86_64, Go 1.
 
 | Encoder | File Size | Compression | Time | Speed | Status |
 |---|---|---|---|---|---|
+| **svk-wav2mp3 CBR 320** | 8,865,600 (8.5 MB) | 4.8x | 19.7 sec | 11.2x RT | OK |
+| **svk-wav2mp3 VBR V0** | 6,789,312 (6.5 MB) | 6.3x | 4.3 sec | 51.4x RT | OK |
+| **svk-wav2mp3 VBR V2** | 4,966,944 (4.7 MB) | 8.6x | 3.9 sec | 56.7x RT | OK |
+| **svk-wav2mp3 CBR 128** | 3,546,240 (3.4 MB) | 12.0x | 15.9 sec | 13.9x RT | OK |
 | **System LAME CBR 320** | 8,865,600 (8.5 MB) | 4.8x | 16.5 sec | 13.5x RT | OK |
 | **System LAME VBR V0** | 6,789,216 (6.5 MB) | 6.3x | 2.9 sec | 76.2x RT | OK |
 | **System LAME CBR 128** | 3,546,240 (3.4 MB) | 12.0x | 13.1 sec | 17.0x RT | OK |
