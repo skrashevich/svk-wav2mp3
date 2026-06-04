@@ -1,0 +1,52 @@
+name: Nightly build
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # daily at 03:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  GO_VERSION: "1.26"
+
+jobs:
+  build:
+    name: Build ${{ matrix.goos }}/${{ matrix.goarch }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - goos: linux
+            goarch: amd64
+          - goos: linux
+            goarch: arm64
+          - goos: darwin
+            goarch: amd64
+          - goos: darwin
+            goarch: arm64
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+
+      - name: Build binary
+        env:
+          CGO_ENABLED: "0"
+          GOOS: ${{ matrix.goos }}
+          GOARCH: ${{ matrix.goarch }}
+        run: |
+          VERSION="nightly-$(date +%Y%m%d)"
+          OUTPUT=wav2mp3-${VERSION}-${{ matrix.goos }}-${{ matrix.goarch }}
+          go build -ldflags "-X main.version=${VERSION}" -o ${OUTPUT} ./cmd/wav2mp3
+          chmod +x ${OUTPUT}
+
+      - name: Upload binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: wav2mp3-${{ matrix.goos }}-${{ matrix.goarch }}
+          path: wav2mp3-*
+          retention-days: 30

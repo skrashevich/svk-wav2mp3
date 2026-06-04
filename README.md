@@ -1,6 +1,6 @@
 # wav2mp3
 
-[![Download binaries](https://img.shields.io/badge/dawnl.ink-download%20binaries-blue)](https://dawnl.ink/skrashevich/svk-wav2mp3/workflows/release/main)
+[![Download nightly](https://img.shields.io/badge/dawnl.ink-nightly%20builds-blue)](https://dawnl.ink/skrashevich/svk-wav2mp3/workflows/nightly/main)
 
 High-quality WAV → MP3 converter. Pure Go, no CGO, no system dependencies. LAME 3.100 is [transpiled from C to Go](lame/) and linked statically.
 
