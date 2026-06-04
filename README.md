@@ -1,5 +1,7 @@
 # wav2mp3
 
+[![Download binaries](https://img.shields.io/badge/dawnl.ink-download%20binaries-blue)](https://dawnl.ink/skrashevich/svk-wav2mp3/workflows/release/main)
+
 High-quality WAV → MP3 converter. Pure Go, no CGO, no system dependencies. LAME 3.100 is [transpiled from C to Go](lame/) and linked statically.
 
 Supports VBR/CBR encoding, ID3v2 tags, and album cover embedding.
